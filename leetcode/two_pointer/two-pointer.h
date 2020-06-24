@@ -2,11 +2,14 @@
 // Created by hl4080 on 2020/6/23.
 //
 
-#ifndef GRAPHBUILD_TWO_POINTER_H
-#define GRAPHBUILD_TWO_POINTER_H
+#ifndef TWO_POINTER_H
+#define TWO_POINTER_H
 
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 bool isHappy(int n);
+vector<vector<int>> threeSum(vector<int>& nums);
 
-#endif //GRAPHBUILD_TWO_POINTER_H
+#endif //TWO_POINTER_H

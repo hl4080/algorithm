@@ -15,3 +15,15 @@ void test_happyNumber() {
     else cerr<<"FAILED"<<endl;
 }
 
+void test_threeSum() {
+    vector<int> vec1;
+    vector<int> vec2{0, -2, 0, 2, 2};
+    vector<vector<int>> res1 = threeSum(vec1);
+    vector<vector<int>> res2 = threeSum(vec2);
+    vector<vector<int>> desired1;
+    vector<vector<int>> desired2{{-2, 0, 2}};
+    if(desired1 == res1 && desired2 == res2)
+        cout<<"PASS"<<endl;
+    else cerr<<"FAILED"<<endl;
+}
+

@@ -2,8 +2,8 @@
 // Created by hl4080 on 2020/6/21.
 //
 
-#ifndef GRAPHBUILD_LEETCODE_TEST_H
-#define GRAPHBUILD_LEETCODE_TEST_H
+#ifndef LEETCODE_TEST_H
+#define LEETCODE_TEST_H
 
 #include <iostream>
 #include "../../leetcode/hash/hash.h"
@@ -18,5 +18,6 @@ void test_singleNumber();
 
 //test functions in two-pointers directory
 void test_happyNumber();
+void test_threeSum();
 
-#endif //GRAPHBUILD_LEETCODE_TEST_H
+#endif //LEETCODE_TEST_H
