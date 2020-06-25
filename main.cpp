@@ -5,5 +5,5 @@
 #include "test/leetcode/leetcode_test.h"
 
 int main() {
-    test_happyNumber();
+    test_addTwoNumber();
 }
