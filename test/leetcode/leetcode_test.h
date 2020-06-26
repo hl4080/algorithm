@@ -21,6 +21,7 @@ void test_singleNumber();
 //test functions in two-pointers directory
 void test_happyNumber();
 void test_threeSum();
+void test_longestSubsting();
 
 //test functions in list directory
 void test_addTwoNumber();

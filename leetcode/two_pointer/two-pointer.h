@@ -6,10 +6,13 @@
 #define TWO_POINTER_H
 
 #include <vector>
+#include <string>
+#include <set>
 #include <algorithm>
 using namespace std;
 
 bool isHappy(int n);
 vector<vector<int>> threeSum(vector<int>& nums);
+int lengthOfLongestSubstring(string s);
 
 #endif //TWO_POINTER_H

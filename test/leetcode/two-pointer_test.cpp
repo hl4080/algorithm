@@ -27,3 +27,12 @@ void test_threeSum() {
     else cerr<<"FAILED"<<endl;
 }
 
+void test_longestSubsting() {
+    string s = "abcabcbb";
+    int result = lengthOfLongestSubstring(s);
+    int desired = 3;
+    if(result == desired)
+        std::cout<<"PASS"<<endl;
+    else cerr<<"FAILED"<<endl;
+}
+
