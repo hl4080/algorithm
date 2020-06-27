@@ -1,0 +1,8 @@
+index   type        name
+1       hash        two-sum
+2       list        add-two-numbers
+3       two-pointer longest-substring-without-repeating
+4       dc          median-of-two-sorted-arrays
+15      two-pointer three-sum
+136     math        single-number
+202     two-pointer happy-number

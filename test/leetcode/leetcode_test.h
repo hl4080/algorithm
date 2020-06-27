@@ -11,6 +11,7 @@
 #include "../../leetcode/math/math.h"
 #include "../../leetcode/two_pointer/two-pointer.h"
 #include "../../leetcode/list/list.h"
+#include "../../leetcode/dc/dc.h"
 
 //test functiions in hash directory
 void test_twoSum();
@@ -25,5 +26,8 @@ void test_longestSubsting();
 
 //test functions in list directory
 void test_addTwoNumber();
+
+//test functions in dc directory
+void test_findMedianSortedArrays();
 
 #endif //LEETCODE_TEST_H
