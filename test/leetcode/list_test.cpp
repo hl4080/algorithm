@@ -5,6 +5,7 @@
 #include "leetcode_test.h"
 
 void test_addTwoNumber() {
+    cout<<"============simple test add-two-number begin============="<<endl;
     vector<int> vec1{2, 4, 3};
     vector<int> vec2{5, 6, 7};
     ListNode* l1 = vector2List(vec1);
@@ -12,8 +13,14 @@ void test_addTwoNumber() {
     ListNode* l = addTwoNumbers(l1, l2);
     vector<int> result = list2Vector(l);
     vector<int> desired{7, 0, 1, 1};
+    cout<<"test case : "<<endl;
+    cout<<"l1: ";
+    printListNode(l1);
+    cout<<"l2: ";
+    printListNode(l2);
     if(result == desired)
-        cout<<"PASS"<<endl;
+        cout<<"TEST STATUS: "<<"PASS"<<endl;
     else
-        cerr<<"FAILED"<<endl;
+        cerr<<"TEST STATUS: "<<"FAILED"<<endl;
+    cout<<"============simple test add-two-number end==============="<<endl;
 }

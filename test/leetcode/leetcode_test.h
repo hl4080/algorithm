@@ -13,6 +13,11 @@
 #include "../../leetcode/list/list.h"
 #include "../../leetcode/dc/dc.h"
 
+typedef void (*FUNC)();
+
+//init function map
+void initLeetMap(map<string, FUNC>& m);
+
 //test functiions in hash directory
 void test_twoSum();
 
