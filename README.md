@@ -1,19 +1,12 @@
 # algorithm
 a lightweight project that provides alogrithm solution I ever met and simple test for this project
 
-##It's novelty
+## It's novelty
  1.support camke and IDE(clion) \
  2.easy to understand solutions and mostly optimal both in time complexity and space complexity\
  3.simple test for every algrithm to quick judge its correctness by yourself
- 
- ##How to complie
- Go to the root directory of algorithm and make
- ```
-cd algorithm
-make
-```
 
-##How to use
+## How to use
 This project divides the problems accosicated with different types and its unique index, like hash、dc、list and etc.You can see clearly in directory *problem*. 
 
 ```
@@ -25,9 +18,6 @@ index   type        name
 .....
 .....
 ```
-Then simply test your algorithm, like
-```
-./main leecode 1    //represent problems in leetcode and the its index
-```
-##What to do
+You can simply click *run*
+## What to do
 more works for learning and solving algorithms
