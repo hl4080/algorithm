@@ -4,12 +4,10 @@
 
 #include "test/leetcode/leetcode_test.h"
 
-int main(int argc, char* argv[]) {
-    if(argc != 3)
-        cerr<<"no valid arguments! "<<endl;
+int main() {
     map<string, FUNC> leetMap;  //associate the test function with its problem index
     initLeetMap(leetMap);
-    string index = argv[2];
+    string index = "1";
     auto it = leetMap.find(index);
     if(it == leetMap.end())
         cerr<<"invaild query index"<<endl;
