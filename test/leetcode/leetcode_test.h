@@ -12,6 +12,7 @@
 #include "../../leetcode/two_pointer/two-pointer.h"
 #include "../../leetcode/list/list.h"
 #include "../../leetcode/dc/dc.h"
+#include "../../leetcode/dp/dp.h"
 
 typedef void (*FUNC)();
 
@@ -34,5 +35,8 @@ void test_addTwoNumber();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();
+
+//test functions in dp diectory
+void test_longestPalindromic();
 
 #endif //LEETCODE_TEST_H

@@ -6,7 +6,7 @@
 
 void initLeetMap(map<string, FUNC>& m) {
     //hash functions
-    m["1"]      = &test_twoSum;
+    m["1"]   = &test_twoSum;
 
     //list functions
     m["2"]      = &test_addTwoNumber;
@@ -21,4 +21,7 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //dc functions
     m["4"]      = &test_findMedianSortedArrays;
+
+    //dp functions
+    m["5"]      = &test_longestPalindromic;
 }
