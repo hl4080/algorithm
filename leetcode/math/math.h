@@ -6,9 +6,11 @@
 #define MATH_H
 
 #include <vector>
+#include <string>
 #include <map>
 using namespace std;
 
 int singleNumber(vector<int>&);
+string zigzagConvert(string s, int numRows);
 
 #endif //MATH_H

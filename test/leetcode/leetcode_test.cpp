@@ -13,6 +13,7 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //math functions
     m["136"]    = &test_singleNumber;
+    m["6"]      = &test_zigzagConversion;
 
     //two_pointer functions
     m["3"]      = &test_longestSubsting;

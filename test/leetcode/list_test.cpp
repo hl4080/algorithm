@@ -18,8 +18,11 @@ void test_addTwoNumber() {
     printListNode(l1);
     cout<<"l2: ";
     printListNode(l2);
-    if(result == desired)
+    if(result == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
     else
         cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test add-two-number end==============="<<endl;

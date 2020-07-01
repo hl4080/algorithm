@@ -13,9 +13,12 @@ void test_twoSum() {
     cout<<"test vector: ";
     printOneDimVec(vec);
     cout<<"taget: "<<target<<endl;
-    if(result != desired)
-        cerr<<"TEST STATUS: "<<"FAILED"<<endl;
-    else
+    if(result == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(desired);
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
+    else
+        cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test two-sum end==============="<<endl;
 }

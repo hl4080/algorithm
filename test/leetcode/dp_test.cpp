@@ -14,8 +14,11 @@ void test_longestPalindromic() {
     string desired2 = "bb";
     cout<<"test case 1: "<<s1<<endl;
     cout<<"test case 2: "<<s2<<endl;
-    if(res1 == res1 && res2 == desired2)
+    if(res1 == res1 && res2 == desired2){
+        cout<<"result of test case 1: "<<desired1<<endl;
+        cout<<"result of rest case 2: "<<desired2<<endl;
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
     else cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test longest palindromic substring end==============="<<endl;
 }

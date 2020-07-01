@@ -15,8 +15,10 @@ void test_findMedianSortedArrays() {
     printOneDimVec(vec1);
     cout<<"vec2: ";
     printOneDimVec(vec2);
-    if(result == desired)
+    if(result == desired){
+        cout<<"result of test case 1: "<<desired<<endl;
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
     else
         cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test find-median-sorted-arrays begin============="<<endl;

@@ -14,8 +14,12 @@ void test_happyNumber() {
     cout<<"test case 1: "<<n1<<endl;
     cout<<"test case 2: "<<n2<<endl;
     cout<<"test case 3: "<<n3<<endl;
-    if(res1 == desired1 && res2 == desired2 && res3 == desired3)
+    if(res1 == desired1 && res2 == desired2 && res3 == desired3) {
+        cout<<"result of test case 1: "<<desired1<<endl;
+        cout<<"result of rest case 2: "<<desired2<<endl;
+        cout<<"result of test case 3: "<<desired3<<endl;
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
     else cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test happy-number end==============="<<endl;
 }
@@ -32,8 +36,14 @@ void test_threeSum() {
     printOneDimVec(vec1);
     cout<<"test case 2: ";
     printOneDimVec(vec2);
-    if(desired1 == res1 && desired2 == res2)
+    if(desired1 == res1 && desired2 == res2) {
+        cout<<"result of test case 1: "<<endl;
+        printTwoDimVec(desired1);
+        cout<<"result of rest case 2: "<<endl;
+        printTwoDimVec(desired2);
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
+
     else cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test three-sum end==============="<<endl;
 }
@@ -44,8 +54,10 @@ void test_longestSubsting() {
     int result = lengthOfLongestSubstring(s);
     int desired = 3;
     cout<<"test case: "<<s<<endl;
-    if(result == desired)
+    if(result == desired) {
+        cout<<"result of test case: "<<desired<<endl;
         cout<<"TEST STATUS: "<<"PASS"<<endl;
+    }
     else cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test longest-substring end==============="<<endl;
 }
