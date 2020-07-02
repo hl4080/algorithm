@@ -12,5 +12,6 @@ using namespace std;
 
 int singleNumber(vector<int>&);
 string zigzagConvert(string s, int numRows);
+int reverseInteger(int x);
 
 #endif //MATH_H

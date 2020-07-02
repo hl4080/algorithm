@@ -45,3 +45,22 @@ void test_zigzagConversion() {
         cerr<<"TEST STATUS: "<<"FAILED"<<endl;
     cout<<"============simple test zigzag-conversion end==============="<<endl;
 }
+
+void test_reverseInteger() {
+    cout<<"============simple test reverse-integer begin============="<<endl;
+    int num1 = 123, num2 = -123, num3 = 120;
+    int res1 = reverseInteger(num1), res2 = reverseInteger(num2), res3 = reverseInteger(num3);
+    int desired1 = 321, desired2 = -321, desired3 = 21;
+    cout<<"test case 1: "<<num1<<endl;
+    cout<<"test case 2: "<<num2<<endl;
+    cout<<"test case 3: "<<num3<<endl;
+    if(res1 == desired1 && res2 == desired2 && res3 == desired3) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"result of test case 3: "<<res3<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    }
+    else
+        cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse-integer end==============="<<endl;
+}

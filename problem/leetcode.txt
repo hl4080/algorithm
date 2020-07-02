@@ -5,6 +5,7 @@ index   type        name
 4       dc          median-of-two-sorted-arrays
 5       dp          longest-palindromic-substring
 6       math        zigzag-conversion
+7       math        reverse-integer
 15      two-pointer three-sum
 136     math        single-number
 202     two-pointer happy-number
