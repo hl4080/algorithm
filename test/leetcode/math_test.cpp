@@ -64,3 +64,22 @@ void test_reverseInteger() {
         cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse-integer end==============="<<endl;
 }
+
+void test_palindromeNumber() {
+    cout<<"============simple test palindrome number begin============="<<endl;
+    int num1 = 121, num2 = -121, num3 = 10;
+    bool res1 = isPalindrome(num1), res2 = isPalindrome(num2), res3 = isPalindrome(num3);
+    bool desired1 = true, desired2 = false, desired3 = false;
+    cout<<"test case 1: "<<num1<<endl;
+    cout<<"test case 2: "<<num2<<endl;
+    cout<<"test case 3: "<<num3<<endl;
+    if(res1 == desired1 && res2 == desired2 && res3 == desired3) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"result of test case 3: "<<res3<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    }
+    else
+        cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test palindrome number end==============="<<endl;
+}

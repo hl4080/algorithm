@@ -26,6 +26,7 @@ void test_twoSum();
 void test_singleNumber();
 void test_zigzagConversion();
 void test_reverseInteger();
+void test_palindromeNumber();
 
 //test functions in two-pointers directory
 void test_happyNumber();

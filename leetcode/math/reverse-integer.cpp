@@ -20,7 +20,7 @@ Output: 21
 */
 
 #include "math.h"
-#include "iostream"
+
 int reverseInteger(int x) {
     long result = 0;
     while(x != 0) {

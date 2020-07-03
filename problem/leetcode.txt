@@ -6,6 +6,7 @@ index   type        name
 5       dp          longest-palindromic-substring
 6       math        zigzag-conversion
 7       math        reverse-integer
+8       math        palindrome-number
 15      two-pointer three-sum
 136     math        single-number
 202     two-pointer happy-number
