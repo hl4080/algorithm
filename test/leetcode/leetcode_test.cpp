@@ -15,7 +15,8 @@ void initLeetMap(map<string, FUNC>& m) {
     m["136"]    = &test_singleNumber;
     m["6"]      = &test_zigzagConversion;
     m["7"]      = &test_reverseInteger;
-    m["8"]      = &test_palindromeNumber;
+    m["9"]      = &test_palindromeNumber;
+    m["10"]     = &test_expressionMatch;
     //two_pointer functions
     m["3"]      = &test_longestSubsting;
     m["15"]     = &test_threeSum;

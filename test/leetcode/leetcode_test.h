@@ -41,5 +41,6 @@ void test_findMedianSortedArrays();
 
 //test functions in dp diectory
 void test_longestPalindromic();
+void test_expressionMatch();
 
 #endif //LEETCODE_TEST_H

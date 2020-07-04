@@ -11,5 +11,6 @@
 using namespace std;
 
 string longestPalindrome(string s);
+bool isExpressionMatch(string s, string p);
 
 #endif //ALOGRITHM_DP_H
