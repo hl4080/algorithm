@@ -2,6 +2,8 @@
 // Created by hl4080 on 2020/6/27.
 //
 
+#include "dc.h"
+
 /*
  There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
@@ -23,7 +25,6 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
  */
 
-#include "dc.h"
 int findKthNumber(vector<int>& nums1, vector<int>& nums2, int k) {
     int m = nums1.size(), n = nums2.size();
     int pivot1 = 0, pivot2 = 0;
