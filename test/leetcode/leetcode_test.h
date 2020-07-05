@@ -32,6 +32,7 @@ void test_palindromeNumber();
 void test_happyNumber();
 void test_threeSum();
 void test_longestSubsting();
+void test_maxWaterArea();
 
 //test functions in list directory
 void test_addTwoNumber();

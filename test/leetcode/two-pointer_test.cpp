@@ -62,3 +62,16 @@ void test_longestSubsting() {
     cout<<"============simple test longest-substring end==============="<<endl;
 }
 
+void test_maxWaterArea() {
+    cout<<"============simple test max-water-area begin============="<<endl;
+    vector<int> vec{1,8,6,2,5,4,8,3,7};
+    int res = maxWaterArea(vec);
+    int desired = 49;
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    if(res == desired) {
+        cout<<"result of test case: "<<desired<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test max-water-area end==============="<<endl;
+}
