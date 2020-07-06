@@ -9,6 +9,7 @@ index   type        name
 9       math        palindrome-number
 10      dp          regular-expression-matching
 11      two-pointer max-water-area
+12      greedy      integer-to-roman
 15      two-pointer three-sum
 136     math        single-number
 202     two-pointer happy-number

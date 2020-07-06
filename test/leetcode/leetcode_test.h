@@ -13,6 +13,7 @@
 #include "../../leetcode/list/list.h"
 #include "../../leetcode/dc/dc.h"
 #include "../../leetcode/dp/dp.h"
+#include "../../leetcode/greedy/greedy.h"
 
 typedef void (*FUNC)();
 
@@ -43,5 +44,8 @@ void test_findMedianSortedArrays();
 //test functions in dp diectory
 void test_longestPalindromic();
 void test_expressionMatch();
+
+//test functions in greedy directory
+void test_intToRoman();
 
 #endif //LEETCODE_TEST_H
