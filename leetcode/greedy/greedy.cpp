@@ -53,7 +53,7 @@ Output: "MCMXCIV"
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 
-#include <iostream>
+
 string intToRoman(int num) {
     //greedy strategy: substract from larger number to small in map
     vector<int> nums{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};

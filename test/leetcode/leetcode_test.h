@@ -22,6 +22,7 @@ void initLeetMap(map<string, FUNC>& m);
 
 //test functiions in hash directory
 void test_twoSum();
+void test_romanToInt();
 
 //test functions in math directory
 void test_singleNumber();

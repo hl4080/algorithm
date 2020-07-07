@@ -7,6 +7,7 @@
 void initLeetMap(map<string, FUNC>& m) {
     //hash functions
     m["1"]   = &test_twoSum;
+    m["13"]  = &test_romanToInt;
 
     //list functions
     m["2"]      = &test_addTwoNumber;

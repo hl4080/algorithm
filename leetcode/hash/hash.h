@@ -7,8 +7,10 @@
 
 #include <vector>
 #include <map>
+#include <string>
 using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target);
+int romanToInt(string s);
 
 #endif //ALGORITHM_HASH_H
