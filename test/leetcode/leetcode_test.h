@@ -41,6 +41,7 @@ void test_addTwoNumber();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();
+void test_longestCommonPrefix();
 
 //test functions in dp diectory
 void test_longestPalindromic();

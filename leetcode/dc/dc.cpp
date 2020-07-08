@@ -51,3 +51,41 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     if((m+n)%2) return findKthNumber(nums1, nums2, k+1);
     else return (findKthNumber(nums1, nums2, k) + findKthNumber(nums1, nums2, k+1)) / 2.0;
 }
+
+/*
+ * Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+
+Input: ["flower","flow","flight"]
+Output: "fl"
+Example 2:
+
+Input: ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+Note:
+
+All given inputs are in lowercase letters a-z.
+ */
+#include <iostream>
+string longestCommonPrefix(vector<string>& strs) {
+    //binary search with the shortest str
+    //in the comment area, a more clever idea is to sort and compare the beginning and end string, time complexity is determined by sort operation
+    if(strs.empty()) return "";
+    int m = strs.size(), minLen = INT_MAX;
+    for(int i=0; i<m; ++i)
+        minLen = min(minLen, (int)strs[i].size());
+    int back = minLen, front = 0;
+    while(front < back) {
+        int mid = front + (back - front + 1) / 2;
+        int i = 0;
+        for(; i<m; ++i)
+            if(strs[0].substr(0, mid) != strs[i].substr(0, mid)) break;
+        if(i == m) front = mid;
+        else back = mid-1;
+    }
+    return strs[0].substr(0, front);
+}

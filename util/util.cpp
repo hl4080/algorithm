@@ -26,16 +26,16 @@ ListNode* vector2List(vector<int>& vec) {
     return pre->next;
 }
 
-void printOneDimVec(vector<int> vec) {
-    for(int i=0; i<vec.size(); ++i)
-        cout<<vec[i]<<" ";
-    cout<<endl;
-}
+//void printOneDimVec(vector<int> vec) {
+//    for(int i=0; i<vec.size(); ++i)
+//        cout<<vec[i]<<" ";
+ //   cout<<endl;
+//}
 
-void printTwoDimVec(vector<vector<int>> vec) {
-    for(int i=0; i<vec.size(); ++i)
-        printOneDimVec(vec[i]);
-}
+//void printTwoDimVec(vector<vector<int>> vec) {
+//    for(int i=0; i<vec.size(); ++i)
+//        printOneDimVec(vec[i]);
+//}
 
 void printListNode(ListNode* l) {
     while(l) {

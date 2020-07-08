@@ -13,8 +13,16 @@ using namespace std;
 
 vector<int> list2Vector(ListNode*);
 ListNode* vector2List(vector<int>&);
-void printOneDimVec(vector<int> vec);
-void printTwoDimVec(vector<vector<int>> vec);
 void printListNode(ListNode* l);
+
+template <class T> void printOneDimVec(vector<T> vec) {
+    for(int i=0; i<vec.size(); ++i)
+        cout<<vec[i]<<" ";
+    cout<<endl;
+}
+template <class T> void printTwoDimVec(vector<vector<T>> vec) {
+    for(int i=0; i<vec.size(); ++i)
+        printOneDimVec(vec[i]);
+}
 
 #endif //ALOGRITHM_UTIL_H
