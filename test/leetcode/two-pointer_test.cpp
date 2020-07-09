@@ -75,3 +75,20 @@ void test_maxWaterArea() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max-water-area end==============="<<endl;
 }
+
+void test_threeSumClosest() {
+    cout<<"============simple test three-sum-closest begin============="<<endl;
+    vector<int> nums{-1, 2, 1, -4};
+    int target = 1;
+    int res = threeSumClosest(nums, target);
+    int desired = 2;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test three-sum-closest end==============="<<endl;
+}

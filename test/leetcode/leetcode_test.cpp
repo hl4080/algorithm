@@ -21,8 +21,9 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //two_pointer functions
     m["3"]      = &test_longestSubsting;
-    m["15"]     = &test_threeSum;
     m["11"]     = &test_maxWaterArea;
+    m["15"]     = &test_threeSum;
+    m["16"]     = &test_threeSumClosest;
     m["202"]    = &test_happyNumber;
 
     //dc functions

@@ -15,5 +15,6 @@ bool isHappy(int n);
 vector<vector<int>> threeSum(vector<int>& nums);
 int lengthOfLongestSubstring(string s);
 int maxWaterArea(vector<int>& height);
+int threeSumClosest(vector<int>& nums, int target);
 
 #endif //TWO_POINTER_H

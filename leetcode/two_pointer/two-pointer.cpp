@@ -143,3 +143,41 @@ int maxWaterArea(vector<int>& height) {
     }
     return maxArea;
 }
+
+/*
+ * Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target.
+ * Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+Example 1:
+
+Input: nums = [-1,2,1,-4], target = 1
+Output: 2
+Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+ 
+Constraints:
+
+3 <= nums.length <= 10^3
+-10^3 <= nums[i] <= 10^3
+-10^4 <= target <= 10^4
+ */
+
+int threeSumClosest(vector<int>& nums, int target) {
+    //idea same as three sum, sort and two pointer, extra result buffer
+    sort(nums.begin(), nums.end());
+    int minDiff = INT_MAX, len = nums.size(), result;
+    for(int p1 = 0; p1<len; ++p1) {
+        if(p1>0 && nums[p1] == nums[p1-1]) continue;
+        for(int p2 = p1+1; p2<len; ++p2) {
+            for(int p3 = len-1; p3>p2; --p3) {
+                int diff = abs(nums[p1] + nums[p2] + nums[p3] - target);
+                if(diff == 0) return target;
+                if(diff < minDiff) {
+                    minDiff = diff;
+                    result = nums[p1] + nums[p2] + nums[p3];
+                }
+                if(nums[p1] + nums[p2] + nums[p3] < target) break;
+            }
+        }
+    }
+    return result;
+}

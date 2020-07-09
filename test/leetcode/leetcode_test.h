@@ -35,6 +35,7 @@ void test_happyNumber();
 void test_threeSum();
 void test_longestSubsting();
 void test_maxWaterArea();
+void test_threeSumClosest();
 
 //test functions in list directory
 void test_addTwoNumber();
