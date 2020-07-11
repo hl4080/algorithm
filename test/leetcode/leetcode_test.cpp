@@ -11,6 +11,7 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //list functions
     m["2"]      = &test_addTwoNumber;
+    m["19"]     = &test_removeNthFromEnd;
 
     //math functions
     m["136"]    = &test_singleNumber;
@@ -33,5 +34,9 @@ void initLeetMap(map<string, FUNC>& m) {
     //dp functions
     m["5"]      = &test_longestPalindromic;
 
+    //greedy functions
     m["12"]     = &test_intToRoman;
+
+    //recursion function
+    m["17"]     = &test_letterCombination;
 }

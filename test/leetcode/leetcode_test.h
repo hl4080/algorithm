@@ -14,6 +14,7 @@
 #include "../../leetcode/dc/dc.h"
 #include "../../leetcode/dp/dp.h"
 #include "../../leetcode/greedy/greedy.h"
+#include "../../leetcode/recursion/recursion.h"
 
 typedef void (*FUNC)();
 
@@ -39,6 +40,7 @@ void test_threeSumClosest();
 
 //test functions in list directory
 void test_addTwoNumber();
+void test_removeNthFromEnd();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();
@@ -50,5 +52,8 @@ void test_expressionMatch();
 
 //test functions in greedy directory
 void test_intToRoman();
+
+//test functions in recursion directory
+void test_letterCombination();
 
 #endif //LEETCODE_TEST_H

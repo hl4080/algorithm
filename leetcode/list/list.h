@@ -10,5 +10,6 @@
 using namespace std;
 
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+ListNode* removeNthFromEnd(ListNode* head, int n);
 
 #endif //LIST_H
