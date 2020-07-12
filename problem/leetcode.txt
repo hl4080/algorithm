@@ -16,5 +16,6 @@ index   type        name
 16      two-pointer three-sum-closest
 17      recursion   latter-combination
 19      list        remove-nth-node-from-end
+20      stack       valid-parentheses
 136     math        single-number
 202     two-pointer happy-number

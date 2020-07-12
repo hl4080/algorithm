@@ -15,6 +15,7 @@
 #include "../../leetcode/dp/dp.h"
 #include "../../leetcode/greedy/greedy.h"
 #include "../../leetcode/recursion/recursion.h"
+#include "../../leetcode/stack/stack.h"
 
 typedef void (*FUNC)();
 
@@ -55,5 +56,8 @@ void test_intToRoman();
 
 //test functions in recursion directory
 void test_letterCombination();
+
+//test functions in stack directory
+void test_validParenthess();
 
 #endif //LEETCODE_TEST_H
