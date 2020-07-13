@@ -42,8 +42,37 @@ void test_removeNthFromEnd() {
     cout<<"n: "<<n<<endl;
     if(result == desired) {
         cout<<"result of test case: ";
-        printOneDimVec(result);
+        printListNode(l);
         cout<<"TEST STATUS: PASS"<<endl;
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test remove-nth-from-end end================="<<endl;
+}
+
+void test_mergeTwoSortedLists() {
+    cout<<"============simple test merge-two-sorted-list begin==============="<<endl;
+    vector<int> vec11{1, 2, 4}, vec12{1, 3, 4};
+    vector<int> vec21{1, 2, 4}, vec22;
+    ListNode* head11 = vector2List(vec11), *head12 = vector2List(vec12);
+    ListNode* head21 = vector2List(vec21), *head22 = vector2List(vec22);
+    ListNode* l1 = mergeTwoLists(head11, head12), *l2 = mergeTwoLists(head21, head22);
+    vector<int> res1 = list2Vector(l1), res2 = list2Vector(l2);
+    vector<int> desired1{1, 1, 2, 3, 4, 4}, desired2{1, 2, 4};
+    cout<<"test case 1: "<<endl;
+    cout<<"l1: ";
+    printListNode(head11);
+    cout<<"l2: ";
+    printListNode(head12);
+    cout<<"test case 2: "<<endl;
+    cout<<"l1: ";
+    printListNode(head21);
+    cout<<"l2: ";
+    printListNode(head22);
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: ";
+        printListNode(l1);
+        cout<<"result of test case 2: ";
+        printListNode(l2);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test merge-two-sorted-list end================="<<endl;
 }
