@@ -57,6 +57,7 @@ void test_intToRoman();
 
 //test functions in recursion directory
 void test_letterCombination();
+void test_generateParenthesis();
 
 //test functions in stack directory
 void test_validParenthess();

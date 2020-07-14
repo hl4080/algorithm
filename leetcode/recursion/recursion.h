@@ -11,5 +11,6 @@
 using namespace std;
 
 vector<string> letterCombinations(string digits);
+vector<string> generateParenthesis(int n);
 
 #endif //ALOGRITHM_RECURSION_H

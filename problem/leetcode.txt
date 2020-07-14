@@ -18,5 +18,6 @@ index   type        name
 19      list        remove-nth-node-from-end
 20      stack       valid-parentheses
 21      list        merge-two-sorted-lists
+22      recursion   generate-parenthesis
 136     math        single-number
 202     two-pointer happy-number

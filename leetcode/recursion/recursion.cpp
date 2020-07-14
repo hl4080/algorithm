@@ -39,3 +39,33 @@ vector<string> letterCombinations(string digits) {
     findCombination(result, m, digits, 0, "");
     return result;
 }
+
+/*
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+For example, given n = 3, a solution set is:
+
+[
+"((()))",
+"(()())",
+"(())()",
+"()(())",
+"()()()"
+]
+*/
+
+void parenthesisHelper(vector<string>& result, int left, int right, int n, string curStr) {
+    if(left == n && right == n) {
+        result.push_back(curStr);
+        return;
+    }
+    if(left < right) return;
+    if(left < n)  parenthesisHelper(result, left+1, right, n, curStr+"(");
+    if(right < n)  parenthesisHelper(result, left, right+1, n, curStr+")");
+}
+
+vector<string> generateParenthesis(int n) {
+    vector<string> result;
+    parenthesisHelper(result, 0, 0, n, "");
+    return result;
+}
