@@ -19,5 +19,6 @@ index   type        name
 20      stack       valid-parentheses
 21      list        merge-two-sorted-lists
 22      recursion   generate-parenthesis
+24      list        swap-nodes-in-pairs
 136     math        single-number
 202     two-pointer happy-number

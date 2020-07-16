@@ -13,6 +13,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["2"]      = &test_addTwoNumber;
     m["19"]     = &test_removeNthFromEnd;
     m["21"]     = &test_mergeTwoSortedLists;
+    m["24"]     = &test_swapPairs;
 
     //math functions
     m["136"]    = &test_singleNumber;

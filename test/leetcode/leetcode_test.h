@@ -43,6 +43,7 @@ void test_threeSumClosest();
 void test_addTwoNumber();
 void test_removeNthFromEnd();
 void test_mergeTwoSortedLists();
+void test_swapPairs();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

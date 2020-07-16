@@ -76,3 +76,20 @@ void test_mergeTwoSortedLists() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test merge-two-sorted-list end================="<<endl;
 }
+
+void test_swapPairs() {
+    cout<<"============simple test swap-pairs begin==============="<<endl;
+    vector<int> vec{1, 2, 3, 4};
+    ListNode* head = vector2List(vec);
+    ListNode* l = swapPairs(head);
+    vector<int> res = list2Vector(l);
+    vector<int> desired{2, 1, 4, 3};
+    cout<<"test case: ";
+    printListNode(l);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test swap-pairs end================="<<endl;
+}

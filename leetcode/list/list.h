@@ -12,5 +12,6 @@ using namespace std;
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
 ListNode* removeNthFromEnd(ListNode* head, int n);
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+ListNode* swapPairs(ListNode* head);
 
 #endif //LIST_H

@@ -96,3 +96,26 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
     }
     return pre->next;
 }
+/*
+ * Given a linked list, swap every two adjacent nodes and return its head.
+
+You may not modify the values in the list's nodes, only nodes itself may be changed.
+
+Example:
+
+Given 1->2->3->4, you should return the list as 2->1->4->3.
+ */
+
+ListNode* swapPairs(ListNode* head) {
+    ListNode* pre = new ListNode(0);
+    pre -> next = head;
+    ListNode* flag = pre;
+    while(flag->next && flag->next->next) {
+        ListNode* first = flag->next, *second = flag->next->next;
+        flag->next = second;
+        first->next = second->next;
+        second->next = first;
+        flag = flag->next->next;
+    }
+    return pre->next;
+}
