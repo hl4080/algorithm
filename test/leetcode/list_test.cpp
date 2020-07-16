@@ -88,7 +88,7 @@ void test_swapPairs() {
     printListNode(l);
     if(res == desired) {
         cout<<"result of test case: ";
-        printOneDimVec(l);
+        printListNode(l);
         cout<<"TEST STATUS: PASS"<<endl;
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test swap-pairs end================="<<endl;

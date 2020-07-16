@@ -16,5 +16,6 @@ vector<vector<int>> threeSum(vector<int>& nums);
 int lengthOfLongestSubstring(string s);
 int maxWaterArea(vector<int>& height);
 int threeSumClosest(vector<int>& nums, int target);
+int removeDuplicates(vector<int>& nums);
 
 #endif //TWO_POINTER_H

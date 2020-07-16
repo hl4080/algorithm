@@ -20,5 +20,6 @@ index   type        name
 21      list        merge-two-sorted-lists
 22      recursion   generate-parenthesis
 24      list        swap-nodes-in-pairs
+26      two-pointer remove-duplicate-from-sorted-array
 136     math        single-number
 202     two-pointer happy-number

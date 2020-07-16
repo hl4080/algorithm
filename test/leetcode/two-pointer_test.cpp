@@ -92,3 +92,18 @@ void test_threeSumClosest() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test three-sum-closest end==============="<<endl;
 }
+
+void test_removeDuplicate() {
+    cout<<"============simple test remove-duplicate begin============="<<endl;
+    vector<int> nums{0,0,1,1,1,2,2,3,3,4};
+    int res = removeDuplicates(nums);
+    int desired = 5;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        cout<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove-duplicate end==============="<<endl;
+}

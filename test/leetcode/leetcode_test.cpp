@@ -27,6 +27,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["11"]     = &test_maxWaterArea;
     m["15"]     = &test_threeSum;
     m["16"]     = &test_threeSumClosest;
+    m["26"]     = &test_removeDuplicate;
     m["202"]    = &test_happyNumber;
 
     //dc functions
