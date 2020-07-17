@@ -215,3 +215,36 @@ int removeDuplicates(vector<int>& nums) {
     }
     return p1+1;
 }
+
+/*
+ * Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+
+If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
+
+The replacement must be in-place and use only constant extra memory.
+
+Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
+
+1,2,3 → 1,3,2
+3,2,1 → 1,2,3
+1,1,5 → 1,5,1
+ */
+
+void nextPermutation(vector<int>& nums) {
+    int p1 = nums.size()-1;
+    int maxium = INT_MIN;
+    while(p1>=0 && nums[p1]>= maxium) maxium = max(maxium, nums[p1--]);
+    if(p1 < 0) {
+        sort(nums.begin(), nums.end());
+        return;
+    }
+    for(int p2 = p1; p2 < nums.size(); ++p2) {
+        if(nums[p2] > nums[p1] && (p2 == nums.size()-1 || nums[p2+1] <= nums[p1])) {
+            int tmp = nums[p1];
+            nums[p1] = nums[p2];
+            nums[p2] = tmp;
+            sort(nums.begin() + p1 + 1, nums.end());
+            break;
+        }
+    }
+}

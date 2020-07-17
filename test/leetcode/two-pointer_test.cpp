@@ -107,3 +107,18 @@ void test_removeDuplicate() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test remove-duplicate end==============="<<endl;
 }
+
+void test_nextPermutation() {
+    cout<<"============simple test remove-permutation begin============="<<endl;
+    vector<int> nums{1, 3, 2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    nextPermutation(nums);
+    vector<int> desired{2, 1, 3};
+    if(nums == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(nums);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove-permutation end==============="<<endl;
+}

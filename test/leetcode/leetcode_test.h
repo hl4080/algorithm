@@ -39,6 +39,7 @@ void test_longestSubsting();
 void test_maxWaterArea();
 void test_threeSumClosest();
 void test_removeDuplicate();
+void test_nextPermutation();
 
 //test functions in list directory
 void test_addTwoNumber();
