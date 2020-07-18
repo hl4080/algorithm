@@ -22,5 +22,6 @@ index   type        name
 24      list        swap-nodes-in-pairs
 26      two-pointer remove-duplicate-from-sorted-array
 31      two-pointer next-permutation
+33      dc          search-in-rotated-sorted-array
 136     math        single-number
 202     two-pointer happy-number

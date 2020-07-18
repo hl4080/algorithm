@@ -50,6 +50,7 @@ void test_swapPairs();
 //test functions in dc directory
 void test_findMedianSortedArrays();
 void test_longestCommonPrefix();
+void test_searchInRotatedArray();
 
 //test functions in dp diectory
 void test_longestPalindromic();

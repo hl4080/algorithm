@@ -43,3 +43,21 @@ void test_longestCommonPrefix() {
     } else cout<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test longest-common-prefix end==============="<<endl;
 }
+
+void test_searchInRotatedArray() {
+    cout<<"============simple test search-in-rotated-array begin============="<<endl;
+    vector<int> nums{4,5,6,7,0,1,2};
+    int target1 = 0, target2 = 3;
+    int res1 = searchInRotatedArray(nums, target1), res2 = searchInRotatedArray(nums, target2);
+    int desired1 = 4, desired2 = -1;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    cout<<"target1: "<<target1<<endl;
+    cout<<"target2: "<<target2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test search-in-rotated-array end==============="<<endl;
+}
