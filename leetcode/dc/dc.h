@@ -12,5 +12,6 @@ using namespace std;
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2);
 string longestCommonPrefix(vector<string>& strs);
 int searchInRotatedArray(vector<int>& nums, int target);
+vector<int> searchElementPositions(vector<int>& nums, int target);
 
 #endif //ALOGRITHM_DC_H

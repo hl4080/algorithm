@@ -1,27 +1,28 @@
-index   type        name
-1       hash        two-sum
-2       list        add-two-numbers
-3       two-pointer longest-substring-without-repeating
-4       dc          median-of-two-sorted-arrays
-5       dp          longest-palindromic-substring
-6       math        zigzag-conversion
-7       math        reverse-integer
-9       math        palindrome-number
-10      dp          regular-expression-matching
-11      two-pointer max-water-area
-12      greedy      integer-to-roman
-13      hash        roman-to-integer
-14      dc          longest-common-prefix
-15      two-pointer three-sum
-16      two-pointer three-sum-closest
-17      recursion   latter-combination
-19      list        remove-nth-node-from-end
-20      stack       valid-parentheses
-21      list        merge-two-sorted-lists
-22      recursion   generate-parenthesis
-24      list        swap-nodes-in-pairs
-26      two-pointer remove-duplicate-from-sorted-array
-31      two-pointer next-permutation
-33      dc          search-in-rotated-sorted-array
-136     math        single-number
-202     two-pointer happy-number
+index   type            name
+1       hash            two sum
+2       list            add two-numbers
+3       two-pointer     longest substring without repeating
+4       dc              median of two sorted arrays
+5       dp              longest palindromic substring
+6       math            zigzag conversion
+7       math            reverse integer
+9       math            palindrome number
+10      dp              regular expression matching
+11      two-pointer     max water area
+12      greedy          integer to roman
+13      hash            roman to integer
+14      dc              longest common prefix
+15      two-pointer     three sum
+16      two-pointer     three sum closest
+17      recursion       latter combination
+19      list            remove nth node from end
+20      stack           valid parentheses
+21      list            merge two sorted lists
+22      recursion       generate parenthesis
+24      list            swap nodes in pairs
+26      two-pointer     remove duplicate from sorted array
+31      two-pointer     next permutation
+33      dc              search in rotated sorted array
+34      dc              find first and last position of element in sorted array
+136     math            single number
+202     two-pointer     happy number

@@ -61,3 +61,23 @@ void test_searchInRotatedArray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search-in-rotated-array end==============="<<endl;
 }
+
+void test_searchElementPositions() {
+    cout<<"============simple test search-element-positions begin============="<<endl;
+    vector<int> nums{5,7,7,8,8,10};
+    int target1 = 8, target2 = 6;
+    vector<int> res1 = searchElementPositions(nums, target1), res2 = searchElementPositions(nums, target2);
+    vector<int> desired1{3, 4}, desired2{-1, -1};
+    cout<<"test case nums: ";
+    printOneDimVec(nums);
+    cout<<"target1: "<<target1<<endl;
+    cout<<"target2: "<<target2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"test of test case 1: ";
+        printOneDimVec(res1);
+        cout<<"result of test case 2:";
+        printOneDimVec(res2);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test search-element-positions end==============="<<endl;
+}

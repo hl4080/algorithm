@@ -51,6 +51,7 @@ void test_swapPairs();
 void test_findMedianSortedArrays();
 void test_longestCommonPrefix();
 void test_searchInRotatedArray();
+void test_searchElementPositions();
 
 //test functions in dp diectory
 void test_longestPalindromic();
