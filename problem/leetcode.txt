@@ -24,5 +24,6 @@ index   type            name
 31      two-pointer     next permutation
 33      dc              search in rotated sorted array
 34      dc              find first and last position of element in sorted array
+35      dc              search insert position
 136     math            single number
 202     two-pointer     happy number

@@ -81,3 +81,21 @@ void test_searchElementPositions() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search-element-positions end==============="<<endl;
 }
+
+void test_searchInsertPosition() {
+    cout<<"============simple test search-insert-position begin============="<<endl;
+    vector<int> nums{1, 3, 5, 6};
+    int target1 = 5, target2 = 2;
+    int res1 = searchInsertPosition(nums, target1), res2 = searchInsertPosition(nums, target2);
+    int desired1 = 2, desired2 = 1;
+    cout<<"test case nums: ";
+    printOneDimVec(nums);
+    cout<<"target 1: "<<target1<<endl;
+    cout<<"target 2: "<<target2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEAT STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test search-insert-position end==============="<<endl;
+}

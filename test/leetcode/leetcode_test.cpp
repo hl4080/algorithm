@@ -36,6 +36,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["14"]     = &test_longestCommonPrefix;
     m["33"]     = &test_searchInRotatedArray;
     m["34"]     = &test_searchElementPositions;
+    m["35"]     = &test_searchInsertPosition;
 
     //dp functions
     m["5"]      = &test_longestPalindromic;
