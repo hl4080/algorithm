@@ -12,5 +12,6 @@ using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target);
 int romanToInt(string s);
+bool isValidSudoku(vector<vector<char>>& board);
 
 #endif //ALGORITHM_HASH_H

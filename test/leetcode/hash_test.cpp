@@ -39,3 +39,41 @@ void test_romanToInt() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test roman-to-int end==============="<<endl;
 }
+
+void test_validSudoku() {
+    cout<<"============simple test valid-sudoku begin============="<<endl;
+    vector<vector<char>> board1{
+            {'8','3','.','.','7','.','.','.','.'},
+            {'6','.','.','1','9','5','.','.','.'},
+            {'.','9','8','.','.','.','.','6','.'},
+            {'8','.','.','.','6','.','.','.','3'},
+            {'4','.','.','8','.','3','.','.','1'},
+            {'7','.','.','.','2','.','.','.','6'},
+            {'.','6','.','.','.','.','2','8','.'},
+            {'.','.','.','4','1','9','.','.','5'},
+            {'.','.','.','.','8','.','.','7','9'}
+    };
+    vector<vector<char>> board2{
+            {'5','3','.','.','7','.','.','.','.'},
+            {'6','.','.','1','9','5','.','.','.'},
+            {'.','9','8','.','.','.','.','6','.'},
+            {'8','.','.','.','6','.','.','.','3'},
+            {'4','.','.','8','.','3','.','.','1'},
+            {'7','.','.','.','2','.','.','.','6'},
+            {'.','6','.','.','.','.','2','8','.'},
+            {'.','.','.','4','1','9','.','.','5'},
+            {'.','.','.','.','8','.','.','7','9'}
+    };
+    bool res1 = isValidSudoku(board1), res2 = isValidSudoku(board2);
+    bool desired1 = false, desired2 = true;
+    cout<<"test case1: "<<endl;
+    printTwoDimVec(board1);
+    cout<<"test case2: "<<endl;
+    printTwoDimVec(board2);
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test valid-sudoku end==============="<<endl;
+}
