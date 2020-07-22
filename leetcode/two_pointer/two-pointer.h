@@ -18,5 +18,6 @@ int maxWaterArea(vector<int>& height);
 int threeSumClosest(vector<int>& nums, int target);
 int removeDuplicates(vector<int>& nums);
 void nextPermutation(vector<int>& nums);
+string countAndSay(int n);
 
 #endif //TWO_POINTER_H

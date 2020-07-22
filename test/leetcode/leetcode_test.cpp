@@ -30,6 +30,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["16"]     = &test_threeSumClosest;
     m["26"]     = &test_removeDuplicate;
     m["31"]     = &test_nextPermutation;
+    m["38"]     = &test_countAndSay;
     m["202"]    = &test_happyNumber;
 
     //dc functions

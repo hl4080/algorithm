@@ -122,3 +122,16 @@ void test_nextPermutation() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test remove-permutation end==============="<<endl;
 }
+
+void test_countAndSay() {
+    cout<<"============simple test count-and-say begin============="<<endl;
+    int n = 5;
+    string res = countAndSay(n);
+    string desired = "111221";
+    cout<<"test case 1: "<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test count-and-say end==============="<<endl;
+}
