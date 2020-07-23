@@ -27,5 +27,6 @@ index   type            name
 35      dc              search insert position
 36      hash            valid sudoku
 38      two-pointer     count and say
+39      recursion       combination sum
 136     math            single number
 202     two-pointer     happy number

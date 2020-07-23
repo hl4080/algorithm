@@ -31,3 +31,24 @@ void test_generateParenthesis() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test generate-parenthesis end==============="<<endl;
 }
+
+void test_combinationSum() {
+    cout<<"============simple test combination sum begin============="<<endl;
+    vector<int> candidates{2, 3, 5};
+    int target = 8;
+    vector<vector<int>> res = combinationSum(candidates, target);
+    vector<vector<int>> desired{
+            {2, 2, 2, 2},
+            {2, 3, 3},
+            {3, 5}
+    };
+    cout<<"test case: ";
+    printOneDimVec(candidates);
+    cout<<"target: "<<target<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test combination sum end==============="<<endl;
+}
