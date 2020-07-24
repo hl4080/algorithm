@@ -67,6 +67,7 @@ void test_intToRoman();
 void test_letterCombination();
 void test_generateParenthesis();
 void test_combinationSum();
+void test_combinationSumII();
 
 //test functions in stack directory
 void test_validParenthess();

@@ -28,5 +28,6 @@ index   type            name
 36      hash            valid sudoku
 38      two-pointer     count and say
 39      recursion       combination sum
+40      recursion       combination sum II
 136     math            single number
 202     two-pointer     happy number

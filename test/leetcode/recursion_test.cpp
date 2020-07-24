@@ -52,3 +52,25 @@ void test_combinationSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test combination sum end==============="<<endl;
 }
+
+void test_combinationSumII() {
+    cout<<"============simple test combination sum II begin============="<<endl;
+    vector<int> candidates{10, 1, 2, 7, 6, 1, 5};
+    int target = 8;
+    vector<vector<int>> res = combinationSum2(candidates, target);
+    vector<vector<int>> desired{
+            {1, 1, 6},
+            {1, 2, 5},
+            {1, 7},
+            {2, 6}
+    };
+    cout<<"test case: ";
+    printOneDimVec(candidates);
+    cout<<"target: "<<target<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test combination sum II end==============="<<endl;
+}

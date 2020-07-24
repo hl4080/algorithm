@@ -50,6 +50,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["17"]     = &test_letterCombination;
     m["22"]     = &test_generateParenthesis;
     m["39"]     = &test_combinationSum;
+    m["40"]     = &test_combinationSumII;
 
     //stack functions
     m["20"]     = &test_validParenthess;
