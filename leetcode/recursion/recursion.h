@@ -14,5 +14,6 @@ vector<string> letterCombinations(string digits);
 vector<string> generateParenthesis(int n);
 vector<vector<int>> combinationSum(vector<int>& candidates, int target);
 vector<vector<int>> combinationSum2(vector<int>& candidates, int target);
+vector<vector<int>> integerPermute(vector<int>& nums);
 
 #endif //ALOGRITHM_RECURSION_H

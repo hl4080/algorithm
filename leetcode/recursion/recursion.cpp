@@ -169,3 +169,38 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
     combination2Help(candidates, res, piece, 0, 0, target);
     return res;
 }
+
+/*
+ * Given a collection of distinct integers, return all possible permutations.
+
+Example:
+
+Input: [1,2,3]
+Output:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+ */
+
+void permuteHelp(vector<int>& nums, vector<vector<int>>& res, int index) {
+    if(index == nums.size()) {
+        res.push_back(nums);
+        return;
+    }
+    for(int i=index; i<nums.size(); ++i) {
+        swap(nums[i], nums[index]);
+        permuteHelp(nums, res, index+1);
+        swap(nums[i], nums[index]);
+    }
+}
+
+vector<vector<int>> integerPermute(vector<int>& nums) {
+    vector<vector<int>> res;
+    permuteHelp(nums, res, 0);
+    return res;
+}

@@ -74,3 +74,25 @@ void test_combinationSumII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test combination sum II end==============="<<endl;
 }
+
+void test_permutations() {
+    cout<<"============simple test permutations begin============="<<endl;
+    vector<int> nums{1, 2, 3};
+    vector<vector<int>> res = integerPermute(nums);
+    vector<vector<int>> desired{
+            {1, 2, 3},
+            {1, 3, 2},
+            {2, 1, 3},
+            {2, 3, 1},
+            {3, 2, 1},
+            {3, 1, 2}
+    };
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(desired == res) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test permutations end==============="<<endl;
+}
