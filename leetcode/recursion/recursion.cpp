@@ -204,3 +204,42 @@ vector<vector<int>> integerPermute(vector<int>& nums) {
     permuteHelp(nums, res, 0);
     return res;
 }
+
+/*
+ * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+Example:
+
+Input: [1,1,2]
+Output:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+
+ */
+
+void permuteHelp2(vector<int>& nums, vector<vector<int>>& res, vector<int>& piece, int index, vector<int>& visited) {
+    if(index == nums.size()) {
+        res.push_back(piece);
+        return;
+    }
+    for(int i=0; i<nums.size(); ++i) {
+        if(visited[i] || (i > 0 && nums[i] == nums[i-1] && !visited[i-1])) continue;
+        piece.push_back(nums[i]);
+        visited[i] = true;
+        permuteHelp2(nums, res, piece, index+1, visited);
+        visited[i] = false;
+        piece.pop_back();
+    }
+}
+
+vector<vector<int>> permuteUnique(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
+    vector<int> piece;
+    vector<vector<int>> res;
+    vector<int> visited(nums.size(), 0);
+    permuteHelp2(nums, res, piece, 0, visited);
+    return res;
+}

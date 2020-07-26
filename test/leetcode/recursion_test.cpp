@@ -96,3 +96,22 @@ void test_permutations() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test permutations end==============="<<endl;
 }
+
+void test_uniquePermutations() {
+    cout<<"============simple test unique-permutations begin============="<<endl;
+    vector<int> nums{1, 1, 2};
+    vector<vector<int>> res = permuteUnique(nums);
+    vector<vector<int>> desired{
+            {1, 1, 2},
+            {1, 2, 1},
+            {2, 1, 1}
+    };
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(desired == res) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test unique-permutations end==============="<<endl;
+}

@@ -30,5 +30,6 @@ index   type            name
 39      recursion       combination sum
 40      recursion       combination sum II
 46      recursion       permutations
+47      recursion       unique permute
 136     math            single number
 202     two-pointer     happy number

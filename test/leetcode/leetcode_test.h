@@ -69,6 +69,7 @@ void test_generateParenthesis();
 void test_combinationSum();
 void test_combinationSumII();
 void test_permutations();
+void test_uniquePermutations();
 
 //test functions in stack directory
 void test_validParenthess();
