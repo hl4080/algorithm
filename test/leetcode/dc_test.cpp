@@ -99,3 +99,28 @@ void test_searchInsertPosition() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search-insert-position end==============="<<endl;
 }
+
+void test_rotateImage() {
+    cout<<"============simple test rotate-image begin============="<<endl;
+    vector<vector<int>> matrix{
+            {5, 1, 9,11},
+            {2, 4, 8,10},
+            {13, 3, 6, 7},
+            {15,14,12,16}
+    };
+    rotateImage(matrix);
+    vector<vector<int>> desired{
+            {15,13, 2, 5},
+            {14, 3, 4, 1},
+            {12, 6, 8, 9},
+            {16, 7,10,11}
+    };
+    cout<<"test case matrix: "<<endl;
+    printTwoDimVec(matrix);
+    if(matrix == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(matrix);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test rotate-image end==============="<<endl;
+}
