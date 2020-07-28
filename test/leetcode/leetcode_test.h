@@ -22,10 +22,13 @@ typedef void (*FUNC)();
 //init function map
 void initLeetMap(map<string, FUNC>& m);
 
+
+
 //test functiions in hash directory
 void test_twoSum();
 void test_romanToInt();
 void test_validSudoku();
+void test_groupAnagroups();
 
 //test functions in math directory
 void test_singleNumber();

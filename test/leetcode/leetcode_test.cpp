@@ -9,6 +9,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["1"]   = &test_twoSum;
     m["13"]  = &test_romanToInt;
     m["36"]  = &test_validSudoku;
+    m["49"]  = &test_groupAnagroups;
 
     //list functions
     m["2"]      = &test_addTwoNumber;

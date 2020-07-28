@@ -77,3 +77,22 @@ void test_validSudoku() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test valid-sudoku end==============="<<endl;
 }
+
+void test_groupAnagroups() {
+    cout<<"============simple test group-anagroups begin============="<<endl;
+    vector<string> strs{"eat", "tea", "tan", "ate", "nat", "bat"};
+    vector<vector<string>> res = groupAnagrams(strs);
+    vector<vector<string>> desired{
+            {"tan", "nat"},
+            {"eat", "tea", "ate"},
+            {"bat"}
+    };
+    cout<<"test case: ";
+    printOneDimVec(strs);
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test group-anagroups end==============="<<endl;
+}

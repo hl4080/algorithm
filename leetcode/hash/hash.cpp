@@ -154,3 +154,36 @@ bool isValidSudoku(vector<vector<char>>& board) {
     }
     return true;
 }
+
+/*
+ * Given an array of strings, group anagrams together.
+
+Example:
+
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+Note:
+
+All inputs will be in lowercase.
+The order of your output does not matter.
+ */
+
+vector<vector<string>> groupAnagrams(vector<string>& strs) {
+    vector<vector<string>> res;
+    map<string, vector<string>> m;
+    for(int i=0; i<strs.size(); ++i) {
+        string s = "00000000000000000000000000";
+        for(int j=0; j<strs[i].size(); ++j) s[strs[i][j]-'a']++;
+        if(!m.count(s)) m[s] = vector<string>{};
+        m[s].push_back(strs[i]);
+    }
+    for(auto it=m.begin(); it!=m.end(); ++it) {
+        res.push_back(it->second);
+    }
+    return res;
+}
