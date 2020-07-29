@@ -40,3 +40,16 @@ void test_expressionMatch() {
     cout<<"============simple test expression match end==============="<<endl;
 }
 
+void test_maximumSubarray() {
+    cout<<"============simple test maximum subarray begin============="<<endl;
+    vector<int> nums{-2,1,-3,4,-1,2,1,-5,4};
+    int res = maxSubArray(nums), desired = 6;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test maximum subarray end==============="<<endl;
+}
+

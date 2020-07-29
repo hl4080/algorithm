@@ -43,6 +43,7 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //dp functions
     m["5"]      = &test_longestPalindromic;
+    m["53"]     = &test_maximumSubarray;
 
     //greedy functions
     m["12"]     = &test_intToRoman;

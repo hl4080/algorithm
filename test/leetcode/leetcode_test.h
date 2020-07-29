@@ -63,6 +63,7 @@ void test_rotateImage();
 //test functions in dp diectory
 void test_longestPalindromic();
 void test_expressionMatch();
+void test_maximumSubarray();
 
 //test functions in greedy directory
 void test_intToRoman();

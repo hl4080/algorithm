@@ -33,5 +33,6 @@ index   type            name
 47      recursion       unique permute
 48      dc              ratate
 49      hash            group anagrams
+53      dp              maximum subarray
 136     math            single number
 202     two-pointer     happy number
