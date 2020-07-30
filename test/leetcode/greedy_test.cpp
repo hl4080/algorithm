@@ -20,3 +20,20 @@ void test_intToRoman() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test integer-to-roman end==============="<<endl;
 }
+
+void test_jumpGame() {
+    cout<<"============simple test jump game begin============="<<endl;
+    vector<int> nums1{2,3,1,1,4}, nums2{3,2,1,0,4};
+    bool res1 = jumpGame(nums1), res2 = jumpGame(nums2);
+    bool desired1 = true, desired2 = false;
+    cout<<"test case1: ";
+    printOneDimVec(nums1);
+    cout<<"test case2: ";
+    printOneDimVec(nums2);
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test jump game end==============="<<endl;
+}

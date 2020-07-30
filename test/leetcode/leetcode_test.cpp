@@ -47,6 +47,7 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //greedy functions
     m["12"]     = &test_intToRoman;
+    m["55"]     = &test_jumpGame;
 
     //recursion functions
     m["17"]     = &test_letterCombination;

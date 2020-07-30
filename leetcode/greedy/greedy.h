@@ -10,5 +10,6 @@
 using namespace std;
 
 string intToRoman(int num);
+bool jumpGame(vector<int>& nums);
 
 #endif //ALOGRITHM_GREEDY_H

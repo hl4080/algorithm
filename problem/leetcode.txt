@@ -34,5 +34,6 @@ index   type            name
 48      dc              ratate
 49      hash            group anagrams
 53      dp              maximum subarray
+55      greedy          jump game
 136     math            single number
 202     two-pointer     happy number

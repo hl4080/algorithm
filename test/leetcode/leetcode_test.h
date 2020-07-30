@@ -67,6 +67,7 @@ void test_maximumSubarray();
 
 //test functions in greedy directory
 void test_intToRoman();
+void test_jumpGame();
 
 //test functions in recursion directory
 void test_letterCombination();
