@@ -19,5 +19,6 @@ int threeSumClosest(vector<int>& nums, int target);
 int removeDuplicates(vector<int>& nums);
 void nextPermutation(vector<int>& nums);
 string countAndSay(int n);
+vector<vector<int>> mergeIntervals(vector<vector<int>>& intervals);
 
 #endif //TWO_POINTER_H

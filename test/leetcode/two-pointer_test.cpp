@@ -135,3 +135,27 @@ void test_countAndSay() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test count-and-say end==============="<<endl;
 }
+
+void test_mergeIntervals() {
+    cout<<"============simple test merge-interval begin============="<<endl;
+    vector<vector<int>> intervals{
+            {1, 3},
+            {2, 6},
+            {8, 10},
+            {15, 18}
+    };
+    vector<vector<int>> res = mergeIntervals(intervals);
+    vector<vector<int>> desired{
+            {1, 6},
+            {8, 10},
+            {15, 18}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(intervals);
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test merge-interval end==============="<<endl;
+}
