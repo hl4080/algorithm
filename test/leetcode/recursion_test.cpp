@@ -115,3 +115,19 @@ void test_uniquePermutations() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test unique-permutations end==============="<<endl;
 }
+
+void test_getPermutation() {
+    cout<<"============simple test get permutation begin============="<<endl;
+    int n1 = 3, k1 = 3;
+    int n2 = 4, k2 = 9;
+    string res1 = getSpecialPermutation(n1, k1), res2 = getSpecialPermutation(n2, k2);
+    string desired1 = "213", desired2 = "2314";
+    cout<<"test case 1: "<<"n:"<<n1<<" k1:"<<k1<<endl;
+    cout<<"test case 2: "<<"n:"<<n2<<" k2:"<<k2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get permutation end==============="<<endl;
+}

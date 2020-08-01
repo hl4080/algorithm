@@ -36,5 +36,6 @@ index   type            name
 53      dp              maximum subarray
 55      greedy          jump game
 56      two-pointer     merge interval
+60      recursion       permutation sequence
 136     math            single number
 202     two-pointer     happy number
