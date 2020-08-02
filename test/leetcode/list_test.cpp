@@ -93,3 +93,29 @@ void test_swapPairs() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test swap-pairs end================="<<endl;
 }
+
+void test_rotateList() {
+    cout<<"============simple test rotate list begin==============="<<endl;
+    vector<int> vec1{1,2,3,4,5}, vec2{0, 1, 2};
+    ListNode* head1 = vector2List(vec1), *head2 = vector2List(vec2);
+    int k1 = 2, k2 =4;
+    ListNode* l1 = rotateRight(head1, k1), *l2 = rotateRight(head2, k2);
+    vector<int> res1 = list2Vector(l1), res2 = list2Vector(l2);
+    vector<int> desired1{4, 5, 1, 2, 3}, desired2{2, 0, 1};
+    cout<<"test case 1: "<<endl;
+    cout<<"list1 : ";
+    printListNode(head1);
+    cout<<"k1: "<<k1<<endl;
+    cout<<"test case 2: "<<endl;
+    cout<<"list 2: ";
+    printListNode(head1);
+    cout<<"k2: "<<k2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: ";
+        printListNode(l1);
+        cout<<"result of test case 2: ";
+        printListNode(l2);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test rotate list end==============="<<endl;
+}
