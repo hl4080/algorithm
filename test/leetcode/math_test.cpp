@@ -83,3 +83,19 @@ void test_palindromeNumber() {
         cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test palindrome number end==============="<<endl;
 }
+
+void test_uniquePaths() {
+    cout<<"============simple test unique paths begin============="<<endl;
+    int m1=7, n1 = 3;
+    int m2=10, n2=5;
+    int res1 = uniquePaths(m1, n1), res2 = uniquePaths(m2, n2);
+    int desired1 = 28, desired2 = 715;
+    cout<<"test case 1: "<<"m: "<<m1<<" n: "<<n1<<endl;
+    cout<<"test case 2: "<<"m: "<<m2<<" n: "<<n2<<endl;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case 1: "<<res1<<endl;
+        cout<<"result of test case 2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test unique paths end==============="<<endl;
+}

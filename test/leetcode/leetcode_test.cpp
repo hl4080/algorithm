@@ -24,6 +24,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["7"]      = &test_reverseInteger;
     m["9"]      = &test_palindromeNumber;
     m["10"]     = &test_expressionMatch;
+    m["62"]     = &test_uniquePaths;
 
     //two_pointer functions
     m["3"]      = &test_longestSubsting;

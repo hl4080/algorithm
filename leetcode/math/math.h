@@ -14,5 +14,6 @@ int singleNumber(vector<int>&);
 string zigzagConvert(string s, int numRows);
 int reverseInteger(int x);
 bool isPalindrome(int x);
+int uniquePaths(int m, int n);
 
 #endif //MATH_H

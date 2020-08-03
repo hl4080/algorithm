@@ -35,6 +35,7 @@ void test_singleNumber();
 void test_zigzagConversion();
 void test_reverseInteger();
 void test_palindromeNumber();
+void test_uniquePaths();
 
 //test functions in two-pointers directory
 void test_happyNumber();
