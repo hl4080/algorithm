@@ -13,5 +13,6 @@ using namespace std;
 string longestPalindrome(string s);
 bool isExpressionMatch(string s, string p);
 int maxSubArray(vector<int>& nums);
+int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 
 #endif //ALOGRITHM_DP_H

@@ -53,3 +53,20 @@ void test_maximumSubarray() {
     cout<<"============simple test maximum subarray end==============="<<endl;
 }
 
+void test_uniquePathWithObstacles() {
+    cout<<"============simple test unique path with obstacles begin============="<<endl;
+    vector<vector<int>> obstacles{
+            {0, 0, 0},
+            {0, 1, 0},
+            {0, 0, 0}
+    };
+    int res = uniquePathsWithObstacles(obstacles), desired = 2;
+    cout<<"test case: "<<endl;
+    printTwoDimVec(obstacles);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test unique path with obstacles end==============="<<endl;
+}
+
