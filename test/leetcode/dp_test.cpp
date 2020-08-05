@@ -70,3 +70,20 @@ void test_uniquePathWithObstacles() {
     cout<<"============simple test unique path with obstacles end==============="<<endl;
 }
 
+void test_minPathSum() {
+    cout<<"============simple test min path sum begin============="<<endl;
+    vector<vector<int>> grid{
+            {1, 3, 1},
+            {1, 5, 1},
+            {4, 2, 1}
+    };
+    int res = minPathSum(grid), desired = 7;
+    cout<<"test case: "<<endl;
+    printTwoDimVec(grid);
+    if(res == desired) {
+        cout<<"result of test case: "<<res;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test min path sum end==============="<<endl;
+}
+
