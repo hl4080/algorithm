@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <cmath>
 using namespace std;
 
 int singleNumber(vector<int>&);
@@ -15,5 +16,6 @@ string zigzagConvert(string s, int numRows);
 int reverseInteger(int x);
 bool isPalindrome(int x);
 int uniquePaths(int m, int n);
+int sqrtx(int x);
 
 #endif //MATH_H

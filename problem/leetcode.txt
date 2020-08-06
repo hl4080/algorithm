@@ -40,5 +40,6 @@ index   type            name
 61      list            rotate list
 62      math            unique paths
 63      dp              unique paths II
+69      math            sqrt(x)
 136     math            single number
 202     two-pointer     happy number

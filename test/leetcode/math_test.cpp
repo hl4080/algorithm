@@ -99,3 +99,15 @@ void test_uniquePaths() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test unique paths end==============="<<endl;
 }
+
+void test_sqrtx() {
+    cout<<"============simple test sqrtx begin============="<<endl;
+    int x=8;
+    int res = sqrtx(x), desired = 2;
+    cout<<"test case: "<<x<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test sqrtx end==============="<<endl;
+}
