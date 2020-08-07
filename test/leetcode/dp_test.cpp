@@ -87,3 +87,15 @@ void test_minPathSum() {
     cout<<"============simple test min path sum end==============="<<endl;
 }
 
+void test_climbStairs() {
+    cout<<"============simple test climb stairs begin============="<<endl;
+    int n = 5;
+    int res = climbStairs(n), desired = 8;
+    cout<<"test case: "<<n<<endl;
+    if(desired == res) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test climb stairs end==============="<<endl;
+}
+

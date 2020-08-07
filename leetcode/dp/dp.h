@@ -15,5 +15,6 @@ bool isExpressionMatch(string s, string p);
 int maxSubArray(vector<int>& nums);
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 int minPathSum(vector<vector<int>>& grid);
+int climbStairs(int n);
 
 #endif //ALOGRITHM_DP_H
