@@ -87,5 +87,6 @@ void test_getPermutation();
 
 //test functions in stack directory
 void test_validParenthess();
+void test_simplifyPath();
 
 #endif //LEETCODE_TEST_H

@@ -8,9 +8,11 @@
 #include <string>
 #include <stack>
 #include <map>
+#include <sstream>
 
 using namespace std;
 
 bool isValidParentheses(string s);
+string simplifyPath(string path);
 
 #endif //ALOGRITHM_STACK_H

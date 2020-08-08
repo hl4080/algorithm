@@ -18,3 +18,15 @@ void test_validParenthess() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test valid-parenthess end==============="<<endl;
 }
+
+void test_simplifyPath() {
+    cout<<"============simple test simplify path begin============="<<endl;
+    string s = "/a//b////c/d//././/..";
+    string res = simplifyPath(s), desired = "/a/b/c";
+    cout<<"test case: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test simplify path end==============="<<endl;
+}

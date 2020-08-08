@@ -68,4 +68,5 @@ void initLeetMap(map<string, FUNC>& m) {
 
     //stack functions
     m["20"]     = &test_validParenthess;
+    m["71"]     = &test_simplifyPath;
 }
