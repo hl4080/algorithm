@@ -111,3 +111,26 @@ void test_sqrtx() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sqrtx end==============="<<endl;
 }
+
+void test_setMatrixZeros() {
+    cout<<"============simple test set matrix zeros begin============="<<endl;
+    vector<vector<int>> matrix{
+            {0, 1, 2, 0},
+            {3, 4, 5, 2},
+            {1, 3, 1, 5}
+    };
+    vector<vector<int>> desired{
+            {0, 0, 0, 0},
+            {0, 4, 5, 0},
+            {0, 3, 1, 0}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(matrix);
+    setZeros(matrix);
+    if(matrix == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(matrix);
+        cout<<"TEST STATUS: PASS";
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test set matrix zeros end==============="<<endl;
+}

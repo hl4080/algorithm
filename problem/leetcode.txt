@@ -43,5 +43,6 @@ index   type            name
 69      math            sqrt(x)
 70      dp              climb stairs
 71      stack           simplify path
+73      math            set matrix zeros
 136     math            single number
 202     two-pointer     happy number

@@ -26,6 +26,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["10"]     = &test_expressionMatch;
     m["62"]     = &test_uniquePaths;
     m["69"]     = &test_sqrtx;
+    m["73"]     = &test_setMatrixZeros;
 
     //two_pointer functions
     m["3"]      = &test_longestSubsting;

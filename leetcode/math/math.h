@@ -17,5 +17,6 @@ int reverseInteger(int x);
 bool isPalindrome(int x);
 int uniquePaths(int m, int n);
 int sqrtx(int x);
+void setZeros(vector<vector<int>>& matrix);
 
 #endif //MATH_H
