@@ -324,3 +324,27 @@ vector<vector<int>> mergeIntervals(vector<vector<int>>& intervals) {
     }
     return res;
 }
+
+/*
+ * Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+
+Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
+
+Note: You are not suppose to use the library's sort function for this problem.
+
+Example:
+
+Input: [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+
+ */
+
+void sortColors(vector<int>& nums) {
+    if(!nums.size()) return;
+    int p0 = 0, cur = 0, p2 = nums.size()-1;
+    while(cur<p2) {
+        if(nums[cur] == 0) swap(nums[p0++], nums[cur++]);
+        else if(nums[cur] == 2) swap(nums[p2--], nums[cur++]);
+        else cur++;
+    }
+}

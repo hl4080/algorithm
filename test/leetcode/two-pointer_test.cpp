@@ -159,3 +159,18 @@ void test_mergeIntervals() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test merge-interval end==============="<<endl;
 }
+
+void test_sortColors() {
+    cout<<"============simple test sort colors begin============="<<endl;
+    vector<int> colors{2, 0, 2, 1, 1, 0};
+    cout<<"test case: ";
+    printOneDimVec(colors);
+    vector<int> desired{0, 0, 1, 1, 2, 2};
+    sortColors(colors);
+    if(colors == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(colors);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test sort colors end==============="<<endl;
+}

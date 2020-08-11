@@ -49,6 +49,7 @@ void test_removeDuplicate();
 void test_nextPermutation();
 void test_countAndSay();
 void test_mergeIntervals();
+void test_sortColors();
 
 //test functions in list directory
 void test_addTwoNumber();
