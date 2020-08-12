@@ -291,3 +291,40 @@ string getSpecialPermutation(int n, int k) {
     }
     return res;
 }
+
+/*
+ * Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+
+Example:
+
+Input: n = 4, k = 2
+Output:
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+ */
+
+void combinationsHelp(vector<vector<int>>& res, vector<int>& single, int index, int n, int k) {
+    if(single.size() == k) {
+        res.push_back(single);
+        return;
+    }
+    for(int i=index; i<n; ++i) {
+        single.push_back(i+1);
+        combinationsHelp(res, single, i+1, n, k);
+        single.pop_back();
+    }
+}
+
+vector<vector<int>> combinations(int n, int k) {
+    vector<vector<int>> res;
+    vector<int> single;
+    if(!n || !k) return res;
+    combinationsHelp(res, single, 0, n, k);
+    return res;
+}

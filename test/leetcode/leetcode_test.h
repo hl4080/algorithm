@@ -87,6 +87,7 @@ void test_combinationSumII();
 void test_permutations();
 void test_uniquePermutations();
 void test_getPermutation();
+void test_combinations();
 
 //test functions in stack directory
 void test_validParenthess();

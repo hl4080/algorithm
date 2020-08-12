@@ -68,6 +68,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["47"]     = &test_uniquePermutations;
     m["48"]     = &test_rotateImage;
     m["60"]     = &test_getPermutation;
+    m["77"]     = &test_combinations;
 
     //stack functions
     m["20"]     = &test_validParenthess;

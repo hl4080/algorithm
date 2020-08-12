@@ -131,3 +131,24 @@ void test_getPermutation() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get permutation end==============="<<endl;
 }
+
+void test_combinations() {
+    cout<<"============simple test combinations begin============="<<endl;
+    int n=4, k=2;
+    vector<vector<int>> res = combinations(n, k);
+    vector<vector<int>> desired{
+            {1, 2},
+            {1, 3},
+            {1, 4},
+            {2, 3},
+            {2, 4},
+            {3, 4}
+    };
+    cout<<"test case: "<<"n: "<<n<<" k: "<<k<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test combinations end==============="<<endl;
+}
