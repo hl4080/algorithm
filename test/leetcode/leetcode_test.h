@@ -88,6 +88,7 @@ void test_permutations();
 void test_uniquePermutations();
 void test_getPermutation();
 void test_combinations();
+void test_subsets();
 
 //test functions in stack directory
 void test_validParenthess();

@@ -152,3 +152,20 @@ void test_combinations() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test combinations end==============="<<endl;
 }
+
+void test_subsets() {
+    cout<<"============simple test subsets begin============="<<endl;
+    vector<int> nums{1, 2, 3};
+    vector<vector<int>> res = subsets(nums);
+    vector<vector<int>> desired{
+            {}, {1}, {1, 2}, {1, 2, 3}, {1, 3}, {2}, {2, 3}, {3}
+    };
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(desired == res) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test subsets end==============="<<endl;
+}

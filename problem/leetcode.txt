@@ -47,5 +47,6 @@ index   type            name
 74      dc              search a 2D matrix
 75      two-pointer     sort colors
 77      recursion       combinations
+78      recursion       subsets
 136     math            single number
 202     two-pointer     happy number
