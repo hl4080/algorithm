@@ -169,3 +169,26 @@ void test_subsets() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test subsets end==============="<<endl;
 }
+
+void test_wordExistBoard() {
+    cout<<"============simple test word exist board begin============="<<endl;
+    vector<vector<char>> board{
+            {'A', 'B', 'C', 'E'},
+            {'S', 'F', 'C', 'S'},
+            {'A', 'D', 'E', 'E'}
+    };
+    string word1 = "SEE", word2 = "ABCB";
+    bool res1 = wordExistBoard(board, word1), res2 = wordExistBoard(board, word2);
+    cout<<"test case: "<<endl;
+    cout<<"board: "<<endl;
+    printTwoDimVec(board);
+    cout<<"word1: "<<word1<<endl;
+    cout<<"word2: "<<word2<<endl;
+    bool desired1 = true, desired2 = false;
+    if(res1 == desired1 && res2 == desired2) {
+        cout<<"result of test case1: "<<res1<<endl;
+        cout<<"result of test case2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test word exist board end==============="<<endl;
+}

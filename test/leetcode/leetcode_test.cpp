@@ -70,6 +70,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["60"]     = &test_getPermutation;
     m["77"]     = &test_combinations;
     m["78"]     = &test_subsets;
+    m["79"]     = &test_wordExistBoard;
 
     //stack functions
     m["20"]     = &test_validParenthess;

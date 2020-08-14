@@ -365,3 +365,57 @@ vector<vector<int>> subsets(vector<int>& nums) {
     subsetsHelp(res, nums, single, 0);
     return res;
 }
+
+/*
+ * Given a 2D board and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring.
+The same letter cell may not be used more than once.
+
+Example:
+
+board =
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+
+Given word = "ABCCED", return true.
+Given word = "SEE", return true.
+Given word = "ABCB", return false.
+ */
+
+bool wordExistHelp(vector<vector<char>>& board, vector<vector<int>>& directions, vector<vector<bool>>& visited, int i, int j, int index, string word) {
+    if(index == word.size()) return true;
+    for(int d=0; d<directions.size(); ++d) {
+        int i1 = i + directions[d][0];
+        int j1 = j + directions[d][1];
+        if(i1>=0 && i1<board.size() && j1>=0 && j1<board[0].size() && board[i1][j1] == word[index]) {
+            if(visited[i1][j1])
+                continue;
+            visited[i1][j1] = true;
+            if(wordExistHelp(board, directions, visited, i1, j1, index+1, word))
+                return true;
+            visited[i1][j1] = false;
+        }
+    }
+    return false;
+}
+
+bool wordExistBoard(vector<vector<char>>& board, string word) {
+    if(board.empty() || word.empty()) return false;
+    vector<vector<int>> directions{{0,1}, {0, -1}, {1, 0}, {-1,0}};
+    vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), 0));
+    for(int i=0; i<board.size(); ++i) {
+        for(int j=0; j<board[0].size(); ++j) {
+            if(word[0] == board[i][j]) {
+                visited[i][j] = true;
+                if(wordExistHelp(board, directions, visited, i, j, 1, word))
+                    return true;
+                visited[i][j] = false;
+            }
+        }
+    }
+    return false;
+}
