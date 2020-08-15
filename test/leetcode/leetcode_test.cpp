@@ -38,6 +38,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["38"]     = &test_countAndSay;
     m["56"]     = &test_mergeIntervals;
     m["75"]     = &test_sortColors;
+    m["80"]     = &test_removeDeplicateII;
     m["202"]    = &test_happyNumber;
 
     //dc functions

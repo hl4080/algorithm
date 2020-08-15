@@ -21,5 +21,6 @@ void nextPermutation(vector<int>& nums);
 string countAndSay(int n);
 vector<vector<int>> mergeIntervals(vector<vector<int>>& intervals);
 void sortColors(vector<int>& nums);
+int removeDeplicatesII(vector<int>& nums);
 
 #endif //TWO_POINTER_H

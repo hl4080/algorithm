@@ -174,3 +174,19 @@ void test_sortColors() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sort colors end==============="<<endl;
 }
+
+void test_removeDeplicateII() {
+    cout<<"============simple test remove deplicate II begin============="<<endl;
+    vector<int> nums{1, 1, 1, 2, 2, 3};
+    int n = removeDeplicatesII(nums);
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<int> desired{1, 1, 2, 2, 3};
+    vector<int> res(nums.begin(), nums.begin()+n);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove deplicate II end==============="<<endl;
+}

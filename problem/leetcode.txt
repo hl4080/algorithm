@@ -49,5 +49,6 @@ index   type            name
 77      recursion       combinations
 78      recursion       subsets
 79      recursion       word search
+80      two-pointer     remove deplicate from sorted array II
 136     math            single number
 202     two-pointer     happy number
