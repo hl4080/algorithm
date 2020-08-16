@@ -144,3 +144,19 @@ void test_searchMatrix() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search matrix end==============="<<endl;
 }
+
+void test_searchRotatedSortedArrayII() {
+    cout<<"============simple test search rotated sorted array II begin============="<<endl;
+    vector<int> nums{2,5,6,0,0,1,2};
+    int target = 0;
+    bool res = searchRotatedArrayII(nums, target), desired = true;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test search rotated sorted array II end==============="<<endl;
+}

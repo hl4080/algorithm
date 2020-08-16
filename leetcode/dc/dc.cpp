@@ -301,3 +301,38 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
     }
     return false;
 }
+
+/*
+ * Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+
+(i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).
+
+You are given a target value to search. If found in the array return true, otherwise return false.
+
+Example 1:
+
+Input: nums = [2,5,6,0,0,1,2], target = 0
+Output: true
+Example 2:
+
+Input: nums = [2,5,6,0,0,1,2], target = 3
+Output: false
+ */
+
+bool searchRotatedArrayII(vector<int>& nums, int target) {
+    int front = 0, back = nums.size()-1;
+    while(front<=back) {
+        int mid = front + (back-front)/2;
+        if(nums[mid] == target) return true;
+        if(nums[front]==nums[mid]) front++;
+        else if(nums[front] < nums[mid]) {
+            if(target >= nums[front] && target < nums[mid]) back = mid-1;
+            else front = mid + 1;
+        }
+        else {
+            if(target  > nums[mid] && target <= nums[back]) front = mid+1;
+            else back = mid-1;
+        }
+    }
+    return false;
+}
