@@ -14,5 +14,6 @@ ListNode* removeNthFromEnd(ListNode* head, int n);
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 ListNode* swapPairs(ListNode* head);
 ListNode* rotateRight(ListNode* head, int k);
+ListNode* deleteDuplicatesListII(ListNode* head);
 
 #endif //LIST_H

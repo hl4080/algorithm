@@ -156,3 +156,39 @@ ListNode* rotateRight(ListNode* head, int k) {
     tail->next = NULL;
     return node;
 }
+
+/*
+ * Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+
+Return the linked list sorted as well.
+
+Example 1:
+
+Input: 1->2->3->3->4->4->5
+Output: 1->2->5
+Example 2:
+
+Input: 1->1->1->2->3
+Output: 2->3
+ */
+
+ListNode* deleteDuplicatesListII(ListNode* head) {
+    if(!head) return head;
+    ListNode* pre = new ListNode(0);
+    pre->next = head;
+    ListNode* p1 = head, *p2 = p1->next, *f = pre;
+    while(p1 && p2) {
+        if(p1->val != p2->val) {
+            f->next = p1;
+            f = p1;
+            p1 = p1->next;
+            p2 = p2->next;
+            continue;
+        }
+        while(p2 && p1->val == p2->val) p2 = p2->next;
+        f->next = p2;
+        p1 = p2;
+        p2 = p2==NULL? NULL: p2->next;
+    }
+    return pre->next;
+}

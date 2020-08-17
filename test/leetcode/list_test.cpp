@@ -119,3 +119,20 @@ void test_rotateList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test rotate list end==============="<<endl;
 }
+
+void test_deleteDuplicatesListII() {
+    cout<<"============simple test delete deplicates list II begin==============="<<endl;
+    vector<int> vec{1, 2, 3, 3, 4, 4, 5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    ListNode* l = deleteDuplicatesListII(head);
+    vector<int> res = list2Vector(l);
+    vector<int> desired{1, 2, 5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(vector2List(res));
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test delete deplicates list II end==============="<<endl;
+}
