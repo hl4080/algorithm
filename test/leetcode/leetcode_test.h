@@ -59,6 +59,7 @@ void test_mergeTwoSortedLists();
 void test_swapPairs();
 void test_rotateList();
 void test_deleteDuplicatesListII();
+void test_deleteDuplicateList();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

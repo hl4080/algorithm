@@ -136,3 +136,20 @@ void test_deleteDuplicatesListII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test delete deplicates list II end==============="<<endl;
 }
+
+void test_deleteDuplicateList() {
+    cout<<"============simple test delete deplicates list begin==============="<<endl;
+    vector<int> vec{1, 1, 2, 3, 3};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    ListNode* l = deleteDuplicatesSortedList(head);
+    vector<int> res = list2Vector(l);
+    vector<int> desired{1, 2, 3};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(head);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test delete deplicates list end================="<<endl;
+}

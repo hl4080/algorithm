@@ -192,3 +192,30 @@ ListNode* deleteDuplicatesListII(ListNode* head) {
     }
     return pre->next;
 }
+
+/*
+ * Given a sorted linked list, delete all duplicates such that each element appear only once.
+
+Example 1:
+
+Input: 1->1->2
+Output: 1->2
+Example 2:
+
+Input: 1->1->2->3->3
+Output: 1->2->3
+ */
+
+ListNode* deleteDuplicatesSortedList(ListNode* head) {
+    if(!head) return head;
+    ListNode* pre = new ListNode(0);
+    pre->next = head;
+    ListNode* p0 = head, *p1 = head->next;
+    while(p1) {
+        while(p1 && p0->val == p1->val) p1 = p1->next;
+        p0->next = p1;
+        p0 = p0->next;
+        p1 = p1? p1->next: NULL;
+    }
+    return pre->next;
+}
