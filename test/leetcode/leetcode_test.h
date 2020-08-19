@@ -60,6 +60,7 @@ void test_swapPairs();
 void test_rotateList();
 void test_deleteDuplicatesListII();
 void test_deleteDuplicateList();
+void test_partitionList();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

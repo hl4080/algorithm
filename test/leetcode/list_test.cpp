@@ -153,3 +153,23 @@ void test_deleteDuplicateList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test delete deplicates list end================="<<endl;
 }
+
+void test_partitionList() {
+    cout<<"============simple test partition lists begin==============="<<endl;
+    vector<int> vec{1,9,4,1,3,2,5,2};
+    ListNode* head = vector2List(vec);
+    int target = 3;
+    cout<<"test case: "<<endl;
+    cout<<"head: ";
+    printListNode(head);
+    cout<<"target: "<<target<<endl;
+    ListNode* l = partitionLists(head, target);
+    vector<int> res = list2Vector(l);
+    vector<int> desired{1,1,2,2,9,4,3,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test partition lists end================="<<endl;
+}

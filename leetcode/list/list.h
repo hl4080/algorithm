@@ -16,5 +16,6 @@ ListNode* swapPairs(ListNode* head);
 ListNode* rotateRight(ListNode* head, int k);
 ListNode* deleteDuplicatesListII(ListNode* head);
 ListNode* deleteDuplicatesSortedList(ListNode* head);
+ListNode* partitionLists(ListNode* head, int x);
 
 #endif //LIST_H

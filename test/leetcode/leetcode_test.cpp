@@ -19,6 +19,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["61"]     = &test_rotateList;
     m["82"]     = &test_deleteDuplicatesListII;
     m["83"]     = &test_deleteDuplicateList;
+    m["86"]     = &test_partitionList;
 
     //math functions
     m["136"]    = &test_singleNumber;

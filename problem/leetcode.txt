@@ -53,5 +53,6 @@ index   type            name
 81      dc              search rotated sorted array II
 82      list            delete deplicates from sorted array II
 83      list            delete deplicates from sorted array
+86      list            partition list
 136     math            single number
 202     two-pointer     happy number
