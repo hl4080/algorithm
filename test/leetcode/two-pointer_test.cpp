@@ -190,3 +190,24 @@ void test_removeDeplicateII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test remove deplicate II end==============="<<endl;
 }
+
+void test_mergeSortedArrays() {
+    cout<<"============simple test merge sorted arrays begin============="<<endl;
+    vector<int> nums1{1, 2, 3, 0, 0, 0}, nums2{2, 5, 6};
+    int m = 3, n =3;
+    cout<<"test case: "<<endl;
+    cout<<"nums1: ";
+    printOneDimVec(nums1);
+    cout<<"m: "<<m<<endl;
+    cout<<"nums2: ";
+    printOneDimVec(nums2);
+    cout<<"n: "<<n<<endl;
+    mergeSortedArrays(nums1, m, nums2, n);
+    vector<int> desired{1, 2, 2, 3, 5, 6};
+    if(nums1 == desired) {
+        cout << "result of test case: ";
+        printOneDimVec(nums1);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test merge sorted arrays end==============="<<endl;
+}
