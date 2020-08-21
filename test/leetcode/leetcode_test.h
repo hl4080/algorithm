@@ -84,6 +84,7 @@ void test_climbStairs();
 //test functions in greedy directory
 void test_intToRoman();
 void test_jumpGame();
+void test_grayCode();
 
 //test functions in recursion directory
 void test_letterCombination();

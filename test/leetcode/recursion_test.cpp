@@ -192,3 +192,17 @@ void test_wordExistBoard() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test word exist board end==============="<<endl;
 }
+
+void test_grayCode() {
+    cout<<"============simple test gray code begin============="<<endl;
+    int n = 3;
+    vector<int> res = grayCode(n);
+    vector<int> desired{0,1,3,2,6,7,5,4};
+    cout<<"test case: "<<"n="<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test gray code end==============="<<endl;
+}
