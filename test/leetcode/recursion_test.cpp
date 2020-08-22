@@ -206,3 +206,18 @@ void test_grayCode() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test gray code end==============="<<endl;
 }
+
+void test_subesetsWithDup() {
+    cout<<"============simple test subsets with dup begin============="<<endl;
+    vector<int> nums{1, 2, 2};
+    vector<vector<int>> res = subsetsWithDup(nums);
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<vector<int>> desired{{}, {1}, {1,2}, {1,2,2}, {2}, {2,2}};
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test subsets with dup end==============="<<endl;
+}

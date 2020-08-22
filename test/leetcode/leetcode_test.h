@@ -97,6 +97,7 @@ void test_getPermutation();
 void test_combinations();
 void test_subsets();
 void test_wordExistBoard();
+void test_subesetsWithDup();
 
 //test functions in stack directory
 void test_validParenthess();

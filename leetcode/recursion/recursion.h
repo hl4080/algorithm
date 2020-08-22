@@ -21,5 +21,6 @@ vector<vector<int>> combinations(int n, int k);
 vector<vector<int>> subsets(vector<int>& nums);
 bool wordExistBoard(vector<vector<char>>& board, string word);
 vector<int> grayCode(int n);
+vector<vector<int>> subsetsWithDup(vector<int>& nums);
 
 #endif //ALOGRITHM_RECURSION_H

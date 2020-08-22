@@ -464,3 +464,39 @@ vector<int> grayCode(int n) {
     grayCodeHelp(res, n, val);
     return res;
 }
+
+/*
+ * Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+
+Example:
+
+Input: [1,2,2]
+Output:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+ */
+void subsetsWithDupHelp(vector<vector<int>>& res, vector<int>& nums, vector<int>& piece, int index) {
+    res.push_back(piece);
+    for(int i=index; i<nums.size(); ++i) {
+        if(i>index && nums[i] == nums[i-1]) continue;
+        piece.push_back(nums[i]);
+        subsetsWithDupHelp(res, nums, piece, i+1);
+        piece.pop_back();
+    }
+}
+vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+    vector<vector<int>> res;
+    if(nums.empty()) return res;
+    sort(nums.begin(), nums.end());
+    vector<int> piece;
+    subsetsWithDupHelp(res, nums, piece, 0);
+    return res;
+}
