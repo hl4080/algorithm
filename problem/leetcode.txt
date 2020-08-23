@@ -57,5 +57,6 @@ index   type            name
 88      two-pointer     merge two sorted arrays
 89      recursion       gray code
 90      recursion       subset II
+91      dp              number decodings
 136     math            single number
 202     two-pointer     happy number

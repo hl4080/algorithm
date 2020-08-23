@@ -99,3 +99,15 @@ void test_climbStairs() {
     cout<<"============simple test climb stairs end==============="<<endl;
 }
 
+void test_numDecodings() {
+    cout<<"============simple test number decodings begin============="<<endl;
+    string s = "226";
+    int res = numDecodings(s), desired = 3;
+    cout<<"test case: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test number decodings end==============="<<endl;
+}
+

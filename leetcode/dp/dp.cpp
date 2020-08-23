@@ -238,3 +238,43 @@ int climbStairs(int n) {
     }
     return res;
 }
+
+/*
+ * A message containing letters from A-Z is being encoded to numbers using the following mapping:
+
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+Given a non-empty string containing only digits, determine the total number of ways to decode it.
+
+Example 1:
+
+Input: "12"
+Output: 2
+Explanation: It could be decoded as "AB" (1 2) or "L" (12).
+Example 2:
+
+Input: "226"
+Output: 3
+Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
+ */
+
+int numDecodings(string s) {
+    //3 conditions: s[i] = '0', if s[i-1] = '1' or '2', dp[i] = dp[i-2], else return 0
+    //              s[i-1] = '1', dp[i] = dp[i-1] + dp[i-2]
+    //              s[i-1] = '2', if '0'<=s[i]<='6', dp[i] = dp[i-1] + dp[i-2], else dp[i] = dp[i-1]
+    if(s.empty() || s[0] == '0') return 0;
+    int pre2=1, pre1=1, cur = 1;
+    for(int i=1; i<s.size(); ++i) {
+        if(s[i] == '0') {
+            if(s[i-1] == '1' || s[i-1] == '2') cur = pre2;
+            else return 0;
+        }
+        else if(s[i-1] == '1' || (s[i-1] == '2' && s[i] >= '0' && s[i] <= '6')) cur = pre1 + pre2;
+        else cur = pre1;
+        pre2 = pre1;
+        pre1 = cur;
+    }
+    return cur;
+}

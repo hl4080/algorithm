@@ -16,5 +16,6 @@ int maxSubArray(vector<int>& nums);
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 int minPathSum(vector<vector<int>>& grid);
 int climbStairs(int n);
+int numDecodings(string s);
 
 #endif //ALOGRITHM_DP_H
