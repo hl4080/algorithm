@@ -173,3 +173,22 @@ void test_partitionList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test partition lists end================="<<endl;
 }
+
+void test_reverseListBetween() {
+    cout<<"============simple test reverse list between begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    int m=2, n=4;
+    ListNode* head = vector2List(vec);
+    cout<<"test case: "<<endl;
+    cout<<"head: ";
+    printListNode(head);
+    cout<<"m: "<<m<<", n: "<<n<<endl;
+    ListNode* l = reverseListBetween(head, m, n);
+    vector<int> res = list2Vector(l), desired{1,4,3,2,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse list between end================="<<endl;
+}
