@@ -221,3 +221,16 @@ void test_subesetsWithDup() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test subsets with dup end==============="<<endl;
 }
+
+void test_restoreIpAddr() {
+    cout<<"============simple test restore ip address begin============="<<endl;
+    string s = "25525511135";
+    vector<string> res = restoreIpAddresses(s), desired{"255.255.11.135","255.255.111.35"};
+    cout<<"test case: s: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test restore ip address end==============="<<endl;
+}

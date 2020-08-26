@@ -81,6 +81,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["79"]     = &test_wordExistBoard;
     m["89"]     = &test_grayCode;
     m["90"]     = &test_subesetsWithDup;
+    m["93"]     = test_restoreIpAddr;
 
     //stack functions
     m["20"]     = &test_validParenthess;

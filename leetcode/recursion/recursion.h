@@ -22,5 +22,6 @@ vector<vector<int>> subsets(vector<int>& nums);
 bool wordExistBoard(vector<vector<char>>& board, string word);
 vector<int> grayCode(int n);
 vector<vector<int>> subsetsWithDup(vector<int>& nums);
+vector<string> restoreIpAddresses(string s);
 
 #endif //ALOGRITHM_RECURSION_H

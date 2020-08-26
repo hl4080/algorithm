@@ -100,6 +100,7 @@ void test_combinations();
 void test_subsets();
 void test_wordExistBoard();
 void test_subesetsWithDup();
+void test_restoreIpAddr();
 
 //test functions in stack directory
 void test_validParenthess();
