@@ -1,64 +1,65 @@
 index   type            name
-1       hash            two sum
-2       list            add two-numbers
-3       two-pointer     longest substring without repeating
-4       dc              median of two sorted arrays
-5       dp              longest palindromic substring
-6       math            zigzag conversion
-7       math            reverse integer
-9       math            palindrome number
-10      dp              regular expression matching
-11      two-pointer     max water area
-12      greedy          integer to roman
-13      hash            roman to integer
-14      dc              longest common prefix
-15      two-pointer     three sum
-16      two-pointer     three sum closest
-17      recursion       latter combination
-19      list            remove nth node from end
-20      stack           valid parentheses
-21      list            merge two sorted lists
-22      recursion       generate parenthesis
-24      list            swap nodes in pairs
-26      two-pointer     remove duplicate from sorted array
-31      two-pointer     next permutation
-33      dc              search in rotated sorted array
-34      dc              find first and last position of element in sorted array
-35      dc              search insert position
-36      hash            valid sudoku
-38      two-pointer     count and say
-39      recursion       combination sum
-40      recursion       combination sum II
-46      recursion       permutations
-47      recursion       unique permute
-48      dc              ratate
-49      hash            group anagrams
-53      dp              maximum subarray
-55      greedy          jump game
-56      two-pointer     merge interval
-60      recursion       permutation sequence
-61      list            rotate list
-62      math            unique paths
-63      dp              unique paths II
-69      math            sqrt(x)
-70      dp              climb stairs
-71      stack           simplify path
-73      math            set matrix zeros
-74      dc              search a 2D matrix
-75      two-pointer     sort colors
-77      recursion       combinations
-78      recursion       subsets
-79      recursion       word search
-80      two-pointer     remove deplicate from sorted array II
-81      dc              search rotated sorted array II
-82      list            delete deplicates from sorted array II
-83      list            delete deplicates from sorted array
-86      list            partition list
-88      two-pointer     merge two sorted arrays
-89      recursion       gray code
-90      recursion       subset II
-91      dp              number decodings
-92      list            reverse list between
-93      recursion       restore ip address
-136     math            single number
-202     two-pointer     happy number
+l1       hash            two sum
+l2       list            add two-numbers
+l3       two-pointer     longest substring without repeating
+l4       dc              median of two sorted arrays
+l5       dp              longest palindromic substring
+l6       math            zigzag conversion
+l7       math            reverse integer
+l9       math            palindrome number
+l10      dp              regular expression matching
+l11      two-pointer     max water area
+l12      greedy          integer to roman
+l13      hash            roman to integer
+l14      dc              longest common prefix
+l15      two-pointer     three sum
+l16      two-pointer     three sum closest
+l17      recursion       latter combination
+l19      list            remove nth node from end
+l20      stack           valid parentheses
+l21      list            merge two sorted lists
+l22      recursion       generate parenthesis
+l24      list            swap nodes in pairs
+l26      two-pointer     remove duplicate from sorted array
+l31      two-pointer     next permutation
+l33      dc              search in rotated sorted array
+l34      dc              find first and last position of element in sorted array
+l35      dc              search insert position
+l36      hash            valid sudoku
+l38      two-pointer     count and say
+l39      recursion       combination sum
+l40      recursion       combination sum II
+l46      recursion       permutations
+l47      recursion       unique permute
+l48      dc              ratate
+l49      hash            group anagrams
+l53      dp              maximum subarray
+l55      greedy          jump game
+l56      two-pointer     merge interval
+l60      recursion       permutation sequence
+l61      list            rotate list
+l62      math            unique paths
+l63      dp              unique paths II
+l69      math            sqrt(x)
+l70      dp              climb stairs
+l71      stack           simplify path
+l73      math            set matrix zeros
+l74      dc              search a 2D matrix
+l75      two-pointer     sort colors
+l77      recursion       combinations
+l78      recursion       subsets
+l79      recursion       word search
+l80      two-pointer     remove deplicate from sorted array II
+l81      dc              search rotated sorted array II
+l82      list            delete deplicates from sorted array II
+l83      list            delete deplicates from sorted array
+l86      list            partition list
+l88      two-pointer     merge two sorted arrays
+l89      recursion       gray code
+l90      recursion       subset II
+l91      dp              number decodings
+l92      list            reverse list between
+l93      recursion       restore ip address
+l94      tree            inorder tree travel
+l136     math            single number
+l202     two-pointer     happy number

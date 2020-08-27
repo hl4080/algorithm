@@ -16,6 +16,7 @@
 #include "../../leetcode/greedy/greedy.h"
 #include "../../leetcode/recursion/recursion.h"
 #include "../../leetcode/stack/stack.h"
+#include "../../leetcode/tree/tree.h"
 
 typedef void (*FUNC)();
 
@@ -105,5 +106,8 @@ void test_restoreIpAddr();
 //test functions in stack directory
 void test_validParenthess();
 void test_simplifyPath();
+
+//test funtions in tree directory
+void test_inorderTreeTravel();
 
 #endif //LEETCODE_TEST_H

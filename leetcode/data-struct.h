@@ -12,4 +12,13 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(): val(0), left(NULL), right(NULL) {}
+    TreeNode(int x): val(x), left(NULL), right(NULL) {}
+    TreeNode(int x, TreeNode* left, TreeNode* right): val(x), left(left), right(right) {}
+};
 #endif //ALOGRITHM_DATA_STRUCT_H

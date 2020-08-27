@@ -8,12 +8,16 @@
 #include <vector>
 #include "../leetcode/data-struct.h"
 #include <iostream>
+#include <queue>
+#include <string>
 
 using namespace std;
 
 vector<int> list2Vector(ListNode*);
 ListNode* vector2List(vector<int>&);
 void printListNode(ListNode* l);
+void printTree(TreeNode* root);
+TreeNode* buildTree(vector<int>& vec, int left, int right);
 
 template <class T> void printOneDimVec(vector<T> vec) {
     for(int i=0; i<vec.size(); ++i)

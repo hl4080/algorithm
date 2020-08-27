@@ -6,84 +6,87 @@
 
 void initLeetMap(map<string, FUNC>& m) {
     //hash functions
-    m["1"]   = &test_twoSum;
-    m["13"]  = &test_romanToInt;
-    m["36"]  = &test_validSudoku;
-    m["49"]  = &test_groupAnagroups;
+    m["l1"]   = &test_twoSum;
+    m["l13"]  = &test_romanToInt;
+    m["l36"]  = &test_validSudoku;
+    m["l49"]  = &test_groupAnagroups;
 
     //list functions
-    m["2"]      = &test_addTwoNumber;
-    m["19"]     = &test_removeNthFromEnd;
-    m["21"]     = &test_mergeTwoSortedLists;
-    m["24"]     = &test_swapPairs;
-    m["61"]     = &test_rotateList;
-    m["82"]     = &test_deleteDuplicatesListII;
-    m["83"]     = &test_deleteDuplicateList;
-    m["86"]     = &test_partitionList;
-    m["92"]     = &test_reverseListBetween;
+    m["l2"]      = &test_addTwoNumber;
+    m["l19"]     = &test_removeNthFromEnd;
+    m["l21"]     = &test_mergeTwoSortedLists;
+    m["l24"]     = &test_swapPairs;
+    m["l61"]     = &test_rotateList;
+    m["l82"]     = &test_deleteDuplicatesListII;
+    m["l83"]     = &test_deleteDuplicateList;
+    m["l86"]     = &test_partitionList;
+    m["l92"]     = &test_reverseListBetween;
 
     //math functions
-    m["136"]    = &test_singleNumber;
-    m["6"]      = &test_zigzagConversion;
-    m["7"]      = &test_reverseInteger;
-    m["9"]      = &test_palindromeNumber;
-    m["10"]     = &test_expressionMatch;
-    m["62"]     = &test_uniquePaths;
-    m["69"]     = &test_sqrtx;
-    m["73"]     = &test_setMatrixZeros;
+    m["l136"]    = &test_singleNumber;
+    m["l6"]      = &test_zigzagConversion;
+    m["l7"]      = &test_reverseInteger;
+    m["l9"]      = &test_palindromeNumber;
+    m["l10"]     = &test_expressionMatch;
+    m["l62"]     = &test_uniquePaths;
+    m["l69"]     = &test_sqrtx;
+    m["l73"]     = &test_setMatrixZeros;
 
     //two_pointer functions
-    m["3"]      = &test_longestSubsting;
-    m["11"]     = &test_maxWaterArea;
-    m["15"]     = &test_threeSum;
-    m["16"]     = &test_threeSumClosest;
-    m["26"]     = &test_removeDuplicate;
-    m["31"]     = &test_nextPermutation;
-    m["38"]     = &test_countAndSay;
-    m["56"]     = &test_mergeIntervals;
-    m["75"]     = &test_sortColors;
-    m["80"]     = &test_removeDeplicateII;
-    m["88"]     = &test_mergeSortedArrays;
-    m["202"]    = &test_happyNumber;
+    m["l3"]      = &test_longestSubsting;
+    m["l11"]     = &test_maxWaterArea;
+    m["l15"]     = &test_threeSum;
+    m["l16"]     = &test_threeSumClosest;
+    m["l26"]     = &test_removeDuplicate;
+    m["l31"]     = &test_nextPermutation;
+    m["l38"]     = &test_countAndSay;
+    m["l56"]     = &test_mergeIntervals;
+    m["l75"]     = &test_sortColors;
+    m["l80"]     = &test_removeDeplicateII;
+    m["l88"]     = &test_mergeSortedArrays;
+    m["l202"]    = &test_happyNumber;
 
     //dc functions
-    m["4"]      = &test_findMedianSortedArrays;
-    m["14"]     = &test_longestCommonPrefix;
-    m["33"]     = &test_searchInRotatedArray;
-    m["34"]     = &test_searchElementPositions;
-    m["35"]     = &test_searchInsertPosition;
-    m["74"]     = &test_searchMatrix;
-    m["81"]     = &test_searchRotatedSortedArrayII;
+    m["l4"]      = &test_findMedianSortedArrays;
+    m["l14"]     = &test_longestCommonPrefix;
+    m["l33"]     = &test_searchInRotatedArray;
+    m["l34"]     = &test_searchElementPositions;
+    m["l35"]     = &test_searchInsertPosition;
+    m["l74"]     = &test_searchMatrix;
+    m["l81"]     = &test_searchRotatedSortedArrayII;
 
     //dp functions
-    m["5"]      = &test_longestPalindromic;
-    m["53"]     = &test_maximumSubarray;
-    m["63"]     = &test_uniquePathWithObstacles;
-    m["64"]     = &test_minPathSum;
-    m["70"]     = &test_climbStairs;
-    m["91"]     = &test_numDecodings;
+    m["l5"]      = &test_longestPalindromic;
+    m["l53"]     = &test_maximumSubarray;
+    m["l63"]     = &test_uniquePathWithObstacles;
+    m["l64"]     = &test_minPathSum;
+    m["l70"]     = &test_climbStairs;
+    m["l91"]     = &test_numDecodings;
 
     //greedy functions
-    m["12"]     = &test_intToRoman;
-    m["55"]     = &test_jumpGame;
+    m["l12"]     = &test_intToRoman;
+    m["l55"]     = &test_jumpGame;
 
     //recursion functions
-    m["17"]     = &test_letterCombination;
-    m["22"]     = &test_generateParenthesis;
-    m["39"]     = &test_combinationSum;
-    m["40"]     = &test_combinationSumII;
-    m["46"]     = &test_permutations;
-    m["47"]     = &test_uniquePermutations;
-    m["48"]     = &test_rotateImage;
-    m["60"]     = &test_getPermutation;
-    m["77"]     = &test_combinations;
-    m["78"]     = &test_subsets;
-    m["79"]     = &test_wordExistBoard;
-    m["89"]     = &test_grayCode;
-    m["90"]     = &test_subesetsWithDup;
-    m["93"]     = test_restoreIpAddr;
+    m["l17"]     = &test_letterCombination;
+    m["l22"]     = &test_generateParenthesis;
+    m["l39"]     = &test_combinationSum;
+    m["l40"]     = &test_combinationSumII;
+    m["l46"]     = &test_permutations;
+    m["l47"]     = &test_uniquePermutations;
+    m["l48"]     = &test_rotateImage;
+    m["l60"]     = &test_getPermutation;
+    m["l77"]     = &test_combinations;
+    m["l78"]     = &test_subsets;
+    m["l79"]     = &test_wordExistBoard;
+    m["l89"]     = &test_grayCode;
+    m["l90"]     = &test_subesetsWithDup;
+    m["l93"]     = test_restoreIpAddr;
 
     //stack functions
-    m["20"]     = &test_validParenthess;
-    m["71"]     = &test_simplifyPath;
+    m["l20"]     = &test_validParenthess;
+    m["l71"]     = &test_simplifyPath;
+
+    //tree functions
+    m["l94"]     = &test_inorderTreeTravel;
 }
