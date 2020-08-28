@@ -109,5 +109,6 @@ void test_simplifyPath();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();
+void test_generateTreesII();
 
 #endif //LEETCODE_TEST_H

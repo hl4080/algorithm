@@ -11,5 +11,6 @@
 using namespace std;
 
 vector<int> inorderTraversal(TreeNode* root);
+vector<TreeNode*> generateTreesII(int n);
 
 #endif //ALOGRITHM_TREE_H

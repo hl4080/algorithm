@@ -82,3 +82,9 @@ TreeNode* buildTree(vector<int>& vec, int left, int right) {
     root->right =  buildTree(vec, mid+1, right);
     return root;
 }
+
+bool treesEqual(TreeNode* root1, TreeNode* root2) {
+    if((!root1 && !root2) || (root1 && root2 && root1->val == root2->val)) return true;
+    if((root1 && !root2) || (root2 && !root1) || (root1->val == root2->val)) return false;
+    return treesEqual(root1->left, root2->left) && treesEqual(root1->right, root2->right);
+}

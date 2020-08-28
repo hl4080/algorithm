@@ -18,6 +18,7 @@ ListNode* vector2List(vector<int>&);
 void printListNode(ListNode* l);
 void printTree(TreeNode* root);
 TreeNode* buildTree(vector<int>& vec, int left, int right);
+bool treesEqual(TreeNode* root1, TreeNode* root2);
 
 template <class T> void printOneDimVec(vector<T> vec) {
     for(int i=0; i<vec.size(); ++i)

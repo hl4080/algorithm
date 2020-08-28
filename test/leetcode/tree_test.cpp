@@ -18,3 +18,18 @@ void test_inorderTreeTravel() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test inorder tree travel end==============="<<endl;
 }
+
+void test_generateTreesII() {
+    cout<<"============simple test generate trees II begin============="<<endl;
+    int n=2;
+    vector<TreeNode*> trees = generateTreesII(n);
+    vector<int>vec1{-1,1,2}, vec2{1, 2, -1};
+    TreeNode* root1 = buildTree(vec1, 0, vec1.size()-1), *root2 = buildTree(vec2, 0, vec2.size()-1);
+    if(treesEqual(root1, trees[0]) && treesEqual(root2, trees[1])) {
+        cout<<"result of test case: "<<endl;
+        printTree(trees[0]);
+        printTree(trees[1]);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test generate trees II end==============="<<endl;
+}
