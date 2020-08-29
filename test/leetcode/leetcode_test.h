@@ -83,6 +83,7 @@ void test_uniquePathWithObstacles();
 void test_minPathSum();
 void test_climbStairs();
 void test_numDecodings();
+void test_numTrees();
 
 //test functions in greedy directory
 void test_intToRoman();

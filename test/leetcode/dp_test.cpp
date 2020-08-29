@@ -111,3 +111,14 @@ void test_numDecodings() {
     cout<<"============simple test number decodings end==============="<<endl;
 }
 
+void test_numTrees() {
+    cout<<"============simple test number trees begin============="<<endl;
+    int n = 5;
+    int res = numTrees(n), desired = 42;
+    cout<<"test case: "<<"n="<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test number trees end==============="<<endl;
+}
