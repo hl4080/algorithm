@@ -91,4 +91,5 @@ void initLeetMap(map<string, FUNC>& m) {
     //tree functions
     m["l94"]     = &test_inorderTreeTravel;
     m["l95"]     = &test_generateTreesII;
+    m["l98"]      = &test_isValidTree;
 }

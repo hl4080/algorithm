@@ -33,3 +33,17 @@ void test_generateTreesII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test generate trees II end==============="<<endl;
 }
+
+void test_isValidTree() {
+    cout<<"============simple test is valid tree begin============="<<endl;
+    vector<int> vec{-1,1,-1,5,3,4,6};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    bool res = isValidBST(root), desired = false;
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is valid tree end==============="<<endl;
+}
