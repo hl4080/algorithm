@@ -13,5 +13,6 @@ using namespace std;
 vector<int> inorderTraversal(TreeNode* root);
 vector<TreeNode*> generateTreesII(int n);
 bool isValidBST(TreeNode* root);
+bool isSameTree(TreeNode* p, TreeNode* q);
 
 #endif //ALOGRITHM_TREE_H

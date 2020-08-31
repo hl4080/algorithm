@@ -47,3 +47,15 @@ void test_isValidTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is valid tree end==============="<<endl;
 }
+
+void test_isSameTree() {
+    cout<<"============simple test is same tree begin============="<<endl;
+    vector<int> vec1{1,2,3}, vec2{2,4,6};
+    TreeNode* root1 = buildTree(vec1, 0, vec1.size()-1), *root2 = buildTree(vec2, 0, vec2.size()-1);
+    bool res = isSameTree(root1, root2), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is same tree end==============="<<endl;
+}
