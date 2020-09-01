@@ -134,3 +134,25 @@ bool isSameTree(TreeNode* p, TreeNode* q) {
     if((p&&!q) || (!p&&q) || (p->val != q->val)) return false;
     return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
 }
+
+/*
+ * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+
+For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+ */
+
+bool isSymmetricHelp(TreeNode* root1, TreeNode* root2) {
+    if(!root1 && !root2) return true;
+    if((!root1 && root2) || (root1 && !root2) || root1->val != root2->val) return false;
+    return isSymmetricHelp(root1->left, root2->right) && isSymmetricHelp(root1->right, root2->left);
+}
+
+bool isSymmetric(TreeNode* root) {
+    return isSymmetricHelp(root, root);
+}

@@ -59,3 +59,17 @@ void test_isSameTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is same tree end==============="<<endl;
 }
+
+void test_isSymmetric() {
+    cout<<"============simple test is symmetric begin============="<<endl;
+    vector<int> vec{3,2,4,1,4,2,3};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    bool res = isSymmetric(root), desired = true;
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is symmetric end==============="<<endl;
+}

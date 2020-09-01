@@ -113,5 +113,6 @@ void test_inorderTreeTravel();
 void test_generateTreesII();
 void test_isValidTree();
 void test_isSameTree();
+void test_isSymmetric();
 
 #endif //LEETCODE_TEST_H

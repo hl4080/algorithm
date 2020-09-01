@@ -93,4 +93,5 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l95"]     = &test_generateTreesII;
     m["l98"]     = &test_isValidTree;
     m["l100"]    = &test_isSameTree;
+    m["l101"]    = &test_isSymmetric;
 }

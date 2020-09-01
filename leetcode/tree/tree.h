@@ -14,5 +14,6 @@ vector<int> inorderTraversal(TreeNode* root);
 vector<TreeNode*> generateTreesII(int n);
 bool isValidBST(TreeNode* root);
 bool isSameTree(TreeNode* p, TreeNode* q);
+bool isSymmetric(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H
