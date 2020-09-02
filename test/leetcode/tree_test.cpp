@@ -73,3 +73,23 @@ void test_isSymmetric() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is symmetric end==============="<<endl;
 }
+
+void test_levelOrder() {
+    cout<<"============simple test level order travel begin============="<<endl;
+    vector<int> vec{-1,9,-1,3,15,20,7};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    vector<vector<int>> res = levelOrder(root);
+    vector<vector<int>> desired{
+            {3},
+            {9,20},
+            {15,7}
+    };
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test level order travel end==============="<<endl;
+}
