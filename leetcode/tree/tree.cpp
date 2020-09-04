@@ -194,3 +194,43 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     }
     return res;
 }
+
+/*
+ * Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
+
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its zigzag level order traversal as:
+[
+  [3],
+  [20,9],
+  [15,7]
+]
+ */
+
+vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+    vector<vector<int>> res;
+    if(!root) return res;
+    queue<TreeNode*> q;
+    q.push(root);
+    bool reverse = 0;
+    while(!q.empty()) {
+        vector<int> tmp(q.size(), 0);
+        int qlen = q.size();
+        for(int i = reverse? qlen-1: 0; reverse? i>=0: i<qlen; reverse?--i: ++i) {
+            TreeNode* node = q.front();
+            q.pop();
+            tmp[i] = node->val;
+            if(node->left) q.push(node->left);
+            if(node->right)  q.push(node->right);
+        }
+        res.push_back(tmp);
+        reverse = !reverse;
+    }
+    return res;
+}

@@ -115,5 +115,6 @@ void test_isValidTree();
 void test_isSameTree();
 void test_isSymmetric();
 void test_levelOrder();
+void test_zigzagOrder();
 
 #endif //LEETCODE_TEST_H
