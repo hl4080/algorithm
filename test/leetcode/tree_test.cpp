@@ -127,3 +127,22 @@ void test_maxDepth() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max depth end==============="<<endl;
 }
+
+void test_buildTreeFromPreAndInorder() {
+    cout<<"============simple test Construct Binary Tree from Preorder and Inorder Traversal begin============="<<endl;
+    vector<int> preorder{3,9,20,15,7}, inorder{9,3,15,20,7};
+    TreeNode* root = buildTreeFromPreAndInorder(preorder, inorder);
+    vector<int> vec{-1, 9, -1, 3, 15, 20, 7};
+    TreeNode* desired = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    cout<<"preorder: ";
+    printOneDimVec(preorder);
+    cout<<"inorder: ";
+    printOneDimVec(inorder);
+    if(treesEqual(root, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test Construct Binary Tree from Preorder and Inorder Traversal end==============="<<endl;
+}

@@ -117,5 +117,6 @@ void test_isSymmetric();
 void test_levelOrder();
 void test_zigzagOrder();
 void test_maxDepth();
+void test_buildTreeFromPreAndInorder();
 
 #endif //LEETCODE_TEST_H

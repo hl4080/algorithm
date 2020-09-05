@@ -259,3 +259,41 @@ int maxDepth(TreeNode* root) {
     if(!root) return 0;
     return max(maxDepth(root->left)+1, maxDepth(root->right)+1);
 }
+
+/*
+ * Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+For example, given
+
+preorder = [3,9,20,15,7]
+inorder = [9,3,15,20,7]
+Return the following binary tree:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+ */
+TreeNode* buildTreeFromPreAndInorderHelp(vector<int>& preorder, vector<int>& inorder,
+        map<int, int>& m, int preStart,int preEnd, int inStart, int inEnd) {
+    if(preStart > preEnd || inStart > inEnd) return NULL;
+    int val = preorder[preStart];
+    TreeNode* root = new TreeNode(val);
+    int inIdx = m[val];
+    int preIdx = inIdx-inStart+1+preStart;
+    root->left = buildTreeFromPreAndInorderHelp(preorder, inorder, m, preStart+1, preIdx-1, inStart, inIdx-1);
+    root->right = buildTreeFromPreAndInorderHelp(preorder, inorder, m, preIdx, preEnd, inIdx + 1, inEnd);
+    return root;
+}
+
+TreeNode* buildTreeFromPreAndInorder(vector<int>& preorder, vector<int>& inorder) {
+    map<int, int> m;
+    for(int i=0; i<inorder.size(); ++i)
+        m[inorder[i]] = i;
+    return buildTreeFromPreAndInorderHelp(preorder, inorder, m, 0, preorder.size()-1, 0, inorder.size()-1);
+}

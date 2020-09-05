@@ -8,6 +8,7 @@
 #include "../data-struct.h"
 #include <vector>
 #include <queue>
+#include <map>
 
 using namespace std;
 
@@ -19,5 +20,6 @@ bool isSymmetric(TreeNode* root);
 vector<vector<int>> levelOrder(TreeNode* root);
 vector<vector<int>> zigzagLevelOrder(TreeNode* root);
 int maxDepth(TreeNode* root);
+TreeNode* buildTreeFromPreAndInorder(vector<int>& preorder, vector<int>& inorder);
 
 #endif //ALOGRITHM_TREE_H
