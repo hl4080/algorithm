@@ -113,3 +113,17 @@ void test_zigzagOrder() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test zigzag level order end==============="<<endl;
 }
+
+void test_maxDepth() {
+    cout<<"============simple test max depth begin============="<<endl;
+    vector<int> vec{-1, 9, -1, 3, 15, 20, 7};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    int res = maxDepth(root), desired = 3;
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test max depth end==============="<<endl;
+}

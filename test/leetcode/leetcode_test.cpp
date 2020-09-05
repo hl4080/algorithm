@@ -96,4 +96,5 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l101"]    = &test_isSymmetric;
     m["l102"]    = &test_levelOrder;
     m["l103"]    = &test_zigzagOrder;
+    m["l104"]    = &test_maxDepth;
 }

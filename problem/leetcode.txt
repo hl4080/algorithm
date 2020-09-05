@@ -68,5 +68,6 @@ index   type            name
 101     tree            is sysmmetric
 102     tree            level order travel
 103     tree            zigzag level order travel
+104     tree            max depth
 136     math            single number
 202     two-pointer     happy number

@@ -18,5 +18,6 @@ bool isSameTree(TreeNode* p, TreeNode* q);
 bool isSymmetric(TreeNode* root);
 vector<vector<int>> levelOrder(TreeNode* root);
 vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+int maxDepth(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H
