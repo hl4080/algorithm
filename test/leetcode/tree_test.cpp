@@ -146,3 +146,22 @@ void test_buildTreeFromPreAndInorder() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test Construct Binary Tree from Preorder and Inorder Traversal end==============="<<endl;
 }
+
+void test_buildTressFromInAndPostOrder() {
+    cout<<"============simple test Construct Binary Tree from Inorder and postorder Traversal begin============="<<endl;
+    vector<int> inorder{9,3,15,20,7}, postorder{9,15,7,20,3};
+    TreeNode* root = buildTreeFromInAndPostOrder(inorder, postorder);
+    vector<int> vec{-1, 9, -1, 3, 15, 20, 7};
+    TreeNode* desired = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    cout<<"inorder: ";
+    printOneDimVec(inorder);
+    cout<<"postorder: ";
+    printOneDimVec(postorder);
+    if(treesEqual(root, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test Construct Binary Tree from Inorder and postorder Traversal end==============="<<endl;
+}

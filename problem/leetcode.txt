@@ -69,6 +69,7 @@ index   type            name
 102     tree            level order travel
 103     tree            zigzag level order travel
 104     tree            max depth
-105     tree            Construct Binary Tree from Preorder and Inorder Traversal
+105     tree            construct Binary Tree from Preorder and Inorder Traversal
+106     tree            construct Binary Tree from Ineorder and Postorder Traversal
 136     math            single number
 202     two-pointer     happy number

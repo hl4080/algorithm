@@ -297,3 +297,42 @@ TreeNode* buildTreeFromPreAndInorder(vector<int>& preorder, vector<int>& inorder
         m[inorder[i]] = i;
     return buildTreeFromPreAndInorderHelp(preorder, inorder, m, 0, preorder.size()-1, 0, inorder.size()-1);
 }
+
+/*
+ * Given inorder and postorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+For example, given
+
+inorder = [9,3,15,20,7]
+postorder = [9,15,7,20,3]
+Return the following binary tree:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+ */
+TreeNode* buildTreeFromInAndPostOrderHelp(vector<int>& inorder, vector<int>& postorder, map<int, int>& m,
+        int inStart, int inEnd, int postStart, int postEnd) {
+    if(inStart > inEnd || postStart > postEnd) return NULL;
+    int val = postorder[postEnd];
+    TreeNode* root = new TreeNode(val);
+    int inIdx = m[val];
+    int postIdx = inIdx - inStart + postStart;
+    root->left = buildTreeFromInAndPostOrderHelp(inorder, postorder, m, inStart, inIdx-1, postStart, postIdx-1);
+    root->right = buildTreeFromInAndPostOrderHelp(inorder, postorder, m, inIdx+1, inEnd, postIdx, postEnd-1);
+    return root;
+}
+
+TreeNode* buildTreeFromInAndPostOrder(vector<int>& inorder, vector<int>& postorder) {
+    map<int, int> m;
+    for(int i=0; i<inorder.size(); ++i) {
+        m[inorder[i]] = i;
+    }
+    return buildTreeFromInAndPostOrderHelp(inorder, postorder, m, 0, inorder.size()-1, 0, postorder.size()-1);
+}
