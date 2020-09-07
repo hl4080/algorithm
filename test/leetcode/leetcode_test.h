@@ -119,5 +119,6 @@ void test_zigzagOrder();
 void test_maxDepth();
 void test_buildTreeFromPreAndInorder();
 void test_buildTressFromInAndPostOrder();
+void test_sortedArrayToBST();
 
 #endif //LEETCODE_TEST_H

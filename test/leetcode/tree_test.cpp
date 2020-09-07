@@ -165,3 +165,17 @@ void test_buildTressFromInAndPostOrder() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test Construct Binary Tree from Inorder and postorder Traversal end==============="<<endl;
 }
+
+void test_sortedArrayToBST() {
+    cout<<"============simple test sorted array to BST begin============="<<endl;
+    vector<int> nums{0,3,7,10,15};
+    TreeNode* root = sortedArrayToBST(nums);
+    vector<int> vec{0,3,-1,7,-1,10,15};
+    TreeNode* desired = buildTree(vec, 0, vec.size()-1);
+    if(treesEqual(root, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test sorted array to BST end==============="<<endl;
+}
