@@ -23,5 +23,6 @@ int maxDepth(TreeNode* root);
 TreeNode* buildTreeFromPreAndInorder(vector<int>& preorder, vector<int>& inorder);
 TreeNode* buildTreeFromInAndPostOrder(vector<int>& inorder, vector<int>& postorder);
 TreeNode* sortedArrayToBST(vector<int>& nums);
+TreeNode* sortedListToBST(ListNode* head);
 
 #endif //ALOGRITHM_TREE_H

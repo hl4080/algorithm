@@ -368,3 +368,37 @@ TreeNode* sortedArrayToBSTHelp(vector<int>& nums, int begin, int end) {
 TreeNode* sortedArrayToBST(vector<int>& nums) {
     return sortedArrayToBSTHelp(nums, 0, nums.size()-1);
 }
+
+/*
+ * Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+
+Input: head = [-10,-3,0,5,9]
+Output: [0,-3,9,-10,null,5]
+Explanation: One possible answer is [0,-3,9,-10,null,5], which represents the shown height balanced BST.
+ */
+
+int getListLength(ListNode* head) {
+    int res = 0;
+
+    for(; head; head = head->next)
+        res++;
+    return res;
+}
+
+TreeNode* sortedListToBSTHelp(ListNode* &head, int left, int right) {
+    if(left > right) return NULL;
+    int mid = left+(right-left+1)/2;
+    TreeNode* root = new TreeNode();
+    root->left = sortedListToBSTHelp(head, left, mid-1);
+    root->val = head->val;
+    head = head->next;
+    root->right = sortedListToBSTHelp(head, mid+1, right);
+    return root;
+}
+
+TreeNode* sortedListToBST(ListNode* head) {
+    int len = getListLength(head);
+    return sortedListToBSTHelp(head, 0, len-1);
+}

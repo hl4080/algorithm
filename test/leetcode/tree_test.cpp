@@ -179,3 +179,18 @@ void test_sortedArrayToBST() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sorted array to BST end==============="<<endl;
 }
+
+void test_sortedListToBST() {
+    cout<<"============simple test sorted list to BST begin============="<<endl;
+    vector<int> vec{-10, -3, 0, 5, 9};
+    ListNode* head = vector2List(vec);
+    TreeNode* root = sortedListToBST(head);
+    vector<int> vec2{-10, -3, -1, 0, 5, 9, -1};
+    TreeNode* desired = buildTree(vec2, 0, vec2.size()-1);
+    if(treesEqual(root, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test sorted list to BST end==============="<<endl;
+}
