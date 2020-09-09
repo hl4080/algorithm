@@ -101,4 +101,5 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l106"]    = &test_buildTressFromInAndPostOrder;
     m["l108"]    = &test_sortedArrayToBST;
     m["l109"]    = &test_sortedListToBST;
+    m["l110"]    = &test_isBalancedTree;
 }

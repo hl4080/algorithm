@@ -24,5 +24,6 @@ TreeNode* buildTreeFromPreAndInorder(vector<int>& preorder, vector<int>& inorder
 TreeNode* buildTreeFromInAndPostOrder(vector<int>& inorder, vector<int>& postorder);
 TreeNode* sortedArrayToBST(vector<int>& nums);
 TreeNode* sortedListToBST(ListNode* head);
+bool isBalancedTree(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H

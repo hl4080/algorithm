@@ -73,5 +73,6 @@ index   type            name
 106     tree            construct Binary Tree from Ineorder and Postorder Traversal
 108     tree            Convert Sorted Array to Binary Search Tree
 109     tree            Convert Sorted List to Binary Search Tree
+110     tree            is balanced tree
 136     math            single number
 202     two-pointer     happy number
