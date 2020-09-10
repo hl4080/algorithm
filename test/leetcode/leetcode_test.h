@@ -122,5 +122,6 @@ void test_buildTressFromInAndPostOrder();
 void test_sortedArrayToBST();
 void test_sortedListToBST();
 void test_isBalancedTree();
+void test_minDepth();
 
 #endif //LEETCODE_TEST_H

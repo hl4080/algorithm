@@ -74,5 +74,6 @@ index   type            name
 108     tree            Convert Sorted Array to Binary Search Tree
 109     tree            Convert Sorted List to Binary Search Tree
 110     tree            is balanced tree
+111     tree            min depth
 136     math            single number
 202     two-pointer     happy number
