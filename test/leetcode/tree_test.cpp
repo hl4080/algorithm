@@ -222,3 +222,18 @@ void test_minDepth() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test min depth end==============="<<endl;
 }
+
+void test_hasPathSum() {
+    cout<<"============simple test has path sum begin============="<<endl;
+    vector<int> vec{-1,9,-1,3,15,20,7};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    int sum = 12;
+    bool res = hasPathSum(root, sum), desired = true;
+    cout<<"test case:"<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test has path sum end==============="<<endl;
+}

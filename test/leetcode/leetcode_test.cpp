@@ -103,4 +103,5 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l109"]    = &test_sortedListToBST;
     m["l110"]    = &test_isBalancedTree;
     m["l111"]    = &test_minDepth;
+    m["l112"]    = &test_hasPathSum;
 }

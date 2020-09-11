@@ -123,5 +123,6 @@ void test_sortedArrayToBST();
 void test_sortedListToBST();
 void test_isBalancedTree();
 void test_minDepth();
+void test_hasPathSum();
 
 #endif //LEETCODE_TEST_H
