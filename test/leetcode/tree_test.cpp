@@ -237,3 +237,23 @@ void test_hasPathSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test has path sum end==============="<<endl;
 }
+
+void test_pathSum() {
+    cout<<"============simple test path sum begin============="<<endl;
+    vector<int> vec{-1,9,-1,3,15,2,7};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    int sum = 12;
+    vector<vector<int>> res = pathSum(root, sum);
+    vector<vector<int>> desired{
+            {3,9},
+            {3,2,7}
+    };
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test path sum end==============="<<endl;
+}

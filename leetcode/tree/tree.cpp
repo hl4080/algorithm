@@ -488,3 +488,47 @@ bool hasPathSum(TreeNode* root, int sum) {
     if(!root->left && !root->right && root->val == sum) return true;
     return hasPathSum(root->left, sum-root->val) || hasPathSum(root->right, sum-root->val);
 }
+
+/*
+ * Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Given the below binary tree and sum = 22,
+
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \    / \
+7    2  5   1
+Return:
+
+[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+ */
+
+void pathSumHelp(TreeNode* root, vector<vector<int>>& res, vector<int> piece, int sum) {
+    if(!root) return;
+    piece.push_back(root->val);
+    if(!root->left && !root->right && sum == root->val) {
+        res.push_back(piece);
+        piece.pop_back();
+        return;
+    }
+    pathSumHelp(root->left, res, piece, sum-root->val);
+    pathSumHelp(root->right, res, piece, sum-root->val);
+
+}
+
+vector<vector<int>> pathSum(TreeNode* root, int sum) {
+    vector<vector<int>> res;
+    vector<int> piece;
+    pathSumHelp(root, res, piece, sum);
+    return res;
+}
