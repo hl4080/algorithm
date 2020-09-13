@@ -28,5 +28,6 @@ bool isBalancedTree(TreeNode* root);
 int minDepth(TreeNode* root);
 bool hasPathSum(TreeNode* root, int sum);
 vector<vector<int>> pathSum(TreeNode* root, int sum);
+void flattenTree(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H

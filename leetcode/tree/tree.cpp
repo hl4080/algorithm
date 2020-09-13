@@ -532,3 +532,41 @@ vector<vector<int>> pathSum(TreeNode* root, int sum) {
     pathSumHelp(root, res, piece, sum);
     return res;
 }
+
+/*
+ * Given a binary tree, flatten it to a linked list in-place.
+
+For example, given the following tree:
+
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+The flattened tree should look like:
+
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+
+ */
+
+void flattenTree(TreeNode* root) {
+    if(!root || !root->left) return;
+    TreeNode* l = root->left;
+    TreeNode* r = root->right;
+    root->left = nullptr;
+    root->right = l;
+    while(l->right) l = l->right;
+    l->right = r;
+    flattenTree(root->left);
+    flattenTree(root->right);
+}

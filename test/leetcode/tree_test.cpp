@@ -257,3 +257,20 @@ void test_pathSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test path sum end==============="<<endl;
 }
+
+void test_flattenTree() {
+    cout<<"============simple test flatten tree begin============="<<endl;
+    vector<int> vec{7,3,9};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    vector<int> vec2{-1,-1,-1,3,-1,7,9};
+    TreeNode* desired = buildTree(vec2, 0, vec2.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    flattenTree(root);
+    if(treesEqual(root, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test flatten tree end==============="<<endl;
+}

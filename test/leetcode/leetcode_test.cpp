@@ -105,4 +105,5 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l111"]    = &test_minDepth;
     m["l112"]    = &test_hasPathSum;
     m["l113"]    = &test_pathSum;
+    m["l114"]    = &test_flattenTree;
 }
