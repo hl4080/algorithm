@@ -134,3 +134,23 @@ void test_setMatrixZeros() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test set matrix zeros end==============="<<endl;
 }
+
+void test_generatePascalTriange() {
+    cout<<"============simple test generate pascal triangle begin============="<<endl;
+    int numRow = 5;
+    vector<vector<int>> res = generatePascalTriangle(numRow);
+    vector<vector<int>> desired{
+            {1},
+            {1,1},
+            {1,2,1},
+            {1,3,3,1},
+            {1,4,6,4,1}
+    };
+    cout<<"test case: numRow = "<<numRow<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test generate pascal triangle end==============="<<endl;
+}

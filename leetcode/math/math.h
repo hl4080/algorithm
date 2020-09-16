@@ -18,5 +18,6 @@ bool isPalindrome(int x);
 int uniquePaths(int m, int n);
 int sqrtx(int x);
 void setZeros(vector<vector<int>>& matrix);
+vector<vector<int>> generatePascalTriangle(int numRows);
 
 #endif //MATH_H

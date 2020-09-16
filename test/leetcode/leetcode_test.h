@@ -39,6 +39,7 @@ void test_palindromeNumber();
 void test_uniquePaths();
 void test_sqrtx();
 void test_setMatrixZeros();
+void test_generatePascalTriange();
 
 //test functions in two-pointers directory
 void test_happyNumber();

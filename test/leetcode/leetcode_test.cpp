@@ -31,6 +31,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l62"]     = &test_uniquePaths;
     m["l69"]     = &test_sqrtx;
     m["l73"]     = &test_setMatrixZeros;
+    m["l118"]    = &test_generatePascalTriange;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
