@@ -19,5 +19,6 @@ int uniquePaths(int m, int n);
 int sqrtx(int x);
 void setZeros(vector<vector<int>>& matrix);
 vector<vector<int>> generatePascalTriangle(int numRows);
+vector<int> getRowPacasalTriangle(int rowIndex);
 
 #endif //MATH_H

@@ -285,3 +285,31 @@ vector<vector<int>> generatePascalTriangle(int numRows) {
     }
     return res;
 }
+
+/*
+ * Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
+
+Notice that the row index starts from 0.
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+
+Follow up:
+
+Could you optimize your algorithm to use only O(k) extra space?
+
+ 
+
+Example 1:
+
+Input: rowIndex = 3
+Output: [1,3,3,1]
+
+ */
+
+vector<int> getRowPacasalTriangle(int rowIndex) {
+    vector<int> res(rowIndex+1, 1);
+    res[0] = 1;
+    for(int i=1; i<=rowIndex; ++i)
+        res[i] = res[i-1]*(rowIndex-i+1)/i;
+    return res;
+}

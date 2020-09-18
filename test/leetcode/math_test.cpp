@@ -154,3 +154,17 @@ void test_generatePascalTriange() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test generate pascal triangle end==============="<<endl;
 }
+
+void test_getRowPascalTriangle() {
+    cout<<"============simple test get row pascal triangle begin============="<<endl;
+    int rowIndex = 4;
+    vector<int> res = getRowPacasalTriangle(rowIndex);
+    vector<int> desired{1,4,6,4,1};
+    cout<<"test case: rowIndex = "<<rowIndex<<endl;
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get row pascal triangle end==============="<<endl;
+}

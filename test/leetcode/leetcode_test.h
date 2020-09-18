@@ -40,6 +40,7 @@ void test_uniquePaths();
 void test_sqrtx();
 void test_setMatrixZeros();
 void test_generatePascalTriange();
+void test_getRowPascalTriangle();
 
 //test functions in two-pointers directory
 void test_happyNumber();
