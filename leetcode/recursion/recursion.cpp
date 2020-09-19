@@ -557,3 +557,39 @@ vector<string> restoreIpAddresses(string s) {
     restoreIpAddressHelp(res, piece, s, 0, 0);
     return res;
 }
+
+/*
+ * Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+For example, given the following triangle
+
+[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+
+Note:
+
+Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.
+
+ */
+
+int minPathTriangle(vector<vector<int>>& triangle) {
+    if(triangle.empty()) return 0;
+    vector<int> dp(triangle.size(),0);
+    for(int i=0; i<triangle.size(); i++) {
+        vector<int> tmp = dp;
+        for(int j=0; j<triangle[i].size(); j++) {
+            if(j==0) dp[j] = tmp[j] + triangle[i][j];
+            else if(j==triangle[i].size()-1) dp[j] = tmp[j-1]+triangle[i][j];
+            else dp[j] = min(tmp[j]+triangle[i][j], tmp[j-1]+triangle[i][j]);
+        }
+    }
+    int minVal = INT_MAX;
+    for(int i=0; i<dp.size(); i++)
+        minVal = min(minVal, dp[i]);
+    return minVal;
+}

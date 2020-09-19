@@ -234,3 +234,21 @@ void test_restoreIpAddr() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test restore ip address end==============="<<endl;
 }
+
+void test_minPathTriangle() {
+    cout<<"============simple test min path triangle begin============="<<endl;
+    vector<vector<int>> triangle{
+            {2},
+            {3,4},
+            {6,5,7},
+            {4,1,8,3}
+    };
+    int res = minPathTriangle(triangle), desired = 11;
+    cout<<"test case: "<<endl;
+    printTwoDimVec(triangle);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test min path triangle end==============="<<endl;
+}

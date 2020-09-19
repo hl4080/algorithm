@@ -105,6 +105,7 @@ void test_subsets();
 void test_wordExistBoard();
 void test_subesetsWithDup();
 void test_restoreIpAddr();
+void test_minPathTriangle();
 
 //test functions in stack directory
 void test_validParenthess();
