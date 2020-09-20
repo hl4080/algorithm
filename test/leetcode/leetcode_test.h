@@ -86,6 +86,7 @@ void test_minPathSum();
 void test_climbStairs();
 void test_numDecodings();
 void test_numTrees();
+void test_maxProfitI();
 
 //test functions in greedy directory
 void test_intToRoman();

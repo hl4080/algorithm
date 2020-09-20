@@ -81,5 +81,6 @@ index   type            name
 118     math            generate pascal's tree
 119     math            get row of pascal triangle
 120     recursion       triangle
+121     dp              best to buy and sell stock
 136     math            single number
 202     two-pointer     happy number

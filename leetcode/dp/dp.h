@@ -18,5 +18,6 @@ int minPathSum(vector<vector<int>>& grid);
 int climbStairs(int n);
 int numDecodings(string s);
 int numTrees(int n);
+int maxProfitI(vector<int>& prices);
 
 #endif //ALOGRITHM_DP_H
