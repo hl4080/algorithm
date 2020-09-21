@@ -81,6 +81,7 @@ index   type            name
 118     math            generate pascal's tree
 119     math            get row of pascal triangle
 120     recursion       triangle
-121     dp              best to buy and sell stock
+121     dp              best time to buy and sell stock I
+122     dp              best time to buy and sell stock II
 136     math            single number
 202     two-pointer     happy number

@@ -135,3 +135,16 @@ void test_maxProfitI() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max profit end==============="<<endl;
 }
+
+void test_maxProfitII() {
+    cout<<"============simple test max profit begin============="<<endl;
+    vector<int> prices{7,1,5,3,6,4};
+    int res = maxProfitII(prices), desired = 7;
+    cout<<"test case: "<<endl;
+    printOneDimVec(prices);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test max profit end==============="<<endl;
+}
