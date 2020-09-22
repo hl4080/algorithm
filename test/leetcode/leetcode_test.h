@@ -17,6 +17,7 @@
 #include "../../leetcode/recursion/recursion.h"
 #include "../../leetcode/stack/stack.h"
 #include "../../leetcode/tree/tree.h"
+#include "../../leetcode/graph/graph.h"
 
 typedef void (*FUNC)();
 
@@ -131,5 +132,8 @@ void test_minDepth();
 void test_hasPathSum();
 void test_pathSum();
 void test_flattenTree();
+
+//functions in graph directory
+void test_ladderLength();
 
 #endif //LEETCODE_TEST_H

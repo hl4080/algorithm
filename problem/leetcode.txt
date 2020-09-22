@@ -83,5 +83,6 @@ index   type            name
 120     recursion       triangle
 121     dp              best time to buy and sell stock I
 122     dp              best time to buy and sell stock II
+127     graph           word ladder
 136     math            single number
 202     two-pointer     happy number

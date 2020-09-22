@@ -111,4 +111,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l112"]    = &test_hasPathSum;
     m["l113"]    = &test_pathSum;
     m["l114"]    = &test_flattenTree;
+
+    //graph functions
+    m["l127"]    = &test_ladderLength;
 }
