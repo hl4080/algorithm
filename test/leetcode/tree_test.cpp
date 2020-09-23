@@ -274,3 +274,17 @@ void test_flattenTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test flatten tree end==============="<<endl;
 }
+
+void test_sumRootToLeaf() {
+    cout<<"============simple test sum root to leaf node begin============="<<endl;
+    vector<int> vec{2,1,3};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int res = sumToLeafNumbers(root), desired = 25;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test sum root to leaf node end==============="<<endl;
+}

@@ -132,6 +132,7 @@ void test_minDepth();
 void test_hasPathSum();
 void test_pathSum();
 void test_flattenTree();
+void test_sumRootToLeaf();
 
 //functions in graph directory
 void test_ladderLength();
