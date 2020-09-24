@@ -252,3 +252,28 @@ void test_minPathTriangle() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test min path triangle end==============="<<endl;
 }
+
+void test_surroundRegions() {
+    cout<<"============simple test surround regions begin============="<<endl;
+    vector<vector<char>> board{
+            {'X','X','X','X'},
+            {'X','O','O','X'},
+            {'X','X','O','X'},
+            {'X','O','X','X'}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(board);
+    surroundRegions(board);
+    vector<vector<char>> desired{
+            {'X','X','X','X'},
+            {'X','X','X','X'},
+            {'X','X','X','X'},
+            {'X','O','X','X'}
+    };
+    if(board == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(desired);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test surround regions end==============="<<endl;
+}
