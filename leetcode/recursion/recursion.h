@@ -25,5 +25,6 @@ vector<vector<int>> subsetsWithDup(vector<int>& nums);
 vector<string> restoreIpAddresses(string s);
 int minPathTriangle(vector<vector<int>>& triangle);
 void surroundRegions(vector<vector<char>>& board);
+vector<vector<string>> palindromePartition(string s);
 
 #endif //ALOGRITHM_RECURSION_H

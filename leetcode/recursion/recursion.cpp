@@ -642,3 +642,44 @@ void surroundRegions(vector<vector<char>>& board) {
         }
     }
 }
+
+/*
+ * Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return all possible palindrome partitioning of s.
+
+Example:
+
+Input: "aab"
+Output:
+[
+  ["aa","b"],
+  ["a","a","b"]
+]
+
+ */
+void palindromePartitionHelp(string s, vector<vector<bool>>& dp, vector<vector<string>>& res, vector<string> piece, int i, int len) {
+    if(i==len) {
+        res.push_back(piece);
+        return;
+    }
+    for(int k=i; k<len; k++) {
+        if(!dp[i][k]) continue;
+        piece.push_back(s.substr(i, k-i+1));
+        palindromePartitionHelp(s, dp, res, piece, k+1, len);
+        piece.pop_back();
+    }
+}
+vector<vector<string>> palindromePartition(string s) {
+    int len = s.size();
+    vector<vector<bool>> dp(len, vector<bool>(len, false));
+    for(int j=0; j<len; j++) {
+        for(int i=0; i<=j; i++) {
+            if(s[i] == s[j] && (j-i<=2 || dp[i+1][j-1])) dp[i][j] = true;
+        }
+    }
+    vector<vector<string>> res;
+    vector<string> piece;
+    palindromePartitionHelp(s, dp, res, piece, 0, len);
+    return res;
+}

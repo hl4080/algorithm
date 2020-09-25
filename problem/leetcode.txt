@@ -86,5 +86,6 @@ index   type            name
 127     graph           word ladder
 129     tree            sum root to leaf numbers
 130     recursion       surrounded regions
+131     recursion       palindrome partition
 136     math            single number
 202     two-pointer     happy number

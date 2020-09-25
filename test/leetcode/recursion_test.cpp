@@ -277,3 +277,22 @@ void test_surroundRegions() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test surround regions end==============="<<endl;
 }
+
+void test_palinfromePartition() {
+    cout<<"============simple test palindrome partition begin============="<<endl;
+    string s = "abbab";
+    vector<vector<string>> res = palindromePartition(s);
+    vector<vector<string>> desired{
+            {"a","b","b","a","b"},
+            {"a","b","bab"},
+            {"a","bb","a","b"},
+            {"abba","b"}
+    };
+    cout<<"test case: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(desired);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test palindrome partition end==============="<<endl;
+}
