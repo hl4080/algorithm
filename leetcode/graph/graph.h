@@ -10,9 +10,11 @@
 #include <map>
 #include <string>
 #include <queue>
+#include "../data-struct.h"
 using namespace std;
 
 int ladderLength(string beginWord, string endWord, vector<string>& wordList);
+Node* cloneGraph(Node* node);
 
 
 #endif //ALOGRITHM_GRAPH_H
