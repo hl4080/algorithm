@@ -11,5 +11,6 @@ using namespace std;
 
 string intToRoman(int num);
 bool jumpGame(vector<int>& nums);
+int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
 
 #endif //ALOGRITHM_GREEDY_H

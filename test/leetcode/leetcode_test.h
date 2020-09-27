@@ -94,6 +94,7 @@ void test_maxProfitII();
 void test_intToRoman();
 void test_jumpGame();
 void test_grayCode();
+void test_canCompleteCircuit();
 
 //test functions in recursion directory
 void test_letterCombination();

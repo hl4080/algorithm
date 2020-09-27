@@ -37,3 +37,20 @@ void test_jumpGame() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test jump game end==============="<<endl;
 }
+
+void test_canCompleteCircuit() {
+    cout<<"============simple test can complete circuit begin============="<<endl;
+    vector<int> gas{1,2,3,4,5};
+    vector<int> cost{3,4,5,1,2};
+    int res = canCompleteCircuit(gas, cost), desired = 3;
+    cout<<"test case"<<endl;
+    cout<<"gas: ";
+    printOneDimVec(gas);
+    cout<<"cost: ";
+    printOneDimVec(cost);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test can complete circuit end==============="<<endl;
+}

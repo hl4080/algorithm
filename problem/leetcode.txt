@@ -87,5 +87,6 @@ index   type            name
 129     tree            sum root to leaf numbers
 130     recursion       surrounded regions
 131     recursion       palindrome partition
+134     greedy          can complete circle
 136     math            single number
 202     two-pointer     happy number
