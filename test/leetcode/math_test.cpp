@@ -168,3 +168,16 @@ void test_getRowPascalTriangle() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get row pascal triangle end==============="<<endl;
 }
+
+void test_singlenumberII() {
+    cout<<"============simple test single number II begin============="<<endl;
+    vector<int> nums{0,1,0,1,0,1,99};
+    int res = singleNumberII(nums), desired = 99;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test single number II end==============="<<endl;
+}

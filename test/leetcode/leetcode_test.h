@@ -42,6 +42,7 @@ void test_sqrtx();
 void test_setMatrixZeros();
 void test_generatePascalTriange();
 void test_getRowPascalTriangle();
+void test_singlenumberII();
 
 //test functions in two-pointers directory
 void test_happyNumber();
