@@ -68,6 +68,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l96"]     = &test_numTrees;
     m["l121"]    = &test_maxProfitI;
     m["l122"]    = &test_maxProfitII;
+    m["l139"]    = &test_wordBreak;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

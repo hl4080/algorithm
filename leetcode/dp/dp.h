@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <set>
 using namespace std;
 
 string longestPalindrome(string s);
@@ -20,5 +21,6 @@ int numDecodings(string s);
 int numTrees(int n);
 int maxProfitI(vector<int>& prices);
 int maxProfitII(vector<int>& prices);
+bool wordBreak(string s, vector<string>& wordDict);
 
 #endif //ALOGRITHM_DP_H

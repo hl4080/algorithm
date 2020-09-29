@@ -148,3 +148,18 @@ void test_maxProfitII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max profit end==============="<<endl;
 }
+
+void test_wordBreak() {
+    cout<<"============simple test word break begin============="<<endl;
+    string s = "applepenapple";
+    vector<string> wordDict{"apple", "pen"};
+    bool res = wordBreak(s, wordDict), desired = true;
+    cout<<"test case: "<<endl;
+    cout<<"s: "<<s<<" "<<"word dict: ";
+    printOneDimVec(wordDict);
+    if( res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test word break end==============="<<endl;
+}
