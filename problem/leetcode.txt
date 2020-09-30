@@ -91,4 +91,5 @@ index   type            name
 136     math            single number
 137     math            single number II
 139     dp              word break
+141     list            linked list cycle
 202     two-pointer     happy number

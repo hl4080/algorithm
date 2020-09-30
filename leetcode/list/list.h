@@ -18,5 +18,6 @@ ListNode* deleteDuplicatesListII(ListNode* head);
 ListNode* deleteDuplicatesSortedList(ListNode* head);
 ListNode* partitionLists(ListNode* head, int x);
 ListNode* reverseListBetween(ListNode* head, int m, int n);
+bool listCycle(ListNode *head);
 
 #endif //LIST_H

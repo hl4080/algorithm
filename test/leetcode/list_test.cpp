@@ -192,3 +192,21 @@ void test_reverseListBetween() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse list between end================="<<endl;
 }
+
+void test_listCycle() {
+    cout<<"============simple test list cycle begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    cout<<"pos: "<<1<<endl;
+    ListNode* tmp = head;
+    while(tmp->next) tmp = tmp->next;
+    tmp->next = head->next;
+    bool res = listCycle(head), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test list cycle end================="<<endl;
+}
