@@ -69,6 +69,7 @@ void test_deleteDuplicateList();
 void test_partitionList();
 void test_reverseListBetween();
 void test_listCycle();
+void test_listCycleII();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

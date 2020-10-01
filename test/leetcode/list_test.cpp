@@ -210,3 +210,22 @@ void test_listCycle() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test list cycle end================="<<endl;
 }
+
+void test_listCycleII() {
+    cout<<"============simple test list cycle II begin==============="<<endl;
+    vector<int> vec{0,1,2,3,4};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    cout<<"pos: "<<1<<endl;
+    ListNode* tmp = head;
+    while(tmp->next) tmp = tmp->next;
+    tmp->next = head->next;
+    ListNode* res = listCycleII(head);
+    int desired = 1;
+    if(res->val == desired) {
+        cout<<"result of test case: tails connected to index "<<res->val<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test list cycle II end================="<<endl;
+}
