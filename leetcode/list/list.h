@@ -20,5 +20,6 @@ ListNode* partitionLists(ListNode* head, int x);
 ListNode* reverseListBetween(ListNode* head, int m, int n);
 bool listCycle(ListNode *head);
 ListNode* listCycleII(ListNode *head);
+ListNode* reverseList(ListNode* head);
 
 #endif //LIST_H

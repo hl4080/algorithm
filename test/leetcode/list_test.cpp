@@ -229,3 +229,20 @@ void test_listCycleII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test list cycle II end================="<<endl;
 }
+
+void test_reverseList() {
+    cout<<"============simple test reverse list begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: "<<endl;
+    cout<<"head: ";
+    printListNode(head);
+    ListNode* l = reverseList(head);
+    vector<int> res = list2Vector(l), desired{5,4,3,2,1};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse list end==============="<<endl;
+}

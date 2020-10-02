@@ -93,4 +93,5 @@ index   type            name
 139     dp              word break
 141     list            linked list cycle
 142     list            linked list cycle II
+206     list            reverse list
 202     two-pointer     happy number
