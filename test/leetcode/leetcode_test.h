@@ -71,6 +71,7 @@ void test_reverseListBetween();
 void test_listCycle();
 void test_listCycleII();
 void test_reverseList();
+void test_reorderList();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

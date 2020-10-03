@@ -246,3 +246,20 @@ void test_reverseList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse list end==============="<<endl;
 }
+
+void test_reorderList() {
+    cout<<"============simple test reorder list begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: "<<endl;
+    cout<<"head: ";
+    printListNode(head);
+    reorderList(head);
+    vector<int> res = list2Vector(head), desired{1,5,2,4,3};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reorder list begin==============="<<endl;
+}

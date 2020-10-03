@@ -21,5 +21,6 @@ ListNode* reverseListBetween(ListNode* head, int m, int n);
 bool listCycle(ListNode *head);
 ListNode* listCycleII(ListNode *head);
 ListNode* reverseList(ListNode* head);
+void reorderList(ListNode* head);
 
 #endif //LIST_H

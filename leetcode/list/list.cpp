@@ -373,3 +373,48 @@ ListNode* reverseList(ListNode* head) {
     }
     return pre->next;
 }
+
+/*
+ * Given a singly linked list L: L0→L1→…→Ln-1→Ln,
+reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+
+You may not modify the values in the list's nodes, only nodes itself may be changed.
+
+Example 1:
+
+Given 1->2->3->4, reorder it to 1->4->2->3.
+Example 2:
+
+Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+
+ */
+
+void reorderList(ListNode* head) {
+    if(!head || !head->next) return;
+    int l = 0;
+    ListNode* pre = head;
+    while(pre) {
+        pre = pre->next;
+        l++;
+    }
+    int k = l%2==0? l/2: l/2+1;
+    ListNode* p = head;
+    while(k-1) {
+        p = p->next;
+        k--;
+    }
+    ListNode* tmp = p->next;
+    p->next = NULL;
+    p = tmp;
+    ListNode* post = reverseList(p);
+    pre = head;
+    while(pre) {
+        ListNode* tmp = pre->next;
+        pre->next = post? post: NULL;
+        pre = tmp;
+        if(!post) return;
+        ListNode* tmp2 = post->next;
+        post->next = pre;
+        post = tmp2;
+    }
+}

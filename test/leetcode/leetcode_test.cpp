@@ -23,6 +23,8 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l92"]     = &test_reverseListBetween;
     m["l141"]    = &test_listCycle;
     m["l142"]    = &test_listCycleII;
+    m["l143"]    = &test_reorderList;
+    m["l206"]    = &test_reverseList;
 
     //math functions
     m["l136"]    = &test_singleNumber;
@@ -36,7 +38,6 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l118"]    = &test_generatePascalTriange;
     m["l119"]    = &test_getRowPascalTriangle;
     m["l137"]    = &test_singlenumberII;
-    m["l206"]    = &test_reverseList;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
