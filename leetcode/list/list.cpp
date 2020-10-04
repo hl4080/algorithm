@@ -418,3 +418,47 @@ void reorderList(ListNode* head) {
         post = tmp2;
     }
 }
+
+/*
+ * Sort a linked list using insertion sort.
+
+Algorithm of Insertion Sort:
+
+Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list.
+At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there.
+It repeats until no input elements remain.
+
+Example 1:
+
+Input: 4->2->1->3
+Output: 1->2->3->4
+Example 2:
+
+Input: -1->5->3->4->0
+Output: -1->0->3->4->5
+
+ */
+
+ListNode* insertionSortList(ListNode* head) {
+    if(!head || !head->next) return head;
+    ListNode* cur = head, *nxt = head->next;
+    cur->next = NULL;
+    while(nxt) {
+        ListNode* tmpn = nxt->next;
+        ListNode* tmpc = cur;
+        while(cur != nxt) {
+            if((!cur->next && cur->val <= nxt->val) || (cur->val <= nxt->val && nxt->val < cur->next->val)) {
+                nxt->next = cur->next;
+                cur->next = nxt;
+                break;
+            } else if((!cur->next && cur->val > nxt->val) || cur->val > nxt->val) {
+                nxt->next = cur;
+                tmpc = nxt;
+                break;
+            } else cur = cur->next;
+        }
+        cur = tmpc;
+        nxt = tmpn;
+    }
+    return cur;
+}

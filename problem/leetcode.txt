@@ -94,5 +94,6 @@ index   type            name
 141     list            linked list cycle
 142     list            linked list cycle II
 143     list            reorder list
+147     list            insert sort list
 206     list            reverse list
 202     two-pointer     happy number

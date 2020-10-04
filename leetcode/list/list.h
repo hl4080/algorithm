@@ -22,5 +22,6 @@ bool listCycle(ListNode *head);
 ListNode* listCycleII(ListNode *head);
 ListNode* reverseList(ListNode* head);
 void reorderList(ListNode* head);
+ListNode* insertionSortList(ListNode* head);
 
 #endif //LIST_H

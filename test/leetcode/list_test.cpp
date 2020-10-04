@@ -263,3 +263,20 @@ void test_reorderList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reorder list begin==============="<<endl;
 }
+
+void test_insertSortList() {
+    cout<<"============simple test insert sort list begin==============="<<endl;
+    vector<int> vec{5,3,2,6,1};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: "<<endl;
+    cout<<"head: ";
+    printListNode(head);
+    ListNode* l = insertionSortList(head);
+    vector<int> res = list2Vector(l), desired{1,2,3,5,6};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUSL FAILED"<<endl;
+    cout<<"============simple test insert sort list end================="<<endl;
+}
