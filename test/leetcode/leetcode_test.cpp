@@ -25,6 +25,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l142"]    = &test_listCycleII;
     m["l143"]    = &test_reorderList;
     m["l147"]    = &test_insertSortList;
+    m["l148"]    = &test_sortList;
     m["l206"]    = &test_reverseList;
 
     //math functions

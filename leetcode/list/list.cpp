@@ -462,3 +462,64 @@ ListNode* insertionSortList(ListNode* head) {
     }
     return cur;
 }
+
+/*
+ * Given the head of a linked list, return the list after sorting it in ascending order.
+
+Follow up: Can you sort the linked list in O(n logn) time and O(1) memory (i.e. constant space)?
+
+Example 1:
+
+Input: head = [4,2,1,3]
+Output: [1,2,3,4]
+Example 2:
+
+Input: head = [-1,5,3,4,0]
+Output: [-1,0,3,4,5]
+Example 3:
+
+Input: head = []
+Output: []
+ 
+
+Constraints:
+
+The number of nodes in the list is in the range [0, 5 * 104].
+-105 <= Node.val <= 105
+
+ */
+ListNode* findMiddle(ListNode* head) {
+    if(!head || !head->next) return head;
+    ListNode* slow = head, *fast = head->next;
+    while(fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    ListNode* tmp = slow->next;
+    slow->next = NULL;
+    return tmp;
+}
+
+ListNode* mergeListsHelp(ListNode* l1, ListNode* l2) {
+    ListNode* pre = new ListNode(0);
+    ListNode* f = pre;
+    while(l1 || l2) {
+        if(!l1 || (l2&&l2->val <= l1->val)) {
+            pre->next = l2;
+            pre = pre->next;
+            l2 = l2->next;
+        } else{
+            pre->next = l1;
+            pre = pre->next;
+            l1 = l1->next;
+        }
+    }
+    pre->next = NULL;
+    return f->next;
+}
+
+ListNode* sortList(ListNode* head) {
+    if(!head || !head->next) return head;
+    ListNode* right = findMiddle(head);
+    return mergeListsHelp(sortList(head), sortList(right));
+}
