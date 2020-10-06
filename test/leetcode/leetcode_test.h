@@ -124,6 +124,7 @@ void test_palinfromePartition();
 //test functions in stack directory
 void test_validParenthess();
 void test_simplifyPath();
+void test_evalPRN();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();

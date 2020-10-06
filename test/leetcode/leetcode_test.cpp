@@ -103,6 +103,7 @@ void initLeetMap(map<string, FUNC>& m) {
     //stack functions
     m["l20"]     = &test_validParenthess;
     m["l71"]     = &test_simplifyPath;
+    m["l150"]    = &test_evalPRN;
 
     //tree functions
     m["l94"]     = &test_inorderTreeTravel;

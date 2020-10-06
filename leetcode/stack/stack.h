@@ -9,10 +9,12 @@
 #include <stack>
 #include <map>
 #include <sstream>
+#include <vector>
 
 using namespace std;
 
 bool isValidParentheses(string s);
 string simplifyPath(string path);
+int evalRPN(vector<string>& tokens);
 
 #endif //ALOGRITHM_STACK_H

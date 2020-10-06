@@ -106,3 +106,44 @@ string simplifyPath(string path) {
     }
     return res.empty()? "/": res;
 }
+
+/*
+ * Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+
+Valid operators are +, -, *, /. Each operand may be an integer or another expression.
+
+Note:
+
+Division between two integers should truncate toward zero.
+The given RPN expression is always valid. That means the expression would always evaluate to a result and there won't be any divide by zero operation.
+Example 1:
+
+Input: ["2", "1", "+", "3", "*"]
+Output: 9
+Explanation: ((2 + 1) * 3) = 9
+Example 2:
+
+Input: ["4", "13", "5", "/", "+"]
+Output: 6
+Explanation: (4 + (13 / 5)) = 6
+
+ */
+
+int evalRPN(vector<string>& tokens) {
+    stack<int> stk;
+    for(int i=0; i<tokens.size(); i++) {
+        if(tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/") {
+            int t1 = stk.top();
+            stk.pop();
+            int t2 = stk.top();
+            stk.pop();
+            if(tokens[i] == "+") stk.push(t2+t1);
+            if(tokens[i] == "-") stk.push(t2-t1);
+            if(tokens[i] == "*") stk.push(t2*t1);
+            if(tokens[i] == "/") stk.push(t2/t1);
+        } else {
+            stk.push(stoi(tokens[i]));
+        }
+    }
+    return stk.top();
+}

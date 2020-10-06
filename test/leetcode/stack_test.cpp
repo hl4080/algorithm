@@ -30,3 +30,16 @@ void test_simplifyPath() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test simplify path end==============="<<endl;
 }
+
+void test_evalPRN() {
+    cout<<"============simple test eval PRN begin============="<<endl;
+    vector<string> tokens{"2", "1", "+", "3", "*"};
+    cout<<"test case: ";
+    printOneDimVec(tokens);
+    int res = evalRPN(tokens), desired = 9;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test eval PRN end==============="<<endl;
+}
