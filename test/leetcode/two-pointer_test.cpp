@@ -211,3 +211,15 @@ void test_mergeSortedArrays() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test merge sorted arrays end==============="<<endl;
 }
+
+void test_reverseWords() {
+    cout<<"============simple test reverse words begin============="<<endl;
+    string s = " hello world ";
+    string res = reverseWords(s), desired = "world hello";
+    cout<<"test case: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse words end==============="<<endl;
+}

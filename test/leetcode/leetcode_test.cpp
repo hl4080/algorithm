@@ -53,6 +53,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l75"]     = &test_sortColors;
     m["l80"]     = &test_removeDeplicateII;
     m["l88"]     = &test_mergeSortedArrays;
+    m["l151"]    = &test_reverseWords;
     m["l202"]    = &test_happyNumber;
 
     //dc functions

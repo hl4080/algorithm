@@ -97,5 +97,6 @@ index   type            name
 147     list            insert sort list
 148     list            sort list
 150     stack           Evaluate Reverse Polish Notation
+151     two-pointer     reverse words in a string
 206     list            reverse list
 202     two-pointer     happy number

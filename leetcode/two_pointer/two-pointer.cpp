@@ -412,3 +412,38 @@ void mergeSortedArrays(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         else nums1[p3--] = nums1[p1--];
     }
 }
+
+/*
+ * Given an input string s, reverse the order of the words.
+
+A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
+
+Return a string of the words in reverse order concatenated by a single space.
+
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+
+Example 1:
+
+Input: s = "the sky is blue"
+Output: "blue is sky the"
+Example 2:
+
+Input: s = "  hello world  "
+Output: "world hello"
+Explanation: Your reversed string should not contain leading or trailing spaces.
+
+ */
+
+string reverseWords(string s) {
+    string res;
+    for(int p2=s.size()-1; p2>=0; ) {
+        while(p2>=0 && s[p2] == ' ') p2--;
+        if(p2<0) break;
+        int p1 = p2;
+        while(p1 >= 0 && s[p1] != ' ') p1--;
+        res += s.substr(p1+1, p2-p1);
+        res += " ";
+        p2 = p1;
+    }
+    return res.substr(0, res.size()-1);
+}

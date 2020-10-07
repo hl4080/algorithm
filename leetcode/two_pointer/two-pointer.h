@@ -23,5 +23,6 @@ vector<vector<int>> mergeIntervals(vector<vector<int>>& intervals);
 void sortColors(vector<int>& nums);
 int removeDeplicatesII(vector<int>& nums);
 void mergeSortedArrays(vector<int>& nums1, int m, vector<int>& nums2, int n);
+string reverseWords(string s);
 
 #endif //TWO_POINTER_H

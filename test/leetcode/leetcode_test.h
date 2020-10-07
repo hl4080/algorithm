@@ -57,6 +57,7 @@ void test_mergeIntervals();
 void test_sortColors();
 void test_removeDeplicateII();
 void test_mergeSortedArrays();
+void test_reverseWords();
 
 //test functions in list directory
 void test_addTwoNumber();
