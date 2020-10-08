@@ -163,3 +163,16 @@ void test_wordBreak() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test word break end==============="<<endl;
 }
+
+void test_maxProductSubarray() {
+    cout<<"============simple test max product subarray begin============="<<endl;
+    vector<int> nums{2,3,-2,4};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = maxProduct(nums), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test max product subarray end==============="<<endl;
+}
