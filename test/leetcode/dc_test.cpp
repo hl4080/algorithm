@@ -160,3 +160,16 @@ void test_searchRotatedSortedArrayII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search rotated sorted array II end==============="<<endl;
 }
+
+void test_findMinSortedArray() {
+    cout<<"============simple test find minimum in sorted array begin============="<<endl;
+    vector<int> nums{4,5,6,7,0,1,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = findMinSortedArray(nums), desired = 0;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find minimum in sorted array end==============="<<endl;
+}

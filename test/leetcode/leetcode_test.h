@@ -85,6 +85,7 @@ void test_searchInsertPosition();
 void test_rotateImage();
 void test_searchMatrix();
 void test_searchRotatedSortedArrayII();
+void test_findMinSortedArray();
 
 //test functions in dp diectory
 void test_longestPalindromic();

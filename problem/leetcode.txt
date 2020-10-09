@@ -99,5 +99,6 @@ index   type            name
 150     stack           Evaluate Reverse Polish Notation
 151     two-pointer     reverse words in a string
 152     dp              max product subarray
+153     dc              find min in sorted array
 206     list            reverse list
 202     two-pointer     happy number

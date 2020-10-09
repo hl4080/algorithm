@@ -17,5 +17,6 @@ int searchInsertPosition(vector<int>& nums, int target);
 void rotateImage(vector<vector<int>>& matrix);
 bool searchMatrix(vector<vector<int>>& matrix, int target);
 bool searchRotatedArrayII(vector<int>& nums, int target);
+int findMinSortedArray(vector<int>& nums);
 
 #endif //ALOGRITHM_DC_H
