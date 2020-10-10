@@ -297,3 +297,23 @@ void test_sortList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sort list end================="<<endl;
 }
+
+void test_interationList() {
+    cout<<"============simple test interaction linked list begin==============="<<endl;
+    vector<int> vec1{4,1,8,4,5};
+    ListNode* head1 = vector2List(vec1);
+    vector<int> vec2{5,6,1};
+    ListNode* head2 = vector2List(vec2);
+    head2->next->next->next = head1->next->next;
+    cout<<"head1: ";
+    printListNode(head1);
+    cout<<"head2: ";
+    printListNode(head2);
+    ListNode* l = getIntersectionNode(head1, head2);
+    int desired = 8;
+    if(l->val == desired) {
+        cout<<"interation at "<<desired<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test interaction linked list end================="<<endl;
+}
