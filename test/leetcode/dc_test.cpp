@@ -173,3 +173,16 @@ void test_findMinSortedArray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find minimum in sorted array end==============="<<endl;
 }
+
+void test_findPeekElement() {
+    cout<<"============simple test find peek element begin============="<<endl;
+    vector<int> nums{1,2,3,1};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = findPeakElement(nums), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find peek element end==============="<<endl;
+}
