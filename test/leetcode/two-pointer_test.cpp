@@ -223,3 +223,17 @@ void test_reverseWords() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse words end==============="<<endl;
 }
+
+void test_compareVersion() {
+    cout<<"============simple test compare versions begin============="<<endl;
+    string version1 = "1.01", version2 = "1.001";
+    int res = compareVersion(version1, version2), desired = 0;
+    cout<<"test case: "<<endl;
+    cout<<"version 1: "<<version1<<endl;
+    cout<<"version 2: "<<version2<<endl;
+    if(res == desired) {
+        cout<<"result of test case :"<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test compare versions end==============="<<endl;
+}
