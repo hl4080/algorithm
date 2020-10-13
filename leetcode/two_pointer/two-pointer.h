@@ -25,5 +25,6 @@ int removeDeplicatesII(vector<int>& nums);
 void mergeSortedArrays(vector<int>& nums1, int m, vector<int>& nums2, int n);
 string reverseWords(string s);
 int compareVersion(string version1, string version2);
+vector<int> twoSumII(vector<int>& numbers, int target);
 
 #endif //TWO_POINTER_H

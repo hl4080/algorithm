@@ -59,6 +59,7 @@ void test_removeDeplicateII();
 void test_mergeSortedArrays();
 void test_reverseWords();
 void test_compareVersion();
+void test_twoSumII();
 
 //test functions in list directory
 void test_addTwoNumber();

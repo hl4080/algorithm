@@ -237,3 +237,16 @@ void test_compareVersion() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test compare versions end==============="<<endl;
 }
+
+void test_twoSumII() {
+    cout<<"============simple test two sum II begin============="<<endl;
+    vector<int> nums{2,7,11,18};
+    int target = 9;
+    vector<int> res = twoSumII(nums, target), desired{1,2};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test two sum II end==============="<<endl;
+}
