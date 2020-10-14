@@ -21,5 +21,6 @@ void setZeros(vector<vector<int>>& matrix);
 vector<vector<int>> generatePascalTriangle(int numRows);
 vector<int> getRowPacasalTriangle(int rowIndex);
 int singleNumberII(vector<int>& nums);
+int majorityElement(vector<int>& nums);
 
 #endif //MATH_H

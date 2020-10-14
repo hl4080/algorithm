@@ -181,3 +181,16 @@ void test_singlenumberII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test single number II end==============="<<endl;
 }
+
+void test_majorityElement() {
+    cout<<"============simple test majority element begin============="<<endl;
+    vector<int> nums{2,2,1,1,1,2,2};
+    int res = majorityElement(nums), desired = 2;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test majority element end==============="<<endl;
+}
