@@ -194,3 +194,15 @@ void test_majorityElement() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test majority element end==============="<<endl;
 }
+
+void test_trailingZeros() {
+    cout<<"============simple test trailing zeros begin============="<<endl;
+    int n= 30;
+    int res = trailingZeroes(n), desired = 7;
+    cout<<"test case: n="<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test trailing zeros end==============="<<endl;
+}

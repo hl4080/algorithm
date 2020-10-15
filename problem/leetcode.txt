@@ -105,5 +105,6 @@ index   type            name
 165     two-pointer     compare version numbers
 167     two-pointer     two sum II
 169     math            majority element
+172     math            trailing zeros
 206     list            reverse list
 202     two-pointer     happy number

@@ -22,5 +22,6 @@ vector<vector<int>> generatePascalTriangle(int numRows);
 vector<int> getRowPacasalTriangle(int rowIndex);
 int singleNumberII(vector<int>& nums);
 int majorityElement(vector<int>& nums);
+int trailingZeroes(int n);
 
 #endif //MATH_H

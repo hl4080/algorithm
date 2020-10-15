@@ -42,6 +42,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l119"]    = &test_getRowPascalTriangle;
     m["l137"]    = &test_singlenumberII;
     m["l169"]    = &test_majorityElement;
+    m["l172"]    = &test_trailingZeros;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
