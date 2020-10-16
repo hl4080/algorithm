@@ -106,5 +106,6 @@ index   type            name
 167     two-pointer     two sum II
 169     math            majority element
 172     math            trailing zeros
+179     math            largest number
 206     list            reverse list
 202     two-pointer     happy number

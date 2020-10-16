@@ -45,6 +45,7 @@ void test_getRowPascalTriangle();
 void test_singlenumberII();
 void test_majorityElement();
 void test_trailingZeros();
+void test_largestNumber();
 
 //test functions in two-pointers directory
 void test_happyNumber();

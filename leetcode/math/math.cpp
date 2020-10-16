@@ -396,3 +396,40 @@ int trailingZeroes(int n) {
     }
     return res;
 }
+
+/*
+ * Given a list of non-negative integers nums, arrange them such that they form the largest number.
+
+Note: The result may be very large, so you need to return a string instead of an integer.
+
+ 
+
+Example 1:
+
+Input: nums = [10,2]
+Output: "210"
+Example 2:
+
+Input: nums = [3,30,34,5,9]
+Output: "9534330"
+
+ */
+
+static bool compare(const string& s1, const string& s2)
+{
+    string ab = s1 + s2;
+    string ba = s2 + s1;
+    return ab > ba;
+}
+
+string largestNumberCombine(vector<int>& nums) {
+    vector<string> vec;
+    string s;
+    for(int i=0; i<nums.size(); i++)
+        vec.push_back(to_string(nums[i]));
+    sort(vec.begin(), vec.end(), compare);
+    if(vec[0] == "0") return "0";
+    for(int i=0; i<vec.size(); i++)
+        s += vec[i];
+    return s;
+}

@@ -206,3 +206,16 @@ void test_trailingZeros() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test trailing zeros end==============="<<endl;
 }
+
+void test_largestNumber() {
+    cout<<"============simple test largets number begin============="<<endl;
+    vector<int> nums{3, 30, 34, 5, 9};
+    string res = largestNumberCombine(nums), desired = "9534330";
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test largets number end==============="<<endl;
+}

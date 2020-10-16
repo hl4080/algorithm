@@ -43,6 +43,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l137"]    = &test_singlenumberII;
     m["l169"]    = &test_majorityElement;
     m["l172"]    = &test_trailingZeros;
+    m["l179"]    = &test_largestNumber;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
