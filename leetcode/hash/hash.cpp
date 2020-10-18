@@ -187,3 +187,40 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
     }
     return res;
 }
+
+/*
+ * All DNA is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T', for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
+
+Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
+
+ 
+
+Example 1:
+
+Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+Output: ["AAAAACCCCC","CCCCCAAAAA"]
+
+ */
+
+vector<string> findRepeatedDnaSequences(string s) {
+    vector<string> res;
+    if(s.size() < 10) return res;
+    map<char, int> m{{'A', 0}, {'C', 1}, {'G', 2}, {'T', 3}};
+    map<int, int> hash;
+    long val = 0;
+    for(int i=0; i<=s.size()-10; i++) {
+        if(i==0) {
+            for(int j=0; j<10; j++) {
+                val = val<<2;
+                val += m[s[j]];
+            }
+        } else {
+            val = val<<2;
+            val += m[s[i+9]];
+            val &= ~(3<<20);
+        }
+        if(hash.count(val)) res.push_back(s.substr(i, 10));
+        hash[val] = 1;
+    }
+    return res;
+}

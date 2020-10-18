@@ -107,5 +107,6 @@ index   type            name
 169     math            majority element
 172     math            trailing zeros
 179     math            largest number
+187     hash            repeated DNA Sequence
 206     list            reverse list
 202     two-pointer     happy number

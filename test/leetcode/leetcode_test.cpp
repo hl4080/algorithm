@@ -10,6 +10,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l13"]  = &test_romanToInt;
     m["l36"]  = &test_validSudoku;
     m["l49"]  = &test_groupAnagroups;
+    m["l187"] = &test_findRepeatDnaSequence;
 
     //list functions
     m["l2"]      = &test_addTwoNumber;

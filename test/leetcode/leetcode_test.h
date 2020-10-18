@@ -31,6 +31,7 @@ void test_twoSum();
 void test_romanToInt();
 void test_validSudoku();
 void test_groupAnagroups();
+void test_findRepeatDnaSequence();
 
 //test functions in math directory
 void test_singleNumber();

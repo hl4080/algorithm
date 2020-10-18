@@ -96,3 +96,16 @@ void test_groupAnagroups() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test group-anagroups end==============="<<endl;
 }
+
+void test_findRepeatDnaSequence() {
+    cout<<"============simple test find repeat dns sequence begin============="<<endl;
+    string s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
+    vector<string> res = findRepeatedDnaSequences(s), desired = {"AAAAACCCCC","CCCCCAAAAA"};
+    cout<<"test case: "<<s<<endl;
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find repeat dns sequence end==============="<<endl;
+}
