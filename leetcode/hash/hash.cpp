@@ -203,10 +203,10 @@ Output: ["AAAAACCCCC","CCCCCAAAAA"]
  */
 
 vector<string> findRepeatedDnaSequences(string s) {
-    vector<string> res;
-    if(s.size() < 10) return res;
+    set<string> res;
+    if(s.size() < 10) return vector<string>{};
     map<char, int> m{{'A', 0}, {'C', 1}, {'G', 2}, {'T', 3}};
-    map<int, int> hash;
+    set<int> st;
     long val = 0;
     for(int i=0; i<=s.size()-10; i++) {
         if(i==0) {
@@ -219,8 +219,11 @@ vector<string> findRepeatedDnaSequences(string s) {
             val += m[s[i+9]];
             val &= ~(3<<20);
         }
-        if(hash.count(val)) res.push_back(s.substr(i, 10));
-        hash[val] = 1;
+        if(st.count(val))
+            res.insert(s.substr(i, 10));
+        st.insert(val);
     }
-    return res;
+    vector<string> repeated;
+    repeated.assign(res.begin(), res.end());
+    return repeated;
 }

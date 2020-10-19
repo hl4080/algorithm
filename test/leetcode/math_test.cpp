@@ -219,3 +219,21 @@ void test_largestNumber() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test largets number end==============="<<endl;
 }
+
+void test_rotateArray() {
+    cout<<"============simple test rotate array begin============="<<endl;
+    vector<int> nums{1,2,3,4,5,6};
+    int k= 3;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"K: "<<k<<endl;
+    vector<int> desired{4,5,6,1,2,3};
+    rotateArray(nums,k);
+    if(desired == nums) {
+        cout<<"result of test case: ";
+        printOneDimVec(desired);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test rotate array end==============="<<endl;
+}

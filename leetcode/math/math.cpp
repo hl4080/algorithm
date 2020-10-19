@@ -433,3 +433,20 @@ string largestNumberCombine(vector<int>& nums) {
         s += vec[i];
     return s;
 }
+
+
+
+void rotateArray(vector<int>& nums, int k) {
+    k = k%nums.size();
+    int count = 0;
+    for(int i=0; count < nums.size(); i++) {
+        int start = i, tmp = nums[i];
+        do {
+            start = (start + k) % nums.size();
+            int tm = nums[start];
+            nums[start] = tmp;
+            tmp = tm;
+            count++;
+        } while(start != i);
+    }
+}

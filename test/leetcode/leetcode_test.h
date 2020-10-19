@@ -47,6 +47,7 @@ void test_singlenumberII();
 void test_majorityElement();
 void test_trailingZeros();
 void test_largestNumber();
+void test_rotateArray();
 
 //test functions in two-pointers directory
 void test_happyNumber();

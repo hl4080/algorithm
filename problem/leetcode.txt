@@ -108,5 +108,6 @@ index   type            name
 172     math            trailing zeros
 179     math            largest number
 187     hash            repeated DNA Sequence
+189     math            rotate array
 206     list            reverse list
 202     two-pointer     happy number

@@ -24,5 +24,6 @@ int singleNumberII(vector<int>& nums);
 int majorityElement(vector<int>& nums);
 int trailingZeroes(int n);
 string largestNumberCombine(vector<int>& nums);
+void rotateArray(vector<int>& nums, int k);
 
 #endif //MATH_H

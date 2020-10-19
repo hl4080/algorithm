@@ -45,6 +45,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l169"]    = &test_majorityElement;
     m["l172"]    = &test_trailingZeros;
     m["l179"]    = &test_largestNumber;
+    m["l189"]    = &test_rotateArray;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
