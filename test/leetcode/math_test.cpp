@@ -237,3 +237,15 @@ void test_rotateArray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test rotate array end==============="<<endl;
 }
+
+void test_reverseBits() {
+    cout<<"============simple test reverse bits begin============="<<endl;
+    uint32_t n = 43261596;
+    uint32_t res = reverseBits(n), desired = 964176192;
+    cout<<"test case: "<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse bits end==============="<<endl;
+}

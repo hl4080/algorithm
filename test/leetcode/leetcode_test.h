@@ -48,6 +48,7 @@ void test_majorityElement();
 void test_trailingZeros();
 void test_largestNumber();
 void test_rotateArray();
+void test_reverseBits();
 
 //test functions in two-pointers directory
 void test_happyNumber();
