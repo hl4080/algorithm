@@ -249,3 +249,15 @@ void test_reverseBits() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse bits end==============="<<endl;
 }
+
+void test_hammingWeight() {
+    cout<<"============simple test hamming weight begin============="<<endl;
+    uint32_t n = 11;
+    int res = hammingWeight(n), desired = 3;
+    cout<<"test case: n: "<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: FAILED"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test hamming weight end==============="<<endl;
+}

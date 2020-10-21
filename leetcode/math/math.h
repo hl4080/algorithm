@@ -26,5 +26,6 @@ int trailingZeroes(int n);
 string largestNumberCombine(vector<int>& nums);
 void rotateArray(vector<int>& nums, int k);
 uint32_t reverseBits(uint32_t n);
+int hammingWeight(uint32_t n);
 
 #endif //MATH_H
