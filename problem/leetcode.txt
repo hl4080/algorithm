@@ -111,5 +111,6 @@ index   type            name
 189     math            rotate array
 190     math            reverse bits
 191     math            number of 1 bits
+198     dp              house rob
 206     list            reverse list
 202     two-pointer     happy number

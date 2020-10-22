@@ -176,3 +176,16 @@ void test_maxProductSubarray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max product subarray end==============="<<endl;
 }
+
+void test_houseRob() {
+    cout<<"============simple test house rob begin============="<<endl;
+    vector<int> nums{2,1,1,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = houseRob(nums), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test house rob end==============="<<endl;
+}

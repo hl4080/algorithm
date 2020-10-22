@@ -23,5 +23,6 @@ int maxProfitI(vector<int>& prices);
 int maxProfitII(vector<int>& prices);
 bool wordBreak(string s, vector<string>& wordDict);
 int maxProduct(vector<int>& nums);
+int houseRob(vector<int>& nums);
 
 #endif //ALOGRITHM_DP_H

@@ -111,6 +111,7 @@ void test_maxProfitI();
 void test_maxProfitII();
 void test_wordBreak();
 void test_maxProductSubarray();
+void test_houseRob();
 
 //test functions in greedy directory
 void test_intToRoman();
