@@ -652,3 +652,39 @@ int sumToLeafNumbers(TreeNode* root) {
     int path = 0;
     return sumToLeafNumbersHelp(root, path);
 }
+
+/*
+ * Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+Example:
+
+Input: [1,2,3,null,5,null,4]
+Output: [1, 3, 4]
+Explanation:
+
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+
+ */
+vector<int> rightSideView(TreeNode* root) {
+    vector<int> res;
+    if(!root) return res;
+    queue<TreeNode*> q;
+    q.push(root);
+    while(!q.empty()) {
+        vector<TreeNode*> tmp;
+        while(!q.empty()) {
+            tmp.push_back(q.front());
+            q.pop();
+        }
+        res.push_back(tmp[tmp.size()-1]->val);
+        for(int i=0; i< tmp.size(); i++) {
+            if(tmp[i]->left) q.push(tmp[i]->left);
+            if(tmp[i]->right) q.push(tmp[i]->right);
+        }
+    }
+    return res;
+}

@@ -288,3 +288,18 @@ void test_sumRootToLeaf() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sum root to leaf node end==============="<<endl;
 }
+
+void test_rightSideView() {
+    cout<<"============simple test right side view begin============="<<endl;
+    vector<int> vec{-1,2,5,1,-1,3,4};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case:"<<endl;
+    printTree(root);
+    vector<int> res = rightSideView(root), desired{1,3,4};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test right side view end==============="<<endl;
+}

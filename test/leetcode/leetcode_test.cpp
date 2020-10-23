@@ -139,6 +139,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l113"]    = &test_pathSum;
     m["l114"]    = &test_flattenTree;
     m["l129"]    = &test_sumRootToLeaf;
+    m["l199"]    = &test_rightSideView;
 
     //graph functions
     m["l127"]    = &test_ladderLength;
