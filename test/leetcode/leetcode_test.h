@@ -135,6 +135,7 @@ void test_restoreIpAddr();
 void test_minPathTriangle();
 void test_surroundRegions();
 void test_palinfromePartition();
+void test_numIsland();
 
 //test functions in stack directory
 void test_validParenthess();

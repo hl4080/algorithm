@@ -683,3 +683,43 @@ vector<vector<string>> palindromePartition(string s) {
     palindromePartitionHelp(s, dp, res, piece, 0, len);
     return res;
 }
+
+/*
+ * Given an m x n 2d grid map of '1's (land) and '0's (water), return the number of islands.
+
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+ You may assume all four edges of the grid are all surrounded by water.
+
+Example 1:
+
+Input: grid = [
+  ["1","1","1","1","0"],
+  ["1","1","0","1","0"],
+  ["1","1","0","0","0"],
+  ["0","0","0","0","0"]
+]
+Output: 1
+
+ */
+void numIslandsHelp(vector<vector<char>>& grid, int i, int j) {
+    grid[i][j] = '0';
+    if(i>0 && grid[i-1][j] == '1') numIslandsHelp(grid, i-1, j);
+    if(i<grid.size()-1 && grid[i+1][j]=='1') numIslandsHelp(grid, i+1, j);
+    if(j>0 && grid[i][j-1] == '1') numIslandsHelp(grid, i, j-1);
+    if(j<grid[0].size()-1 && grid[i][j+1]=='1') numIslandsHelp(grid, i, j+1);
+}
+
+int numIslands(vector<vector<char>>& grid) {
+    int num = 0;
+    if(grid.empty()) return num;
+    int m = grid.size(), n = grid[0].size();
+    for(int i=0; i<m; i++) {
+        for(int j=0; j<n; j++) {
+            if(grid[i][j] == '1') {
+                numIslandsHelp(grid, i, j);
+                num++;
+            }
+        }
+    }
+    return num;
+}

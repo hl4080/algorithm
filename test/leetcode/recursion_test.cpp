@@ -296,3 +296,21 @@ void test_palinfromePartition() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test palindrome partition end==============="<<endl;
 }
+
+void test_numIsland() {
+    cout<<"============simple test num island begin============="<<endl;
+    vector<vector<char>> grid{
+            {'1','1','0','0','0'},
+            {'1','1','0','0','0'},
+            {'0','0','1','0','0'},
+            {'0','0','0','1','1'}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(grid);
+    int res = numIslands(grid), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test num island end==============="<<endl;
+}

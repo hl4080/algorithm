@@ -114,6 +114,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l120"]    = &test_minPathTriangle;
     m["l130"]    = &test_surroundRegions;
     m["l131"]    = &test_palinfromePartition;
+    m["l200"]    = &test_numIsland;
 
     //stack functions
     m["l20"]     = &test_validParenthess;

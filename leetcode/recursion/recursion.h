@@ -26,5 +26,6 @@ vector<string> restoreIpAddresses(string s);
 int minPathTriangle(vector<vector<int>>& triangle);
 void surroundRegions(vector<vector<char>>& board);
 vector<vector<string>> palindromePartition(string s);
+int numIslands(vector<vector<char>>& grid);
 
 #endif //ALOGRITHM_RECURSION_H
