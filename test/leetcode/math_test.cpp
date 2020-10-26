@@ -261,3 +261,15 @@ void test_hammingWeight() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test hamming weight end==============="<<endl;
 }
+
+void test_rangeBitwiseAnd() {
+    cout<<"============simple test range bitwise and begin============="<<endl;
+    int m=5, n=7;
+    int res = rangeBitwiseAnd(m, n), desired = 4;
+    cout<<"test case: m="<<m<<" n="<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test range bitwise and end==============="<<endl;
+}

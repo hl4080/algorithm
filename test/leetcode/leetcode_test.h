@@ -50,6 +50,7 @@ void test_largestNumber();
 void test_rotateArray();
 void test_reverseBits();
 void test_hammingWeight();
+void test_rangeBitwiseAnd();
 
 //test functions in two-pointers directory
 void test_happyNumber();
