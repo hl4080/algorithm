@@ -115,5 +115,6 @@ index   type            name
 199     tree            binary tree right side view
 200     recursion       num of islands
 201     math            range bitwise and
-206     list            reverse list
+203     list            remove elements
 202     two-pointer     happy number
+206     list            reverse list

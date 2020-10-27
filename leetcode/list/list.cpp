@@ -563,3 +563,24 @@ ListNode* getIntersectionNode(ListNode *headA, ListNode *headB) {
     }
     return p1;
 }
+
+/*
+ * Remove all elements from a linked list of integers that have value val.
+
+Example:
+
+Input:  1->2->6->3->4->5->6, val = 6
+Output: 1->2->3->4->5
+
+ */
+
+ListNode* removeElements(ListNode* head, int val) {
+    ListNode* pre = new ListNode(0);
+    pre->next = head;
+    ListNode* res = pre;
+    while(pre) {
+        while(pre->next && pre->next->val == val) pre->next = pre->next->next;
+        pre = pre->next;
+    }
+    return res->next;
+}

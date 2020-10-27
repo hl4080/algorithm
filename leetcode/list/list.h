@@ -25,5 +25,6 @@ void reorderList(ListNode* head);
 ListNode* insertionSortList(ListNode* head);
 ListNode* sortList(ListNode* head);
 ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
+ListNode* removeElements(ListNode* head, int val);
 
 #endif //LIST_H

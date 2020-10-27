@@ -317,3 +317,21 @@ void test_interationList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test interaction linked list end================="<<endl;
 }
+
+void test_removeElements() {
+    cout<<"============simple test remove elements begin==============="<<endl;
+    vector<int> vec{1,2,6,3,4,5,6};
+    ListNode* head = vector2List(vec);
+    int val = 6;
+    cout<<"head: ";
+    printListNode(head);
+    cout<<"val="<<val<<endl;
+    ListNode* l = removeElements(head, val);
+    vector<int> res = list2Vector(l), desired{1,2,3,4,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove elements end================="<<endl;
+}
