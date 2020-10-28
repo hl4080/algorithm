@@ -50,6 +50,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l190"]    = &test_reverseBits;
     m["l191"]    = &test_hammingWeight;
     m["l201"]    = &test_rangeBitwiseAnd;
+    m["l204"]    = &test_countPrimes;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

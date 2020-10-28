@@ -28,5 +28,6 @@ void rotateArray(vector<int>& nums, int k);
 uint32_t reverseBits(uint32_t n);
 int hammingWeight(uint32_t n);
 int rangeBitwiseAnd(int m, int n);
+int countPrimes(int n);
 
 #endif //MATH_H

@@ -273,3 +273,15 @@ void test_rangeBitwiseAnd() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test range bitwise and end==============="<<endl;
 }
+
+void test_countPrimes() {
+    cout<<"============simple test count prime begin============="<<endl;
+    int n = 10;
+    int res = countPrimes(n), desired = 4;
+    cout<<"test case: "<<n<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test count prime end==============="<<endl;
+}

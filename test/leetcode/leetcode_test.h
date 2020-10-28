@@ -51,6 +51,7 @@ void test_rotateArray();
 void test_reverseBits();
 void test_hammingWeight();
 void test_rangeBitwiseAnd();
+void test_countPrimes();
 
 //test functions in two-pointers directory
 void test_happyNumber();
