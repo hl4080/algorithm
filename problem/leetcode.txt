@@ -118,4 +118,5 @@ index   type            name
 202     two-pointer     happy number
 203     list            remove elements
 204     math            count primes
+205     hash            is isomorphic
 206     list            reverse list

@@ -109,3 +109,16 @@ void test_findRepeatDnaSequence() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find repeat dns sequence end==============="<<endl;
 }
+
+void test_isIsomorphic() {
+    cout<<"============simple test is isomorphic begin============="<<endl;
+    string s = "egg", t = "add";
+    cout<<"test case: "<<endl;
+    cout<<"s: "<<s<<" "<<"t: "<<t<<endl;
+    bool res = isIsomorphic(s, t), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is isomorphic end==============="<<endl;
+}

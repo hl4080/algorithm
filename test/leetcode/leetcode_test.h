@@ -32,6 +32,7 @@ void test_romanToInt();
 void test_validSudoku();
 void test_groupAnagroups();
 void test_findRepeatDnaSequence();
+void test_isIsomorphic();
 
 //test functions in math directory
 void test_singleNumber();
