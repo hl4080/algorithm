@@ -120,3 +120,4 @@ index   type            name
 204     math            count primes
 205     hash            is isomorphic
 206     list            reverse list
+207     graph           course schedule

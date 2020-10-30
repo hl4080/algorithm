@@ -20,3 +20,18 @@ void test_ladderLength() {
     cout<<"============simple test ladder length end==============="<<endl;
 }
 
+void test_courseSchedule() {
+    cout<<"============simple test course schedule begin============="<<endl;
+    int numCourses = 2;
+    vector<vector<int>> prerequisites{{1,0}, {0,1}};
+    cout<<"test case: "<<endl;
+    cout<<"numCourses: "<<numCourses<<endl;
+    cout<<"prerequisites: "<<endl;
+    printTwoDimVec(prerequisites);
+    bool res = courseSchedule(numCourses, prerequisites), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test course schedule begin============="<<endl;
+}
