@@ -250,3 +250,19 @@ void test_twoSumII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test two sum II end==============="<<endl;
 }
+
+void test_minSubarrayLen() {
+    cout<<"============simple test min subarray len begin============="<<endl;
+    int s = 7;
+    vector<int> nums{2,3,1,2,4,3};
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"s = "<<s<<endl;
+    int res = minSubArrayLen(s, nums), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST SATUS: FAILED"<<endl;
+    cout<<"============simple test min subarray len end==============="<<endl;
+}
