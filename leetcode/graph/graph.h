@@ -16,6 +16,7 @@ using namespace std;
 int ladderLength(string beginWord, string endWord, vector<string>& wordList);
 Node* cloneGraph(Node* node);
 bool courseSchedule(int numCourses, vector<vector<int>>& prerequisites);
+vector<int> courseScheduleII(int numCourses, vector<vector<int>>& prerequisites);
 
 
 #endif //ALOGRITHM_GRAPH_H

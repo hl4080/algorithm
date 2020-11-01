@@ -35,3 +35,20 @@ void test_courseSchedule() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test course schedule begin============="<<endl;
 }
+
+void test_courseScheduleII() {
+    cout<<"============simple test course schedule II begin============="<<endl;
+    int numCourses = 4;
+    vector<vector<int>> prerequisites{{1,0}, {2,0}, {3,1}, {3,2}};
+    cout<<"test case: "<<endl;
+    cout<<"numCourses: "<<numCourses<<endl;
+    cout<<"prerequisites: ";
+    printTwoDimVec(prerequisites);
+    vector<int> res = courseScheduleII(numCourses, prerequisites), desired{0,1,2,3};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test course schedule II end==============="<<endl;
+}

@@ -171,5 +171,6 @@ void test_rightSideView();
 //functions in graph directory
 void test_ladderLength();
 void test_courseSchedule();
+void test_courseScheduleII();
 
 #endif //LEETCODE_TEST_H

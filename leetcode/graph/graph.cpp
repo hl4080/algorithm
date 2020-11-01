@@ -152,3 +152,43 @@ bool courseSchedule(int numCourses, vector<vector<int>>& prerequisites) {
     }
     return numRes == numCourses;
 }
+
+/*
+ * There are a total of n courses you have to take labelled from 0 to n - 1.
+
+Some courses may have prerequisites, for example, if prerequisites[i] = [ai, bi] this means you must take the course bi before the course ai.
+
+Given the total number of courses numCourses and a list of the prerequisite pairs, return the ordering of courses you should take to finish all courses.
+
+If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
+
+Example 1:
+
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: [0,1]
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+
+ */
+
+vector<int> courseScheduleII(int numCourses, vector<vector<int>>& prerequisites) {
+    vector<vector<int>> adj(numCourses, vector<int>());
+    vector<int> res;
+    vector<int> inDegree(numCourses, 0);
+    queue<int> q;
+    for(int i=0; i<prerequisites.size(); i++) {
+        inDegree[prerequisites[i][0]]++;
+        adj[prerequisites[i][1]].push_back(prerequisites[i][0]);
+    }
+    for(int i=0; i<inDegree.size(); i++)
+        if(!inDegree[i]) q.push(i);
+    while(!q.empty()) {
+        int node = q.front();
+        res.push_back(node);
+        q.pop();
+        for(int i=0; i<adj[node].size(); i++) {
+            inDegree[adj[node][i]]--;
+            if(!inDegree[adj[node][i]]) q.push(adj[node][i]);
+        }
+    }
+    return res.size() == numCourses? res: vector<int>();
+}

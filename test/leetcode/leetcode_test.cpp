@@ -150,4 +150,5 @@ void initLeetMap(map<string, FUNC>& m) {
     //graph functions
     m["l127"]    = &test_ladderLength;
     m["l207"]    = &test_courseSchedule;
+    m["l210"]    = &test_courseScheduleII;
 }
