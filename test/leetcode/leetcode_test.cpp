@@ -95,6 +95,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l139"]    = &test_wordBreak;
     m["l152"]    = &test_maxProductSubarray;
     m["l198"]    = &test_houseRob;
+    m["l213"]    = &test_houseRobII;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

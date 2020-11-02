@@ -189,3 +189,16 @@ void test_houseRob() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test house rob end==============="<<endl;
 }
+
+void test_houseRobII() {
+    cout<<"============simple test house rob II begin============="<<endl;
+    vector<int> nums{1,3,1,3,100};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = houseRobII(nums), desired = 103;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test house rob II end==============="<<endl;
+}
