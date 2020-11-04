@@ -102,6 +102,7 @@ void test_searchMatrix();
 void test_searchRotatedSortedArrayII();
 void test_findMinSortedArray();
 void test_findPeekElement();
+void test_findKLargest();
 
 //test functions in dp diectory
 void test_longestPalindromic();

@@ -19,5 +19,6 @@ bool searchMatrix(vector<vector<int>>& matrix, int target);
 bool searchRotatedArrayII(vector<int>& nums, int target);
 int findMinSortedArray(vector<int>& nums);
 int findPeakElement(vector<int>& nums);
+int findKthLargest(vector<int>& nums, int k);
 
 #endif //ALOGRITHM_DC_H

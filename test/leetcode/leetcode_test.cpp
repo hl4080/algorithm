@@ -81,6 +81,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l81"]     = &test_searchRotatedSortedArrayII;
     m["l153"]    = &test_findMinSortedArray;
     m["l162"]    = &test_findPeekElement;
+    m["l215"]    = &test_findKLargest;
 
     //dp functions
     m["l5"]      = &test_longestPalindromic;

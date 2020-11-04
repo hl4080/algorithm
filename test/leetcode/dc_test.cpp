@@ -186,3 +186,19 @@ void test_findPeekElement() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find peek element end==============="<<endl;
 }
+
+void test_findKLargest() {
+    cout<<"============simple test find kth largest element begin============="<<endl;
+    vector<int> nums{3,2,1,5,6,4};
+    int k = 2;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"k="<<k<<endl;
+    int res = findKthLargest(nums, k), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find kth largest element end==============="<<endl;
+}
