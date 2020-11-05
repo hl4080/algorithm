@@ -314,3 +314,21 @@ void test_numIsland() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test num island end==============="<<endl;
 }
+
+void test_combinationSum3() {
+    cout<<"============simple test combination sum 3 begin============="<<endl;
+    int n = 9, k = 3;
+    vector<vector<int>> res = combinationSum3(k, n);
+    vector<vector<int>> desired{
+            {1,2,6},
+            {1,3,5},
+            {2,3,4}
+    };
+    cout<<"test case: n="<<n<<", k="<<k<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test combination sum 3 end==============="<<endl;
+}

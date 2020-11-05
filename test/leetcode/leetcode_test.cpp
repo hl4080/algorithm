@@ -122,6 +122,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l130"]    = &test_surroundRegions;
     m["l131"]    = &test_palinfromePartition;
     m["l200"]    = &test_numIsland;
+    m["l216"]    = &test_combinationSum3;
 
     //stack functions
     m["l20"]     = &test_validParenthess;

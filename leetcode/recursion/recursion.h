@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <numeric>
 
 using namespace std;
 
@@ -27,5 +28,6 @@ int minPathTriangle(vector<vector<int>>& triangle);
 void surroundRegions(vector<vector<char>>& board);
 vector<vector<string>> palindromePartition(string s);
 int numIslands(vector<vector<char>>& grid);
+vector<vector<int>> combinationSum3(int k, int n);
 
 #endif //ALOGRITHM_RECURSION_H

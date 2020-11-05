@@ -143,6 +143,7 @@ void test_minPathTriangle();
 void test_surroundRegions();
 void test_palinfromePartition();
 void test_numIsland();
+void test_combinationSum3();
 
 //test functions in stack directory
 void test_validParenthess();
