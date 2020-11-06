@@ -17,5 +17,6 @@ bool isValidSudoku(vector<vector<char>>& board);
 vector<vector<string>> groupAnagrams(vector<string>& strs);
 vector<string> findRepeatedDnaSequences(string s);
 bool isIsomorphic(string s, string t);
+bool containsDuplicate(vector<int>& nums);
 
 #endif //ALGORITHM_HASH_H

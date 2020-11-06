@@ -255,3 +255,24 @@ bool isIsomorphic(string s, string t) {
         if(m1[s[i]] != m2[t[i]]) return false;
     return true;
 }
+
+/*
+ * Given an array of integers, find if the array contains any duplicates.
+
+Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+Example 1:
+
+Input: [1,2,3,1]
+Output: true
+
+ */
+
+bool containsDuplicate(vector<int>& nums) {
+    map<int, bool> m;
+    for(int i=0; i<nums.size(); i++) {
+        if(m.count(nums[i])) return true;
+        m[nums[i]] = true;
+    }
+    return false;
+}

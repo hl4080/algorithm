@@ -122,3 +122,16 @@ void test_isIsomorphic() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is isomorphic end==============="<<endl;
 }
+
+void test_containDuplicate() {
+    cout<<"============simple test contain duplicate begin============="<<endl;
+    vector<int> nums{1,2,3,1};
+    bool res = containsDuplicate(nums), desired = true;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test contain duplicate end==============="<<endl;
+}
