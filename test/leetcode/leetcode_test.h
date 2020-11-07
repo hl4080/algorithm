@@ -34,6 +34,7 @@ void test_groupAnagroups();
 void test_findRepeatDnaSequence();
 void test_isIsomorphic();
 void test_containDuplicate();
+void test_containDuplicatesII();
 
 //test functions in math directory
 void test_singleNumber();

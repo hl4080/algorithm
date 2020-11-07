@@ -18,5 +18,6 @@ vector<vector<string>> groupAnagrams(vector<string>& strs);
 vector<string> findRepeatedDnaSequences(string s);
 bool isIsomorphic(string s, string t);
 bool containsDuplicate(vector<int>& nums);
+bool containsNearbyDuplicate(vector<int>& nums, int k);
 
 #endif //ALGORITHM_HASH_H

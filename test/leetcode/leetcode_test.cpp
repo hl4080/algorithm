@@ -13,6 +13,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l187"] = &test_findRepeatDnaSequence;
     m["l205"] = &test_isIsomorphic;
     m["l217"] = &test_containDuplicate;
+    m["l219"] = &test_containDuplicatesII;
 
     //list functions
     m["l2"]      = &test_addTwoNumber;

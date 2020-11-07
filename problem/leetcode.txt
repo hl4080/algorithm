@@ -125,3 +125,6 @@ index   type            name
 210     graph           course schedule II
 213     dp              house rob II
 215     dc              Kth largest element in an array
+216     recursion       combination sum III
+217     hash            contain duplicates
+219     hash            contain duplicates II
