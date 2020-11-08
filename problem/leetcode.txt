@@ -128,3 +128,4 @@ index   type            name
 216     recursion       combination sum III
 217     hash            contain duplicates
 219     hash            contain duplicates II
+220     hash            contain duplicates III

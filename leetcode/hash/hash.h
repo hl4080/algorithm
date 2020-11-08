@@ -19,5 +19,6 @@ vector<string> findRepeatedDnaSequences(string s);
 bool isIsomorphic(string s, string t);
 bool containsDuplicate(vector<int>& nums);
 bool containsNearbyDuplicate(vector<int>& nums, int k);
+bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
 
 #endif //ALGORITHM_HASH_H

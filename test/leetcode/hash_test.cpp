@@ -151,3 +151,19 @@ void test_containDuplicatesII() {
     }else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test contain duplicate II end==============="<<endl;
 }
+
+void test_containduplicateIII() {
+    cout<<"============simple test contain duplicate III begin============="<<endl;
+    vector<int> nums{1,2,3,1};
+    int k = 3, t = 0;
+    bool res = containsNearbyAlmostDuplicate(nums, k, t), desired = true;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"k="<<k<<", t="<<t<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test contain duplicate III end==============="<<endl;
+}
