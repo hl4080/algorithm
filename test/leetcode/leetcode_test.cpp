@@ -100,6 +100,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l152"]    = &test_maxProductSubarray;
     m["l198"]    = &test_houseRob;
     m["l213"]    = &test_houseRobII;
+    m["l221"]    = &test_maximalSquare;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

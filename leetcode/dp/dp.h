@@ -25,5 +25,6 @@ bool wordBreak(string s, vector<string>& wordDict);
 int maxProduct(vector<int>& nums);
 int houseRob(vector<int>& nums);
 int houseRobII(vector<int>& nums);
+int maximalSquare(vector<vector<char>>& matrix);
 
 #endif //ALOGRITHM_DP_H

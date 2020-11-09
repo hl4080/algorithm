@@ -202,3 +202,21 @@ void test_houseRobII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test house rob II end==============="<<endl;
 }
+
+void test_maximalSquare() {
+    cout<<"============simple test maximal square begin============="<<endl;
+    vector<vector<char>> matrix{
+            {'1', '0', '1', '0', '0'},
+            {'1', '0', '1', '1', '1'},
+            {'1', '1', '1', '1', '1'},
+            {'1', '0', '0', '1', '0'}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(matrix);
+    int res = maximalSquare(matrix), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test maximal square end==============="<<endl;
+}

@@ -122,6 +122,7 @@ void test_wordBreak();
 void test_maxProductSubarray();
 void test_houseRob();
 void test_houseRobII();
+void test_maximalSquare();
 
 //test functions in greedy directory
 void test_intToRoman();
