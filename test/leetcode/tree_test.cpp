@@ -303,3 +303,17 @@ void test_rightSideView() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test right side view end==============="<<endl;
 }
+
+void test_countNodes() {
+    cout<<"============simple test count nodes begin============="<<endl;
+    vector<int> vec{4,2,5,1,6,3,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int res = countNodes(root), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test count nodes end==============="<<endl;
+}

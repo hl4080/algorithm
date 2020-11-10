@@ -130,3 +130,4 @@ index   type            name
 219     hash            contain duplicates II
 220     hash            contain duplicates III
 221     dp              maximal square
+222     tree            count complete tree nodes

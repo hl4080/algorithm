@@ -9,6 +9,7 @@
 #include <vector>
 #include <queue>
 #include <map>
+#include <cmath>
 
 using namespace std;
 
@@ -31,5 +32,6 @@ vector<vector<int>> pathSum(TreeNode* root, int sum);
 void flattenTree(TreeNode* root);
 int sumToLeafNumbers(TreeNode* root);
 vector<int> rightSideView(TreeNode* root);
+int countNodes(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H
