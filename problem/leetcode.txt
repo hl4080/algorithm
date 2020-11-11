@@ -131,3 +131,4 @@ index   type            name
 220     hash            contain duplicates III
 221     dp              maximal square
 222     tree            count complete tree nodes
+225     stack           implement stack using queue

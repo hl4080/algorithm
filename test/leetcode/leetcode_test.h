@@ -153,6 +153,7 @@ void test_combinationSum3();
 void test_validParenthess();
 void test_simplifyPath();
 void test_evalPRN();
+void test_mystack();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();

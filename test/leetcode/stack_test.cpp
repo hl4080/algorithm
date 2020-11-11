@@ -43,3 +43,18 @@ void test_evalPRN() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test eval PRN end==============="<<endl;
 }
+
+void test_mystack() {
+    cout<<"============simple test my stack begin============="<<endl;
+    MyStack stk = MyStack();
+    stk.push(1);
+    stk.push(2);
+    int p1 = stk.top(), desired1 = 2;
+    int p2 = stk.pop(), desired2 = 2;
+    int t3 = stk.empty(), desired3 = false;
+    if(p1 == desired1 && p2 == desired2 && t3 == desired3) {
+        cout<<"result of test case: push(1), push(2), top()->"<<p1<<", pop()->"<<p2<<", empty()->"<<t3<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test my stack end==============="<<endl;
+}
