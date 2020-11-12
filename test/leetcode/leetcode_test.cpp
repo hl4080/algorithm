@@ -155,6 +155,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l129"]    = &test_sumRootToLeaf;
     m["l199"]    = &test_rightSideView;
     m["l222"]    = &test_countNodes;
+    m["l226"]    = &test_invertBinaryTree;
 
     //graph functions
     m["l127"]    = &test_ladderLength;

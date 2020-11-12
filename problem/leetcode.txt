@@ -132,3 +132,4 @@ index   type            name
 221     dp              maximal square
 222     tree            count complete tree nodes
 225     stack           implement stack using queue
+226     tree            invert binary tree

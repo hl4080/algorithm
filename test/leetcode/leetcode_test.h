@@ -176,6 +176,7 @@ void test_flattenTree();
 void test_sumRootToLeaf();
 void test_rightSideView();
 void test_countNodes();
+void test_invertBinaryTree();
 
 //functions in graph directory
 void test_ladderLength();

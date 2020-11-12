@@ -317,3 +317,20 @@ void test_countNodes() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test count nodes end==============="<<endl;
 }
+
+void test_invertBinaryTree() {
+    cout<<"============simple test invert binary tree begin============="<<endl;
+    vector<int> vec{1,2,3,4,6,7,9};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    TreeNode* res = invertTree(root);
+    vector<int> vec1{9,7,6,4,3,2,1};
+    TreeNode* desired = buildTree(vec1, 0, vec1.size()-1);
+    if(treesEqual(res, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test invert binary tree end==============="<<endl;
+}

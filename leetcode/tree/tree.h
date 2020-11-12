@@ -33,5 +33,6 @@ void flattenTree(TreeNode* root);
 int sumToLeafNumbers(TreeNode* root);
 vector<int> rightSideView(TreeNode* root);
 int countNodes(TreeNode* root);
+TreeNode* invertTree(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H
