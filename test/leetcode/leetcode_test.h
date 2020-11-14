@@ -154,6 +154,7 @@ void test_validParenthess();
 void test_simplifyPath();
 void test_evalPRN();
 void test_mystack();
+void test_calculator();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();

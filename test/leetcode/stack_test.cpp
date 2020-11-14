@@ -58,3 +58,15 @@ void test_mystack() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test my stack end==============="<<endl;
 }
+
+void test_calculator() {
+    cout<<"============simple test calculator begin============="<<endl;
+    string s = " 3+5 / 2 ";
+    cout<<"test case: "<<s<<endl;
+    int res = calculate(s), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test calculator end==============="<<endl;
+}
