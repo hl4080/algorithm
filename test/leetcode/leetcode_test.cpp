@@ -55,6 +55,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l191"]    = &test_hammingWeight;
     m["l201"]    = &test_rangeBitwiseAnd;
     m["l204"]    = &test_countPrimes;
+    m["l229"]    = &test_majorityElementsII;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

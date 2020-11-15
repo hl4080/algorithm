@@ -285,3 +285,17 @@ void test_countPrimes() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test count prime end==============="<<endl;
 }
+
+void test_majorityElementsII() {
+    cout<<"============simple test majority elements II begin============="<<endl;
+    vector<int> nums{3,2,3};
+    vector<int> res = majorityElementII(nums), desired{3};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test majority elements II end==============="<<endl;
+}

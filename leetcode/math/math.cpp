@@ -534,3 +534,57 @@ int countPrimes(int n) {
     }
     return count;
 }
+
+/*
+ * Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
+
+Follow-up: Could you solve the problem in linear time and in O(1) space?
+
+ 
+
+Example 1:
+
+Input: nums = [3,2,3]
+Output: [3]
+Example 2:
+
+Input: nums = [1]
+Output: [1]
+Example 3:
+
+Input: nums = [1,2]
+Output: [1,2]
+
+ */
+
+vector<int> majorityElementII(vector<int>& nums) {
+    if(nums.size()<=1) return nums;
+    int p1=nums[0], c1=0, p2=nums[0], c2=0;
+    for(int i=0; i<nums.size(); i++) {
+        if(p1 == nums[i]) c1++;
+        else {
+            if(p2 == nums[i]) c2++;
+            else{
+                if(c2==0) {
+                    p2 = nums[i];
+                    c2 = 1;
+                } else if(c1 == 0) {
+                    p1 = nums[i];
+                    c1 = 1;
+                }else {
+                    c1--;
+                    c2--;
+                }
+            }
+        }
+    }
+    int count1=0, count2=0;
+    for(int i=0; i<nums.size(); i++) {
+        if(p1 == nums[i]) count1++;
+        else if(p2 == nums[i]) count2++;
+    }
+    vector<int> res;
+    if(count1>nums.size()/3) res.push_back(p1);
+    if(p1!=p2 && count2>nums.size()/3) res.push_back(p2);
+    return res;
+}
