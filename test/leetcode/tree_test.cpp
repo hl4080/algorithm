@@ -334,3 +334,17 @@ void test_invertBinaryTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test invert binary tree end==============="<<endl;
 }
+
+void test_kthSmallestElementBST() {
+    cout<<"============simple test kth smallest elements in BST begin============="<<endl;
+    vector<int> vec{-1,1,2,3,1,4,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int res = kthSmallestTree(root,1), desired = 1;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test kth smallest elements in BST end==============="<<endl;
+}

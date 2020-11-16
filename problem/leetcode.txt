@@ -135,3 +135,4 @@ index   type            name
 226     tree            invert binary tree
 227     stack           calculator
 229     math            majority elements II
+230     tree            kth smallest element in BST

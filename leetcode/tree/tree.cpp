@@ -756,3 +756,28 @@ TreeNode* invertTree(TreeNode* root) {
     root->right = l;
     return root;
 }
+
+/*
+ * Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+Example 1:
+
+Input: root = [3,1,4,null,2], k = 1
+   3
+  / \
+ 1   4
+  \
+   2
+Output: 1
+
+ */
+int numberNodes(TreeNode* root) {
+    if(!root) return 0;
+    return numberNodes(root->left)+numberNodes(root->right)+1;
+}
+int kthSmallestTree(TreeNode* root, int k) {
+    int lnum = numberNodes(root->left);
+    if(lnum < k-1) return kthSmallestTree(root->right, k-1-lnum);
+    else if(lnum == k-1) return root->val;
+    return kthSmallestTree(root->left, k);
+}

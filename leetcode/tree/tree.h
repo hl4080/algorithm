@@ -34,5 +34,6 @@ int sumToLeafNumbers(TreeNode* root);
 vector<int> rightSideView(TreeNode* root);
 int countNodes(TreeNode* root);
 TreeNode* invertTree(TreeNode* root);
+int kthSmallestTree(TreeNode* root, int k);
 
 #endif //ALOGRITHM_TREE_H
