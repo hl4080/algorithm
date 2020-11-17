@@ -136,3 +136,4 @@ index   type            name
 227     stack           calculator
 229     math            majority elements II
 230     tree            kth smallest element in BST
+232     stack           my queue

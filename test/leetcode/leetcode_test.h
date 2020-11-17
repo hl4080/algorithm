@@ -156,6 +156,7 @@ void test_simplifyPath();
 void test_evalPRN();
 void test_mystack();
 void test_calculator();
+void test_myQueue();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();

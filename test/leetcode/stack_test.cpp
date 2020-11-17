@@ -70,3 +70,18 @@ void test_calculator() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test calculator end==============="<<endl;
 }
+
+void test_myQueue() {
+    cout<<"============simple test my queue begin============="<<endl;
+    MyQueue q;
+    q.push(1);
+    q.push(2);
+    int res1 = q.peek(), desired1 = 1;
+    int res2 = q.pop(), desired2 = 1;
+    bool res3 = q.empty(), desired3 = false;
+    if(res1 == desired1 && res2 == desired2 && res3 == desired3) {
+        cout<<"result of test case: push("<<1<<"), "<<"push("<<2<<"), "<<"peek()->"<<res1<<", pop()->"<<res2<<", empty()->"<<res3<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    }else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test my queue end==============="<<endl;
+}
