@@ -335,3 +335,17 @@ void test_removeElements() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test remove elements end================="<<endl;
 }
+
+void test_ispalindromeList() {
+    cout<<"============simple test is palindrome list begin==============="<<endl;
+    vector<int> vec{1,2,3,2,1};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    bool res = isPalindromeList(head), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    }else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is palindrome list end================="<<endl;
+}

@@ -584,3 +584,31 @@ ListNode* removeElements(ListNode* head, int val) {
     }
     return res->next;
 }
+
+/*
+ * Given a singly linked list, determine if it is a palindrome.
+
+Example 1:
+
+Input: 1->2
+Output: false
+Example 2:
+
+Input: 1->2->2->1
+Output: true
+
+ */
+
+ListNode* front;
+bool recursiveCheck(ListNode* head) {
+    if(head) {
+        if(!recursiveCheck(head->next)) return false;
+        if(head->val != front->val) return false;
+        front = front->next;
+    }
+    return true;
+}
+bool isPalindromeList(ListNode* head) {
+    front = head;
+    return recursiveCheck(head);
+}

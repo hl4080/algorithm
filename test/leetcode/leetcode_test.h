@@ -94,6 +94,7 @@ void test_insertSortList();
 void test_sortList();
 void test_interationList();
 void test_removeElements();
+void test_ispalindromeList();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();

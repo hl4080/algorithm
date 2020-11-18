@@ -26,5 +26,6 @@ ListNode* insertionSortList(ListNode* head);
 ListNode* sortList(ListNode* head);
 ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
 ListNode* removeElements(ListNode* head, int val);
+bool isPalindromeList(ListNode* head);
 
 #endif //LIST_H

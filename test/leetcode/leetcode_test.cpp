@@ -34,6 +34,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l160"]    = &test_interationList;
     m["l203"]    = &test_removeElements;
     m["l206"]    = &test_reverseList;
+    m["l234"]    = &test_ispalindromeList;
 
     //math functions
     m["l136"]    = &test_singleNumber;
