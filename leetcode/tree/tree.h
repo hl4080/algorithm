@@ -35,5 +35,6 @@ vector<int> rightSideView(TreeNode* root);
 int countNodes(TreeNode* root);
 TreeNode* invertTree(TreeNode* root);
 int kthSmallestTree(TreeNode* root, int k);
+TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
 
 #endif //ALOGRITHM_TREE_H

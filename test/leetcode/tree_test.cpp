@@ -348,3 +348,18 @@ void test_kthSmallestElementBST() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test kth smallest elements in BST end==============="<<endl;
 }
+
+void test_lowestCommonAncestor() {
+    cout<<"============simple test lowest common ancestor begin============="<<endl;
+    vector<int> vec{-1,0,-1,2,3,4,5,6,-1,7,-1,8,-1,9,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    TreeNode* p = new TreeNode(2), *q = new TreeNode(8);
+    TreeNode* res = lowestCommonAncestor(root, p, q), *desired = new TreeNode(6);
+    if(res->val == desired->val) {
+        cout<<"result of test case: "<<res->val<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test lowest common ancestor end==============="<<endl;
+}

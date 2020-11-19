@@ -781,3 +781,24 @@ int kthSmallestTree(TreeNode* root, int k) {
     else if(lnum == k-1) return root->val;
     return kthSmallestTree(root->left, k);
 }
+
+/*
+ * Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
+
+Example 1:
+
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+Output: 6
+Explanation: The LCA of nodes 2 and 8 is 6.
+
+ */
+
+TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    int low = p->val>q->val? q->val: p->val;
+    int high = p->val>q->val? p->val: q->val;
+    if(root->val < low)  return lowestCommonAncestor(root->right, p, q);
+    else if(root->val > high) return lowestCommonAncestor(root->left, p, q);
+    return root;
+}

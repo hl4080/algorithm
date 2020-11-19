@@ -182,6 +182,7 @@ void test_rightSideView();
 void test_countNodes();
 void test_invertBinaryTree();
 void test_kthSmallestElementBST();
+void test_lowestCommonAncestor();
 
 //functions in graph directory
 void test_ladderLength();
