@@ -162,6 +162,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l226"]    = &test_invertBinaryTree;
     m["l230"]    = &test_kthSmallestElementBST;
     m["l235"]    = &test_lowestCommonAncestor;
+    m["l236"]    = &test_lowestCommonAncestorII;
 
     //graph functions
     m["l127"]    = &test_ladderLength;
