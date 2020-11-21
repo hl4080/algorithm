@@ -35,6 +35,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l203"]    = &test_removeElements;
     m["l206"]    = &test_reverseList;
     m["l234"]    = &test_ispalindromeList;
+    m["l237"]    = &test_deleteNode;
 
     //math functions
     m["l136"]    = &test_singleNumber;

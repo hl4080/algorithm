@@ -349,3 +349,19 @@ void test_ispalindromeList() {
     }else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is palindrome list end================="<<endl;
 }
+
+void test_deleteNode() {
+    cout<<"============simple test delete node begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    ListNode* node = head->next;
+    vector<int> desired{1,3,4,5};
+    deleteNode(node);
+    vector<int> res = list2Vector(head);
+    if(vecEqual(res, desired)) {
+        cout<<"result of test case: ";
+        printListNode(head);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test delete node end================="<<endl;
+}
