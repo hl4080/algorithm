@@ -299,3 +299,17 @@ void test_majorityElementsII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test majority elements II end==============="<<endl;
 }
+
+void test_productExceptSelf() {
+    cout<<"============simple test product except self begin============="<<endl;
+    vector<int> nums{1,2,3,4};
+    vector<int> res = productExceptSelf(nums), desired{24,12,8,6};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test product except self end==============="<<endl;
+}

@@ -141,3 +141,4 @@ index   type            name
 235     tree            lowest common ancestor
 236     tree            lowest common ancestot II
 237     list            delete list
+238     math            product except self

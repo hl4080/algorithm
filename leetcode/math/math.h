@@ -30,5 +30,6 @@ int hammingWeight(uint32_t n);
 int rangeBitwiseAnd(int m, int n);
 int countPrimes(int n);
 vector<int> majorityElementII(vector<int>& nums);
+vector<int> productExceptSelf(vector<int>& nums);
 
 #endif //MATH_H

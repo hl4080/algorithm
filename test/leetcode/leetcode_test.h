@@ -57,6 +57,7 @@ void test_hammingWeight();
 void test_rangeBitwiseAnd();
 void test_countPrimes();
 void test_majorityElementsII();
+void test_productExceptSelf();
 
 //test functions in two-pointers directory
 void test_happyNumber();
