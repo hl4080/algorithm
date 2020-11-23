@@ -76,6 +76,7 @@ void test_reverseWords();
 void test_compareVersion();
 void test_twoSumII();
 void test_minSubarrayLen();
+void test_searchMatrixII();
 
 //test functions in list directory
 void test_addTwoNumber();

@@ -266,3 +266,20 @@ void test_minSubarrayLen() {
     } else cerr<<"TEST SATUS: FAILED"<<endl;
     cout<<"============simple test min subarray len end==============="<<endl;
 }
+
+void test_searchMatrixII() {
+    cout<<"============simple test search matrix begin============="<<endl;
+    vector<vector<int>> nums{
+            {1,   4,  7, 11, 15},
+            {2,   5,  8, 12, 19},
+            {3,   6,  9, 16, 22},
+            {10, 13, 14, 17, 24},
+            {18, 21, 23, 26, 30}
+    };
+    int res = searchMatrixII(nums, 20), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test search matrix end==============="<<endl;
+}
