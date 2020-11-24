@@ -20,5 +20,6 @@ bool searchRotatedArrayII(vector<int>& nums, int target);
 int findMinSortedArray(vector<int>& nums);
 int findPeakElement(vector<int>& nums);
 int findKthLargest(vector<int>& nums, int k);
+vector<int> diffWaysToCompute(string input);
 
 #endif //ALOGRITHM_DC_H

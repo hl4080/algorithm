@@ -202,3 +202,16 @@ void test_findKLargest() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find kth largest element end==============="<<endl;
 }
+
+void test_diffWaysToCompute() {
+    cout<<"============simple test different ways to compute begin============="<<endl;
+    string input = "2*3-4*5";
+    cout<<"test case: "<<input<<endl;
+    vector<int> res = diffWaysToCompute(input), desired{-34, -10, -14, -10, 10};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test different ways to compute end==============="<<endl;
+}

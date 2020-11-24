@@ -427,3 +427,42 @@ int sortArray(vector<int>& nums, int i, int j, int k) {
 int findKthLargest(vector<int>& nums, int k) {
     return sortArray(nums, 0, nums.size()-1, k);
 }
+
+/*
+ * Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are +, - and *.
+
+Example 1:
+
+Input: "2-1-1"
+Output: [0, 2]
+Explanation:
+((2-1)-1) = 0
+(2-(1-1)) = 2
+
+ */
+
+bool isDigit(string s) {
+    for(int i=0; i<s.size(); i++) {
+        if(s[i] < '0' || s[i] > '9') return false;
+    }
+    return true;
+}
+
+vector<int> diffWaysToCompute(string input) {
+    if(isDigit(input)) return vector<int>{atoi(input.c_str())};
+    vector<int> res;
+    for(int i=0; i<input.size(); i++) {
+        if(input[i] == '+' || input[i] == '-' || input[i] == '*') {
+            vector<int> left = diffWaysToCompute(input.substr(0, i));
+            vector<int> right = diffWaysToCompute(input.substr(i+1, input.size()-i-1));
+            for(int j=0; j<left.size(); j++) {
+                for(int k=0; k<right.size(); k++) {
+                    if(input[i] == '+') res.push_back(left[j]+right[k]);
+                    else if(input[i] == '-') res.push_back(left[j]-right[k]);
+                    else res.push_back(left[j]*right[k]);
+                }
+            }
+        }
+    }
+    return res;
+}
