@@ -143,4 +143,5 @@ index   type            name
 237     list            delete list
 238     math            product except self
 240     two-pointer     search matrix II
-241     dc              differnet ways to compute
+241     dc              different ways to compute
+257     tree            binary tree paths

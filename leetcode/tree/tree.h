@@ -9,6 +9,7 @@
 #include <vector>
 #include <queue>
 #include <map>
+#include <string>
 #include <cmath>
 
 using namespace std;
@@ -37,5 +38,6 @@ TreeNode* invertTree(TreeNode* root);
 int kthSmallestTree(TreeNode* root, int k);
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
 TreeNode* lowestCommonAncestorII(TreeNode* root, TreeNode* p, TreeNode* q);
+vector<string> binaryTreePaths(TreeNode* root);
 
 #endif //ALOGRITHM_TREE_H

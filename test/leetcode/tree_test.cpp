@@ -378,3 +378,18 @@ void test_lowestCommonAncestorII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test lowest common ancestor II end==============="<<endl;
 }
+
+void test_binaryTreePath() {
+    cout<<"============simple test binary tree path begin============="<<endl;
+    vector<int> vec{-1,2,5,1,-1,3,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    vector<string> res = binaryTreePaths(root), desired = {"1->2->5", "1->3"};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test binary tree path end==============="<<endl;
+}

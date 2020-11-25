@@ -827,3 +827,44 @@ TreeNode* lowestCommonAncestorII(TreeNode* root, TreeNode* p, TreeNode* q) {
     isInTree(root, p, q);
     return ancestor;
 }
+
+/*
+ * Given a binary tree, return all root-to-leaf paths.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Input:
+
+   1
+ /   \
+2     3
+ \
+  5
+
+Output: ["1->2->5", "1->3"]
+
+Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+
+ */
+
+void binaryTreePathsHelp(TreeNode* root, vector<string>& res, string single) {
+    if(!root) return;
+    if(!root->left && !root->right) {
+        single += to_string(root->val);
+        res.push_back(single);
+        return;
+    }
+    single += to_string(root->val);
+    single += "->";
+    if(root->left) binaryTreePathsHelp(root->left, res, single);
+    if(root->right) binaryTreePathsHelp(root->right, res, single);
+}
+
+vector<string> binaryTreePaths(TreeNode* root) {
+    vector<string> res;
+    string single;
+    binaryTreePathsHelp(root, res, single);
+    return res;
+}
