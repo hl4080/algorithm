@@ -145,3 +145,4 @@ index   type            name
 240     two-pointer     search matrix II
 241     dc              different ways to compute
 257     tree            binary tree paths
+258     math            add digits

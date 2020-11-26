@@ -58,6 +58,7 @@ void test_rangeBitwiseAnd();
 void test_countPrimes();
 void test_majorityElementsII();
 void test_productExceptSelf();
+void test_addDigits();
 
 //test functions in two-pointers directory
 void test_happyNumber();

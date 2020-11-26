@@ -31,5 +31,6 @@ int rangeBitwiseAnd(int m, int n);
 int countPrimes(int n);
 vector<int> majorityElementII(vector<int>& nums);
 vector<int> productExceptSelf(vector<int>& nums);
+int addDigits(int num);
 
 #endif //MATH_H

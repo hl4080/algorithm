@@ -313,3 +313,15 @@ void test_productExceptSelf() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test product except self end==============="<<endl;
 }
+
+void test_addDigits() {
+    cout<<"============simple test add digits begin============="<<endl;
+    int num = 38;
+    int res = addDigits(num), desired = 2;
+    cout<<"test case: "<<num<<endl;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test add digits end==============="<<endl;
+}
