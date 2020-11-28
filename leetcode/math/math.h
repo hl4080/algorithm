@@ -32,5 +32,6 @@ int countPrimes(int n);
 vector<int> majorityElementII(vector<int>& nums);
 vector<int> productExceptSelf(vector<int>& nums);
 int addDigits(int num);
+vector<int> singleNumberIII(vector<int>& nums);
 
 #endif //MATH_H

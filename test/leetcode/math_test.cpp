@@ -325,3 +325,17 @@ void test_addDigits() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test add digits end==============="<<endl;
 }
+
+void test_singleNumberIII() {
+    cout<<"============simple test single number III begin============="<<endl;
+    vector<int> nums{1,2,1,3,2,5};
+    vector<int> res = singleNumberIII(nums), desired{3,5};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test single number III end==============="<<endl;
+}

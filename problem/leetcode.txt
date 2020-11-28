@@ -146,3 +146,4 @@ index   type            name
 241     dc              different ways to compute
 257     tree            binary tree paths
 258     math            add digits
+260     math            single number III
