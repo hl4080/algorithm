@@ -283,3 +283,15 @@ void test_searchMatrixII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test search matrix end==============="<<endl;
 }
+
+void test_nthUglyNumber() {
+    cout<<"============simple test nth ugly number begin============="<<endl;
+    int n = 10;
+    cout<<"test case: "<<n<<endl;
+    int res = nthUglyNumber(n), desired = 12;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test nth ugly number end==============="<<endl;
+}

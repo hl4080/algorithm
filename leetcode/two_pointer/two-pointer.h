@@ -28,5 +28,6 @@ int compareVersion(string version1, string version2);
 vector<int> twoSumII(vector<int>& numbers, int target);
 int minSubArrayLen(int s, vector<int>& nums);
 bool searchMatrixII(vector<vector<int>>& matrix, int target);
+int nthUglyNumber(int n);
 
 #endif //TWO_POINTER_H

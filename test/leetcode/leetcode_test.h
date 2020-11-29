@@ -79,6 +79,7 @@ void test_compareVersion();
 void test_twoSumII();
 void test_minSubarrayLen();
 void test_searchMatrixII();
+void test_nthUglyNumber();
 
 //test functions in list directory
 void test_addTwoNumber();

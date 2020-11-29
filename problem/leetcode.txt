@@ -147,3 +147,4 @@ index   type            name
 257     tree            binary tree paths
 258     math            add digits
 260     math            single number III
+264     two-pointer     nth ugly number
