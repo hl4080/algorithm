@@ -339,3 +339,16 @@ void test_singleNumberIII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test single number III end==============="<<endl;
 }
+
+void test_missingNumber() {
+    cout<<"============simple test missing number begin============="<<endl;
+    vector<int> nums{9,6,4,2,3,5,7,0,1};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = missingNumber(nums), desired = 8;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test missing number end==============="<<endl;
+}

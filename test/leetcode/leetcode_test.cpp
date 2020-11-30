@@ -61,6 +61,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l238"]    = &test_productExceptSelf;
     m["l258"]    = &test_addDigits;
     m["l260"]    = &test_singleNumberIII;
+    m["l268"]    = &test_missingNumber;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

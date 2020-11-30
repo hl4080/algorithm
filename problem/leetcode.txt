@@ -148,3 +148,4 @@ index   type            name
 258     math            add digits
 260     math            single number III
 264     two-pointer     nth ugly number
+268     math            missing number
