@@ -352,3 +352,16 @@ void test_missingNumber() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test missing number end==============="<<endl;
 }
+
+void test_hIndex() {
+    cout<<"============simple test h index begin============="<<endl;
+    vector<int> indexes{3,0,6,1,5};
+    cout<<"test case: ";
+    printOneDimVec(indexes);
+    int res = hIndex(indexes), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test h index end==============="<<endl;
+}

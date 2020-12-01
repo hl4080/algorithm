@@ -34,5 +34,6 @@ vector<int> productExceptSelf(vector<int>& nums);
 int addDigits(int num);
 vector<int> singleNumberIII(vector<int>& nums);
 int missingNumber(vector<int>& nums);
+int hIndex(vector<int>& citations);
 
 #endif //MATH_H

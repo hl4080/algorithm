@@ -149,3 +149,4 @@ index   type            name
 260     math            single number III
 264     two-pointer     nth ugly number
 268     math            missing number
+274     math            h index

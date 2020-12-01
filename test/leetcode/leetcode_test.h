@@ -61,6 +61,7 @@ void test_productExceptSelf();
 void test_addDigits();
 void test_singleNumberIII();
 void test_missingNumber();
+void test_hIndex();
 
 //test functions in two-pointers directory
 void test_happyNumber();
