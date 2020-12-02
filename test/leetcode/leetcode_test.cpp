@@ -63,6 +63,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l260"]    = &test_singleNumberIII;
     m["l268"]    = &test_missingNumber;
     m["l274"]    = &test_hIndex;
+    m["l275"]    = &test_hIndexII;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

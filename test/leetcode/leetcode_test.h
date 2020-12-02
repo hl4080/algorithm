@@ -62,6 +62,7 @@ void test_addDigits();
 void test_singleNumberIII();
 void test_missingNumber();
 void test_hIndex();
+void test_hIndexII();
 
 //test functions in two-pointers directory
 void test_happyNumber();

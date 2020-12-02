@@ -365,3 +365,16 @@ void test_hIndex() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test h index end==============="<<endl;
 }
+
+void test_hIndexII() {
+    cout<<"============simple test h index II begin============="<<endl;
+    vector<int> citations{0,1,3,5,6};
+    cout<<"test case: ";
+    printOneDimVec(citations);
+    int res = hIndexII(citations), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test h index II end==============="<<endl;
+}
