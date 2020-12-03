@@ -135,6 +135,7 @@ void test_maxProductSubarray();
 void test_houseRob();
 void test_houseRobII();
 void test_maximalSquare();
+void test_numSquare();
 
 //test functions in greedy directory
 void test_intToRoman();

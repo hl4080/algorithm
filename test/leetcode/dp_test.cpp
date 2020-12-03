@@ -220,3 +220,15 @@ void test_maximalSquare() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test maximal square end==============="<<endl;
 }
+
+void test_numSquare() {
+    cout<<"============simple test num square begin============="<<endl;
+    int n = 12;
+    cout<<"test case: n="<<n<<endl;
+    int res = numSquares(n), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test num square end==============="<<endl;
+}
