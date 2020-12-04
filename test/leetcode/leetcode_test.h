@@ -83,6 +83,7 @@ void test_twoSumII();
 void test_minSubarrayLen();
 void test_searchMatrixII();
 void test_nthUglyNumber();
+void test_moveZeros();
 
 //test functions in list directory
 void test_addTwoNumber();

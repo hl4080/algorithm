@@ -295,3 +295,18 @@ void test_nthUglyNumber() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test nth ugly number end==============="<<endl;
 }
+
+void test_moveZeros() {
+    cout<<"============simple test move zeros begin============="<<endl;
+    vector<int> nums{0,1,0,3,12};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    moveZeroes(nums);
+    vector<int> desired{1,3,12,0,0};
+    if(vecEqual(nums, desired)) {
+        cout<<"result of test case: ";
+        printOneDimVec(nums);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test move zeros end==============="<<endl;
+}

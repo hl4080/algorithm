@@ -84,6 +84,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l209"]    = &test_minSubarrayLen;
     m["l240"]    = &test_searchMatrixII;
     m["l264"]    = &test_nthUglyNumber;
+    m["l283"]    = &test_moveZeros;
 
     //dc functions
     m["l4"]      = &test_findMedianSortedArrays;
