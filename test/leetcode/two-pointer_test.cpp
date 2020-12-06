@@ -310,3 +310,16 @@ void test_moveZeros() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test move zeros end==============="<<endl;
 }
+
+void test_findDuplicate() {
+    cout<<"============simple test find duplicate begin============="<<endl;
+    vector<int> nums{1,3,4,2,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = findDuplicateNumber(nums), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find duplicate end==============="<<endl;
+}

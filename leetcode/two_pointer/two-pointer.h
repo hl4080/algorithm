@@ -30,5 +30,6 @@ int minSubArrayLen(int s, vector<int>& nums);
 bool searchMatrixII(vector<vector<int>>& matrix, int target);
 int nthUglyNumber(int n);
 void moveZeroes(vector<int>& nums);
+int findDuplicateNumber(vector<int>& nums);
 
 #endif //TWO_POINTER_H
