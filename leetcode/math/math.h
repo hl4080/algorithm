@@ -36,5 +36,6 @@ vector<int> singleNumberIII(vector<int>& nums);
 int missingNumber(vector<int>& nums);
 int hIndex(vector<int>& citations);
 int hIndexII(vector<int>& citations);
+bool canWinNim(int n);
 
 #endif //MATH_H

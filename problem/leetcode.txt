@@ -154,3 +154,4 @@ index   type            name
 279     dp              perfect suqares
 283     two-pointer     move zeros
 287     two-pointer     find duplicate
+292     math            can win Nim

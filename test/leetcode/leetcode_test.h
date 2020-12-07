@@ -63,6 +63,7 @@ void test_singleNumberIII();
 void test_missingNumber();
 void test_hIndex();
 void test_hIndexII();
+void test_canWinNim();
 
 //test functions in two-pointers directory
 void test_happyNumber();

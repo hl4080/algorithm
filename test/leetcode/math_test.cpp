@@ -378,3 +378,14 @@ void test_hIndexII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test h index II end==============="<<endl;
 }
+
+void test_canWinNim() {
+    cout<<"============simple test can win Nim begin============="<<endl;
+    int n = 8;
+    bool res = canWinNim(n), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test can win Nim end==============="<<endl;
+}
