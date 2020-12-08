@@ -155,3 +155,4 @@ index   type            name
 283     two-pointer     move zeros
 287     two-pointer     find duplicate
 292     math            can win Nim
+300     dp              lenght of LIP

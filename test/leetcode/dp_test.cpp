@@ -232,3 +232,16 @@ void test_numSquare() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test num square end==============="<<endl;
 }
+
+void test_lengthOfLIS() {
+    cout<<"============simple test length of LIS begin============="<<endl;
+    vector<int> nums{10,9,2,5,3,7,101,18};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = lengthOfLIS(nums), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test length of LIS end==============="<<endl;
+}

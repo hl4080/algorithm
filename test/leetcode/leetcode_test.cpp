@@ -117,6 +117,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l213"]    = &test_houseRobII;
     m["l221"]    = &test_maximalSquare;
     m["l279"]    = &test_numSquare;
+    m["l300"]    = &test_lengthOfLIS;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

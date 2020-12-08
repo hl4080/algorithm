@@ -27,5 +27,6 @@ int houseRob(vector<int>& nums);
 int houseRobII(vector<int>& nums);
 int maximalSquare(vector<vector<char>>& matrix);
 int numSquares(int n);
+int lengthOfLIS(vector<int>& nums);
 
 #endif //ALOGRITHM_DP_H
