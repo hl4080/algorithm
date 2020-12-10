@@ -393,3 +393,25 @@ void test_binaryTreePath() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test binary tree path end==============="<<endl;
 }
+
+void test_findMinHeightTrees() {
+    cout<<"============simple test find min height trees begin============="<<endl;
+    int n = 6;
+    vector<vector<int>> edges{
+            {3,0},
+            {3,1},
+            {3,2},
+            {3,4},
+            {5,4}
+    };
+    cout<<"test case:"<<endl;
+    cout<<"n="<<n<<endl;
+    printTwoDimVec(edges);
+    vector<int> res = findMinHeightTrees(n, edges), desired{3,4};
+    if(res == desired) {
+        cout<<"result of test case ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find min height trees end==============="<<endl;
+}

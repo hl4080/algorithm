@@ -200,6 +200,7 @@ void test_kthSmallestElementBST();
 void test_lowestCommonAncestor();
 void test_lowestCommonAncestorII();
 void test_binaryTreePath();
+void test_findMinHeightTrees();
 
 //functions in graph directory
 void test_ladderLength();

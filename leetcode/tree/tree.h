@@ -39,5 +39,6 @@ int kthSmallestTree(TreeNode* root, int k);
 TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
 TreeNode* lowestCommonAncestorII(TreeNode* root, TreeNode* p, TreeNode* q);
 vector<string> binaryTreePaths(TreeNode* root);
+vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges);
 
 #endif //ALOGRITHM_TREE_H
