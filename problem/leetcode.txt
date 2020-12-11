@@ -157,3 +157,4 @@ index   type            name
 292     math            can win Nim
 300     dp              lenght of LIP
 310     tree            find min height tree
+313     two-pointer     nth super ugly numbers

@@ -31,5 +31,6 @@ bool searchMatrixII(vector<vector<int>>& matrix, int target);
 int nthUglyNumber(int n);
 void moveZeroes(vector<int>& nums);
 int findDuplicateNumber(vector<int>& nums);
+int nthSuperUglyNumber(int n, vector<int>& primes);
 
 #endif //TWO_POINTER_H

@@ -323,3 +323,19 @@ void test_findDuplicate() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find duplicate end==============="<<endl;
 }
+
+void test_nthSuperUglyNumber() {
+    cout<<"============simple test nth super ugly number begin============="<<endl;
+    int n = 12;
+    vector<int> primes{2,7,13,19};
+    cout<<"test case:"<<endl;
+    cout<<"n="<<n<<endl;
+    cout<<"primes:";
+    printOneDimVec(primes);
+    int res = nthSuperUglyNumber(n, primes), desired = 32;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test nth super ugly number end==============="<<endl;
+}

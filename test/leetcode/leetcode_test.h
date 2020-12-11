@@ -86,6 +86,7 @@ void test_searchMatrixII();
 void test_nthUglyNumber();
 void test_moveZeros();
 void test_findDuplicate();
+void test_nthSuperUglyNumber();
 
 //test functions in list directory
 void test_addTwoNumber();

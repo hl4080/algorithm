@@ -87,6 +87,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l264"]    = &test_nthUglyNumber;
     m["l283"]    = &test_moveZeros;
     m["l287"]    = &test_findDuplicate;
+    m["l313"]    = &test_nthSuperUglyNumber;
 
     //dc functions
     m["l4"]      = &test_findMedianSortedArrays;
