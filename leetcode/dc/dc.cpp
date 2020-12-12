@@ -466,3 +466,45 @@ vector<int> diffWaysToCompute(string input) {
     }
     return res;
 }
+
+/*
+ * Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3]....
+
+Example 1:
+
+Input: nums = [1, 5, 1, 1, 6, 4]
+Output: One possible answer is [1, 4, 1, 5, 1, 6].
+
+ */
+void quickSort(vector<int>& nums, int front, int back, int n) {
+    if(front >= back) return;
+    int pivot = nums[back-1];
+    int i = front, j = front;
+    while(j<back) {
+        if(nums[j] <= pivot) swap(nums[i++], nums[j++]);
+        else j++;
+    }
+    if(i <= n) quickSort(nums, i, back, n);
+    else quickSort(nums, front, i-1, n);
+}
+
+void wiggleSortII(vector<int>& nums) {
+    int n = nums.size();
+    quickSort(nums, 0, n, n/2);
+    int mid = n/2;
+    int i = 0, j = 0, k = n-1;
+    while(j < k) {
+        if(nums[j] > nums[mid])
+            swap(nums[j], nums[k--]);
+        else if(nums[j] < nums[mid])
+            swap(nums[i++], nums[j++]);
+        else j++;
+    }
+    if(n % 2) mid++;
+    vector<int> left(nums.begin(), nums.begin()+mid);
+    vector<int> right(nums.begin()+mid, nums.end());
+    for(int i=0; i<left.size(); i++)
+        nums[i*2] = left[left.size()-1-i];
+    for(int j=0; j<right.size(); j++)
+        nums[j*2+1] = right[right.size()-1-j];
+}

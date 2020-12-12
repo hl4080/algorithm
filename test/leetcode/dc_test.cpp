@@ -215,3 +215,18 @@ void test_diffWaysToCompute() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test different ways to compute end==============="<<endl;
 }
+
+void test_wiggleSortII() {
+    cout<<"============simple test wiggle sort II begin============="<<endl;
+    vector<int> nums{1, 5, 1, 1, 6, 4};
+    cout<<"test case:";
+    printOneDimVec(nums);
+    wiggleSortII(nums);
+    vector<int> desired{1,6,1,5,1,4};
+    if(nums == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(nums);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test wiggle sort II end==============="<<endl;
+}

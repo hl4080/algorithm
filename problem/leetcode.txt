@@ -158,3 +158,4 @@ index   type            name
 300     dp              lenght of LIP
 310     tree            find min height tree
 313     two-pointer     nth super ugly numbers
+324     dc              wiggle sort II
