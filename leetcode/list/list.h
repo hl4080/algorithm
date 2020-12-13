@@ -28,5 +28,6 @@ ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
 ListNode* removeElements(ListNode* head, int val);
 bool isPalindromeList(ListNode* head);
 void deleteNode(ListNode* node);
+ListNode* oddEvenList(ListNode* head);
 
 #endif //LIST_H

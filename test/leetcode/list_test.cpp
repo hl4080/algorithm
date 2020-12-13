@@ -365,3 +365,19 @@ void test_deleteNode() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test delete node end================="<<endl;
 }
+
+void test_oddEvenList() {
+    cout<<"============simple test odd even list begin==============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case:";
+    printListNode(head);
+    ListNode* res = oddEvenList(head);
+    vector<int> desired{1,3,5,2,4};
+    if(list2Vector(res) == desired) {
+        cout<<"result of test case: ";
+        printListNode(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test odd even list end================="<<endl;
+}

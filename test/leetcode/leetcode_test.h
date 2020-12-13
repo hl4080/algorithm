@@ -108,6 +108,7 @@ void test_interationList();
 void test_removeElements();
 void test_ispalindromeList();
 void test_deleteNode();
+void test_oddEvenList();
 
 //test functions in dc directory
 void test_findMedianSortedArrays();
