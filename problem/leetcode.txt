@@ -160,3 +160,4 @@ index   type            name
 313     two-pointer     nth super ugly numbers
 324     dc              wiggle sort II
 328     list            odd even list
+332     graph           find Itinerary

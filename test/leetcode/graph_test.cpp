@@ -52,3 +52,22 @@ void test_courseScheduleII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test course schedule II end==============="<<endl;
 }
+
+void test_findItinerary() {
+    cout<<"============simple test find Itinerary begin============="<<endl;
+    vector<vector<string>> tickets{
+            {"MUC", "LHR"},
+            {"JFK", "MUC"},
+            {"SFO", "SJC"},
+            {"LHR", "SFO"}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(tickets);
+    vector<string> res = findItinerary(tickets), desired{"JFK", "MUC", "LHR", "SFO", "SJC"};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TES STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find Itinerary end==============="<<endl;
+}

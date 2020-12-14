@@ -10,6 +10,7 @@
 #include <map>
 #include <string>
 #include <queue>
+#include <stack>
 #include "../data-struct.h"
 using namespace std;
 
@@ -17,6 +18,7 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList);
 Node* cloneGraph(Node* node);
 bool courseSchedule(int numCourses, vector<vector<int>>& prerequisites);
 vector<int> courseScheduleII(int numCourses, vector<vector<int>>& prerequisites);
+vector<string> findItinerary(vector<vector<string>>& tickets);
 
 
 #endif //ALOGRITHM_GRAPH_H

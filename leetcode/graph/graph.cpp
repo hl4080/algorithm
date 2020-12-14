@@ -192,3 +192,43 @@ vector<int> courseScheduleII(int numCourses, vector<vector<int>>& prerequisites)
     }
     return res.size() == numCourses? res: vector<int>();
 }
+
+/*
+ * Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. Thus, the itinerary must begin with JFK.
+
+Note:
+
+If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary ["JFK", "LGA"] has a smaller lexical order than ["JFK", "LGB"].
+All airports are represented by three capital letters (IATA code).
+You may assume all tickets form at least one valid itinerary.
+One must use all the tickets once and only once.
+Example 1:
+
+Input: [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+Output: ["JFK", "MUC", "LHR", "SFO", "SJC"]
+
+ */
+void findItineraryHelp(map<string, vector<string>>& m, stack<string>& stk, string current) {
+    while(!m[current].empty()) {
+        string tmp = m[current][0];
+        m[current].erase(m[current].begin());
+        findItineraryHelp(m, stk, tmp);
+    }
+    stk.push(current);
+}
+
+vector<string> findItinerary(vector<vector<string>>& tickets) {
+    map<string, vector<string>> m;
+    stack<string> stk;
+    vector<string> res;
+    for(int i=0; i<tickets.size(); ++i)
+        m[tickets[i][0]].push_back(tickets[i][1]);
+    for(auto iter=m.begin(); iter!=m.end(); iter++)
+        sort((*iter).second.begin(), (*iter).second.end());
+    findItineraryHelp(m, stk, "JFK");
+    while(!stk.empty()) {
+        res.push_back(stk.top());
+        stk.pop();
+    }
+    return res;
+}

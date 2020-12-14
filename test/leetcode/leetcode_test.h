@@ -209,5 +209,6 @@ void test_findMinHeightTrees();
 void test_ladderLength();
 void test_courseSchedule();
 void test_courseScheduleII();
+void test_findItinerary();
 
 #endif //LEETCODE_TEST_H
