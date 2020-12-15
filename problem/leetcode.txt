@@ -161,3 +161,4 @@ index   type            name
 324     dc              wiggle sort II
 328     list            odd even list
 332     graph           find Itinerary
+334     math            increasing triplet

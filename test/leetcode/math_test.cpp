@@ -389,3 +389,16 @@ void test_canWinNim() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test can win Nim end==============="<<endl;
 }
+
+void test_increasingTriplet() {
+    cout<<"============simple test increasing triplet begin============="<<endl;
+    vector<int> nums{4,5,1,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    bool res = increasingTriplet(nums), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test increasing triplet end==============="<<endl;
+}

@@ -37,5 +37,6 @@ int missingNumber(vector<int>& nums);
 int hIndex(vector<int>& citations);
 int hIndexII(vector<int>& citations);
 bool canWinNim(int n);
+bool increasingTriplet(vector<int>& nums);
 
 #endif //MATH_H
