@@ -205,6 +205,7 @@ void test_lowestCommonAncestor();
 void test_lowestCommonAncestorII();
 void test_binaryTreePath();
 void test_findMinHeightTrees();
+void test_houseRobIII();
 
 //functions in graph directory
 void test_ladderLength();

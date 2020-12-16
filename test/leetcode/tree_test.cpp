@@ -415,3 +415,17 @@ void test_findMinHeightTrees() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find min height trees end==============="<<endl;
 }
+
+void test_houseRobIII() {
+    cout<<"============simple test house rob III begin============="<<endl;
+    vector<int> nums{-1,2,3,3,-1,3,1};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int res = robTree(root), desired = 7;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test house rob III end==============="<<endl;
+}
