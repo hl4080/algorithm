@@ -245,3 +245,16 @@ void test_lengthOfLIS() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test length of LIS end==============="<<endl;
 }
+
+void test_countBits() {
+    cout<<"============simple test count bits begin============="<<endl;
+    int num = 5;
+    cout<<"test case: num="<<num<<endl;
+    vector<int> res = countBits(num), desired{0,1,1,2,1,2};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test count bits end==============="<<endl;
+}

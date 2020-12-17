@@ -144,6 +144,7 @@ void test_houseRobII();
 void test_maximalSquare();
 void test_numSquare();
 void test_lengthOfLIS();
+void test_countBits();
 
 //test functions in greedy directory
 void test_intToRoman();
