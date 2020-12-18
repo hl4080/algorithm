@@ -777,3 +777,22 @@ bool increasingTriplet(vector<int>& nums) {
     }
     return false;
 }
+
+/*
+ * Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers. Return the maximum product you can get.
+
+Example 1:
+
+Input: 2
+Output: 1
+Explanation: 2 = 1 + 1, 1 × 1 = 1.
+
+ */
+
+int integerBreak(int n) {
+    int times = n/3;
+    int reminder = n%3;
+    if(reminder == 0) return times == 1? 2: pow(3, times);
+    else if(reminder == 1) return !times? 1: pow(3, times-1)*4;
+    return !times? 1: pow(3,times)*reminder;
+}

@@ -38,5 +38,6 @@ int hIndex(vector<int>& citations);
 int hIndexII(vector<int>& citations);
 bool canWinNim(int n);
 bool increasingTriplet(vector<int>& nums);
+int integerBreak(int n);
 
 #endif //MATH_H

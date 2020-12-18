@@ -402,3 +402,15 @@ void test_increasingTriplet() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test increasing triplet end==============="<<endl;
 }
+
+void test_integerBreak() {
+    cout<<"============simple test integer break begin============="<<endl;
+    int n = 11;
+    cout<<"test case: n="<<n<<endl;
+    int res = integerBreak(n), desired = 54;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test integer break end==============="<<endl;
+}
