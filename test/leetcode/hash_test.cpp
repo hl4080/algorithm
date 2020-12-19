@@ -167,3 +167,19 @@ void test_containduplicateIII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test contain duplicate III end==============="<<endl;
 }
+
+void test_topKfrequent() {
+    cout<<"============simple test top K frequent begin============="<<endl;
+    vector<int> nums{5,1,-1,-8,-7,8,-5,0,1,10,8,0,-4,3,-1,-1,4,-5,4,-3,0,2,2,2,4,-2,-4,8,-7,-7,2,-8,0,-8,10,8,-8,-2,-9,4,-7,6,6,-1,4,2,8,-3,5,-9,-3,6,-8,-5,5,10,2,-5,-1,-5,1,-3,7,0,8,-2,-3,-1,-5,4,7,-9,0,2,10,4,4,-4,-1,-1,6,-8,-9,-1,9,-9,3,5,1,6,-1,-2,4,2,4,-6,4,4,5,-5};
+    int k = 7;
+    cout<<"test case: "<<endl;
+    printOneDimVec(nums);
+    cout<<"k="<<k<<endl;
+    vector<int> res = topKFrequent(nums, k), desired{8,-5,-8,-1,2,4,0};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test top K frequent end==============="<<endl;
+}

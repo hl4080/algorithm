@@ -20,5 +20,6 @@ bool isIsomorphic(string s, string t);
 bool containsDuplicate(vector<int>& nums);
 bool containsNearbyDuplicate(vector<int>& nums, int k);
 bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
+vector<int> topKFrequent(vector<int>& nums, int k);
 
 #endif //ALGORITHM_HASH_H

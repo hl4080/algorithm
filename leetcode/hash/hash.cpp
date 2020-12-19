@@ -316,3 +316,58 @@ bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
     }
     return false;
 }
+
+/*
+ * Given a non-empty array of integers, return the k most frequent elements.
+
+Example 1:
+
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
+ */
+
+void initHeap(map<int, int>& m, vector<int>& heap, int insert) {
+    int tmp = heap[insert];
+    while(insert >0 && m[heap[insert/2]] > m[heap[insert]]) {
+        heap[insert] = heap[insert/2];
+        insert /= 2;
+        heap[insert] = tmp;
+    }
+}
+
+void heapSort(map<int, int>& m, vector<int>& heap) {
+    int tmp = heap[0];
+    int i=0;
+    for(int j=2*i+1; j<heap.size(); j = j*2+1) {
+        if(j+1 < heap.size() && m[heap[j+1]] < m[heap[j]]) j++;
+        if(m[heap[i]] > m[heap[j]]) {
+            heap[i] = heap[j];
+            i=j;
+            heap[i] = tmp;
+        } else break;
+    }
+}
+
+vector<int> topKFrequent(vector<int>& nums, int k) {
+    map<int, int> m;
+    vector<int> res;
+    vector<int> heap;
+    for(int i=0; i<nums.size(); i++) {
+        if(!m.count(nums[i])) m[nums[i]] = 1;
+        else m[nums[i]]++;
+    }
+    auto it = m.begin();
+    for(int i=0; i<k; ++i) {
+        heap.push_back(it->first);
+        initHeap(m, heap, heap.size()-1);
+        it++;
+    }
+    for(; it!=m.end(); it++) {
+        if(it->second > m[heap[0]]) {
+            heap[0] = it->first;
+            heapSort(m, heap);
+        }
+    }
+    return heap;
+}

@@ -36,6 +36,7 @@ void test_isIsomorphic();
 void test_containDuplicate();
 void test_containDuplicatesII();
 void test_containduplicateIII();
+void test_topKfrequent();
 
 //test functions in math directory
 void test_singleNumber();

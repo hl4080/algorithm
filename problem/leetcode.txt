@@ -165,3 +165,4 @@ index   type            name
 337     tree            house rob III
 338     dp              count bits
 343     math            integer break
+347     hash            top k frequent
