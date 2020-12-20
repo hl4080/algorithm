@@ -166,3 +166,4 @@ index   type            name
 338     dp              count bits
 343     math            integer break
 347     hash            top k frequent
+357     math            count numbers with unique digits

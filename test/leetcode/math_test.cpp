@@ -414,3 +414,15 @@ void test_integerBreak() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test integer break end==============="<<endl;
 }
+
+void test_countNumbersWithUnqiueDigits() {
+    cout<<"============simple test count numbers with unique digits begin============="<<endl;
+    int n=3;
+    cout<<"test case: n="<<n<<endl;
+    int res = countNumbersWithUniqueDigits(n), desired = 739;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test count numbers with unique digits end==============="<<endl;
+}

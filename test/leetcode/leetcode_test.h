@@ -67,6 +67,7 @@ void test_hIndexII();
 void test_canWinNim();
 void test_increasingTriplet();
 void test_integerBreak();
+void test_countNumbersWithUnqiueDigits();
 
 //test functions in two-pointers directory
 void test_happyNumber();

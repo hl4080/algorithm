@@ -796,3 +796,22 @@ int integerBreak(int n) {
     else if(reminder == 1) return !times? 1: pow(3, times-1)*4;
     return !times? 1: pow(3,times)*reminder;
 }
+
+/*
+ * Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x < 10n.
+
+Example:
+
+Input: 2
+Output: 91
+Explanation: The answer should be the total numbers in the range of 0 ≤ x < 100,
+             excluding 11,22,33,44,55,66,77,88,99
+
+ */
+
+int countNumbersWithUniqueDigits(int n) {
+    if(n==0) return 1;
+    int res = 9;
+    for(int i=1; i<n; i++) res *= (10-i);
+    return res+countNumbersWithUniqueDigits(n-1);
+}
