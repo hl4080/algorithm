@@ -167,3 +167,4 @@ index   type            name
 343     math            integer break
 347     hash            top k frequent
 357     math            count numbers with unique digits
+367     math            is perfect square

@@ -40,5 +40,6 @@ bool canWinNim(int n);
 bool increasingTriplet(vector<int>& nums);
 int integerBreak(int n);
 int countNumbersWithUniqueDigits(int n);
+bool isPerfectSquare(int num);
 
 #endif //MATH_H

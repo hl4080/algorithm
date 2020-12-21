@@ -68,6 +68,7 @@ void test_canWinNim();
 void test_increasingTriplet();
 void test_integerBreak();
 void test_countNumbersWithUnqiueDigits();
+void test_isPerfectSquare();
 
 //test functions in two-pointers directory
 void test_happyNumber();

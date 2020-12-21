@@ -426,3 +426,15 @@ void test_countNumbersWithUnqiueDigits() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test count numbers with unique digits end==============="<<endl;
 }
+
+void test_isPerfectSquare() {
+    cout<<"============simple test is perfect square begin============="<<endl;
+    int num = 15;
+    cout<<"test case: num="<<num<<endl;
+    bool res = isPerfectSquare(num), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is perfect square end==============="<<endl;
+}

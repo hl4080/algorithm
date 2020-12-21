@@ -70,6 +70,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l334"]    = &test_increasingTriplet;
     m["l343"]    = &test_integerBreak;
     m["l357"]    = &test_countNumbersWithUnqiueDigits;
+    m["l367"]    = &test_isPerfectSquare;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

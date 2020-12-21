@@ -815,3 +815,27 @@ int countNumbersWithUniqueDigits(int n) {
     for(int i=1; i<n; i++) res *= (10-i);
     return res+countNumbersWithUniqueDigits(n-1);
 }
+
+/*
+ * Given a positive integer num, write a function which returns True if num is a perfect square else False.
+
+Follow up: Do not use any built-in library function such as sqrt.
+
+ 
+
+Example 1:
+
+Input: num = 16
+Output: true
+
+ */
+
+bool isPerfectSquare(int num) {
+    int x0 = num;
+    long y0 = (long)x0*x0 - num;
+    while(y0 > 0) {
+        y0 = (long)x0*x0 - num;
+        x0 = ((long)x0 + num/x0)/2;
+    }
+    return y0 == 0;
+}
