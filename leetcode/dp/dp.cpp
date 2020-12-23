@@ -603,3 +603,54 @@ vector<int> countBits(int num) {
     }
     return res;
 }
+
+/*
+ * Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies:
+
+Si % Sj = 0 or Sj % Si = 0.
+
+If there are multiple solutions, return any subset is fine.
+
+Example 1:
+
+Input: [1,2,3]
+Output: [1,2] (of course, [1,3] will also be ok)
+Example 2:
+
+Input: [1,2,4,8]
+Output: [1,2,4,8]
+
+ */
+
+vector<int> largestDivisibleSubset(vector<int>& nums) {
+    if(nums.empty()) return vector<int>();
+    sort(nums.begin(), nums.end());
+    vector<int> dp(nums.size(), 1);
+    vector<int> res;
+    vector<vector<int>> connect(nums.size(), vector<int>());
+    for(int i=0; i<nums.size(); i++) {
+        connect[i].push_back(i);
+        connect[i].push_back(i);
+    }
+    for(int i=0; i<nums.size(); i++) {
+        int maxSize = 0;
+        for(int j=i-1; j>=0; j--) {
+            if(maxSize <= dp[j] && nums[i]%nums[j] == 0) {
+                dp[i] = dp[j]+1;
+                maxSize = dp[i];
+                connect[i][1] = j;
+            }
+        }
+    }
+    int maxIndex = 0;
+    for(int i=0; i<dp.size(); i++) {
+        if(dp[maxIndex] < dp[i]) maxIndex = i;
+    }
+    for(int i=maxIndex; i>=0;) {
+        res.push_back(nums[i]);
+        int tmp = i;
+        i = connect[i][1];
+        if(tmp == connect[i][0]) break;
+    }
+    return res;
+}

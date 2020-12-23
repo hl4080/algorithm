@@ -258,3 +258,17 @@ void test_countBits() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test count bits end==============="<<endl;
 }
+
+void test_largestDivisibleSubset() {
+    cout<<"============simple test largest divisible subsets begin============="<<endl;
+    vector<int> nums{4,8,10,240};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<int> res= largestDivisibleSubset(nums), desired{240,8,4};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test largest divisible subsets end==============="<<endl;
+}
