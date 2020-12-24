@@ -169,3 +169,4 @@ index   type            name
 357     math            count numbers with unique digits
 367     math            is perfect square
 368     dp              larget divisible subset
+371     math            get sum

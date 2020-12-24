@@ -438,3 +438,15 @@ void test_isPerfectSquare() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is perfect square end==============="<<endl;
 }
+
+void test_getSum() {
+    cout<<"============simple test get sum begin============="<<endl;
+    int a = -4, b = 2;
+    cout<<"test case: a="<<a<<" "<<"b="<<b<<endl;
+    int res = getSum(a, b), desired = -2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get sum end==============="<<endl;
+}
