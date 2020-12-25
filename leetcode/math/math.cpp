@@ -857,3 +857,22 @@ Output: 1
 int getSum(int a, int b) {
     return b == 0? a: getSum(a^b, (unsigned int)(a&b)<<1);
 }
+
+/*
+ * Your task is to calculate ab mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
+Example 1:
+
+Input: a = 2, b = [3]
+Output: 8
+
+ */
+int powerCertain(int a, int n) {
+    return n==0? 1: n==1? a: (a*(long)(powerCertain(a,n-1)%1337))%1337;
+}
+
+int superPow(int a, vector<int>& b) {
+    if(b.size() == 1) return powerCertain(a, b[0]);
+    int c = b[b.size()-1];
+    b.pop_back();
+    return ((long)powerCertain(a,c)*powerCertain(superPow(a, b), 10))%1337;
+}

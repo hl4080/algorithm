@@ -450,3 +450,19 @@ void test_getSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get sum end==============="<<endl;
 }
+
+void test_superPow() {
+    cout<<"============simple test super pow begin============="<<endl;
+    int a = 1;
+    vector<int> b{4,3,3,8,5,2};
+    cout<<"test case: "<<endl;
+    cout<<"a="<<a<<endl;
+    cout<<"b=";
+    printOneDimVec(b);
+    int res = superPow(a, b), desired = 1;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STAUS: PASS"<<endl;
+    } else cerr<<"TEST STAUTS: FAILED"<<endl;
+    cout<<"============simple test super pow end==============="<<endl;
+}

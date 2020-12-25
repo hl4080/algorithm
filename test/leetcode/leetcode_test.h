@@ -70,6 +70,7 @@ void test_integerBreak();
 void test_countNumbersWithUnqiueDigits();
 void test_isPerfectSquare();
 void test_getSum();
+void test_superPow();
 
 //test functions in two-pointers directory
 void test_happyNumber();

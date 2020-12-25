@@ -42,5 +42,6 @@ int integerBreak(int n);
 int countNumbersWithUniqueDigits(int n);
 bool isPerfectSquare(int num);
 int getSum(int a, int b);
+int superPow(int a, vector<int>& b);
 
 #endif //MATH_H
