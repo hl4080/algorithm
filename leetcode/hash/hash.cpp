@@ -371,3 +371,47 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
     }
     return heap;
 }
+
+
+/*
+ * You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
+
+Define a pair (u,v) which consists of one element from the first array and one element from the second array.
+
+Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
+
+Example 1:
+
+Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3
+Output: [[1,2],[1,4],[1,6]]
+Explanation: The first 3 pairs are returned from the sequence:
+             [1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]
+
+ */
+
+struct ksmallPairsCmp{
+    bool operator()(const pair<int, pair<int, int>>& a, const pair<int, pair<int, int>>& b) {
+        return a.first + a.second.first > b.first + b.second.first;
+    }
+};
+
+vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
+    vector<vector<int>> res;
+    if(!k || nums1.empty() || nums2.empty()) return res;
+    priority_queue <pair<int,pair<int,int> >,vector<pair<int, pair<int, int> > >, ksmallPairsCmp > q;
+    for(int i=0; i<nums1.size(); i++) {
+        pair<int, pair<int, int>> p(nums1[i], pair<int, int>(nums2[0], 0));
+        q.push(p);
+    }
+    for(int i=0; i<k&&!q.empty(); ++i) {
+        pair<int, pair<int, int>> tmp = q.top();
+        q.pop();
+        res.push_back(vector<int>{tmp.first, tmp.second.first});
+        if(tmp.second.second < nums2.size()-1) {
+            tmp.second.second++;
+            tmp.second.first = nums2[tmp.second.second];
+            q.push(tmp);
+        }
+    }
+    return res;
+}

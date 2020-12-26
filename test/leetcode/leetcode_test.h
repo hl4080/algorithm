@@ -37,6 +37,7 @@ void test_containDuplicate();
 void test_containDuplicatesII();
 void test_containduplicateIII();
 void test_topKfrequent();
+void test_kSmallestPairs();
 
 //test functions in math directory
 void test_singleNumber();

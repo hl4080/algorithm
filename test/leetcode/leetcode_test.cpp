@@ -16,6 +16,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l219"] = &test_containDuplicatesII;
     m["l220"] = &test_containduplicateIII;
     m["l347"] = &test_topKfrequent;
+    m["l373"] = &test_kSmallestPairs;
 
     //list functions
     m["l2"]      = &test_addTwoNumber;

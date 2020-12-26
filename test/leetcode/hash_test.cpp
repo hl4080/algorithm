@@ -183,3 +183,23 @@ void test_topKfrequent() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test top K frequent end==============="<<endl;
 }
+
+void test_kSmallestPairs() {
+    cout<<"============simple test k smallest pairs begin============="<<endl;
+    vector<int> nums1{1,1,2}, nums2{1,2,3};
+    int k = 10;
+    cout<<"test case: "<<endl;
+    cout<<"nums1: ";
+    printOneDimVec(nums1);
+    cout<<"nums2:";
+    printOneDimVec(nums2);
+    cout<<"k="<<k<<endl;
+    vector<vector<int>> res = kSmallestPairs(nums1, nums2, k);
+    vector<vector<int>> desired {{1,1}, {1,1}, {2,1}, {1,2},{1,2},{2,2},{1,3},{1,3},{2,3}};
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test k smallest pairs end==============="<<endl;
+}

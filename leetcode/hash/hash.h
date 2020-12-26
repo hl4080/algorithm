@@ -9,6 +9,7 @@
 #include <set>
 #include <map>
 #include <string>
+#include <queue>
 using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target);
@@ -21,5 +22,6 @@ bool containsDuplicate(vector<int>& nums);
 bool containsNearbyDuplicate(vector<int>& nums, int k);
 bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
 vector<int> topKFrequent(vector<int>& nums, int k);
+vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k);
 
 #endif //ALGORITHM_HASH_H

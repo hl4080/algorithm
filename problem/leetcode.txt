@@ -171,3 +171,4 @@ index   type            name
 368     dp              larget divisible subset
 371     math            get sum
 372     math            super sum
+373     hash            find k pairs with smallest sums
