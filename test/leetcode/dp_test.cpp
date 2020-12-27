@@ -272,3 +272,15 @@ void test_largestDivisibleSubset() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test largest divisible subsets end==============="<<endl;
 }
+
+void test_getMoneyCount() {
+    cout<<"============simple test get monrey count begin============="<<endl;
+    int n = 10;
+    cout<<"test case: n="<<n<<endl;
+    int res = getMoneyAmount(n), desired = 16;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get monrey count end==============="<<endl;
+}

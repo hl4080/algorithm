@@ -172,3 +172,4 @@ index   type            name
 371     math            get sum
 372     math            super sum
 373     hash            find k pairs with smallest sums
+375     dp              get money count

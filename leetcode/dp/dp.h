@@ -30,5 +30,6 @@ int numSquares(int n);
 int lengthOfLIS(vector<int>& nums);
 vector<int> countBits(int num);
 vector<int> largestDivisibleSubset(vector<int>& nums);
+int getMoneyAmount(int n);
 
 #endif //ALOGRITHM_DP_H

@@ -153,6 +153,7 @@ void test_numSquare();
 void test_lengthOfLIS();
 void test_countBits();
 void test_largestDivisibleSubset();
+void test_getMoneyCount();
 
 //test functions in greedy directory
 void test_intToRoman();

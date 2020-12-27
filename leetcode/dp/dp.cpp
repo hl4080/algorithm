@@ -654,3 +654,28 @@ vector<int> largestDivisibleSubset(vector<int>& nums) {
     }
     return res;
 }
+
+/*
+ * We are playing the Guessing Game. The game will work as follows:
+
+I pick a number between 1 and n.
+You guess a number.
+If you guess the right number, you win the game.
+If you guess the wrong number, then I will tell you whether the number I picked is higher or lower, and you will continue guessing.
+Every time you guess a wrong number x, you will pay x dollars. If you run out of money, you lose the game.
+Given a particular n, return the minimum amount of money you need to guarantee a win regardless of what number I pick.
+
+ */
+
+int getMoneyAmount(int n) {
+    vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
+    for(int i=2; i<=n; i++) {
+        for(int j=1; j<=n-i+1; j++) {
+            int minVal = INT_MAX;
+            for (int k = j; k < j + i - 1; k++)
+                minVal = min(minVal, k + max(dp[j][k - 1], dp[k + 1][i+j-1]));
+            dp[j][i+j-1] = minVal;
+        }
+    }
+    return dp[1][n];
+}
