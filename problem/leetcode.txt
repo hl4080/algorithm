@@ -173,3 +173,4 @@ index   type            name
 372     math            super sum
 373     hash            find k pairs with smallest sums
 375     dp              get money count
+376     dp              wiggle max length

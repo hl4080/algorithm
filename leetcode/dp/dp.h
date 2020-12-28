@@ -31,5 +31,6 @@ int lengthOfLIS(vector<int>& nums);
 vector<int> countBits(int num);
 vector<int> largestDivisibleSubset(vector<int>& nums);
 int getMoneyAmount(int n);
+int wiggleMaxLength(vector<int>& nums);
 
 #endif //ALOGRITHM_DP_H

@@ -284,3 +284,16 @@ void test_getMoneyCount() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get monrey count end==============="<<endl;
 }
+
+void test_wiggleMaxLength() {
+    cout<<"============simple test wiggle max length begin============="<<endl;
+    vector<int> nums{1,17,5,10,13,15,10,5,16,8};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = wiggleMaxLength(nums), desired = 7;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test wiggle max length end==============="<<endl;
+}

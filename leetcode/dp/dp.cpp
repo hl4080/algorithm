@@ -679,3 +679,44 @@ int getMoneyAmount(int n) {
     }
     return dp[1][n];
 }
+
+/*
+ * A sequence of numbers is called a wiggle sequence if the differences between successive numbers strictly alternate between positive and negative.
+ * The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence.
+
+Example 1:
+
+Input: [1,7,4,9,2,5]
+Output: 6
+Explanation: The entire sequence is a wiggle sequence.
+Example 2:
+
+Input: [1,17,5,10,13,15,10,5,16,8]
+Output: 7
+Explanation: There are several subsequences that achieve this length. One is [1,17,10,13,10,16,8].
+
+ */
+
+int wiggleMaxLength(vector<int>& nums) {
+    if(nums.empty()) return 0;
+    vector<int> up(nums.size(), 1);
+    vector<int> down(nums.size(), 1);
+    for(int i=1; i<nums.size(); i++) {
+        if(nums[i] < nums[i-1]) {
+            up[i] = up[i-1];
+            down[i] = max(down[i-1], up[i-1]+1);
+        } else if(nums[i] == nums[i-1]) {
+            up[i] = up[i-1];
+            down[i] = down[i-1];
+        } else {
+            up[i] = max(up[i-1], down[i-1]+1);
+            down[i] = down[i-1];
+        }
+    }
+    int res = INT_MIN;
+    for(int i=0; i<nums.size(); ++i) {
+        res = max(res, up[i]);
+        res = max(res, down[i]);
+    }
+    return res;
+}

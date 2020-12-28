@@ -154,6 +154,7 @@ void test_lengthOfLIS();
 void test_countBits();
 void test_largestDivisibleSubset();
 void test_getMoneyCount();
+void test_wiggleMaxLength();
 
 //test functions in greedy directory
 void test_intToRoman();
