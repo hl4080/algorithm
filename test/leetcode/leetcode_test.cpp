@@ -133,6 +133,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l368"]    = &test_largestDivisibleSubset;
     m["l375"]    = &test_getMoneyCount;
     m["l376"]    = &test_wiggleMaxLength;
+    m["l377"]    = &test_combinationSum4;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

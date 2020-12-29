@@ -297,3 +297,19 @@ void test_wiggleMaxLength() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test wiggle max length end==============="<<endl;
 }
+
+void test_combinationSum4() {
+    cout<<"============simple test combination sun 4 begin============="<<endl;
+    vector<int> nums{1,2,3};
+    int target = 4;
+    cout<<"test case:"<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    int res = combinationSum4(nums, target), desired = 7;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test combination sun 4 end==============="<<endl;
+}
