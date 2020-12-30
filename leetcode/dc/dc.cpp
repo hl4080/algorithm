@@ -508,3 +508,47 @@ void wiggleSortII(vector<int>& nums) {
     for(int j=0; j<right.size(); j++)
         nums[j*2+1] = right[right.size()-1-j];
 }
+
+/*
+ * Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.
+
+Note that it is the kth smallest element in the sorted order, not the kth distinct element.
+
+Example:
+
+matrix = [
+   [ 1,  5,  9],
+   [10, 11, 13],
+   [12, 13, 15]
+],
+k = 8,
+
+return 13.
+
+ */
+
+bool kthSmallestMatrixHelp(vector<vector<int>>& matrix, int x, int k) {
+    int n = matrix.size();
+    int i = n-1, j = 0;
+    int sz = 0;
+    while(i>=0 && j<n) {
+        if(matrix[i][j] <= x) {
+            sz += i+1;
+            j++;
+        } else {
+            i--;
+        }
+    }
+    return sz >= k;
+}
+
+int kthSmallestMatrix(vector<vector<int>>& matrix, int k) {
+    int n = matrix.size();
+    int small = matrix[0][0], large = matrix[n-1][n-1];
+    while(small < large) {
+        int mid = small + (large-small)/2;
+        if(kthSmallestMatrixHelp(matrix, mid, k)) large = mid;
+        else small = mid+1;
+    }
+    return small;
+}

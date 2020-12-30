@@ -230,3 +230,23 @@ void test_wiggleSortII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test wiggle sort II end==============="<<endl;
 }
+
+void test_kthSmallestMatrix() {
+    cout<<"============simple test kth smallest matrix begin============="<<endl;
+    vector<vector<int>> matrix{
+            {1,5,9},
+            {10,11,13},
+            {12,13,15}
+    };
+    int k = 8;
+    cout<<"test case"<<endl;
+    cout<<"matrix: "<<endl;
+    printTwoDimVec(matrix);
+    cout<<"k="<<k<<endl;
+    int res = kthSmallestMatrix(matrix, k), desired = 13;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test kth smallest matrix end==============="<<endl;
+}

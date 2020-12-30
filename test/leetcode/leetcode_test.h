@@ -132,6 +132,7 @@ void test_findPeekElement();
 void test_findKLargest();
 void test_diffWaysToCompute();
 void test_wiggleSortII();
+void test_kthSmallestMatrix();
 
 //test functions in dp diectory
 void test_longestPalindromic();
