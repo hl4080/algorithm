@@ -332,3 +332,16 @@ void test_combinationSum3() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test combination sum 3 end==============="<<endl;
 }
+
+void test_lexicalOrder() {
+    cout<<"============simple test lexical order begin============="<<endl;
+    int n =13;
+    cout<<"test case: n="<<n<<endl;
+    vector<int> res = lexicalOrder(n), desired{1,10,11,12,13,2,3,4,5,6,7,8,9};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test lexical order end==============="<<endl;
+}

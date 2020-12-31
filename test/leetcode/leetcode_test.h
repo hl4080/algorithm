@@ -182,6 +182,7 @@ void test_surroundRegions();
 void test_palinfromePartition();
 void test_numIsland();
 void test_combinationSum3();
+void test_lexicalOrder();
 
 //test functions in stack directory
 void test_validParenthess();

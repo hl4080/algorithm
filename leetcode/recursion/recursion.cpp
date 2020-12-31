@@ -761,3 +761,28 @@ vector<vector<int>> combinationSum3(int k, int n) {
     combinationSum3Help(res, piece, 0, k, n, 1, 9);
     return res;
 }
+
+/*
+ * Given an integer n, return 1 - n in lexicographical order.
+
+For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].
+
+Please optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.
+
+ */
+
+void lexicalOrderHelp(int n, int x, vector<int>& res) {
+    if(x>n) return ;
+    res.push_back(x);
+    for(int i=0; i<10; i++) {
+        lexicalOrderHelp(n, x*10+i, res);
+    }
+}
+
+vector<int> lexicalOrder(int n) {
+    vector<int> res;
+    for(int i=1; i<10; ++i) {
+        lexicalOrderHelp(n, i, res);
+    }
+    return res;
+}

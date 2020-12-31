@@ -174,4 +174,6 @@ index   type            name
 373     hash            find k pairs with smallest sums
 375     dp              get money count
 376     dp              wiggle max length
-378     dc              kth smallest elements
+377     dp              combination sum 4
+378     dc              kth smallest elements in sorted matrix
+386     recursion       lexical order

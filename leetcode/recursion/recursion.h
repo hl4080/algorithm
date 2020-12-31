@@ -29,5 +29,6 @@ void surroundRegions(vector<vector<char>>& board);
 vector<vector<string>> palindromePartition(string s);
 int numIslands(vector<vector<char>>& grid);
 vector<vector<int>> combinationSum3(int k, int n);
+vector<int> lexicalOrder(int n);
 
 #endif //ALOGRITHM_RECURSION_H
