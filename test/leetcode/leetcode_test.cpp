@@ -74,6 +74,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l367"]    = &test_isPerfectSquare;
     m["l371"]    = &test_getSum;
     m["l372"]    = &test_superPow;
+    m["l390"]    = &test_lastRemain;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;

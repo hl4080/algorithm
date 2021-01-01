@@ -466,3 +466,15 @@ void test_superPow() {
     } else cerr<<"TEST STAUTS: FAILED"<<endl;
     cout<<"============simple test super pow end==============="<<endl;
 }
+
+void test_lastRemain() {
+    cout<<"============simple test last remain begin============="<<endl;
+    int n = 9;
+    cout<<"test case: n="<<n<<endl;
+    int res = lastRemaining(n), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test last remain end==============="<<endl;
+}

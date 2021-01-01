@@ -177,3 +177,4 @@ index   type            name
 377     dp              combination sum 4
 378     dc              kth smallest elements in sorted matrix
 386     recursion       lexical order
+390     math            last remain
