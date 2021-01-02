@@ -85,3 +85,15 @@ void test_myQueue() {
     }else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test my queue end==============="<<endl;
 }
+
+void test_decodeString() {
+    cout<<"============simple test decode string begin============="<<endl;
+    string s = "2[abc]3[cd]ef";
+    cout<<"test case: "<<s<<endl;
+    string res = decodeString(s), desired = "abcabccdcdcdef";
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test decode string end==============="<<endl;
+}

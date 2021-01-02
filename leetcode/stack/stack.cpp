@@ -207,3 +207,53 @@ int calculate(string s) {
     }
     return res;
 }
+
+/*
+ * You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.
+
+Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
+
+Example 1:
+
+Input: s = "3[a]2[bc]"
+Output: "aaabcbc"
+
+ */
+
+string decodeString(string s) {
+    string res;
+    stack<char> stk;
+    for(int pos=0; pos<s.size(); pos++) {
+        string tmp;
+        if(s[pos] == ']') {
+            while(!stk.empty() && (!(stk.top() <= '9' && stk.top() >= '0'))) {
+                tmp += stk.top();
+                stk.pop();
+            }
+            reverse(tmp.begin(), tmp.end());
+            string num;
+            while(!stk.empty() && stk.top() <= '9' && stk.top() >= '0') {
+                num += stk.top();
+                stk.pop();
+            }
+            reverse(num.begin(), num.end());
+            int n = 0;
+            for(int i=0; i<num.size(); ++i) {
+                n = 10*n + num[i]-'0';
+            }
+            for(int i=0; i<n; ++i) {
+                for(int j=1; j<tmp.size(); j++) {
+                    stk.push(tmp[j]);
+                }
+            }
+        } else {
+            stk.push(s[pos]);
+        }
+    }
+    while(!stk.empty()) {
+        res += stk.top();
+        stk.pop();
+    }
+    reverse(res.begin(), res.end());
+    return res;
+}

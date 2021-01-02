@@ -178,3 +178,4 @@ index   type            name
 378     dc              kth smallest elements in sorted matrix
 386     recursion       lexical order
 390     math            last remain
+394     stack           decode string

@@ -171,6 +171,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l225"]    = &test_mystack;
     m["l227"]    = &test_calculator;
     m["l232"]    = &test_myQueue;
+    m["l394"]    = &test_decodeString;
 
     //tree functions
     m["l94"]     = &test_inorderTreeTravel;

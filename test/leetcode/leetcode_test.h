@@ -192,6 +192,7 @@ void test_evalPRN();
 void test_mystack();
 void test_calculator();
 void test_myQueue();
+void test_decodeString();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();

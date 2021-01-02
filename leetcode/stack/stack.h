@@ -17,6 +17,7 @@ bool isValidParentheses(string s);
 string simplifyPath(string path);
 int evalRPN(vector<string>& tokens);
 int calculate(string s);
+string decodeString(string s);
 
 class MyStack {
 public:
