@@ -113,6 +113,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l241"]    = &test_diffWaysToCompute;
     m["l324"]    = &test_wiggleSortII;
     m["l378"]    = &test_kthSmallestMatrix;
+    m["l395"]    = &test_longestSubstrWithKRepeatingchar;
 
     //dp functions
     m["l5"]      = &test_longestPalindromic;

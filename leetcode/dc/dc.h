@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <string>
+#include <map>
 using namespace std;
 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2);
@@ -23,5 +24,6 @@ int findKthLargest(vector<int>& nums, int k);
 vector<int> diffWaysToCompute(string input);
 void wiggleSortII(vector<int>& nums);
 int kthSmallestMatrix(vector<vector<int>>& matrix, int k);
+int longestSubstring(string s, int k);
 
 #endif //ALOGRITHM_DC_H

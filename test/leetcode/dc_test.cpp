@@ -250,3 +250,16 @@ void test_kthSmallestMatrix() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test kth smallest matrix end==============="<<endl;
 }
+
+void test_longestSubstrWithKRepeatingchar() {
+    cout<<"============simple test longest substr with k repeating chars begin============="<<endl;
+    string s = "ababbc";
+    int k = 2;
+    cout<<"test case: s="<<s<<"k="<<k<<endl;
+    int res = longestSubstring(s, k), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test longest substr with k repeating chars end==============="<<endl;
+}

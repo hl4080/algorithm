@@ -134,6 +134,7 @@ void test_findKLargest();
 void test_diffWaysToCompute();
 void test_wiggleSortII();
 void test_kthSmallestMatrix();
+void test_longestSubstrWithKRepeatingchar();
 
 //test functions in dp diectory
 void test_longestPalindromic();

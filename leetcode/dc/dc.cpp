@@ -552,3 +552,32 @@ int kthSmallestMatrix(vector<vector<int>>& matrix, int k) {
     }
     return small;
 }
+
+/*
+ * Given a string s and an integer k, return the length of the longest substring of s such that the frequency of each character in this substring is greater than or equal to k.
+
+Example 1:
+
+Input: s = "aaabb", k = 3
+Output: 3
+Explanation: The longest substring is "aaa", as 'a' is repeated 3 times.
+
+ */
+
+int longestSubstring(string s, int k) {
+    map<char, int> m;
+    vector<int> split;
+    for(int i=0; i<s.size(); i++)
+        m[s[i]]++;
+    for(int i=0; i<s.size(); i++)
+        if(m[s[i]] < k) split.push_back(i);
+    if(split.empty()) return s.size();
+    split.push_back(s.size());
+    int res = 0, left = 0;
+    for(int i=0; i<split.size(); i++) {
+        int len = split[i] - left;
+        if(len > res) res = max(res, longestSubstring(s.substr(left, len), k));
+        left = split[i]+1;
+    }
+    return res;
+}

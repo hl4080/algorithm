@@ -179,3 +179,4 @@ index   type            name
 386     recursion       lexical order
 390     math            last remain
 394     stack           decode string
+395     dc              longest substr with at least k repeat chars
