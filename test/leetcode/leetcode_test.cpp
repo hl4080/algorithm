@@ -137,6 +137,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l375"]    = &test_getMoneyCount;
     m["l376"]    = &test_wiggleMaxLength;
     m["l377"]    = &test_combinationSum4;
+    m["l396"]    = &test_rotateFunction;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

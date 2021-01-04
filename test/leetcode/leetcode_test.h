@@ -159,6 +159,7 @@ void test_largestDivisibleSubset();
 void test_getMoneyCount();
 void test_wiggleMaxLength();
 void test_combinationSum4();
+void test_rotateFunction();
 
 //test functions in greedy directory
 void test_intToRoman();

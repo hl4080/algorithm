@@ -180,3 +180,4 @@ index   type            name
 390     math            last remain
 394     stack           decode string
 395     dc              longest substr with at least k repeat chars
+396     dp              rotate function

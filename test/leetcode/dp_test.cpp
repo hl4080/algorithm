@@ -313,3 +313,16 @@ void test_combinationSum4() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test combination sun 4 end==============="<<endl;
 }
+
+void test_rotateFunction() {
+    cout<<"============simple test rotate function begin============="<<endl;
+    vector<int> A{4, 3, 2, 6};
+    cout<<"test case: ";
+    printOneDimVec(A);
+    int res = maxRotateFunction(A), desired = 26;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test rotate function end==============="<<endl;
+}
