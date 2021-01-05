@@ -73,6 +73,7 @@ void test_isPerfectSquare();
 void test_getSum();
 void test_superPow();
 void test_lastRemain();
+void test_integerReplacement();
 
 //test functions in two-pointers directory
 void test_happyNumber();

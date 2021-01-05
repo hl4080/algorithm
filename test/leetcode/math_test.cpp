@@ -478,3 +478,15 @@ void test_lastRemain() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test last remain end==============="<<endl;
 }
+
+void test_integerReplacement() {
+    cout<<"============simple test integer replacement begin============="<<endl;
+    int n = 15;
+    cout<<"test case: n="<<15<<endl;
+    int res = integerReplacement(n), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test integer replacement end==============="<<endl;
+}

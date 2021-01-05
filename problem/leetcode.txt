@@ -181,3 +181,4 @@ index   type            name
 394     stack           decode string
 395     dc              longest substr with at least k repeat chars
 396     dp              rotate function
+397     math            integer replacement
