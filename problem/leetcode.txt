@@ -182,3 +182,4 @@ index   type            name
 395     dc              longest substr with at least k repeat chars
 396     dp              rotate function
 397     math            integer replacement
+398     math            random pick index

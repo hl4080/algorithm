@@ -74,6 +74,7 @@ void test_getSum();
 void test_superPow();
 void test_lastRemain();
 void test_integerReplacement();
+void test_randomPickIndex();
 
 //test functions in two-pointers directory
 void test_happyNumber();

@@ -930,3 +930,23 @@ int integerReplacement(int n) {
     }
     return res;
 }
+
+/*
+ * Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.
+
+Note:
+The array size can be very large. Solution that uses too much extra space will not pass the judge.
+
+ */
+
+int pickRandomly(vector<int>& nums, int target) {
+    int res;
+    int index = 0;
+    for(int i=0; i<nums.size(); i++) {
+        if(nums[i] == target) {
+            index++;
+            if(rand()%index == 0) res = i;
+        }
+    }
+    return res;
+}

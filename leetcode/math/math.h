@@ -45,5 +45,6 @@ int getSum(int a, int b);
 int superPow(int a, vector<int>& b);
 int lastRemaining(int n);
 int integerReplacement(int n);
+int pickRandomly(vector<int>& nums, int target);
 
 #endif //MATH_H

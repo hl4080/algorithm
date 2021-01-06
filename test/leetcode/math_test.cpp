@@ -490,3 +490,25 @@ void test_integerReplacement() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test integer replacement end==============="<<endl;
 }
+
+void test_randomPickIndex() {
+    cout<<"============simple test randomly pick index begin============="<<endl;
+    vector<int> nums{1,2,3,3,3};
+    int target = 3;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    int c1 = 0, c2 = 0, c3 = 0;
+    for(int i=0; i<100; i++) {
+        int res = pickRandomly(nums, target);
+        if(res == 2) c1++;
+        else if(res == 3) c2++;
+        else if(res == 4) c3++;
+    }
+    if(c1+c2+c3 == 100 && c1 && c2 && c3) {
+        cout<<"result of test case: randomly pick indexes 100 times are: "<<c1<<" "<<c2<<" "<<c3<<endl;
+        cout<<"TEST CASE: PASS"<<endl;
+    } else cerr<<"TEST CASE: FAILED"<<endl;
+    cout<<"============simple test randomly pick index end==============="<<endl;
+}

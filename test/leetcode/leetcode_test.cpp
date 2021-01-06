@@ -76,6 +76,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l372"]    = &test_superPow;
     m["l390"]    = &test_lastRemain;
     m["l397"]    = &test_integerReplacement;
+    m["l398"]    = &test_randomPickIndex;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
