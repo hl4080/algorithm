@@ -512,3 +512,15 @@ void test_randomPickIndex() {
     } else cerr<<"TEST CASE: FAILED"<<endl;
     cout<<"============simple test randomly pick index end==============="<<endl;
 }
+
+void test_findNthDigit() {
+    cout<<"============simple test find nth digit begin============="<<endl;
+    int n = 1000;
+    cout<<"test case: n="<<n<<endl;
+    int res = findNthDigit(n), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find nth digit end==============="<<endl;
+}

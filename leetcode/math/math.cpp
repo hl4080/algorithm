@@ -950,3 +950,32 @@ int pickRandomly(vector<int>& nums, int target) {
     }
     return res;
 }
+
+/*
+ * Find the nth digit of the infinite integer sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...
+
+Note:
+n is positive and will fit within the range of a 32-bit signed integer (n < 231).
+
+Example 1:
+
+Input:
+3
+
+Output:
+3
+ */
+
+int findNthDigit(int n) {
+    n -= 1;
+    int res;
+    for(int i=1; i<11; i++) {
+        long first = pow(10, i-1);
+        if(n<first*9*i){
+            res = to_string(n/i+first)[n%i]-'0';
+            return res;
+        }
+        n -= first*9*i;
+    }
+    return res;
+}

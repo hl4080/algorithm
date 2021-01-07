@@ -183,3 +183,4 @@ index   type            name
 396     dp              rotate function
 397     math            integer replacement
 398     math            random pick index
+400     math            nth digit

@@ -46,5 +46,6 @@ int superPow(int a, vector<int>& b);
 int lastRemaining(int n);
 int integerReplacement(int n);
 int pickRandomly(vector<int>& nums, int target);
+int findNthDigit(int n);
 
 #endif //MATH_H
