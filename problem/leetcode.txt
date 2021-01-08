@@ -184,3 +184,4 @@ index   type            name
 397     math            integer replacement
 398     math            random pick index
 400     math            nth digit
+402     stack           remove k digits

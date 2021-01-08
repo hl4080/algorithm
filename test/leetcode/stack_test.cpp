@@ -97,3 +97,18 @@ void test_decodeString() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test decode string end==============="<<endl;
 }
+
+void test_removeKDigits() {
+    cout<<"============simple test remove k digits begin============="<<endl;
+    string num = "1432219";
+    int k = 3;
+    cout<<"test case:"<<endl;
+    cout<<"num: "<<num<<endl;
+    cout<<"k="<<k<<endl;
+    string res = removeKdigits(num, k), desired = "1219";
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove k digits end==============="<<endl;
+}

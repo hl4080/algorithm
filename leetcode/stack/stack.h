@@ -18,6 +18,7 @@ string simplifyPath(string path);
 int evalRPN(vector<string>& tokens);
 int calculate(string s);
 string decodeString(string s);
+string removeKdigits(string num, int k);
 
 class MyStack {
 public:

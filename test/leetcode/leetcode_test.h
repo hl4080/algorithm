@@ -198,6 +198,7 @@ void test_mystack();
 void test_calculator();
 void test_myQueue();
 void test_decodeString();
+void test_removeKDigits();
 
 //test funtions in tree directory
 void test_inorderTreeTravel();
