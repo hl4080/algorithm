@@ -185,3 +185,4 @@ index   type            name
 398     math            random pick index
 400     math            nth digit
 402     stack           remove k digits
+404     tree            sum of left leaves

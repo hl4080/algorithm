@@ -207,6 +207,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l257"]    = &test_binaryTreePath;
     m["l310"]    = &test_findMinHeightTrees;
     m["l337"]    = &test_houseRobIII;
+    m["l404"]    = &test_sumOfLeafNodes;
 
     //graph functions
     m["l127"]    = &test_ladderLength;
