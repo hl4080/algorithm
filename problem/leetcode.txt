@@ -186,3 +186,4 @@ index   type            name
 400     math            nth digit
 402     stack           remove k digits
 404     tree            sum of left leaves
+416     dp              partition equal subset sum

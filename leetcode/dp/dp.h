@@ -34,5 +34,6 @@ int getMoneyAmount(int n);
 int wiggleMaxLength(vector<int>& nums);
 int combinationSum4(vector<int>& nums, int target);
 int maxRotateFunction(vector<int>& A);
+bool canPartition(vector<int>& nums);
 
 #endif //ALOGRITHM_DP_H

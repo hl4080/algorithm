@@ -794,3 +794,36 @@ int maxRotateFunction(vector<int>& A) {
     for(int i=0; i<n; ++i) res = max(res, f[i]);
     return n==0? 0: res;
 }
+
+/*
+ * Given a non-empty array nums containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+
+Example 1:
+
+Input: nums = [1,5,11,5]
+Output: true
+Explanation: The array can be partitioned as [1, 5, 5] and [11].
+
+ */
+
+bool canPartition(vector<int>& nums) {
+    int n = nums.size();
+    if(n<2) return false;
+    int total = 0, maxNum = INT_MIN;
+    for(int i=0; i<n; ++i) {
+        total += nums[i];
+        maxNum = max(maxNum, nums[i]);
+    }
+    if(total % 2 == 1) return false;
+    if(maxNum > total/2) return false;
+    vector<vector<bool>> dp(n, vector<bool>(total/2+1));
+    for(int i=0; i<n; i++) dp[i][0] = true;
+    dp[0][nums[0]] = true;
+    for(int i=1; i<n; i++) {
+        for(int j=1; j<total/2+1; j++) {
+            if(nums[i] > j) dp[i][j] = dp[i-1][j];
+            else dp[i][j] = dp[i-1][j] | dp[i-1][j-nums[i]];
+        }
+    }
+    return dp[n-1][total/2];
+}
