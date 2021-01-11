@@ -339,3 +339,17 @@ void test_nthSuperUglyNumber() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test nth super ugly number end==============="<<endl;
 }
+
+void test_ongestRepeatingCharacterReplacement() {
+    cout<<"============simple test largest repeating character replacement begin============="<<endl;
+    string s = "AABABBA";
+    int k = 1;
+    cout<<"test case: "<<endl;
+    cout<<"s="<<s<<" "<<"k="<<k<<endl
+    int res = characterReplacement(s, k), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST SATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test largest repeating character replacement end==============="<<endl;
+}

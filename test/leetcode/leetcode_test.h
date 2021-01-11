@@ -99,6 +99,7 @@ void test_nthUglyNumber();
 void test_moveZeros();
 void test_findDuplicate();
 void test_nthSuperUglyNumber();
+void test_ongestRepeatingCharacterReplacement();
 
 //test functions in list directory
 void test_addTwoNumber();
@@ -163,6 +164,7 @@ void test_getMoneyCount();
 void test_wiggleMaxLength();
 void test_combinationSum4();
 void test_rotateFunction();
+void test_partitionEqualSum();
 
 //test functions in greedy directory
 void test_intToRoman();

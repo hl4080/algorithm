@@ -9,6 +9,7 @@
 #include <string>
 #include <set>
 #include <algorithm>
+#include <map>
 using namespace std;
 
 bool isHappy(int n);
@@ -32,5 +33,6 @@ int nthUglyNumber(int n);
 void moveZeroes(vector<int>& nums);
 int findDuplicateNumber(vector<int>& nums);
 int nthSuperUglyNumber(int n, vector<int>& primes);
+int characterReplacement(string s, int k);
 
 #endif //TWO_POINTER_H

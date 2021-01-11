@@ -706,3 +706,42 @@ int nthSuperUglyNumber(int n, vector<int>& primes) {
     }
     return uglys[n-1];
 }
+
+/*
+ * Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
+
+In one operation, you can choose any character of the string and change it to any other uppercase English character.
+
+Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.
+
+Note:
+Both the string's length and k will not exceed 104.
+
+Example 1:
+
+Input:
+s = "ABAB", k = 2
+
+Output:
+4
+
+Explanation:
+Replace the two 'A's with two 'B's or vice versa.
+
+ */
+
+int characterReplacement(string s, int k) {
+    map<char, int> m;
+    int left = 0, right = 0;
+    int max_count = 0;
+    while(right < s.size()) {
+        m[s[right]]+=1;
+        max_count = max(max_count, m[s[right]]);
+        if(right - left + 1 - max_count > k) {
+            m[s[left]]-=1;
+            left++;
+        }
+        right++;
+    }
+    return right-left;
+}

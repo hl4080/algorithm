@@ -101,6 +101,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l283"]    = &test_moveZeros;
     m["l287"]    = &test_findDuplicate;
     m["l313"]    = &test_nthSuperUglyNumber;
+    m["l424"]    = &test_ongestRepeatingCharacterReplacement;
 
     //dc functions
     m["l4"]      = &test_findMedianSortedArrays;
@@ -141,6 +142,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l376"]    = &test_wiggleMaxLength;
     m["l377"]    = &test_combinationSum4;
     m["l396"]    = &test_rotateFunction;
+    m["l416"]    = &test_partitionEqualSum;
 
     //greedy functions
     m["l12"]     = &test_intToRoman;

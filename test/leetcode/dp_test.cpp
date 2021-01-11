@@ -326,3 +326,16 @@ void test_rotateFunction() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test rotate function end==============="<<endl;
 }
+
+void test_partitionEqualSum() {
+    cout<<"============simple test partition equal subset sum begin============="<<endl;
+    vector<int> nums{1,5,11,5};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = canPartition(nums), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test partition equal subset sum end==============="<<endl;
+}
