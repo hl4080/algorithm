@@ -203,3 +203,18 @@ void test_kSmallestPairs() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test k smallest pairs end==============="<<endl;
 }
+
+void test_miniumGeneticMutation() {
+    cout<<"============simple test minimum genetic mutation begin============="<<endl;
+    string start = "AACCGGTT", end = "AAACGGTA";
+    vector<string> bank{"AACCGGTA", "AACCGCTA", "AAACGGTA"};
+    cout<<"test case: "<<endl;
+    cout<<"start: "<<start<<" "<<"end: "<<end<<" "<<"bank: ";
+    printOneDimVec(bank);
+    int res = minMutation(start, end, bank), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test minimum genetic mutation end==============="<<endl;
+}

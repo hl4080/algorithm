@@ -345,7 +345,7 @@ void test_ongestRepeatingCharacterReplacement() {
     string s = "AABABBA";
     int k = 1;
     cout<<"test case: "<<endl;
-    cout<<"s="<<s<<" "<<"k="<<k<<endl
+    cout<<"s="<<s<<" "<<"k="<<k<<endl;
     int res = characterReplacement(s, k), desired = 4;
     if(res == desired) {
         cout<<"result of test case: "<<res<<endl;

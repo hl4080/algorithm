@@ -23,5 +23,6 @@ bool containsNearbyDuplicate(vector<int>& nums, int k);
 bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t);
 vector<int> topKFrequent(vector<int>& nums, int k);
 vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k);
+int minMutation(string start, string end, vector<string>& bank);
 
 #endif //ALGORITHM_HASH_H

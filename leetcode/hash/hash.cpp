@@ -415,3 +415,64 @@ vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k
     }
     return res;
 }
+
+/*
+ * A gene string can be represented by an 8-character long string, with choices from "A", "C", "G", "T".
+
+Suppose we need to investigate about a mutation (mutation from "start" to "end"), where ONE mutation is defined as ONE single character changed in the gene string.
+
+For example, "AACCGGTT" -> "AACCGGTA" is 1 mutation.
+
+Also, there is a given gene "bank", which records all the valid gene mutations. A gene must be in the bank to make it a valid gene string.
+
+Now, given 3 things - start, end, bank, your task is to determine what is the minimum number of mutations needed to mutate from "start" to "end". If there is no such a mutation, return -1.
+
+Note:
+
+Starting point is assumed to be valid, so it might not be included in the bank.
+If multiple mutations are needed, all mutations during in the sequence must be valid.
+You may assume start and end string is not the same.
+ 
+
+Example 1:
+
+start: "AACCGGTT"
+end:   "AACCGGTA"
+bank: ["AACCGGTA"]
+
+return: 1
+
+ */
+
+int minMutation(string start, string end, vector<string>& bank) {
+    map<string, bool> hash;
+    for(int i=0; i<bank.size(); i++)
+        hash[bank[i]] = false;
+    queue<string> q;
+    q.push(start);
+    vector<char> clist{'A', 'C', 'G', 'T'};
+    int res = 0;
+    while(!q.empty()) {
+        int sz = q.size();
+        while(sz) {
+            string first = q.front();
+            q.pop();
+            if(first == end) return res;
+            for(int i=0; i<first.size(); i++) {
+                string tmp = first;
+                for(int j=0; j<clist.size(); j++) {
+                    char store = tmp[i];
+                    tmp[i] = clist[j];
+                    if(hash.count(tmp) && !hash[tmp]) {
+                        hash[tmp] = true;
+                        q.push(tmp);
+                    }
+                    tmp[i] = store;
+                }
+            }
+            sz--;
+        }
+        res++;
+    }
+    return -1;
+}

@@ -38,6 +38,7 @@ void test_containDuplicatesII();
 void test_containduplicateIII();
 void test_topKfrequent();
 void test_kSmallestPairs();
+void test_miniumGeneticMutation();
 
 //test functions in math directory
 void test_singleNumber();
