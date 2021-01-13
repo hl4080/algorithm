@@ -189,3 +189,4 @@ index   type            name
 416     dp              partition equal subset sum
 424     two-pointers    longest repeating character replacement
 433     hash            minimum genetic mutation
+435     greedy          non-overlapping intervals

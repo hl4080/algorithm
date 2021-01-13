@@ -172,6 +172,7 @@ void test_intToRoman();
 void test_jumpGame();
 void test_grayCode();
 void test_canCompleteCircuit();
+void test_nonOverlappingIntervals();
 
 //test functions in recursion directory
 void test_letterCombination();

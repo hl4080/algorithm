@@ -149,6 +149,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l12"]     = &test_intToRoman;
     m["l55"]     = &test_jumpGame;
     m["l134"]    = &test_canCompleteCircuit;
+    m["l435"]    = &test_nonOverlappingIntervals;
 
     //recursion functions
     m["l17"]     = &test_letterCombination;

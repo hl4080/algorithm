@@ -218,3 +218,16 @@ void test_miniumGeneticMutation() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test minimum genetic mutation end==============="<<endl;
 }
+
+void test_nonOverlappingIntervals() {
+    cout<<"============simple test non overlapping intervals begin============="<<endl;
+    vector<vector<int>> intervals{{1,2},{2,3},{3,4},{1,3}};
+    cout<<"test case: "<<endl;
+    printTwoDimVec(intervals);
+    int res = eraseOverlapIntervals(intervals), desired = 1;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test non overlapping intervals end==============="<<endl;
+}

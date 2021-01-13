@@ -150,3 +150,34 @@ int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
     }
     return maxIndex;
 }
+
+/*
+ * Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+
+ 
+
+Example 1:
+
+Input: [[1,2],[2,3],[3,4],[1,3]]
+Output: 1
+Explanation: [1,3] can be removed and the rest of intervals are non-overlapping.
+
+ */
+
+bool eraseOverlapIntervalsCmp(vector<int>& a, vector<int>& b) {
+    return a[1] < b[1];
+}
+
+int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+    if(intervals.empty()) return 0;
+    sort(intervals.begin(), intervals.end(), eraseOverlapIntervalsCmp);
+    int interval_num = 1;
+    vector<int> first = intervals[0];
+    for(int i=0; i<intervals.size(); i++) {
+        if(intervals[i][0] >= first[1]) {
+            interval_num++;
+            first = intervals[i];
+        }
+    }
+    return intervals.size()-interval_num;
+}

@@ -12,5 +12,6 @@ using namespace std;
 string intToRoman(int num);
 bool jumpGame(vector<int>& nums);
 int canCompleteCircuit(vector<int>& gas, vector<int>& cost);
+int eraseOverlapIntervals(vector<vector<int>>& intervals);
 
 #endif //ALOGRITHM_GREEDY_H
