@@ -233,6 +233,7 @@ void test_binaryTreePath();
 void test_findMinHeightTrees();
 void test_houseRobIII();
 void test_sumOfLeafNodes();
+void test_pathSumIII();
 
 //functions in graph directory
 void test_ladderLength();

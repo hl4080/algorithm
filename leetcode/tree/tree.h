@@ -42,5 +42,6 @@ vector<string> binaryTreePaths(TreeNode* root);
 vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges);
 int robTree(TreeNode* root);
 int sumOfLeftLeaves(TreeNode* root);
+int pathSumIII(TreeNode* root, int sum);
 
 #endif //ALOGRITHM_TREE_H

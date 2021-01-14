@@ -443,3 +443,19 @@ void test_sumOfLeafNodes() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test sum of leaf nodes end==============="<<endl;
 }
+
+void test_pathSumIII() {
+    cout<<"============simple test path sum III begin============="<<endl;
+    vector<int> nums{-1,5,-1,3,1,2,3};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case:"<<endl;
+    printTree(root);
+    int sum = 8;
+    cout<<"sum="<<sum<<endl;
+    int res = pathSumIII(root, sum), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUSL FAILED"<<endl;
+    cout<<"============simple test path sum III end==============="<<endl;
+}
