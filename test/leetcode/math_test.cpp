@@ -524,3 +524,17 @@ void test_findNthDigit() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find nth digit end==============="<<endl;
 }
+
+void test_findAllDuplicates() {
+    cout<<"============simple test find all duplicates begin============="<<endl;
+    vector<int> nums{4,3,2,7,8,2,3,1};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<int> res = findDuplicates(nums), desired{2,3};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find all duplicates end==============="<<endl;
+}

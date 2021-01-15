@@ -191,3 +191,4 @@ index   type            name
 433     hash            minimum genetic mutation
 435     greedy          non-overlapping intervals
 437     tree            path sum III
+442     math            find all duplicates

@@ -77,6 +77,7 @@ void test_lastRemain();
 void test_integerReplacement();
 void test_randomPickIndex();
 void test_findNthDigit();
+void test_findAllDuplicates();
 
 //test functions in two-pointers directory
 void test_happyNumber();

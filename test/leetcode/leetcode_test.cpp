@@ -79,6 +79,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l397"]    = &test_integerReplacement;
     m["l398"]    = &test_randomPickIndex;
     m["l400"]    = &test_findNthDigit;
+    m["l442"]    = &test_findAllDuplicates;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
