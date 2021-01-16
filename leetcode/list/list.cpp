@@ -654,3 +654,49 @@ ListNode* oddEvenList(ListNode* head) {
     }
     return head;
 }
+
+/*
+ * You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Follow up:
+What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
+
+Example:
+
+Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 8 -> 0 -> 7
+
+ */
+
+ListNode* addTwoNumbersII(ListNode* l1, ListNode* l2) {
+    stack<int> stk1, stk2;
+    while(l1) {
+        stk1.push(l1->val);
+        l1 = l1->next;
+    }
+    while(l2) {
+        stk2.push(l2->val);
+        l2 = l2->next;
+    }
+    ListNode* res = new ListNode(0);
+    res->next = NULL;
+    int carry = 0;
+    while(!stk1.empty() || !stk2.empty() || carry != 0) {
+        int val = carry;
+        if(!stk1.empty()) {
+            val += stk1.top();
+            stk1.pop();
+        }
+        if(!stk2.empty()) {
+            val += stk2.top();
+            stk2.pop();
+        }
+        carry = val/10;
+        ListNode* node = new ListNode(val%10);
+        node->next = res->next;
+        res->next = node;
+    }
+    return res->next;
+}

@@ -5,6 +5,8 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include <stack>
+
 #include "../data-struct.h"
 
 using namespace std;
@@ -29,5 +31,6 @@ ListNode* removeElements(ListNode* head, int val);
 bool isPalindromeList(ListNode* head);
 void deleteNode(ListNode* node);
 ListNode* oddEvenList(ListNode* head);
+ListNode* addTwoNumbersII(ListNode* l1, ListNode* l2);
 
 #endif //LIST_H

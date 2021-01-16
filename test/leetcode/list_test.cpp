@@ -381,3 +381,23 @@ void test_oddEvenList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test odd even list end================="<<endl;
 }
+
+void test_ddTwoNumbersII() {
+    cout<<"============simple test two numbers II begin==============="<<endl;
+    vector<int> vec1{7,2,4,3};
+    vector<int> vec2{5,6,4};
+    ListNode* l1 = vector2List(vec1), *l2 = vector2List(vec2);
+    cout<<"test case: "<<endl;
+    cout<<"l1: ";
+    printListNode(l1);
+    cout<<"l2: ";
+    printListNode(l2);
+    ListNode* res = addTwoNumbersII(l1, l2);
+    vector<int> desired{7,8,0,7};
+    if(list2Vector(res) == desired) {
+        cout<<"result of test case: ";
+        printListNode(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test two numbers II end================="<<endl;
+}
