@@ -538,3 +538,17 @@ void test_findAllDuplicates() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find all duplicates end==============="<<endl;
 }
+
+void test_findAllDisappear() {
+    cout<<"============simple test find all disappear begin============="<<endl;
+    vector<int> nums{4,3,2,7,8,2,3,1};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<int> res = findDisappearedNumbers(nums), desired{5,6};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find all disappear end==============="<<endl;
+}

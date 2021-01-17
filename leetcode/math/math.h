@@ -48,5 +48,6 @@ int integerReplacement(int n);
 int pickRandomly(vector<int>& nums, int target);
 int findNthDigit(int n);
 vector<int> findDuplicates(vector<int>& nums);
+vector<int> findDisappearedNumbers(vector<int>& nums);
 
 #endif //MATH_H
