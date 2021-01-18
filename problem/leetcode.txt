@@ -194,3 +194,4 @@ index   type            name
 442     math            find all duplicates
 445     list            add two numbers II
 448     math            find all diaappear
+450     tree            delete node

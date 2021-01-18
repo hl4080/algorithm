@@ -43,5 +43,6 @@ vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges);
 int robTree(TreeNode* root);
 int sumOfLeftLeaves(TreeNode* root);
 int pathSumIII(TreeNode* root, int sum);
+TreeNode* deleteTreeNode(TreeNode* root, int key);
 
 #endif //ALOGRITHM_TREE_H

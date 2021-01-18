@@ -459,3 +459,21 @@ void test_pathSumIII() {
     } else cerr<<"TEST STATUSL FAILED"<<endl;
     cout<<"============simple test path sum III end==============="<<endl;
 }
+
+void test_deleteTreeNode() {
+    cout<<"============simple test delete node begin============="<<endl;
+    vector<int> nums{2,3,4,5,-1,6,7};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int target = 7;
+    TreeNode* res = deleteTreeNode(root, target);
+    vector<int> des{2,3,4,5,-1,6,-1};
+    TreeNode* desired = buildTree(des, 0, des.size()-1);
+    if(treesEqual(res, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test delete node end==============="<<endl;
+}
