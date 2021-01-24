@@ -3,7 +3,7 @@ CXX = g++
 LDFLAGS = -std=c++14
 TARGET = main
 #CPP_FILES = $(shell find . -name "*.cpp")
-CPP_FILES = $(shell  find ./leetcode ./test/ ./util main.cpp -name "*.cpp")
+CPP_FILES = $(shell  find ./target_offer ./leetcode ./test/ ./util main.cpp -name "*.cpp")
 DATASTRUCT_HEAD = leetcode/data-struct.h
 BASE = $(basename $(CPP_FILES))
 OBJS = $(addsuffix .o, $(addprefix obj/, $(BASE)))

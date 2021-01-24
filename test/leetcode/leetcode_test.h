@@ -19,13 +19,6 @@
 #include "../../leetcode/tree/tree.h"
 #include "../../leetcode/graph/graph.h"
 
-typedef void (*FUNC)();
-
-//init function map
-void initLeetMap(map<string, FUNC>& m);
-
-
-
 //test functiions in hash directory
 void test_twoSum();
 void test_romanToInt();
@@ -39,6 +32,7 @@ void test_containduplicateIII();
 void test_topKfrequent();
 void test_kSmallestPairs();
 void test_miniumGeneticMutation();
+void test_fourSumCount();
 
 //test functions in math directory
 void test_singleNumber();
@@ -79,6 +73,7 @@ void test_randomPickIndex();
 void test_findNthDigit();
 void test_findAllDuplicates();
 void test_findAllDisappear();
+void test_minMoves();
 
 //test functions in two-pointers directory
 void test_happyNumber();

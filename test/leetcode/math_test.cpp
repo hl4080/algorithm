@@ -552,3 +552,16 @@ void test_findAllDisappear() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find all disappear end==============="<<endl;
 }
+
+void test_minMoves() {
+    cout<<"============simple test min values begin============="<<endl;
+    vector<int> nums{1,2,3};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = minMoves(nums), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cout<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test min values end==============="<<endl;
+}

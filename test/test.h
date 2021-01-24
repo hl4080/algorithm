@@ -1,10 +1,12 @@
 //
-// Created by hl4080 on 2020/6/28.
+// Created by hl4080 on 2021/1/24.
 //
 
-#include "leetcode_test.h"
+#include "leetcode/leetcode_test.h"
+#include "target_offer/target_offer_test.h"
 
-void initLeetMap(map<string, FUNC>& m) {
+void initProblemMap(map<string, FUNC>& m) {
+    /********************* leetcode problems **********************/
     //hash functions
     m["l1"]   = &test_twoSum;
     m["l13"]  = &test_romanToInt;
@@ -18,6 +20,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l347"] = &test_topKfrequent;
     m["l373"] = &test_kSmallestPairs;
     m["l433"] = &test_miniumGeneticMutation;
+    m["l454"] = &test_fourSumCount;
 
     //list functions
     m["l2"]      = &test_addTwoNumber;
@@ -82,6 +85,7 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l400"]    = &test_findNthDigit;
     m["l442"]    = &test_findAllDuplicates;
     m["l448"]    = &test_findAllDisappear;
+    m["l453"]    = &test_minMoves;
 
     //two_pointer functions
     m["l3"]      = &test_longestSubsting;
@@ -223,4 +227,9 @@ void initLeetMap(map<string, FUNC>& m) {
     m["l207"]    = &test_courseSchedule;
     m["l210"]    = &test_courseScheduleII;
     m["l332"]    = &test_findItinerary;
+
+    /********************* target offer problems **********************/
+
+    //ararry function
+    m["o1"]     = &test_find;
 }

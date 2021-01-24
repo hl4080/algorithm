@@ -195,3 +195,5 @@ index   type            name
 445     list            add two numbers II
 448     math            find all diaappear
 450     tree            delete node
+453     math            min moves
+454     hash            four sum count

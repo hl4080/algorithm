@@ -231,3 +231,23 @@ void test_nonOverlappingIntervals() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test non overlapping intervals end==============="<<endl;
 }
+
+void test_fourSumCount() {
+    cout<<"============simple test four sum count begin============="<<endl;
+    vector<int> A{1,2}, B{-2,-1}, C{-1,2}, D{0,2};
+    cout<<"test case: "<<endl;
+    cout<<"A: ";
+    printOneDimVec(A);
+    cout<<"B: ";
+    printOneDimVec(B);
+    cout<<"C: ";
+    printOneDimVec(C);
+    cout<<"D: ";
+    printOneDimVec(D);
+    int res = fourSumCount(A, B, C, D), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test four sum count end==============="<<endl;
+}

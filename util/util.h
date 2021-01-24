@@ -9,7 +9,13 @@
 #include "../leetcode/data-struct.h"
 #include <iostream>
 #include <queue>
+#include <map>
 #include <string>
+
+typedef void (*FUNC)();
+
+//init function map
+void initProblemMap(map<string, FUNC>& m);
 
 using namespace std;
 
