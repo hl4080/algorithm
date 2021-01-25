@@ -232,4 +232,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //ararry function
     m["o1"]     = &test_find;
+
+    //string functions
+    m["o2"]     = &test_replaceSpace;
 }

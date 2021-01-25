@@ -13,21 +13,25 @@ int main(int argc, char* argv[]) {
     initProblemMap(offerMap);
     //for leetcode, index's first char should be l
     //for target offer, index's first char should be o
-    string index = "o1";
+    string index = "o2";
     map<string, FUNC>::iterator it;
     switch(index[0]) {
         case 'l':
             it = leetMap.find(index);
+            if(it == leetMap.end()) {
+                cerr<<"invalid query index"<<endl;
+                exit(1);
+            }
             break;
         case 'o':
             it = offerMap.find(index);
+            if(it == offerMap.end()) {
+                cerr<<"invalid query index"<<endl;
+                exit(1);
+            }
             break;
         default:
             cerr<<"invalid problem index!"<<endl;
-    }
-    if(it == leetMap.end()) {
-        cerr<<"invaild query index"<<endl;
-        exit(1);
     }
     it->second();
 }

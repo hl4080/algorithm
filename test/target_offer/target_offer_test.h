@@ -13,4 +13,7 @@
 //functions in array
 void test_find();
 
+//functions in string
+void test_replaceSpace();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H
