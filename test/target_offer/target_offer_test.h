@@ -16,4 +16,7 @@ void test_find();
 //functions in string
 void test_replaceSpace();
 
+//functions in list
+void test_printReverseList();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H
