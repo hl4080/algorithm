@@ -238,4 +238,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //list functions
     m["o3"]     = &test_printReverseList;
+
+    //tree functions
+    m["o4"]     = &test_reconstructTree;
 }

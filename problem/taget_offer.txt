@@ -1,3 +1,4 @@
 1   array       find
 2   string      replace space
 3   list        print reverse list
+4   tree        reconstruct tree from pre and in order

@@ -19,4 +19,7 @@ void test_replaceSpace();
 //functions in list
 void test_printReverseList();
 
+//functions in tree
+void test_reconstructTree();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H
