@@ -22,4 +22,7 @@ void test_printReverseList();
 //functions in tree
 void test_reconstructTree();
 
+//functions in stack
+void test_myStack();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

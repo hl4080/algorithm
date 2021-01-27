@@ -5,15 +5,15 @@
 #include "test/test.h"
 
 int main(int argc, char* argv[]) {
-    if(argc != 3)
-       cerr<<"no valid arguments! "<<endl;
+    //if(argc != 3)
+     //  cerr<<"no valid arguments! "<<endl;
     map<string, FUNC> leetMap;  //associate the test function with its problem index
     map<string, FUNC> offerMap;   //associate the test function with its problem index
     initProblemMap(leetMap);
     initProblemMap(offerMap);
     //for leetcode, index's first char should be l
     //for target offer, index's first char should be o
-    string index = "o1";
+    string index = "o5";
     map<string, FUNC>::iterator it;
     switch(index[0]) {
         case 'l':
