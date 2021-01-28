@@ -25,4 +25,7 @@ void test_reconstructTree();
 //functions in stack
 void test_myStack();
 
+//functions in dc
+void test_minRotateArray();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

@@ -244,4 +244,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //stack function
     m["o5"]     = &test_myStack;
+
+    //dc function
+    m["o6"]     = &test_minRotateArray;
 }
