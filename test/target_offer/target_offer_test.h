@@ -32,4 +32,7 @@ void test_minRotateArray();
 void test_fibonacci();
 void test_jumpFloor();
 
+//functions in math
+void test_jumpFloorII();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H
