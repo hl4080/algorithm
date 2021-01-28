@@ -247,4 +247,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //dc function
     m["o6"]     = &test_minRotateArray;
+
+    //dp function
+    m["o7"]     = &test_fibonacci;
 }

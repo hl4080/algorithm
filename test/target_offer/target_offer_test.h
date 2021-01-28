@@ -28,4 +28,7 @@ void test_myStack();
 //functions in dc
 void test_minRotateArray();
 
+//functions in dp
+void test_fibonacci();
+
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H
