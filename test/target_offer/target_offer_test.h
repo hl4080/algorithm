@@ -35,5 +35,6 @@ void test_rectCover();
 
 //functions in math
 void test_jumpFloorII();
+void test_numberOf1();
 
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

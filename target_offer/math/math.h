@@ -9,6 +9,7 @@
 #include <math.h>
 
 int jumpFloorII(int number);
+int  NumberOf1(int n);
 
 
 #endif //ALOGRITHM_MATH_H

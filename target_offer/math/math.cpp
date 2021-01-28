@@ -19,3 +19,24 @@
 int jumpFloorII(int number) {
     return pow(2, number-1);
 }
+
+/*
+ * 输入一个整数，输出该数32位二进制表示中1的个数。其中负数用补码表示。
+示例1
+输入
+
+10
+返回值
+
+2
+ */
+
+int  NumberOf1(int n) {
+    int val = n;
+    int res = 0;
+    while(val) {
+        res++;
+        val &= (val-1);
+    }
+    return res;
+}

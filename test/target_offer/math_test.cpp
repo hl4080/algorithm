@@ -17,3 +17,15 @@ void test_jumpFloorII() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test jump floor II end==============="<<endl;
 }
+
+void test_numberOf1() {
+    cout<<"============simple test number of 1 begin============="<<endl;
+    int n = 5;
+    cout<<"test case: ="<<n<<endl;
+    int res = NumberOf1(n), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test number of 1 end==============="<<endl;
+}

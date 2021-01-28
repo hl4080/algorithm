@@ -8,3 +8,4 @@
 8   dp          jump floor
 9   math        jump floor II
 10  dp          rect cover
+11  dc          number of 1
