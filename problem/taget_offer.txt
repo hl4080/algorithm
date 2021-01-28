@@ -5,3 +5,4 @@
 5   stack       two stacks form a queue
 6   dc          min rotate array
 7   dp          fabonacci
+8   dp          jump floor

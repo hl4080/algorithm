@@ -250,4 +250,5 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //dp function
     m["o7"]     = &test_fibonacci;
+    m["o8"]     = &test_jumpFloor;
 }

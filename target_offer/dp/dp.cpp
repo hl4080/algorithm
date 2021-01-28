@@ -27,3 +27,32 @@ int Fibonacci(int n) {
     }
     return t1;
 }
+
+/*
+ * 一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
+示例1
+输入
+
+1
+返回值
+
+1
+示例2
+输入
+
+4
+返回值
+
+5
+ */
+
+int jumpFloor(int number) {
+    if(number == 1) return 1;
+    int t1 = 1, t2 = 2;
+    for(int i=3; i<=number; i++) {
+        int tmp = t2;
+        t2 += t1;
+        t1 = tmp;
+    }
+    return t2;
+}

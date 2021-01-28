@@ -30,5 +30,6 @@ void test_minRotateArray();
 
 //functions in dp
 void test_fibonacci();
+void test_jumpFloor();
 
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

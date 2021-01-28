@@ -18,3 +18,15 @@ void test_fibonacci() {
     cout<<"============simple test min rotate array end==============="<<endl;
 }
 
+void test_jumpFloor() {
+    cout<<"============simple test jump floor begin============="<<endl;
+    int n=4;
+    cout<<"test case: n="<<n<<endl;
+    int res = jumpFloor(n), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test jump floor end==============="<<endl;
+}
+
