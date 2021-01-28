@@ -7,3 +7,4 @@
 7   dp          fabonacci
 8   dp          jump floor
 9   math        jump floor II
+10  dp          rect cover

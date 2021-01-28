@@ -31,6 +31,7 @@ void test_minRotateArray();
 //functions in dp
 void test_fibonacci();
 void test_jumpFloor();
+void test_rectCover();
 
 //functions in math
 void test_jumpFloorII();

@@ -8,6 +8,7 @@
 
 int Fibonacci(int n);
 int jumpFloor(int number);
+int rectCover(int number);
 
 
 #endif //ALOGRITHM_DP_H

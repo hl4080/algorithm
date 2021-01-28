@@ -30,3 +30,15 @@ void test_jumpFloor() {
     cout<<"============simple test jump floor end==============="<<endl;
 }
 
+void test_rectCover() {
+    cout<<"============simple test rect cover begin============="<<endl;
+    int n = 4;
+    cout<<"test case: n="<<n<<endl;
+    int res = rectCover(n), desired = 5;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test rect cover end==============="<<endl;
+}
+
