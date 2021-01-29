@@ -40,3 +40,31 @@ int  NumberOf1(int n) {
     }
     return res;
 }
+
+/*
+ * 给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。
+
+保证base和exponent不同时为0
+示例1
+输入
+
+2,3
+返回值
+
+8.00000
+ */
+
+double Power(double base, int exponent) {
+    if(exponent<0) {
+        base = 1/base;
+        exponent = -exponent;
+    }
+    double res = 1.0;
+    double b = base;
+    while(exponent) {
+        if(exponent&1) res *= b;
+        b *= b;
+        exponent = exponent>>1;
+    }
+    return res;
+}

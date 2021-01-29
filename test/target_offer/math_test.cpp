@@ -29,3 +29,16 @@ void test_numberOf1() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test number of 1 end==============="<<endl;
 }
+
+void test_power() {
+    cout<<"============simple test power begin============="<<endl;
+    double base = 3.0;
+    int exponent = 5;
+    cout<<"test case: base="<<base<<" "<<"exponent:"<<exponent<<endl;
+    double res = Power(base, exponent), desired = 243.0;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test power begin============="<<endl;
+}

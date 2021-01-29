@@ -10,6 +10,7 @@
 
 int jumpFloorII(int number);
 int  NumberOf1(int n);
+double Power(double base, int exponent);
 
 
 #endif //ALOGRITHM_MATH_H

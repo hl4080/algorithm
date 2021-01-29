@@ -256,4 +256,5 @@ void initProblemMap(map<string, FUNC>& m) {
     //math function
     m["o9"]     = &test_jumpFloorII;
     m["o11"]    = &test_numberOf1;
+    m["o12"]    = &test_power;
 }
