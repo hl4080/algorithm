@@ -11,6 +11,7 @@
 using namespace std;
 
 vector<int> printListFromTailToHead(ListNode* head);
+ListNode* FindKthToTail(ListNode* pListHead, unsigned int k);
 
 
 #endif //ALOGRITHM_LIST_H

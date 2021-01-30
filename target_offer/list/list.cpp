@@ -26,3 +26,28 @@ vector<int> printListFromTailToHead(ListNode* head) {
     printListFromTailToHeadHelp(head, res);
     return res;
 }
+
+
+/*
+ * 输入一个链表，输出该链表中倒数第k个结点。
+示例1
+输入
+
+1,{1,2,3,4,5}
+返回值
+
+{5}
+ */
+
+ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {
+    ListNode* p1 = pListHead, *p2 = pListHead;
+    for(int i=0; i<k; i++) {
+        if(!p1) return NULL;
+        p1 = p1->next;
+    }
+    while(p1) {
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+    return p2;
+}
