@@ -12,6 +12,7 @@
 
 //functions in array
 void test_find();
+void test_reorderArray();
 
 //functions in string
 void test_replaceSpace();

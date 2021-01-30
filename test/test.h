@@ -232,6 +232,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //ararry function
     m["o1"]     = &test_find;
+    m["o13"]    = &test_reorderArray;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

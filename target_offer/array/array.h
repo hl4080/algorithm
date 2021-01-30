@@ -11,5 +11,6 @@
 using namespace std;
 
 bool Find(int target, vector<vector<int> > array);
+void reorderArray(vector<int> &array);
 
 #endif //ALOGRITHM_ARRAY_H

@@ -24,3 +24,18 @@ void test_find() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find begin============="<<endl;
 }
+
+void test_reorderArray() {
+    cout<<"============simple test reorder array begin============="<<endl;
+    vector<int> nums{1,2,3,4,5};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    reorderArray(nums);
+    vector<int> desired{1,3,5,2,4};
+    if(nums == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(nums);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reorder array end==============="<<endl;
+}
