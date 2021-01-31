@@ -51,3 +51,24 @@ ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {
     }
     return p2;
 }
+
+/*
+ * 输入一个链表，反转链表后，输出新链表的表头。
+示例1
+输入
+{1,2,3}
+返回值
+{3,2,1}
+ */
+
+ListNode* ReverseList(ListNode* pHead) {
+    if(!pHead) return pHead;
+    ListNode* node = ReverseList(pHead->next);
+    if(!pHead->next) {
+        pHead->next = NULL;
+        return pHead;
+    }
+    pHead->next->next = pHead;
+    pHead->next = NULL;
+    return node;
+}
