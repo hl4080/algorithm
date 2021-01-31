@@ -241,6 +241,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o3"]     = &test_printReverseList;
     m["o14"]    = &test_FindKthToTail;
     m["o15"]    = &test_reverList;
+    m["o16"]    = &test_merge;
 
     //tree functions
     m["o4"]     = &test_reconstructTree;

@@ -21,6 +21,7 @@ void test_replaceSpace();
 void test_printReverseList();
 void test_FindKthToTail();
 void test_reverList();
+void test_merge();
 
 //functions in tree
 void test_reconstructTree();

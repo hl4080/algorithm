@@ -55,3 +55,22 @@ void test_reverList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse list end==============="<<endl;
 }
+
+void test_merge() {
+    cout<<"============simple test merge list begin============="<<endl;
+    vector<int> l1{1,3,5}, l2{2,4,6};
+    ListNode* head1 = vector2List(l1), *head2 = vector2List(l2);
+    cout<<"test case:"<<endl;
+    cout<<"head1: ";
+    printListNode(head1);
+    cout<<"head2: ";
+    printListNode(head2);
+    ListNode* l = Merge(head1, head2);
+    vector<int> res = list2Vector(l), desired{1,2,3,4,5,6};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printListNode(l);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test merge list end==============="<<endl;
+}

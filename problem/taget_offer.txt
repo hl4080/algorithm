@@ -12,3 +12,4 @@
 12  math        Power
 13  array       reorder array
 14  list        find kth to tail
+15  list        reverse list

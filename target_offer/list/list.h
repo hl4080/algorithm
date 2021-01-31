@@ -13,6 +13,7 @@ using namespace std;
 vector<int> printListFromTailToHead(ListNode* head);
 ListNode* FindKthToTail(ListNode* pListHead, unsigned int k);
 ListNode* ReverseList(ListNode* pHead);
+ListNode* Merge(ListNode* pHead1, ListNode* pHead2);
 
 
 #endif //ALOGRITHM_LIST_H
