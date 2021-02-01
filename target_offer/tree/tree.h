@@ -9,5 +9,6 @@
 #include "../../leetcode/data-struct.h"
 
 TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> vin);
+bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2);
 
 #endif //ALOGRITHM_TREE_H

@@ -13,3 +13,5 @@
 13  array       reorder array
 14  list        find kth to tail
 15  list        reverse list
+16  list        merge sorted lists
+17  tree        has subtree

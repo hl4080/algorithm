@@ -31,3 +31,26 @@ TreeNode* reconstructBinaryTreeHelp(vector<int>& pre, int pBegin, int pEnd, vect
 TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> vin) {
     return reconstructBinaryTreeHelp(pre, 0, pre.size()-1, vin, 0, vin.size()-1);
 }
+
+
+/*
+ * 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+示例1
+输入
+
+{8,8,#,9,#,2,#,5},{8,9,#,2}
+返回值
+
+true
+ */
+
+bool HasSubtreeHelp(TreeNode* pRoot1, TreeNode* pRoot2) {
+    if(!pRoot2) return true;
+    if(!pRoot1) return false;
+    return pRoot1->val == pRoot2->val && HasSubtreeHelp(pRoot1->left, pRoot2->left) && HasSubtreeHelp(pRoot1->right, pRoot2->right);
+}
+
+bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2) {
+    if(!pRoot1 || !pRoot2) return false;
+    return HasSubtreeHelp(pRoot1, pRoot2) || HasSubtreeHelp(pRoot1->left, pRoot2) || HasSubtreeHelp(pRoot1->right, pRoot2);
+}

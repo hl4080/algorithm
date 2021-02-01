@@ -23,3 +23,20 @@ void test_reconstructTree() {
     cout<<"============simple test reconstruct tree end==============="<<endl;
 }
 
+
+void test_subTree() {
+    cout<<"============simple test is sub tree begin============="<<endl;
+    vector<int> vec1{4,2,5,1,1,3,-1}, vec2{4,2,5};
+    TreeNode* root1 = buildTree(vec1, 0, vec1.size()-1), *root2 = buildTree(vec2, 0, vec2.size()-1);
+    cout<<"test case: "<<endl;
+    cout<<"tree 1:"<<endl;
+    printTree(root1);
+    cout<<"tree 2:"<<endl;
+    printTree(root2);
+    bool res = HasSubtree(root1, root2), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is sub tree end==============="<<endl;
+}
