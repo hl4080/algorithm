@@ -16,3 +16,4 @@
 16  list        merge sorted lists
 17  tree        has subtree
 18  tree        mirror
+19  array       print matrix

@@ -233,6 +233,7 @@ void initProblemMap(map<string, FUNC>& m) {
     //ararry function
     m["o1"]     = &test_find;
     m["o13"]    = &test_reorderArray;
+    m["o19"]    = &test_printMatrix;
 
     //string functions
     m["o2"]     = &test_replaceSpace;
@@ -246,7 +247,7 @@ void initProblemMap(map<string, FUNC>& m) {
     //tree functions
     m["o4"]     = &test_reconstructTree;
     m["o17"]    = &test_subTree;
-    m["o18"]    = test_Mirror;
+    m["o18"]    = &test_Mirror;
 
     //stack function
     m["o5"]     = &test_myStack;

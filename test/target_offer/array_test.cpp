@@ -39,3 +39,21 @@ void test_reorderArray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reorder array end==============="<<endl;
 }
+
+void test_printMatrix() {
+    cout<<"============simple test print matrix begin============="<<endl;
+    vector<vector<int>> matrix{
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+    };
+    cout<<"test case: "<<endl;
+    printTwoDimVec(matrix);
+    vector<int> res = printMatrix(matrix), desired{1,2,3,6,9,8,7,4,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test print matrix end==============="<<endl;
+}

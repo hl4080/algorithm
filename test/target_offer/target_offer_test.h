@@ -13,6 +13,7 @@
 //functions in array
 void test_find();
 void test_reorderArray();
+void test_printMatrix();
 
 //functions in string
 void test_replaceSpace();

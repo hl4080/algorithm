@@ -47,3 +47,37 @@ void reorderArray(vector<int> &array) {
         array[even] = tmp;
     }
 }
+
+/*
+ * 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字
+示例1
+输入
+
+[[1,2],[3,4]]
+返回值
+
+[1,2,4,3]
+ */
+
+void printMatrixHelp(vector<vector<int> >& matrix, vector<int>& res, int lx, int ly, int rx, int ry) {
+    for(int i=ly; i<=ry; i++) res.push_back(matrix[lx][i]);
+    for(int i=lx+1; i<=rx; i++) res.push_back(matrix[i][ry]);
+    int h = rx-lx+1;
+    if(h>1) {
+        for(int i=ry-1; i>=ly; i--) res.push_back(matrix[rx][i]);
+    }
+    int w = ry- ly+1;
+    if(w > 1) {
+        for(int i=rx-1; i>=lx+1; i--) res.push_back(matrix[i][ly]);
+    }
+}
+
+vector<int> printMatrix(vector<vector<int> > matrix) {
+    vector<int> res;
+    if(matrix.empty()) return res;
+    int m = matrix.size(), n = matrix[0].size();
+    int lx = 0, ly = 0;
+    int rx = m-1, ry = n-1;
+    while(lx<=rx && ly <= ry) printMatrixHelp(matrix, res, lx++, ly++, rx--, ry--);
+    return res;
+}
