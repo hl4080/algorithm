@@ -15,3 +15,4 @@
 15  list        reverse list
 16  list        merge sorted lists
 17  tree        has subtree
+18  tree        mirror

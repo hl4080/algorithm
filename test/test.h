@@ -246,6 +246,7 @@ void initProblemMap(map<string, FUNC>& m) {
     //tree functions
     m["o4"]     = &test_reconstructTree;
     m["o17"]    = &test_subTree;
+    m["o18"]    = test_Mirror;
 
     //stack function
     m["o5"]     = &test_myStack;

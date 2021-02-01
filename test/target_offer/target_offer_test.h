@@ -26,6 +26,7 @@ void test_merge();
 //functions in tree
 void test_reconstructTree();
 void test_subTree();
+void test_Mirror();
 
 //functions in stack
 void test_myStack();

@@ -40,3 +40,18 @@ void test_subTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is sub tree end==============="<<endl;
 }
+
+void test_Mirror() {
+    cout<<"============simple test mirror begin============="<<endl;
+    vector<int> vec1{4,2,5,1,-1,3,-1}, vec2{-1,3,-1,1,5,2,4};
+    TreeNode* root1 = buildTree(vec1, 0, vec1.size()-1), *root2 = buildTree(vec2, 0, vec2.size()-1);
+    cout<<"test case:"<<endl;
+    printTree(root1);
+    Mirror(root1);
+    if(treesEqual(root1, root2)) {
+        cout<<"result of test case: "<<endl;
+        printTree(root1);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test mirror end==============="<<endl;
+}
