@@ -32,6 +32,7 @@ void test_Mirror();
 //functions in stack
 void test_myStack();
 void test_minStack();
+void test_isPopOrder();
 
 //functions in dc
 void test_minRotateArray();

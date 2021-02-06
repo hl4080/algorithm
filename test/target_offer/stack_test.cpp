@@ -3,6 +3,7 @@
 //
 
 #include "../../target_offer/stack/stack.h"
+#include "../../util/util.h"
 #include <iostream>
 
 void test_myStack() {
@@ -36,4 +37,20 @@ void test_minStack() {
         cout<<"TEST STATUS: PASS"<<endl;
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test min stack end==============="<<endl;
+}
+
+void test_isPopOrder() {
+    cout<<"============simple test is pop order begin============="<<endl;
+    vector<int> vec1{1,2,3,4,5}, vec2{4,5,3,1,2};
+    cout<<"test case:"<<endl;
+    cout<<"push vector: ";
+    printOneDimVec(vec1);
+    cout<<"pop vector: ";
+    printOneDimVec(vec2);
+    bool res = IsPopOrder(vec1, vec2), desired = false;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is pop order end==============="<<endl;
 }

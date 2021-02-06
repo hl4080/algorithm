@@ -252,6 +252,7 @@ void initProblemMap(map<string, FUNC>& m) {
     //stack function
     m["o5"]     = &test_myStack;
     m["o20"]    = &test_minStack;
+    m["o21"]    = &test_isPopOrder;
 
     //dc function
     m["o6"]     = &test_minRotateArray;

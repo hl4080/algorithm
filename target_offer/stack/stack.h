@@ -7,6 +7,8 @@
 
 
 #include <stack>
+#include <vector>
+#include <map>
 using namespace std;
 
 class MyStack {
@@ -61,5 +63,6 @@ private:
     stack<int> stk2;
 };
 
+bool IsPopOrder(vector<int> pushV,vector<int> popV);
 
 #endif //ALOGRITHM_STACK_H
