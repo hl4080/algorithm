@@ -35,5 +35,31 @@ private:
     stack<int> stack2;
 };
 
+class MinStack {
+public:
+    void push(int value) {
+        stk1.push(value);
+        if(stk2.empty()) {
+            stk2.push(value);
+            return;
+        }
+        int minValue = stk2.top();
+        stk2.push(std::min(minValue, value));
+    }
+    void pop() {
+        stk1.pop();
+        stk2.pop();
+    }
+    int top() {
+        return stk1.top();
+    }
+    int min() {
+        return stk2.top();
+    }
+private:
+    stack<int> stk1;
+    stack<int> stk2;
+};
+
 
 #endif //ALOGRITHM_STACK_H

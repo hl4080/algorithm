@@ -31,6 +31,7 @@ void test_Mirror();
 
 //functions in stack
 void test_myStack();
+void test_minStack();
 
 //functions in dc
 void test_minRotateArray();

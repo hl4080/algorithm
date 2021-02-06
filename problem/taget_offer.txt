@@ -17,3 +17,4 @@
 17  tree        has subtree
 18  tree        mirror
 19  array       print matrix
+20  stack       min stack
