@@ -70,3 +70,16 @@ void test_printTreeLevel() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test print tree level end==============="<<endl;
 }
+
+void test_verifyBST() {
+    cout<<"============simple test verify BST begin============="<<endl;
+    vector<int> vec{4,8,6,12,16,14,10};
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    bool res = VerifySquenceOfBST(vec), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test verify BST end==============="<<endl;
+}

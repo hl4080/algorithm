@@ -96,16 +96,43 @@ vector<int> PrintFromTopToBottom(TreeNode* root) {
     queue<TreeNode*> q;
     q.push(root);
     while(!q.empty()) {
-        vector<TreeNode*> level;
-        while(!q.empty()) {
-            level.push_back(q.front());
+        int len = q.size();
+        for(int i=0; i<len; i++) {
+            TreeNode* node = q.front();
             q.pop();
-        }
-        for(int i=0; i<level.size(); i++) {
-            res.push_back(level[i]->val);
-            if(level[i]->left) q.push(level[i]->left);
-            if(level[i]->right) q.push(level[i]->right);
+            res.push_back(node->val);
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
         }
     }
     return res;
+}
+
+/*
+ * 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则返回true,否则返回false。假设输入的数组的任意两个数字都互不相同。
+示例1
+输入
+
+[4,8,6,12,16,14,10]
+返回值
+
+true
+ */
+
+bool VerifySquenceOfBSTHelp(vector<int>& sequence, int start, int end) {
+    if(start >= end) return true;
+    int leftIdx = 0;
+    for(int i=start; i<=end; i++) {
+        if(sequence[leftIdx] < sequence[end]) leftIdx = i;
+        else break;
+    }
+    for(int i=leftIdx; i<=end; i++) {
+        if(sequence[end] > sequence[i]) return false;
+    }
+    return VerifySquenceOfBSTHelp(sequence, start, leftIdx-1) && VerifySquenceOfBSTHelp(sequence, leftIdx, end-1);
+}
+
+bool VerifySquenceOfBST(vector<int>& sequence) {
+    if(sequence.empty()) return false;
+    return VerifySquenceOfBSTHelp(sequence, 0, sequence.size()-1);
 }

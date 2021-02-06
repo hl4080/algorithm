@@ -20,3 +20,4 @@
 20  stack       min stack
 21  stack       is pop stack
 22  tree        print tree level
+23  tree        verify BST

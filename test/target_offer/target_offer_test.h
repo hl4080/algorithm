@@ -29,6 +29,7 @@ void test_reconstructTree();
 void test_subTree();
 void test_Mirror();
 void test_printTreeLevel();
+void test_verifyBST();
 
 //functions in stack
 void test_myStack();
