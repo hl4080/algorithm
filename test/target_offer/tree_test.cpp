@@ -55,3 +55,18 @@ void test_Mirror() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test mirror end==============="<<endl;
 }
+
+void test_printTreeLevel() {
+    cout<<"============simple test print tree level begin============="<<endl;
+    vector<int> vec{4,2,5,1,-1,3,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    vector<int> res = PrintFromTopToBottom(root), desired{1,2,3,4,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test print tree level end==============="<<endl;
+}

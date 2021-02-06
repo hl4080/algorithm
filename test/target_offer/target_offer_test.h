@@ -28,6 +28,7 @@ void test_merge();
 void test_reconstructTree();
 void test_subTree();
 void test_Mirror();
+void test_printTreeLevel();
 
 //functions in stack
 void test_myStack();

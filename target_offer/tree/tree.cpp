@@ -78,3 +78,34 @@ void Mirror(TreeNode *pRoot) {
     if(pRoot->left) Mirror(pRoot->left);
     if(pRoot->right) Mirror(pRoot->right);
 }
+
+/*
+ * 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
+示例1
+输入
+
+{5,4,#,3,#,2,#,1}
+返回值
+
+[5,4,3,2,1]
+ */
+
+vector<int> PrintFromTopToBottom(TreeNode* root) {
+    vector<int> res;
+    if(!root) return res;
+    queue<TreeNode*> q;
+    q.push(root);
+    while(!q.empty()) {
+        vector<TreeNode*> level;
+        while(!q.empty()) {
+            level.push_back(q.front());
+            q.pop();
+        }
+        for(int i=0; i<level.size(); i++) {
+            res.push_back(level[i]->val);
+            if(level[i]->left) q.push(level[i]->left);
+            if(level[i]->right) q.push(level[i]->right);
+        }
+    }
+    return res;
+}

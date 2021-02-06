@@ -19,3 +19,4 @@
 19  array       print matrix
 20  stack       min stack
 21  stack       is pop stack
+22  tree        print tree level
