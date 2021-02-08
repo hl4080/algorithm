@@ -136,3 +136,39 @@ bool VerifySquenceOfBST(vector<int>& sequence) {
     if(sequence.empty()) return false;
     return VerifySquenceOfBSTHelp(sequence, 0, sequence.size()-1);
 }
+
+/*
+输入一颗二叉树的根节点和一个整数，按字典序打印出二叉树中结点值的和为输入整数的所有路径。路径定义为从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。
+示例1
+
+
+{10,5,12,4,7},22
+返回值
+
+[[10,5,7],[10,12]]
+示例2
+
+复制
+{10,5,12,4,7},15
+返回值
+
+[]
+ */
+
+void findPathHelp(vector<vector<int>>& res, vector<int> path, TreeNode* root, int exp) {
+    if(!root || exp<0) return;
+    path.push_back(root->val);;
+    if(!root->left && !root->right && exp == root->val) {
+        res.push_back(path);
+        return;
+    }
+    findPathHelp(res, path, root->left, exp-root->val);
+    findPathHelp(res, path, root->right, exp-root->val);
+}
+
+vector<vector<int> > FindPath(TreeNode* root,int expectNumber) {
+    vector<vector<int>> res;
+    vector<int> path;
+    findPathHelp(res, path, root, expectNumber);
+    return res;
+}

@@ -14,5 +14,6 @@ bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2);
 void Mirror(TreeNode *pRoot);
 vector<int> PrintFromTopToBottom(TreeNode* root);
 bool VerifySquenceOfBST(vector<int>& sequence);
+vector<vector<int> > FindPath(TreeNode* root,int expectNumber);
 
 #endif //ALOGRITHM_TREE_H

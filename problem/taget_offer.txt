@@ -21,3 +21,4 @@
 21  stack       is pop stack
 22  tree        print tree level
 23  tree        verify BST
+24  tree        find path

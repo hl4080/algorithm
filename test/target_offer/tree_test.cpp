@@ -83,3 +83,21 @@ void test_verifyBST() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test verify BST end==============="<<endl;
 }
+
+void test_findPath() {
+    cout<<"============simple test find path begin============="<<endl;
+    vector<int> vec{1,3,4,2,-1,7,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int exp = 9;
+    cout<<"exp number: "<<exp<<endl;
+    vector<vector<int>> res = FindPath(root, exp), desired{{2,3,4}, {2,7}};
+    printTwoDimVec(res);
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find path end==============="<<endl;
+}

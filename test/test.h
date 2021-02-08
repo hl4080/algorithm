@@ -250,6 +250,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o18"]    = &test_Mirror;
     m["o22"]    = &test_printTreeLevel;
     m["o23"]    = &test_verifyBST;
+    m["o24"]    = &test_findPath;
 
     //stack function
     m["o5"]     = &test_myStack;
