@@ -14,6 +14,7 @@ vector<int> printListFromTailToHead(ListNode* head);
 ListNode* FindKthToTail(ListNode* pListHead, unsigned int k);
 ListNode* ReverseList(ListNode* pHead);
 ListNode* Merge(ListNode* pHead1, ListNode* pHead2);
+RandomListNode* CloneRandomList(RandomListNode* pHead);
 
 
 #endif //ALOGRITHM_LIST_H

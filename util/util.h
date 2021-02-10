@@ -20,6 +20,8 @@ void initProblemMap(map<string, FUNC>& m);
 using namespace std;
 
 vector<int> list2Vector(ListNode*);
+RandomListNode* vector2RandList(vector<int>& vec);
+bool RandomListEqual(RandomListNode* l1, RandomListNode* l2);
 ListNode* vector2List(vector<int>&);
 void printListNode(ListNode* l);
 void printTree(TreeNode* root);

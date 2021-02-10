@@ -99,3 +99,35 @@ ListNode* Merge(ListNode* pHead1, ListNode* pHead2){
     }
     return n->next;
 }
+
+/*
+ * 输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针random指向一个随机节点），
+ * 请对此链表进行深拷贝，并返回拷贝后的头结点。（注意，输出结果中请不要返回参数中的节点引用，否则判题程序会直接返回空）
+ */
+
+RandomListNode* CloneRandomList(RandomListNode* pHead) {
+    if(!pHead) return NULL;
+    RandomListNode* pHead1 = pHead;
+    while(pHead1) {
+        RandomListNode* node = new RandomListNode(pHead1->label);
+        node->next = pHead1->next;
+        pHead1->next = node;
+        pHead1 = node->next;
+    }
+    pHead1 = pHead;
+    while(pHead1) {
+        if(pHead1->random) pHead1->next->random = pHead1->random->next;
+        pHead1 = pHead1->next->next;
+    }
+    pHead1 = pHead;
+    RandomListNode* pHead2 = pHead->next;
+    RandomListNode* res = pHead2;
+    while(pHead2 && pHead2->next) {
+        pHead1->next = pHead1->next->next;
+        pHead2->next = pHead2->next->next;
+        pHead1 = pHead1->next;
+        pHead2 = pHead2->next;
+    }
+    pHead1->next = NULL;
+    return res;
+}

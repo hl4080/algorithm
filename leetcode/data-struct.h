@@ -24,6 +24,14 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right): val(x), left(left), right(right) {}
 };
 
+struct RandomListNode {
+    int label;
+    struct RandomListNode *next, *random;
+    RandomListNode(int x) :
+            label(x), next(NULL), random(NULL) {
+    }
+};
+
 struct Node {
     int val;
     vector<Node*> neighbors;

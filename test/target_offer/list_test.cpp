@@ -74,3 +74,18 @@ void test_merge() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test merge list end==============="<<endl;
 }
+
+void test_cloneRandomList() {
+    cout<<"============simple test clone random list begin============="<<endl;
+    vector<int> vec{1,2,3,-1,1,-1};
+    RandomListNode* l1 = vector2RandList(vec);
+    RandomListNode* l2 = CloneRandomList(l1);
+    cout<<"test case: "<<endl;
+    printOneDimVec(vec);
+    if(RandomListEqual(l1, l2)) {
+        cout<<"result test case: ";
+        printOneDimVec(vec);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test clone random list end==============="<<endl;
+}

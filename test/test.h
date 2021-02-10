@@ -243,6 +243,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o14"]    = &test_FindKthToTail;
     m["o15"]    = &test_reverList;
     m["o16"]    = &test_merge;
+    m["o25"]    = &test_cloneRandomList;
 
     //tree functions
     m["o4"]     = &test_reconstructTree;

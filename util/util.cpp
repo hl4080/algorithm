@@ -26,6 +26,39 @@ ListNode* vector2List(vector<int>& vec) {
     return pre->next;
 }
 
+RandomListNode* vector2RandList(vector<int>& vec) {
+    RandomListNode* l = new RandomListNode(0);
+    RandomListNode* pre = l;
+    l->next = NULL;
+    for(int i=0; i<vec.size()/2; i++) {
+        RandomListNode* node = new RandomListNode(vec[i]);
+        node->next = pre->next;
+        pre->next = node;
+        pre = pre->next;
+    }
+    RandomListNode* flag = l->next;
+    for(int i=vec.size()/2; i<vec.size(); i++) {
+        if(vec[i] != -1) {
+            RandomListNode* p = l;
+            for(int j=0; j<vec[i]; j++) p = p->next;
+            flag->random = p;
+        }
+        flag = flag->next;
+    }
+    return l->next;
+}
+
+bool RandomListEqual(RandomListNode* l1, RandomListNode* l2) {
+    while(l1 && l2) {
+        if(l1->label != l2->label || (l1->random && !l2->random) || (!l1->random && l2->random)||
+        (l1->random && l2->random && l1->random->label != l2->random->label))
+            return false;
+        l1 = l1->next;
+        l2 = l2->next;
+    }
+    return true;
+}
+
 void printListNode(ListNode* l) {
     while(l) {
         if(!l->next) cout<<l->val;

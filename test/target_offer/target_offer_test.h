@@ -23,6 +23,7 @@ void test_printReverseList();
 void test_FindKthToTail();
 void test_reverList();
 void test_merge();
+void test_cloneRandomList();
 
 //functions in tree
 void test_reconstructTree();
