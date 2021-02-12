@@ -22,3 +22,5 @@
 22  tree        print tree level
 23  tree        verify BST
 24  tree        find path
+25  list        clone randomlist
+26  tree        convert to list

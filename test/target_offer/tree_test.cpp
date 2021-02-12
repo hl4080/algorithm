@@ -101,3 +101,19 @@ void test_findPath() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find path end==============="<<endl;
 }
+
+void test_convert2List() {
+    cout<<"============simple test convert to list begin============="<<endl;
+    vector<int> vec{1,2,3}, vec1{-1,1,2,2,2,3,-1};
+    TreeNode* root = buildTree(vec,0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    TreeNode* res = Convert2List(root), *desired = buildTree(vec1, 0, vec1.size()-1);
+    res = res->right;
+    if(treesEqual(res, desired)) {
+        cout<<"result of test case: "<<endl;
+        printTree(desired);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test convert to list end==============="<<endl;
+}
