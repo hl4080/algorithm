@@ -17,6 +17,7 @@ void test_printMatrix();
 
 //functions in string
 void test_replaceSpace();
+void test_permutation();
 
 //functions in list
 void test_printReverseList();

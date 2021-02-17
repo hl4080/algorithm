@@ -24,3 +24,4 @@
 24  tree        find path
 25  list        clone randomlist
 26  tree        convert to list
+27  string      permutation

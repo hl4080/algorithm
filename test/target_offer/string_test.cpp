@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "../../target_offer/string/string.h"
+#include "../../util/util.h"
 
 
 void test_replaceSpace() {
@@ -19,4 +20,17 @@ void test_replaceSpace() {
         cout<<"TEST STATUS: PASS"<<endl;
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test replace space begin============="<<endl;
+}
+
+void test_permutation() {
+    cout<<"============simple test permutation begin============="<<endl;
+    string s = "aab";
+    cout<<"test case: s="<<s<<endl;
+    vector<string> res = Permutation(s), desired{"aab", "aba", "baa"};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test permutation end==============="<<endl;
 }
