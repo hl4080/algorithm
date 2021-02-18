@@ -49,6 +49,7 @@ void test_minRotateArray();
 void test_fibonacci();
 void test_jumpFloor();
 void test_rectCover();
+void test_greatestSubarray();
 
 //functions in math
 void test_jumpFloorII();

@@ -269,6 +269,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o7"]     = &test_fibonacci;
     m["o8"]     = &test_jumpFloor;
     m["o10"]    = &test_rectCover;
+    m["o30"]    = &test_greatestSubarray;
 
     //math function
     m["o9"]     = &test_jumpFloorII;

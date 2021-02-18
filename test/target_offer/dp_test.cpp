@@ -42,3 +42,15 @@ void test_rectCover() {
     cout<<"============simple test rect cover end==============="<<endl;
 }
 
+void test_greatestSubarray() {
+    cout<<"============simple test greatest subarray begin============="<<endl;
+    vector<int> vec{1,-2,3,10,-4,7,2,-5};
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    int res = FindGreatestSumOfSubArray(vec), desired = 18;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test greatest subarray end==============="<<endl;
+}

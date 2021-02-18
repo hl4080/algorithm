@@ -27,3 +27,4 @@
 27  string      permutation
 28  array       more than half
 29  array       least k numbers
+30  dp          greatest subarray

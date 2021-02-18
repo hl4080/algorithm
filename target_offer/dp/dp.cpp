@@ -80,3 +80,23 @@ int rectCover(int number) {
     }
     return t2;
 }
+
+/*
+ * 输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为 O(n).
+示例1
+输入
+
+[1,-2,3,10,-4,7,2,-5]
+返回值
+
+18
+ */
+
+int FindGreatestSumOfSubArray(vector<int> arr) {
+    vector<int> dp(arr.size()+1, 0);
+    int maxVal = INT_MIN;
+    for(int i=0; i<arr.size(); i++) dp[i+1] = dp[i]>0? dp[i]+arr[i]: arr[i];
+    for(int i=1; i<dp.size(); i++)
+        maxVal = max(maxVal, dp[i]);
+    return maxVal;
+}

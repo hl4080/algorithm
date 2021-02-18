@@ -5,10 +5,13 @@
 #ifndef ALOGRITHM_DP_H
 #define ALOGRITHM_DP_H
 
+#include <vector>
+using namespace std;
 
 int Fibonacci(int n);
 int jumpFloor(int number);
 int rectCover(int number);
+int FindGreatestSumOfSubArray(vector<int> arr);
 
 
 #endif //ALOGRITHM_DP_H
