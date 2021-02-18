@@ -81,3 +81,33 @@ vector<int> printMatrix(vector<vector<int> > matrix) {
     while(lx<=rx && ly <= ry) printMatrixHelp(matrix, res, lx++, ly++, rx--, ry--);
     return res;
 }
+
+/*
+ * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。
+示例1
+输入
+
+[1,2,3,2,2,2,5,4,2]
+返回值
+
+2
+ */
+
+int MoreThanHalfNum(vector<int> numbers) {
+    if(numbers.empty()) return 0;
+    int count = 1;
+    int val = numbers[0];
+    for(int i=1; i<numbers.size(); i++) {
+        if(val != numbers[i]) count--;
+        else count++;
+        if(!count) {
+            count = 1;
+            val = numbers[i];
+        }
+    }
+    count = 0;
+    for(int i=0; i<numbers.size(); i++) {
+        if(numbers[i] == val) count++;
+    }
+    return count>numbers.size()/2? val: 0;
+}

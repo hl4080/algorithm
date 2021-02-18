@@ -57,3 +57,16 @@ void test_printMatrix() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test print matrix end==============="<<endl;
 }
+
+void test_morethanHalf() {
+    cout<<"============simple test more than half begin============="<<endl;
+    vector<int> nums{1,2,3,2,2,2,5,4,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = MoreThanHalfNum(nums), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FIALED"<<endl;
+    cout<<"============simple test more than half end==============="<<endl;
+}

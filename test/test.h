@@ -234,6 +234,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o1"]     = &test_find;
     m["o13"]    = &test_reorderArray;
     m["o19"]    = &test_printMatrix;
+    m["o28"]    = &test_morethanHalf;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

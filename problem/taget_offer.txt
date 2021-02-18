@@ -25,3 +25,4 @@
 25  list        clone randomlist
 26  tree        convert to list
 27  string      permutation
+28  array       more than half

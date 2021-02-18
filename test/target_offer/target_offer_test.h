@@ -14,6 +14,7 @@
 void test_find();
 void test_reorderArray();
 void test_printMatrix();
+void test_morethanHalf();
 
 //functions in string
 void test_replaceSpace();
