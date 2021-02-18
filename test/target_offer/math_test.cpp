@@ -42,3 +42,15 @@ void test_power() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test power begin============="<<endl;
 }
+
+void test_numberOf1s() {
+    cout<<"============simple test number of 1s begin============="<<endl;
+    int n = 13;
+    cout<<"test case: n="<<n<<endl;
+    int res = NumberOf1Between1AndN(n), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test number of 1s end==============="<<endl;
+}

@@ -275,4 +275,5 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o9"]     = &test_jumpFloorII;
     m["o11"]    = &test_numberOf1;
     m["o12"]    = &test_power;
+    m["o31"]    = &test_numberOf1s;
 }
