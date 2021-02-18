@@ -70,3 +70,19 @@ void test_morethanHalf() {
     } else cerr<<"TEST STATUS: FIALED"<<endl;
     cout<<"============simple test more than half end==============="<<endl;
 }
+
+void test_leastKNumbers() {
+    cout<<"============simple test least k numbers begin============="<<endl;
+    vector<int> vec{4,5,1,6,2,7,3,8};
+    int k = 4;
+    cout<<"test case: "<<endl;
+    printOneDimVec(vec);
+    cout<<"k="<<k<<endl;
+    vector<int> res = LeasKtNumbers(vec, k), desired{1,2,3,4};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED";
+    cout<<"============simple test least k numbers end==============="<<endl;
+}

@@ -7,6 +7,7 @@
 
 
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -14,5 +15,6 @@ bool Find(int target, vector<vector<int> > array);
 void reorderArray(vector<int> &array);
 vector<int> printMatrix(vector<vector<int> > matrix);
 int MoreThanHalfNum(vector<int> numbers);
+vector<int> LeasKtNumbers(vector<int> input, int k);
 
 #endif //ALOGRITHM_ARRAY_H
