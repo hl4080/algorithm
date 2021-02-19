@@ -17,6 +17,7 @@ void test_printMatrix();
 void test_morethanHalf();
 void test_leastKNumbers();
 void test_minStringVal();
+void test_uglyNumber();
 
 //functions in string
 void test_replaceSpace();

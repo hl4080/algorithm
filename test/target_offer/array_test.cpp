@@ -99,3 +99,15 @@ void test_minStringVal() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test least k numbers end==============="<<endl;
 }
+
+void test_uglyNumber() {
+    cout<<"============simple test ugly number begin============="<<endl;
+    int index = 7;
+    cout<<"test case: index="<<index<<endl;
+    int res = UglyNumber(index), desired = 8;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test ugly number end==============="<<endl;
+}
