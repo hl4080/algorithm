@@ -64,3 +64,24 @@ vector<string> Permutation(string str) {
     PermutationHelp(res, piece, m, str.size());
     return res;
 }
+
+/*
+ * 在一个字符串(0<=字符串长度<=10000，全部由字母组成)中找到第一个只出现一次的字符,并返回它的位置, 如果没有则返回 -1（需要区分大小写）.（从0开始计数）
+示例1
+输入
+
+"google"
+返回值
+
+4
+ */
+
+int FirstNotRepeatingChar(string str) {
+    vector<int> vec(256, 0);
+    for(auto ch:str) vec[ch]++;
+    char t;
+    for(int i=0; i<str.size(); i++) {
+        if(vec[str[i]] == 1) return i;
+    }
+    return -1;
+}

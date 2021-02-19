@@ -22,6 +22,7 @@ void test_uglyNumber();
 //functions in string
 void test_replaceSpace();
 void test_permutation();
+void test_firstNotRepeatChar();
 
 //functions in list
 void test_printReverseList();

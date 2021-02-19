@@ -12,6 +12,7 @@ using namespace std;
 
 void replaceSpace(char *str,int length);
 vector<string> Permutation(string str);
+int FirstNotRepeatingChar(string str);
 
 
 #endif //ALOGRITHM_STRING_H

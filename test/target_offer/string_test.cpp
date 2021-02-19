@@ -34,3 +34,15 @@ void test_permutation() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test permutation end==============="<<endl;
 }
+
+void test_firstNotRepeatChar() {
+    cout<<"============simple test first not repeat char begin============="<<endl;
+    string s = "google";
+    cout<<"test case: s="<<endl;
+    int res = FirstNotRepeatingChar(s), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test first not repeat char end==============="<<endl;
+}
