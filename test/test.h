@@ -236,6 +236,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o19"]    = &test_printMatrix;
     m["o28"]    = &test_morethanHalf;
     m["o29"]    = &test_leastKNumbers;
+    m["o32"]    = &test_minStringVal;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

@@ -8,6 +8,7 @@
 
 #include <vector>
 #include <queue>
+#include <string>
 
 using namespace std;
 
@@ -16,5 +17,6 @@ void reorderArray(vector<int> &array);
 vector<int> printMatrix(vector<vector<int> > matrix);
 int MoreThanHalfNum(vector<int> numbers);
 vector<int> LeasKtNumbers(vector<int> input, int k);
+string minStringNumber(vector<int> numbers);
 
 #endif //ALOGRITHM_ARRAY_H

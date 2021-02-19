@@ -86,3 +86,16 @@ void test_leastKNumbers() {
     } else cerr<<"TEST STATUS: FAILED";
     cout<<"============simple test least k numbers end==============="<<endl;
 }
+
+void test_minStringVal() {
+    cout<<"============simple test least k numbers begin============="<<endl;
+    vector<int> vec{3,32,24};
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    string res = minStringNumber(vec), desired = "24323";
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test least k numbers end==============="<<endl;
+}
