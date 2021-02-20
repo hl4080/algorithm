@@ -244,3 +244,35 @@ int InversePairs(vector<int> data) {
     mergeSort(data, lo, hi, res);
     return res;
 }
+
+/*
+ * 统计一个数字在升序数组中出现的次数。
+示例1
+输入
+
+[1,2,3,3,3,3,4,5],3
+返回值
+
+4
+ */
+
+void GetNumberOfKHlep(vector<int>& data ,int k, int lo, int hi, int& res) {
+    if(lo > hi) return;
+    while(lo <= hi) {
+        int mid = lo + (hi-lo)/2;
+        if(data[mid] == k) {
+            res += 1;
+            GetNumberOfKHlep(data, k, lo, mid-1, res);
+            GetNumberOfKHlep(data, k, mid+1, hi, res);
+            return;
+        }
+        else if(data[mid] < k) lo = mid+1;
+        else hi = mid-1;
+    }
+}
+
+int GetNumberOfK(vector<int> data ,int k) {
+    int lo = 0, hi = data.size()-1, res = 0;
+    GetNumberOfKHlep(data, k, lo, hi, res);
+    return res;
+}

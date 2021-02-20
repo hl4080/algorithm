@@ -124,3 +124,19 @@ void test_reversePairs() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse pairs end==============="<<endl;
 }
+
+void test_getNumberOfK() {
+    cout<<"============simple test get number of k begin============="<<endl;
+    vector<int> vec{1,2,3,3,3,3,4,5};
+    int k = 3;
+    cout<<"test case: "<<endl;
+    cout<<"data: "<<endl;
+    printOneDimVec(vec);
+    cout<<"k="<<k<<endl;
+    int res = GetNumberOfK(vec, k), desired = 4;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get number of k end==============="<<endl;
+}

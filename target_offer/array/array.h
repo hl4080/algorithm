@@ -20,5 +20,6 @@ vector<int> LeasKtNumbers(vector<int> input, int k);
 string minStringNumber(vector<int> numbers);
 int UglyNumber(int index);
 int InversePairs(vector<int> data);
+int GetNumberOfK(vector<int> data ,int k);
 
 #endif //ALOGRITHM_ARRAY_H

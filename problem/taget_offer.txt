@@ -34,3 +34,4 @@
 34  string      first not repeat char
 35  array       inverse pairs
 36  list        find first common node
+37  array       get number of k
