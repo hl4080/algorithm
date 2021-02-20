@@ -15,6 +15,7 @@ ListNode* FindKthToTail(ListNode* pListHead, unsigned int k);
 ListNode* ReverseList(ListNode* pHead);
 ListNode* Merge(ListNode* pHead1, ListNode* pHead2);
 RandomListNode* CloneRandomList(RandomListNode* pHead);
+ListNode* FindFirstCommonNode( ListNode* pHead1, ListNode* pHead2);
 
 
 #endif //ALOGRITHM_LIST_H

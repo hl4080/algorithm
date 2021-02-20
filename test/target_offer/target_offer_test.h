@@ -31,6 +31,7 @@ void test_FindKthToTail();
 void test_reverList();
 void test_merge();
 void test_cloneRandomList();
+void test_findFirstCommon();
 
 //functions in tree
 void test_reconstructTree();

@@ -251,6 +251,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o15"]    = &test_reverList;
     m["o16"]    = &test_merge;
     m["o25"]    = &test_cloneRandomList;
+    m["o36"]    = &test_findFirstCommon;
 
     //tree functions
     m["o4"]     = &test_reconstructTree;

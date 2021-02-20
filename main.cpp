@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
     initProblemMap(offerMap);
     //for leetcode, index's first char should be l
     //for target offer, index's first char should be o
-    string index = "o35";
+    string index = "o36";
     map<string, FUNC>::iterator it;
     switch(index[0]) {
         case 'l':

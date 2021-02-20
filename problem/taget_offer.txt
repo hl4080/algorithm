@@ -33,3 +33,4 @@
 33  array       ugly number
 34  string      first not repeat char
 35  array       inverse pairs
+36  list        find first common node

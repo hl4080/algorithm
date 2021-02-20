@@ -89,3 +89,22 @@ void test_cloneRandomList() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test clone random list end==============="<<endl;
 }
+
+void test_findFirstCommon() {
+    cout<<"============simple test find first common begin============="<<endl;
+    vector<int> vec1{1,2,3,4}, vec2{5}, vec3{3,4};
+    ListNode* head1 = vector2List(vec1), *head2 = vector2List(vec2);
+    head2->next = head1->next->next;
+    cout<<"test case:"<<endl;
+    cout<<"head1: ";
+    printListNode(head1);
+    cout<<"head2: ";
+    printListNode(head2);
+    ListNode* res = FindFirstCommonNode(head1, head2), *desired = vector2List(vec3);
+    if(list2Vector(res) == list2Vector(desired)) {
+        cout<<"result of test case: ";
+        printListNode(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find first common end==============="<<endl;
+}
