@@ -32,3 +32,4 @@
 32  array       min string value
 33  array       ugly number
 34  string      first not repeat char
+35  array       inverse pairs

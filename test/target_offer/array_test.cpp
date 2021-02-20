@@ -111,3 +111,16 @@ void test_uglyNumber() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test ugly number end==============="<<endl;
 }
+
+void test_reversePairs() {
+    cout<<"============simple test reverse pairs begin============="<<endl;
+    vector<int> vec{1,2,3,4,5,6,7,0};
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    int res = InversePairs(vec), desired = 7;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse pairs end==============="<<endl;
+}

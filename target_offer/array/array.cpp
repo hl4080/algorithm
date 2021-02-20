@@ -192,3 +192,55 @@ int UglyNumber(int index) {
     }
     return res[index-1];
 }
+
+/*
+ * 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组,求出这个数组中的逆序对的总数P。并将P对1000000007取模的结果输出。 即输出P%1000000007
+
+对于50%的数据,size≤10000
+4
+
+对于75%的数据,size≤100000
+5
+
+对于100\%100%的数据,size≤2∗100000
+5
+
+输入描述:
+题目保证输入的数组中没有的相同的数字
+示例1
+输入
+
+[1,2,3,4,5,6,7,0]
+返回值
+
+7
+ */
+
+void merge(vector<int>& data, int lo, int mid, int hi, int& res) {
+    int i = lo, j = mid+1;
+    vector<int> tmp;
+    while(i<=mid && j<=hi) {
+        if(data[i]<data[j]) tmp.push_back(data[i++]);
+        else {
+            res += (mid-i+1);
+            tmp.push_back(data[j++]);
+        }
+    }
+    while(i<=mid) tmp.push_back(data[i++]);
+    while(j<=hi) tmp.push_back(data[j++]);
+    for(int i=lo; i<=hi; i++) data[i] = tmp[i-lo];
+}
+
+void mergeSort(vector<int>& data, int lo, int hi, int& res) {
+    if(lo >= hi) return;
+    int mid = lo + (hi-lo)/2;
+    mergeSort(data, lo, mid, res);
+    mergeSort(data, mid+1, hi, res);
+    merge(data, lo, mid, hi, res);
+}
+
+int InversePairs(vector<int> data) {
+    int lo = 0, hi = data.size()-1, res = 0;
+    mergeSort(data, lo, hi, res);
+    return res;
+}

@@ -19,5 +19,6 @@ int MoreThanHalfNum(vector<int> numbers);
 vector<int> LeasKtNumbers(vector<int> input, int k);
 string minStringNumber(vector<int> numbers);
 int UglyNumber(int index);
+int InversePairs(vector<int> data);
 
 #endif //ALOGRITHM_ARRAY_H

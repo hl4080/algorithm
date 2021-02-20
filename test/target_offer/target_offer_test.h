@@ -18,6 +18,7 @@ void test_morethanHalf();
 void test_leastKNumbers();
 void test_minStringVal();
 void test_uglyNumber();
+void test_reversePairs();
 
 //functions in string
 void test_replaceSpace();
