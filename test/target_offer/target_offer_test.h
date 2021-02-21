@@ -42,6 +42,7 @@ void test_printTreeLevel();
 void test_verifyBST();
 void test_findPath();
 void test_convert2List();
+void test_treeDepth();
 
 //functions in stack
 void test_myStack();

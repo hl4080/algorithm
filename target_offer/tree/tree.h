@@ -16,5 +16,6 @@ vector<int> PrintFromTopToBottom(TreeNode* root);
 bool VerifySquenceOfBST(vector<int>& sequence);
 vector<vector<int> > FindPath(TreeNode* root,int expectNumber);
 TreeNode* Convert2List(TreeNode* pRootOfTree);
+int TreeDepth(TreeNode* pRoot);
 
 #endif //ALOGRITHM_TREE_H

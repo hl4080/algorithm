@@ -117,3 +117,17 @@ void test_convert2List() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test convert to list end==============="<<endl;
 }
+
+void test_treeDepth() {
+    cout<<"============simple test tree depth begin============="<<endl;
+    vector<int> vec{4,5,2,1,-1,3,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int res = TreeDepth(root), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test tree depth end==============="<<endl;
+}

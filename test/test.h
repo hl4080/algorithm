@@ -262,6 +262,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o23"]    = &test_verifyBST;
     m["o24"]    = &test_findPath;
     m["o26"]    = &test_convert2List;
+    m["o38"]    = &test_treeDepth;
 
     //stack function
     m["o5"]     = &test_myStack;
