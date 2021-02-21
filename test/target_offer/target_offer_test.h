@@ -43,6 +43,7 @@ void test_verifyBST();
 void test_findPath();
 void test_convert2List();
 void test_treeDepth();
+void test_IsBalancedTree();
 
 //functions in stack
 void test_myStack();

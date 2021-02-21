@@ -131,3 +131,17 @@ void test_treeDepth() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test tree depth end==============="<<endl;
 }
+
+void test_IsBalancedTree() {
+    cout<<"============simple test is balanced tree begin============="<<endl;
+    vector<int> vec{4,5,2,1,-1,3,-1};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    bool res = IsBalancedTree(root), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is balanced tree end==============="<<endl;
+}

@@ -263,6 +263,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o24"]    = &test_findPath;
     m["o26"]    = &test_convert2List;
     m["o38"]    = &test_treeDepth;
+    m["o39"]    = &test_IsBalancedTree;
 
     //stack function
     m["o5"]     = &test_myStack;
