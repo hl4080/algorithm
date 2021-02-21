@@ -54,3 +54,19 @@ void test_numberOf1s() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test number of 1s end==============="<<endl;
 }
+
+void test_appearOnce() {
+    cout<<"============simple test appear once begin============="<<endl;
+    vector<int> vec{1,1,2,2,3,5};
+    cout<<"test case: ";
+    printOneDimVec(vec);
+    int n0=0, n1=0;
+    int *num1 = &n0, *num2 = &n1;
+    FindNumsAppearOnce(vec, num1, num2);
+    int desired1 = 3, desired2 = 5;
+    if(*num1 == desired1 && *num2 == desired2) {
+        cout<<"result of test case: num1="<<num1<<" nums2="<<num2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test appear once end=============="<<endl;
+}

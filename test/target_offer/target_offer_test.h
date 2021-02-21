@@ -64,5 +64,6 @@ void test_jumpFloorII();
 void test_numberOf1();
 void test_power();
 void test_numberOf1s();
+void test_appearOnce();
 
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

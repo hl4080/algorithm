@@ -93,3 +93,19 @@ int NumberOf1Between1AndN(int n) {
     }
     return res;
 }
+
+/*
+ * 一个整型数组里除了两个数字之外，其他的数字都出现了两次。请写程序找出这两个只出现一次的数字。
+ */
+
+void FindNumsAppearOnce(vector<int> data,int* num1,int *num2) {
+    int ret = 0;
+    for(int i=0; i<data.size(); i++) ret ^= data[i];
+    int flag = 1;
+    while(!(ret&flag)) flag <<= 1;
+    *num1 = 0, *num2 = 0;
+    for(int i=0; i<data.size(); i++) {
+        if(data[i]&flag) *num1 ^= data[i];
+        else *num2 ^= data[i];
+    }
+}
