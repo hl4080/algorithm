@@ -37,3 +37,5 @@
 37  array       get number of k
 38  tree        tree depth
 39  tree        is balanced tree
+40  math        appear once
+41  array       find continous sequence

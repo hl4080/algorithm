@@ -20,6 +20,7 @@ void test_minStringVal();
 void test_uglyNumber();
 void test_reversePairs();
 void test_getNumberOfK();
+void test_continuousSequence();
 
 //functions in string
 void test_replaceSpace();

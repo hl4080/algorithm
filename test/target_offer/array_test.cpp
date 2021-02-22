@@ -140,3 +140,16 @@ void test_getNumberOfK() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get number of k end==============="<<endl;
 }
+
+void test_continuousSequence() {
+    cout<<"============simple test get continuous sequence begin============="<<endl;
+    int sum = 9;
+    cout<<"test case: sum="<<sum<<endl;
+    vector<vector<int>> res = FindContinuousSequence(sum), desired{{2,3,4}, {4,5}};
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get continuous sequence end==============="<<endl;
+}

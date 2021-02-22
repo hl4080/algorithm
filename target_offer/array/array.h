@@ -21,5 +21,6 @@ string minStringNumber(vector<int> numbers);
 int UglyNumber(int index);
 int InversePairs(vector<int> data);
 int GetNumberOfK(vector<int> data ,int k);
+vector<vector<int>> FindContinuousSequence(int sum);
 
 #endif //ALOGRITHM_ARRAY_H
