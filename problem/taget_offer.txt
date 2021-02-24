@@ -40,3 +40,4 @@
 40  math        appear once
 41  array       find continous sequence
 42  array       find numbers with sum
+43  string      left totated string

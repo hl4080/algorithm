@@ -46,3 +46,16 @@ void test_firstNotRepeatChar() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test first not repeat char end==============="<<endl;
 }
+
+void test_leftRotatedString() {
+    cout<<"============simple test left rotated string begin============="<<endl;
+    string s = "XYZdefabc";
+    int n = 3;
+    cout<<"test case: s="<<s<<" n="<<n<<endl;
+    string res = LeftRotateString(s, n), desired = "defabcXYZ";
+    if(res == desired) {
+        cout<<"resuklt of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test left rotated string end==============="<<endl;
+}

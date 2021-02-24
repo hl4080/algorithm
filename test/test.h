@@ -247,6 +247,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o2"]     = &test_replaceSpace;
     m["o27"]    = &test_permutation;
     m["o34"]    = &test_firstNotRepeatChar;
+    m["o43"]    = &test_leftRotatedString;
 
     //list functions
     m["o3"]     = &test_printReverseList;

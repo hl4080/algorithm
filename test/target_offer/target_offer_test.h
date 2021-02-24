@@ -27,6 +27,7 @@ void test_numberWithSum();
 void test_replaceSpace();
 void test_permutation();
 void test_firstNotRepeatChar();
+void test_leftRotatedString();
 
 //functions in list
 void test_printReverseList();
