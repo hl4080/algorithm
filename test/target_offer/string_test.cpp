@@ -59,3 +59,15 @@ void test_leftRotatedString() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test left rotated string end==============="<<endl;
 }
+
+void test_reverseSentence() {
+    cout<<"============simple test reverse string begin============="<<endl;
+    string s = "nowcoder. a am I";
+    cout<<"test case: s="<<s<<endl;
+    string res = ReverseSentence(s), desired = "I am a nowcoder.";
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test reverse string end==============="<<endl;
+}

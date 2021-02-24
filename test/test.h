@@ -248,6 +248,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o27"]    = &test_permutation;
     m["o34"]    = &test_firstNotRepeatChar;
     m["o43"]    = &test_leftRotatedString;
+    m["o44"]    = &test_reverseSentence;
 
     //list functions
     m["o3"]     = &test_printReverseList;

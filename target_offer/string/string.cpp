@@ -97,3 +97,26 @@ string LeftRotateString(string str, int n) {
     str += str.substr(0,shift);
     return str.substr(shift);
 }
+
+/*
+ * 牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向Fish借来翻看，但却读不懂它的意思。
+ * 例如，“student. a am I”。后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该是“I am a student.”。Cat对一一的翻转这些单词顺序可不在行，你能帮助他么？
+ */
+
+string ReverseSentence(string str) {
+    int p1 = str.size()-1;
+    int p2 = p1;
+    string res;
+    while(p2>=0) {
+        if(p2 == 0) {
+            res += str.substr(0, p1-p2+1);
+            return res;
+        }else if(str[p2] == ' ') {
+            res += str.substr(p2+1, p1-p2);
+            res += ' ';
+            p1 = p2-1;
+            p2 = p1;
+        } else p2--;
+    }
+    return res;
+}

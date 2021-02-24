@@ -28,6 +28,7 @@ void test_replaceSpace();
 void test_permutation();
 void test_firstNotRepeatChar();
 void test_leftRotatedString();
+void test_reverseSentence();
 
 //functions in list
 void test_printReverseList();
