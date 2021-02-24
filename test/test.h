@@ -242,6 +242,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o37"]    = &test_getNumberOfK;
     m["o41"]    = &test_continuousSequence;
     m["o42"]    = &test_numberWithSum;
+    m["o45"]    = &test_isContinous;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

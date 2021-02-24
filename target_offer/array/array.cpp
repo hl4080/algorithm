@@ -335,3 +335,29 @@ vector<int> FindNumbersWithSum(vector<int> array,int sum) {
     }
     return n1==0&&n2==0? vector<int>{}: vector<int>{n1,n2};
 }
+
+/*
+ * 要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何，
+ * 如果牌能组成顺子就输出true，否则就输出false。为了方便起见,你可以认为大小王是0。
+ * 输入
+
+[0,3,2,6,4]
+返回值
+
+true
+ */
+
+bool IsContinuous( vector<int> numbers) {
+    if(numbers.empty()) return false;
+    set<int> st;
+    int minValue = 14, maxValue = 0;
+    for(int i=0; i<numbers.size(); i++) {
+        if(numbers[i]>0) {
+            if(st.count(numbers[i])) return false;
+            st.insert(numbers[i]);
+            minValue = min(numbers[i], minValue);
+            maxValue = max(numbers[i], maxValue);
+        }
+    }
+    return maxValue-minValue<5;
+}

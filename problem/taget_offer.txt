@@ -42,3 +42,4 @@
 42  array       find numbers with sum
 43  string      left totated string
 44  string      reverse string
+45  array       is continuous

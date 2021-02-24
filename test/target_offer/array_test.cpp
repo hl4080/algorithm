@@ -170,3 +170,16 @@ void test_numberWithSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find numbers with sum end==============="<<endl;
 }
+
+void test_isContinous() {
+    cout<<"============simple test is continous begin============="<<endl;
+    vector<int> nums{0,3,2,6,4};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    bool res = IsContinuous(nums), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is continous end==============="<<endl;
+}

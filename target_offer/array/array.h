@@ -9,6 +9,7 @@
 #include <vector>
 #include <queue>
 #include <string>
+#include <set>
 
 using namespace std;
 
@@ -23,5 +24,6 @@ int InversePairs(vector<int> data);
 int GetNumberOfK(vector<int> data ,int k);
 vector<vector<int>> FindContinuousSequence(int sum);
 vector<int> FindNumbersWithSum(vector<int> array,int sum);
+bool IsContinuous( vector<int> numbers);
 
 #endif //ALOGRITHM_ARRAY_H

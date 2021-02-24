@@ -22,6 +22,7 @@ void test_reversePairs();
 void test_getNumberOfK();
 void test_continuousSequence();
 void test_numberWithSum();
+void test_isContinous();
 
 //functions in string
 void test_replaceSpace();
