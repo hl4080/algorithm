@@ -22,5 +22,6 @@ int UglyNumber(int index);
 int InversePairs(vector<int> data);
 int GetNumberOfK(vector<int> data ,int k);
 vector<vector<int>> FindContinuousSequence(int sum);
+vector<int> FindNumbersWithSum(vector<int> array,int sum);
 
 #endif //ALOGRITHM_ARRAY_H

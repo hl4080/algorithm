@@ -305,3 +305,33 @@ vector<vector<int>> FindContinuousSequence(int sum) {
     }
     return res;
 }
+
+/*
+ * 输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。
+返回值描述:
+对应每个测试案例，输出两个数，小的先输出。
+示例1
+输入
+
+[1,2,4,7,11,15],15
+返回值
+
+[4,11]
+ */
+
+vector<int> FindNumbersWithSum(vector<int> array,int sum) {
+    int p1 = 0, p2 = array.size()-1;
+    int n1=0, n2=0, product = INT_MAX;
+    while(p1<p2) {
+        if(array[p1] + array[p2] == sum) {
+            if(array[p1]*array[p2] < product) {
+                n1 = array[p1];
+                n2 = array[p2];
+                product = array[p1]*array[p2];
+            }
+            p1++, p2--;
+        } else if(array[p1] + array[p2] < sum) p1++;
+        else p2--;
+    }
+    return n1==0&&n2==0? vector<int>{}: vector<int>{n1,n2};
+}

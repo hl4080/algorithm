@@ -153,3 +153,20 @@ void test_continuousSequence() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get continuous sequence end==============="<<endl;
 }
+
+void test_numberWithSum() {
+    cout<<"============simple test find numbers with sum begin============="<<endl;
+    vector<int> vec{1,2,4,6,8,11,15};
+    int sum = 15;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(vec);
+    cout<<"sum = "<<sum<<endl;
+    vector<int> res = FindNumbersWithSum(vec, sum), desired{4,11};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test find numbers with sum end==============="<<endl;
+}

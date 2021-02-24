@@ -241,6 +241,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o35"]    = &test_reversePairs;
     m["o37"]    = &test_getNumberOfK;
     m["o41"]    = &test_continuousSequence;
+    m["o42"]    = &test_numberWithSum;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

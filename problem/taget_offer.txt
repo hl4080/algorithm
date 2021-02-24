@@ -39,3 +39,4 @@
 39  tree        is balanced tree
 40  math        appear once
 41  array       find continous sequence
+42  array       find numbers with sum

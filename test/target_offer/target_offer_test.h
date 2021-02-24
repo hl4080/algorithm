@@ -21,6 +21,7 @@ void test_uglyNumber();
 void test_reversePairs();
 void test_getNumberOfK();
 void test_continuousSequence();
+void test_numberWithSum();
 
 //functions in string
 void test_replaceSpace();
