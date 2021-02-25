@@ -43,4 +43,5 @@
 43  string      left totated string
 44  string      reverse string
 45  array       is continuous
-46  math        joseph circle
+46  dp          joseph circle
+47  math        special sum

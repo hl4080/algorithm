@@ -71,5 +71,6 @@ void test_numberOf1();
 void test_power();
 void test_numberOf1s();
 void test_appearOnce();
+void test_specialSum();
 
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

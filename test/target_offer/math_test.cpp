@@ -70,3 +70,15 @@ void test_appearOnce() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test appear once end=============="<<endl;
 }
+
+void test_specialSum() {
+    cout<<"============simple test special sum begin============="<<endl;
+    int n = 5;
+    cout<<"test case: n="<<n<<endl;
+    int res = SpecialSum(n), desired = 15;
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test special sum end==============="<<endl;
+}

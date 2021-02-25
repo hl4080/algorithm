@@ -109,3 +109,19 @@ void FindNumsAppearOnce(vector<int> data,int* num1,int *num2) {
         else *num2 ^= data[i];
     }
 }
+
+/*
+ * 求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+示例1
+输入
+
+5
+返回值
+
+15
+ */
+
+int SpecialSum(int n) {
+    bool x = n>1 && (n+=SpecialSum(n-1));
+    return n;
+}
