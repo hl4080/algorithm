@@ -63,6 +63,7 @@ void test_fibonacci();
 void test_jumpFloor();
 void test_rectCover();
 void test_greatestSubarray();
+void test_josephCircle();
 
 //functions in math
 void test_jumpFloorII();

@@ -54,3 +54,15 @@ void test_greatestSubarray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test greatest subarray end==============="<<endl;
 }
+
+void test_josephCircle() {
+    cout<<"============simple test joseph circle begin============="<<endl;
+    int n=5, m=3;
+    cout<<"test case: n="<<n<<" m="<<m<<endl;
+    int res = LastRemaining(n, m), desired = 3;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test joseph circle end==============="<<endl;
+}
