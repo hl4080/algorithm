@@ -125,3 +125,23 @@ int SpecialSum(int n) {
     bool x = n>1 && (n+=SpecialSum(n-1));
     return n;
 }
+
+/*
+ * 写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。
+示例1
+输入
+
+1,2
+返回值
+
+3
+ */
+
+int SpecialAdd(int num1, int num2) {
+    while(num2) {
+        int tmp = num1^num2;
+        num2 = (num1&num2)<<1;
+        num1 = tmp;
+    }
+    return num1;
+}

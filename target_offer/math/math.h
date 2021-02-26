@@ -16,6 +16,7 @@ double Power(double base, int exponent);
 int NumberOf1Between1AndN(int n);
 void FindNumsAppearOnce(vector<int> data,int* num1,int *num2);
 int SpecialSum(int n);
+int SpecialAdd(int num1, int num2);
 
 
 #endif //ALOGRITHM_MATH_H

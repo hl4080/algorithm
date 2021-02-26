@@ -292,4 +292,5 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o31"]    = &test_numberOf1s;
     m["o40"]    = &test_appearOnce;
     m["o47"]    = &test_specialSum;
+    m["o48"]    = &test_specialAdd;
 }

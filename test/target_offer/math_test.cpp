@@ -82,3 +82,15 @@ void test_specialSum() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test special sum end==============="<<endl;
 }
+
+void test_specialAdd() {
+    cout<<"============simple test special add begin============="<<endl;
+    int a = 5, b = 3;
+    cout<<"test case: a="<<a<<" b="<<b<<endl;
+    int res = SpecialAdd(a, b), desired = 8;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test special add end==============="<<endl;
+}
