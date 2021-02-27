@@ -67,6 +67,7 @@ void test_jumpFloor();
 void test_rectCover();
 void test_greatestSubarray();
 void test_josephCircle();
+void test_matchPattern();
 
 //functions in math
 void test_jumpFloorII();

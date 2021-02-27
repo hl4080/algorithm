@@ -66,3 +66,15 @@ void test_josephCircle() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test joseph circle end==============="<<endl;
 }
+
+void test_matchPattern() {
+    cout<<"============simple test match pattern begin============="<<endl;
+    string s = "aaa", p = "a*a";
+    cout<<"test case: s="<<s<<" p="<<p<<endl;
+    bool res = matchPattern(s, p), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FIALED"<<endl;
+    cout<<"============simple test match pattern end==============="<<endl;
+}
