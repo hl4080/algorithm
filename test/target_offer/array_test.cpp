@@ -183,3 +183,16 @@ void test_isContinous() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is continous end==============="<<endl;
 }
+
+void test_duplicate() {
+    cout<<"============simple test duplicate begin============="<<endl;
+    vector<int> nums{2,3,1,0,2,5,3};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    int res = duplicate(nums), desired = 2;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test duplicate end==============="<<endl;
+}

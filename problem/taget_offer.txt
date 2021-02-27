@@ -47,3 +47,4 @@
 47  math        special sum
 48  math        spcial add
 49  string      string to int
+50  array       duplicate

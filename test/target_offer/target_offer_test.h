@@ -23,6 +23,7 @@ void test_getNumberOfK();
 void test_continuousSequence();
 void test_numberWithSum();
 void test_isContinous();
+void test_duplicate();
 
 //functions in string
 void test_replaceSpace();
