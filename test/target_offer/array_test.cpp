@@ -196,3 +196,17 @@ void test_duplicate() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test duplicate end==============="<<endl;
 }
+
+void test_multiplyArray() {
+    cout<<"============simple test multiply array begin============="<<endl;
+    vector<int> nums{1,2,3,4,5};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    vector<int> res = multiplyArray(nums), desired{120,60,40,30,24};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST SATUS: FAILED"<<endl;
+    cout<<"============simple test multiply array end==============="<<endl;
+}

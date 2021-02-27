@@ -244,6 +244,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o42"]    = &test_numberWithSum;
     m["o45"]    = &test_isContinous;
     m["o50"]    = &test_duplicate;
+    m["o51"]    = &test_multiplyArray;
 
     //string functions
     m["o2"]     = &test_replaceSpace;

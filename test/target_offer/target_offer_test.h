@@ -24,6 +24,7 @@ void test_continuousSequence();
 void test_numberWithSum();
 void test_isContinous();
 void test_duplicate();
+void test_multiplyArray();
 
 //functions in string
 void test_replaceSpace();

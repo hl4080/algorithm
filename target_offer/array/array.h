@@ -26,5 +26,6 @@ vector<vector<int>> FindContinuousSequence(int sum);
 vector<int> FindNumbersWithSum(vector<int> array,int sum);
 bool IsContinuous( vector<int> numbers);
 int duplicate(vector<int>& numbers);
+vector<int> multiplyArray(const vector<int>& A);
 
 #endif //ALOGRITHM_ARRAY_H
