@@ -30,6 +30,7 @@ void test_permutation();
 void test_firstNotRepeatChar();
 void test_leftRotatedString();
 void test_reverseSentence();
+void test_string2int();
 
 //functions in list
 void test_printReverseList();

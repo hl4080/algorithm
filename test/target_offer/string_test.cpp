@@ -71,3 +71,15 @@ void test_reverseSentence() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test reverse string end==============="<<endl;
 }
+
+void test_string2int() {
+    cout<<"============simple test string 2 int begin============="<<endl;
+    string s = "+2147483647";
+    cout<<"test case: s="<<s<<endl;
+    int res = StrToInt(s), desired = 2147483647;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test string 2 int end==============="<<endl;
+}

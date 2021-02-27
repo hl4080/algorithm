@@ -120,3 +120,40 @@ string ReverseSentence(string str) {
     }
     return res;
 }
+
+/*
+ * 将一个字符串转换成一个整数，要求不能使用字符串转换整数的库函数。 数值为0或者字符串不是一个合法的数值则返回0
+输入描述:
+输入一个字符串,包括数字字母符号,可以为空
+返回值描述:
+如果是合法的数值表达则返回该数字，否则返回0
+示例1
+输入
+
+"+2147483647"
+返回值
+
+2147483647
+示例2
+输入
+
+"1a33"
+返回值
+
+0
+ */
+
+int StrToInt(string str) {
+    int res = 0;
+    int bit = 1;
+    for(int i=str.size()-1; i>=0; i--) {
+        if(i == 0) {
+            if(str[i] == '+') return res;
+            else if(str[i] == '-') return -res;
+        }
+        if(str[i] < '0' || str[i] > '9') return 0;
+        else res += (str[i]-'0')*bit;
+        bit *=10;
+    }
+    return res;
+}
