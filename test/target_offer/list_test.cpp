@@ -108,3 +108,16 @@ void test_findFirstCommon() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test find first common end==============="<<endl;
 }
+
+void test_listCycleNode() {
+    cout<<"============simple test list cycle begin============="<<endl;
+    vector<int> vec{1,2,3,4,5};
+    ListNode* head = vector2List(vec);
+    head->next->next->next->next->next = head->next;
+    ListNode* res = EntryNodeOfLoop(head), *desired = head->next;
+    if(res == desired) {
+        cout<<"result of test case: "<<res->val<<endl;
+        cout<<"TEST STAUTS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test list cycle end==============="<<endl;
+}

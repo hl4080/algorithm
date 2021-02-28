@@ -51,3 +51,4 @@
 51  array       multiply array
 52  dp          match pattern
 54  string      stream first appear
+55  list        list cycle

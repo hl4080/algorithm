@@ -144,3 +144,23 @@ ListNode* FindFirstCommonNode( ListNode* pHead1, ListNode* pHead2) {
     }
     return p1;
 }
+
+/*
+ * 给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。
+ */
+
+ListNode* EntryNodeOfLoop(ListNode* pHead) {
+    ListNode* p1 = pHead, *p2 = pHead;
+    if(!p2 || !p2->next) return NULL;
+    do {
+        p1 = p1->next;
+        p2 = p2->next->next;
+    }while(p1 != p2 && p2 && p2->next);
+    if(!p2 || !p2->next) return NULL;
+    p1 = pHead;
+    while(p1 != p2) {
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+    return p1;
+}
