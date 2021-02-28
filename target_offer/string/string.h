@@ -8,6 +8,8 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <unordered_map>
+#include <queue>
 using namespace std;
 
 void replaceSpace(char *str,int length);
@@ -16,6 +18,19 @@ int FirstNotRepeatingChar(string str);
 string LeftRotateString(string str, int n);
 string ReverseSentence(string str);
 int StrToInt(string str);
+
+class SstreamFirstAppear
+{
+public:
+    //Insert one char from stringstream
+    void Insert(char ch);
+    //return the first appearence once char in current stringstream
+    char firstAppearingOnce();
+
+private:
+    unordered_map<char, int> m;
+    queue<char> q;
+};
 
 
 #endif //ALOGRITHM_STRING_H

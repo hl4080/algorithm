@@ -83,3 +83,19 @@ void test_string2int() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test string 2 int end==============="<<endl;
 }
+
+void test_stringFirstAppear() {
+    cout<<"============simple test string stream first appear char begin============="<<endl;
+    SstreamFirstAppear sstring;
+    sstring.Insert('a');
+    sstring.Insert('b');
+    char res = sstring.firstAppearingOnce(), desired = 'a';
+    sstring.Insert('a');
+    char res2 = sstring.firstAppearingOnce(), desired2 = 'b';
+    cout<<"test case: insert(a), insert(b), firstAppear1, insert(a), firstAppear2"<<endl;
+    if(res == desired && res2 == desired2) {
+        cout<<"result of test case: firstAppear1: "<<res<<" firstAppear2: "<<res2<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test string stream first appear char end==============="<<endl;
+}

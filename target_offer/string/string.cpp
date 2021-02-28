@@ -2,6 +2,7 @@
 // Created by hl4080 on 2021/1/25.
 //
 
+#include <unordered_map>
 #include "string.h"
 
 /*
@@ -156,4 +157,42 @@ int StrToInt(string str) {
         bit *=10;
     }
     return res;
+}
+
+/*
+ * 请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串"+100","5e2","-123","3.1416"和"-1E-16"都表示数值。
+ * 但是"12e","1a3.14","1.2.3","+-5"和"12e+4.3"都不是。
+示例1
+输入
+
+"123.45e+6"
+返回值
+
+true
+ */
+
+bool isNumeric(string str) {
+
+}
+
+/*
+ * 请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符"go"时，第一个只出现一次的字符是"g"。
+ * 当从该字符流中读出前六个字符“google"时，第一个只出现一次的字符是"l"。
+返回值描述:
+如果当前字符流没有存在出现一次的字符，返回#字符。
+ */
+
+//Insert one char from stringstream
+void SstreamFirstAppear::Insert(char ch) {
+    if(!m.count(ch)) q.push(ch);
+    m[ch]++;
+}
+//return the first appearence once char in current stringstream
+char SstreamFirstAppear::firstAppearingOnce() {
+    while(!q.empty()) {
+        char head = q.front();
+        if(m[head] == 1) return head;
+        else q.pop();
+    }
+    return '#';
 }
