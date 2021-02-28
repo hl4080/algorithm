@@ -43,6 +43,7 @@ void test_merge();
 void test_cloneRandomList();
 void test_findFirstCommon();
 void test_listCycleNode();
+void test_removeDuplicateList();
 
 //functions in tree
 void test_reconstructTree();

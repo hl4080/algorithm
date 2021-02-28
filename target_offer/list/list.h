@@ -17,6 +17,7 @@ ListNode* Merge(ListNode* pHead1, ListNode* pHead2);
 RandomListNode* CloneRandomList(RandomListNode* pHead);
 ListNode* FindFirstCommonNode( ListNode* pHead1, ListNode* pHead2);
 ListNode* EntryNodeOfLoop(ListNode* pHead);
+ListNode* deleteDuplication(ListNode* pHead);
 
 
 #endif //ALOGRITHM_LIST_H

@@ -121,3 +121,18 @@ void test_listCycleNode() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test list cycle end==============="<<endl;
 }
+
+void test_removeDuplicateList() {
+    cout<<"============simple test remove duplicate list begin============="<<endl;
+    vector<int> vec{1,2,3,3,4,4,5}, vec2{1,2,5};
+    ListNode* head = vector2List(vec);
+    cout<<"test case: ";
+    printListNode(head);
+    ListNode* res = deleteDuplication(head), *desired = vector2List(vec2);
+    if(list2Vector(res) == list2Vector(desired)) {
+        cout<<"result of test case: ";
+        printListNode(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test remove duplicate list end==============="<<endl;
+}

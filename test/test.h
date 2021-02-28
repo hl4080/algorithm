@@ -263,6 +263,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o25"]    = &test_cloneRandomList;
     m["o36"]    = &test_findFirstCommon;
     m["o55"]    = &test_listCycleNode;
+    m["o56"]    = &test_removeDuplicateList;
 
     //tree functions
     m["o4"]     = &test_reconstructTree;

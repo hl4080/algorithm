@@ -164,3 +164,34 @@ ListNode* EntryNodeOfLoop(ListNode* pHead) {
     }
     return p1;
 }
+
+/*
+ * 在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指针。
+ * 例如，链表1->2->3->3->4->4->5 处理后为 1->2->5
+示例1
+输入
+
+{1,2,3,3,4,4,5}
+返回值
+
+{1,2,5}
+ */
+
+ListNode* deleteDuplication(ListNode* pHead) {
+    ListNode* pre = new ListNode(0);
+    ListNode* flag = pre;
+    pre->next = pHead;
+    ListNode* cur = pHead;
+    while(cur) {
+        if(cur->next && cur->val == cur->next->val) {
+            cur = cur->next;
+            while(cur->next && cur->val == cur->next->val) cur = cur->next;
+            cur = cur->next;
+            pre->next = cur;
+        } else {
+            pre = pre->next;
+            cur = cur->next;
+        }
+    }
+    return flag->next;
+}
