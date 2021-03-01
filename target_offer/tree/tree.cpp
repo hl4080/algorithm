@@ -215,3 +215,24 @@ bool IsBalancedTree(TreeNode* pRoot) {
     if(abs(TreeDepth(pRoot->left)-TreeDepth(pRoot->right)) > 1) return false;
     return IsBalancedTree(pRoot->left) && IsBalancedTree(pRoot->right);
 }
+
+/*
+ * 给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。
+ * 注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。
+ */
+
+TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode) {
+    if(!pNode) return pNode;
+    TreeLinkNode* node = pNode;
+    if(node->right) {
+        TreeLinkNode* tmp = node->right;
+        while(tmp->left) tmp = tmp->left;
+        return tmp;
+    } else {
+        while(node->next) {
+            if(node->next->left == node) return node->next;
+            node = node->next;
+        }
+    }
+    return NULL;
+}

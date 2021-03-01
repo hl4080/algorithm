@@ -24,6 +24,14 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right): val(x), left(left), right(right) {}
 };
 
+struct TreeLinkNode {
+    int val;
+    TreeLinkNode *left;
+    TreeLinkNode *right;
+    TreeLinkNode *next;
+    TreeLinkNode(int x) :val(x), left(NULL), right(NULL), next(NULL) {}
+};
+
 struct RandomListNode {
     int label;
     struct RandomListNode *next, *random;

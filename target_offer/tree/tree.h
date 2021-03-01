@@ -18,5 +18,6 @@ vector<vector<int> > FindPath(TreeNode* root,int expectNumber);
 TreeNode* Convert2List(TreeNode* pRootOfTree);
 int TreeDepth(TreeNode* pRoot);
 bool IsBalancedTree(TreeNode* pRoot);
+TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode);
 
 #endif //ALOGRITHM_TREE_H

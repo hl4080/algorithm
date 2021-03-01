@@ -55,6 +55,7 @@ void test_findPath();
 void test_convert2List();
 void test_treeDepth();
 void test_IsBalancedTree();
+void test_getNextLinkTree();
 
 //functions in stack
 void test_myStack();

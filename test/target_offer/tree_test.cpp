@@ -145,3 +145,19 @@ void test_IsBalancedTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is balanced tree end==============="<<endl;
 }
+
+void test_getNextLinkTree() {
+    cout<<"============simple test get next linked tree begin============="<<endl;
+    TreeLinkNode* node1 = new TreeLinkNode(1);
+    TreeLinkNode* node2 = new TreeLinkNode(2);
+    TreeLinkNode* node3 = new TreeLinkNode(3);
+    node1->left = node2, node1->right = NULL, node1->next = NULL;
+    node2->left = NULL, node2->right = node3, node2->next = node1;
+    node3->left = NULL, node3->right = NULL, node3->next = node2;
+    TreeLinkNode* res = GetNextLinkNode(node3), *desired = node1;
+    if(res == desired) {
+        cout<<"result of test case: "<<res->val<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test get next linked tree end==============="<<endl;
+}

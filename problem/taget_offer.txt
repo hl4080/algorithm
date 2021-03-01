@@ -40,7 +40,7 @@
 40  math        appear once
 41  array       find continous sequence
 42  array       find numbers with sum
-43  string      left totated string
+43  string      left rotated string
 44  string      reverse string
 45  array       is continuous
 46  dp          joseph circle
@@ -53,3 +53,4 @@
 54  string      stream first appear
 55  list        list cycle
 56  list        remove duplicate list
+57  tree        get next link tree node
