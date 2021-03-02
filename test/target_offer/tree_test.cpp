@@ -161,3 +161,17 @@ void test_getNextLinkTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test get next linked tree end==============="<<endl;
 }
+
+void test_isSymmetrical() {
+    cout<<"============simple test is symmetrical begin============="<<endl;
+    vector<int> nums{3,2,4,1,4,2,3};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    bool res = isSymmetrical(root), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test is symmetrical end==============="<<endl;
+}

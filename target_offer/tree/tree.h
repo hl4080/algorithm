@@ -19,5 +19,6 @@ TreeNode* Convert2List(TreeNode* pRootOfTree);
 int TreeDepth(TreeNode* pRoot);
 bool IsBalancedTree(TreeNode* pRoot);
 TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode);
+bool isSymmetrical(TreeNode* pRoot);
 
 #endif //ALOGRITHM_TREE_H

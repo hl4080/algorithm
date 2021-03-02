@@ -276,6 +276,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o38"]    = &test_treeDepth;
     m["o39"]    = &test_IsBalancedTree;
     m["o57"]    = &test_getNextLinkTree;
+    m["o58"]    = &test_isSymmetrical;
 
     //stack function
     m["o5"]     = &test_myStack;

@@ -236,3 +236,24 @@ TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode) {
     }
     return NULL;
 }
+
+/*
+ * 请实现一个函数，用来判断一棵二叉树是不是对称的。注意，如果一个二叉树同此二叉树的镜像是同样的，定义其为对称的。
+示例1
+输入
+
+{8,6,6,5,7,7,5}
+返回值
+
+true
+ */
+
+bool isSymmetricalHelp(TreeNode* root1, TreeNode* root2) {
+    if(!root1 && !root2) return true;
+    if((!root1 && root2) || (root1 && !root2)) return false;
+    return root1->val == root2->val && isSymmetricalHelp(root1->left, root2->right) && isSymmetricalHelp(root1->right, root2->left);
+}
+
+bool isSymmetrical(TreeNode* pRoot) {
+    return isSymmetricalHelp(pRoot, pRoot);
+}

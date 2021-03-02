@@ -54,3 +54,4 @@
 55  list        list cycle
 56  list        remove duplicate list
 57  tree        get next link tree node
+58  tree        is symmetrical

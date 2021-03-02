@@ -56,6 +56,7 @@ void test_convert2List();
 void test_treeDepth();
 void test_IsBalancedTree();
 void test_getNextLinkTree();
+void test_isSymmetrical();
 
 //functions in stack
 void test_myStack();
