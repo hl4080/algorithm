@@ -8,6 +8,8 @@
 
 #include "../../leetcode/data-struct.h"
 #include <queue>
+#include <string>
+#include <cmath>
 
 TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> vin);
 bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2);
@@ -22,5 +24,7 @@ TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode);
 bool isSymmetrical(TreeNode* pRoot);
 vector<vector<int> > PrintZTree(TreeNode* pRoot);
 vector<vector<int> > PrintLevelTree(TreeNode* pRoot);
+char* SerializeTree(TreeNode *root);
+TreeNode* DeserializeTree(char *str);
 
 #endif //ALOGRITHM_TREE_H

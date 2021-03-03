@@ -205,3 +205,19 @@ void test_printLevelTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test print level tree end==============="<<endl;
 }
+
+void test_serializeTree() {
+    cout<<"============simple test serialize tree begin============="<<endl;
+    vector<int> nums{4,2,5,1,6,3,7};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    char* s = SerializeTree(root);
+    TreeNode* res = DeserializeTree(s);
+    if(treesEqual(res, root)) {
+        cout<<"result of test case: "<<endl;
+        printTree(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test serialize tree end==============="<<endl;
+}

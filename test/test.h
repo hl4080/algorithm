@@ -279,6 +279,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o58"]    = &test_isSymmetrical;
     m["o59"]    = &test_printZTree;
     m["o60"]    = &test_printLevelTree;
+    m["o61"]    = &test_serializeTree;
 
     //stack function
     m["o5"]     = &test_myStack;
