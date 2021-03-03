@@ -175,3 +175,18 @@ void test_isSymmetrical() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test is symmetrical end==============="<<endl;
 }
+
+void test_printZTree() {
+    cout<<"============simple test print Z tree begin============="<<endl;
+    vector<int> nums{4,2,5,1,6,3,7};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    vector<vector<int>> res = PrintZTree(root), desired{{1},{3,2},{4,5,6,7}};
+    if(res == desired) {
+        cout<<"result of test case: "<<endl;
+        printTwoDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test print Z tree end==============="<<endl;
+}

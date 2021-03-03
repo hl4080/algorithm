@@ -257,3 +257,37 @@ bool isSymmetricalHelp(TreeNode* root1, TreeNode* root2) {
 bool isSymmetrical(TreeNode* pRoot) {
     return isSymmetricalHelp(pRoot, pRoot);
 }
+
+/*
+ * 请实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序打印，第三行按照从左到右的顺序打印，其他行以此类推。
+示例1
+输入
+
+{8,6,10,5,7,9,11}
+返回值
+
+[[8],[10,6],[5,7,9,11]]
+ */
+
+vector<vector<int> > PrintZTree(TreeNode* pRoot) {
+    queue<TreeNode*> q;
+    vector<vector<int>> res;
+    if(!pRoot) return res;
+    q.push(pRoot);
+    bool dir = 1;
+    while(!q.empty()) {
+        int sz = q.size();
+        vector<int> level;
+        for(int i=0; i<sz; i++) {
+            TreeNode* node = q.front();
+            q.pop();
+            level.push_back(node->val);
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
+        }
+        if(!dir) reverse(level.begin(), level.end());
+        res.push_back(level);
+        dir = !dir;
+    }
+    return res;
+}
