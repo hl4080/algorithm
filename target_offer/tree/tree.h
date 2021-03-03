@@ -21,5 +21,6 @@ bool IsBalancedTree(TreeNode* pRoot);
 TreeLinkNode* GetNextLinkNode(TreeLinkNode* pNode);
 bool isSymmetrical(TreeNode* pRoot);
 vector<vector<int> > PrintZTree(TreeNode* pRoot);
+vector<vector<int> > PrintLevelTree(TreeNode* pRoot);
 
 #endif //ALOGRITHM_TREE_H

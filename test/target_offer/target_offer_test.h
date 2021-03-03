@@ -58,6 +58,7 @@ void test_IsBalancedTree();
 void test_getNextLinkTree();
 void test_isSymmetrical();
 void test_printZTree();
+void test_printLevelTree();
 
 //functions in stack
 void test_myStack();
