@@ -280,6 +280,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o59"]    = &test_printZTree;
     m["o60"]    = &test_printLevelTree;
     m["o61"]    = &test_serializeTree;
+    m["o62"]    = &test_kthTreeNode;
 
     //stack function
     m["o5"]     = &test_myStack;

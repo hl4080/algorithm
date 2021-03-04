@@ -221,3 +221,19 @@ void test_serializeTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test serialize tree end==============="<<endl;
 }
+
+void test_kthTreeNode() {
+    cout<<"============simple test kth tree node begin============="<<endl;
+    vector<int> nums{1,2,3,4,5,6,7};
+    TreeNode* root = buildTree(nums, 0, nums.size()-1);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    int k = 4;
+    cout<<"k="<<k<<endl;
+    TreeNode* res = KthNode(root, k), *desired = root;
+    if(res == root) {
+        cout<<"result of test case: "<<res->val<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test kth tree node end==============="<<endl;
+}

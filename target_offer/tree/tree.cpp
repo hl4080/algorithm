@@ -372,3 +372,29 @@ TreeNode* deserialize(char *&str) {
 TreeNode* DeserializeTree(char *str) {
     return deserialize(str);
 }
+
+/*
+ * 给定一棵二叉搜索树，请找出其中的第k小的TreeNode结点。
+示例1
+输入
+
+{5,3,7,2,4,6,8},3
+返回值
+
+{4}
+说明
+按结点数值大小顺序第三小结点的值为4
+ */
+
+void inorderKnode(TreeNode* root, vector<TreeNode*>& res) {
+    if(!root) return;
+    inorderKnode(root->left, res);
+    res.push_back(root);
+    inorderKnode(root->right, res);
+}
+
+TreeNode* KthNode(TreeNode* pRoot, int k) {
+    vector<TreeNode*> seq;
+    inorderKnode(pRoot, seq);
+    return (k<=0 || k>seq.size())? NULL: seq[k-1];
+}

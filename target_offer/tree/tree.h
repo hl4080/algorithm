@@ -26,5 +26,6 @@ vector<vector<int> > PrintZTree(TreeNode* pRoot);
 vector<vector<int> > PrintLevelTree(TreeNode* pRoot);
 char* SerializeTree(TreeNode *root);
 TreeNode* DeserializeTree(char *str);
+TreeNode* KthNode(TreeNode* pRoot, int k);
 
 #endif //ALOGRITHM_TREE_H

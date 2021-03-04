@@ -58,3 +58,4 @@
 59  tree        print Z level tree
 60  tree        print level tree
 61  tree        serialize and deserialize tree
+62  tree        kth node
