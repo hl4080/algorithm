@@ -289,6 +289,7 @@ void initProblemMap(map<string, FUNC>& m) {
 
     //dc function
     m["o6"]     = &test_minRotateArray;
+    m["o63"]    = &test_streamMedian;
 
     //dp function
     m["o7"]     = &test_fibonacci;

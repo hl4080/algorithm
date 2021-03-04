@@ -59,3 +59,4 @@
 60  tree        print level tree
 61  tree        serialize and deserialize tree
 62  tree        kth node
+63  dc          stream median

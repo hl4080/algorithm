@@ -69,6 +69,7 @@ void test_isPopOrder();
 
 //functions in dc
 void test_minRotateArray();
+void test_streamMedian();
 
 //functions in dp
 void test_fibonacci();

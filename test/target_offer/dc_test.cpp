@@ -18,3 +18,23 @@ void test_minRotateArray() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test min rotate array end==============="<<endl;
 }
+
+void test_streamMedian() {
+    cout<<"============simple test stream median begin============="<<endl;
+    StreamMedian sm;
+    vector<int> stream{5,2,3,4,1,6,7,0,8};
+    vector<double> res;
+    for(int i=0; i<stream.size(); i++) {
+        sm.Insert(stream[i]);
+        res.push_back(sm.GetMedian());
+    }
+    cout<<"test case: ";
+    printOneDimVec(stream);
+    vector<double> desired{5.00,3.50,3.00,3.50,3.00,3.50,4.00,3.50,4.00};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test stream median end==============="<<endl;
+}
