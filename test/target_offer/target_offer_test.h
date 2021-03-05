@@ -25,6 +25,7 @@ void test_numberWithSum();
 void test_isContinous();
 void test_duplicate();
 void test_multiplyArray();
+void test_maxWindow();
 
 //functions in string
 void test_replaceSpace();

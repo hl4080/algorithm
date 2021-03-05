@@ -210,3 +210,20 @@ void test_multiplyArray() {
     } else cerr<<"TEST SATUS: FAILED"<<endl;
     cout<<"============simple test multiply array end==============="<<endl;
 }
+
+void test_maxWindow() {
+    cout<<"============simple test max window begin============="<<endl;
+    vector<int> nums{2,3,4,2,6,2,5,1};
+    int k = 3;
+    cout<<"test case: "<<endl;
+    cout<<"nums: ";
+    printOneDimVec(nums);
+    cout<<"k="<<k<<endl;
+    vector<int> res = maxInWindows(nums, k), desired{4,4,6,6,6,5};
+    if(res == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res);
+        cout<<"TEST SATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test max window end==============="<<endl;
+}

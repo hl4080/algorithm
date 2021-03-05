@@ -245,6 +245,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o45"]    = &test_isContinous;
     m["o50"]    = &test_duplicate;
     m["o51"]    = &test_multiplyArray;
+    m["o64"]    = &test_maxWindow;
 
     //string functions
     m["o2"]     = &test_replaceSpace;
