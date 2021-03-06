@@ -145,3 +145,32 @@ int SpecialAdd(int num1, int num2) {
     }
     return num1;
 }
+
+/*
+ * 给你一根长度为n的绳子，请把绳子剪成整数长的m段（m、n都是整数，n>1并且m>1，m<=n），每段绳子的长度记为k[1],...,k[m]。
+ * 请问k[1]x...xk[m]可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
+输入描述:
+输入一个数n，意义见题面。（2 <= n <= 60）
+返回值描述:
+输出答案。
+示例1
+输入
+
+8
+返回值
+
+18
+ */
+
+int cutRope(int number) {
+    int res = 1;
+    while(number>1) {
+        if(number == 2) return res*2;
+        else if(number == 4) return res*4;
+        else {
+            res *= 3;
+            number -= 3;
+        }
+    }
+    return res;
+}

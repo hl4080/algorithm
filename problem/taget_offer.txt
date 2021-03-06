@@ -63,3 +63,4 @@
 64  array       max in windows
 65  string      has path
 66  array       moving counting
+67  math        cut rope

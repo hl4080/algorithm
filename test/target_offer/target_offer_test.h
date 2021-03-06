@@ -90,5 +90,6 @@ void test_numberOf1s();
 void test_appearOnce();
 void test_specialSum();
 void test_specialAdd();
+void test_cutRope();
 
 #endif //ALOGRITHM_TARGET_OFFER_TEST_H

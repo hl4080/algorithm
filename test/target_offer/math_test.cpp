@@ -94,3 +94,15 @@ void test_specialAdd() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test special add end==============="<<endl;
 }
+
+void test_cutRope() {
+    cout<<"============simple test cut rope begin============="<<endl;
+    int n = 8;
+    cout<<"test case: n="<<n<<endl;
+    int res = cutRope(n), desired = 18;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST SATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test cut rope end==============="<<endl;
+}
