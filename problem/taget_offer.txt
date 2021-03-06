@@ -62,3 +62,4 @@
 63  dc          stream median
 64  array       max in windows
 65  string      has path
+66  array       moving counting

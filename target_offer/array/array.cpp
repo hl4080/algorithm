@@ -434,3 +434,37 @@ vector<int> maxInWindows(const vector<int>& num, unsigned int size) {
     }
     return res;
 }
+
+/*
+ * 地上有一个m行和n列的方格。一个机器人从坐标0,0的格子开始移动，每一次只能向左，右，上，下四个方向移动一格，但是不能进入行坐标和列坐标的数位之和大于k的格子。
+ * 例如，当k为18时，机器人能够进入方格（35,37），因为3+5+3+7 = 18。但是，它不能进入方格（35,38），因为3+5+3+8 = 19。请问该机器人能够达到多少个格子？
+示例1
+输入
+
+5,10,10
+返回值
+
+21
+ */
+int digitCount(int num) {
+    int res = 0;
+    while(num) {
+        res += num%10;
+        num /= 10;
+    }
+    return res;
+}
+
+int movingCountHelp(vector<vector<bool>>& visited, int threshold, int rows, int cols, int i, int j) {
+    if(i<0 || i>=rows || j<0 || j>=cols || visited[i][j] || digitCount(i)+digitCount(j) > threshold) return 0;
+    visited[i][j] = true;
+    return 1+movingCountHelp(visited, threshold, rows, cols, i-1, j)+movingCountHelp(visited, threshold, rows, cols, i, j-1)
+           +movingCountHelp(visited, threshold, rows, cols, i+1, j)+movingCountHelp(visited, threshold, rows, cols, i, j+1);
+}
+
+int movingCount(int threshold, int rows, int cols) {
+    int res = 0;
+    if(rows<=0 || cols<=0) return res;
+    vector<vector<bool>> visited(rows, vector<bool>(cols, false));
+    return movingCountHelp(visited, threshold, rows, cols, 0, 0);
+}

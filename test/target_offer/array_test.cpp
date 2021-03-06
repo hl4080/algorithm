@@ -227,3 +227,15 @@ void test_maxWindow() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test max window end==============="<<endl;
 }
+
+void test_movingCount() {
+    cout<<"============simple test moving count begin============="<<endl;
+    int threhold = 5, rows = 10, cols = 10;
+    cout<<"threhold="<<threhold<<" rows="<<rows<<" cols="<<cols<<endl;
+    int res = movingCount(threhold, rows, cols), desired = 21;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test moving count end==============="<<endl;
+}

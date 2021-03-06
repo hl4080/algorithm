@@ -246,6 +246,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o50"]    = &test_duplicate;
     m["o51"]    = &test_multiplyArray;
     m["o64"]    = &test_maxWindow;
+    m["o66"]    = &test_movingCount;
 
     //string functions
     m["o2"]     = &test_replaceSpace;
@@ -255,7 +256,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o44"]    = &test_reverseSentence;
     m["o49"]    = &test_string2int;
     m["o54"]    = &test_stringFirstAppear;
-    m["o65"]    - &test_hasPath;
+    m["o65"]    = &test_hasPath;
 
     //list functions
     m["o3"]     = &test_printReverseList;

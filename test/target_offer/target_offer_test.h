@@ -26,6 +26,7 @@ void test_isContinous();
 void test_duplicate();
 void test_multiplyArray();
 void test_maxWindow();
+void test_movingCount();
 
 //functions in string
 void test_replaceSpace();

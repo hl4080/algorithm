@@ -28,5 +28,6 @@ bool IsContinuous( vector<int> numbers);
 int duplicate(vector<int>& numbers);
 vector<int> multiplyArray(const vector<int>& A);
 vector<int> maxInWindows(const vector<int>& num, unsigned int size);
+int movingCount(int threshold, int rows, int cols);
 
 #endif //ALOGRITHM_ARRAY_H
