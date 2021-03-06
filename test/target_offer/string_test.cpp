@@ -99,3 +99,17 @@ void test_stringFirstAppear() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test string stream first appear char end==============="<<endl;
 }
+
+void test_hasPath() {
+    cout<<"============simple test has path begin============="<<endl;
+    string s = "ABCESFCSADEE";
+    int row = 3, col = 4;
+    string str = "ABCCED";
+    cout<<"test case: s="<<s<<" row="<<row<<" col="<<col<<" str="<<str<<endl;
+    bool res = hasPath(s, row, col, str), desired = true;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test has path end==============="<<endl;
+}

@@ -18,6 +18,7 @@ int FirstNotRepeatingChar(string str);
 string LeftRotateString(string str, int n);
 string ReverseSentence(string str);
 int StrToInt(string str);
+bool hasPath(string matrix, int rows, int cols, string str);
 
 class SstreamFirstAppear
 {

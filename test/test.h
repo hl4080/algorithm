@@ -255,6 +255,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o44"]    = &test_reverseSentence;
     m["o49"]    = &test_string2int;
     m["o54"]    = &test_stringFirstAppear;
+    m["o65"]    - &test_hasPath;
 
     //list functions
     m["o3"]     = &test_printReverseList;

@@ -61,3 +61,4 @@
 62  tree        kth node
 63  dc          stream median
 64  array       max in windows
+65  string      has path

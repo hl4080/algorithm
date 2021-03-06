@@ -35,6 +35,7 @@ void test_leftRotatedString();
 void test_reverseSentence();
 void test_string2int();
 void test_stringFirstAppear();
+void test_hasPath();
 
 //functions in list
 void test_printReverseList();
