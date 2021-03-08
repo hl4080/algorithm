@@ -4,6 +4,7 @@
 
 #include "leetcode/leetcode_test.h"
 #include "target_offer/target_offer_test.h"
+#include "basis/basis_test.h"
 
 void initProblemMap(map<string, FUNC>& m) {
     /********************* leetcode problems **********************/
@@ -311,4 +312,7 @@ void initProblemMap(map<string, FUNC>& m) {
     m["o47"]    = &test_specialSum;
     m["o48"]    = &test_specialAdd;
     m["o67"]    = &test_cutRope;
+
+    /********************* basic problems **********************/
+    m["b1"]     = &test_directInsertSort;
 }

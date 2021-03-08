@@ -5,4 +5,10 @@
 #ifndef ALOGRITHM_BASIS_TEST_H
 #define ALOGRITHM_BASIS_TEST_H
 
+#include "../../util/util.h"
+#include "../../basis/sort/sort.h"
+#include <iostream>
+
+void test_directInsertSort();
+
 #endif //ALOGRITHM_BASIS_TEST_H

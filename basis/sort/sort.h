@@ -6,9 +6,11 @@
 #define ALOGRITHM_SORT_H
 
 
-class sort {
+#include <vector>
 
-};
+using namespace std;
+
+void directInsertSort(vector<int>& nums);
 
 
 #endif //ALOGRITHM_SORT_H
