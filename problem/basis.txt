@@ -1,1 +1,2 @@
 1       direct insert sort
+2       select sort

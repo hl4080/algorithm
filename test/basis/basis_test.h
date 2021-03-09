@@ -10,5 +10,6 @@
 #include <iostream>
 
 void test_directInsertSort();
+void test_selectSort();
 
 #endif //ALOGRITHM_BASIS_TEST_H
