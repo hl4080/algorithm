@@ -12,6 +12,7 @@ using namespace std;
 
 void directInsertSort(vector<int>& nums);
 void selectSort(vector<int>& nums);
+void bubble_sort(vector<int>& nums);
 
 
 #endif //ALOGRITHM_SORT_H

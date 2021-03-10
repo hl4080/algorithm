@@ -1,2 +1,3 @@
 1       direct insert sort
 2       select sort
+3       bubble  sort

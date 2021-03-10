@@ -11,5 +11,6 @@
 
 void test_directInsertSort();
 void test_selectSort();
+void test_bubbleSort();
 
 #endif //ALOGRITHM_BASIS_TEST_H

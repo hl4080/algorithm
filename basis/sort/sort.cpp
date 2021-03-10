@@ -31,3 +31,13 @@ void selectSort(vector<int>& nums) {
         swap(nums[i], nums[pos]);
     }
 }
+
+//bubble sort
+//time complexity O(n2), space complexity O(1), stable sort
+void bubble_sort(vector<int>& nums) {
+    for(int i=0;i<nums.size(); i++) {
+        for(int j=nums.size()-1; j>i; j--) {
+            if(nums[j] < nums[i]) swap(nums[i], nums[j]);
+        }
+    }
+}
