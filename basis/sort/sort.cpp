@@ -41,3 +41,17 @@ void bubble_sort(vector<int>& nums) {
         }
     }
 }
+
+//hill sort
+//time complexity worst O(n2) avg O(nlogn2), space compexity O(1), unstable sort
+void hill_sort(vector<int>& nums) {
+    for(int interval = nums.size()/2; interval>0; interval = interval/2) {
+        for(int i=interval; i<nums.size(); i++) {
+            int j=i;
+            while(j-interval>=0 && nums[j-interval] > nums[j]) {
+                swap(nums[j-interval], nums[j]);
+                j = j-interval;
+            }
+        }
+    }
+}
