@@ -55,3 +55,26 @@ void hill_sort(vector<int>& nums) {
         }
     }
 }
+
+//quick sort
+int partitions(vector<int>& nums, int left, int right) {
+    int pivot = nums[left];
+    int l = left+1, r = right;
+    while(l<r) {
+        while(l<r && nums[l] < pivot) l++;
+        while(r>l && nums[r] > pivot) r--;
+        swap(nums[l], nums[r]);
+    }
+    swap(nums[left], nums[l-1]);
+    return l-1;
+}
+void quickSortHelp(vector<int>& nums, int left, int right) {
+    if(left < right) {
+        int mid = partitions(nums, left, right);
+        quickSortHelp(nums, left, mid-1);
+        quickSortHelp(nums, mid+1, right);
+    }
+}
+void quickSort(vector<int>& nums) {
+    quickSortHelp(nums, 0, nums.size()-1);
+}

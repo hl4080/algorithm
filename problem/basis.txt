@@ -2,3 +2,4 @@
 2       select sort
 3       bubble  sort
 4       hill sort
+5       quick sort

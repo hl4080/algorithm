@@ -14,6 +14,7 @@ void directInsertSort(vector<int>& nums);
 void selectSort(vector<int>& nums);
 void bubble_sort(vector<int>& nums);
 void hill_sort(vector<int>& nums);
+void quickSort(vector<int>& nums);
 
 
 #endif //ALOGRITHM_SORT_H
