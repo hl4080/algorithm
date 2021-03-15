@@ -3,3 +3,4 @@
 3       bubble  sort
 4       hill sort
 5       quick sort
+6       merge sort

@@ -319,4 +319,5 @@ void initProblemMap(map<string, FUNC>& m) {
     m["b3"]     = &test_bubbleSort;
     m["b4"]     = &test_hillSort;
     m["b5"]     = &test_quickSort;
+    m["b6"]     = &test_mergeSort;
 }

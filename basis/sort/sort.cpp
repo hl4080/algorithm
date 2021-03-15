@@ -78,3 +78,29 @@ void quickSortHelp(vector<int>& nums, int left, int right) {
 void quickSort(vector<int>& nums) {
     quickSortHelp(nums, 0, nums.size()-1);
 }
+
+//merge sort
+
+void merge1(vector<int>& nums, int l1, int r1, int l2, int r2) {
+    vector<int> arr;
+    int p1 = l1, p2 = l2;
+    while(p1<=r1 && p2<=r2) {
+        if(nums[p1]>nums[p2]) arr.push_back(nums[p2++]);
+        else arr.push_back(nums[p1++]);
+    }
+    while(p1<=r1) arr.push_back(nums[p1++]);
+    while(p2<=r2) arr.push_back(nums[p2++]);
+    for(int i=l1; i<=r2; i++) nums[i] = arr[i-l1];
+}
+
+void mergeSortHelp(vector<int>& nums, int l, int r) {
+    if(l>=r) return;
+    int mid = l+(r-l)/2;
+    mergeSortHelp(nums, l, mid);
+    mergeSortHelp(nums, mid+1, r);
+    merge1(nums, l, mid, mid+1, r);
+}
+
+void mergeSort(vector<int>& nums) {
+    mergeSortHelp(nums, 0, nums.size()-1);
+}
