@@ -4,3 +4,4 @@
 4       hill sort
 5       quick sort
 6       merge sort
+7       heap sort

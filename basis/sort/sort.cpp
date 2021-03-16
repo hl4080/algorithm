@@ -104,3 +104,24 @@ void mergeSortHelp(vector<int>& nums, int l, int r) {
 void mergeSort(vector<int>& nums) {
     mergeSortHelp(nums, 0, nums.size()-1);
 }
+
+//heap sort
+void adjustHeap(vector<int>& nums, int i, int len) {
+    int tmp = nums[i];
+    for(int k=2*i+1; k<len; k=2*k+1) {
+        if(k+1<len && nums[k+1] > nums[k]) k++;
+        if(nums[k] > nums[i]) {
+            swap(nums[i], nums[k]);
+            i = k;
+        }else break;
+    }
+}
+void heapSort(vector<int>& nums) {
+    int len = nums.size();
+    for(int i=len/2; i>=0; i--)
+        adjustHeap(nums, i, len);
+    for(int i=len-1; i>0; i--) {
+        swap(nums[0], nums[i]);
+        adjustHeap(nums, 0, i);
+    }
+}

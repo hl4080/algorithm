@@ -15,5 +15,6 @@ void test_bubbleSort();
 void test_hillSort();
 void test_quickSort();
 void test_mergeSort();
+void test_heapSort();
 
 #endif //ALOGRITHM_BASIS_TEST_H

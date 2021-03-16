@@ -85,7 +85,6 @@ void test_mergeSort() {
     cout<<"test case: ";
     printOneDimVec(nums);
     mergeSort(nums);
-    printOneDimVec(nums);
     vector<int> desired{1,2,2,4,5,6,9};
     if(nums == desired) {
         cout<<"result of test case: ";
@@ -93,4 +92,20 @@ void test_mergeSort() {
         cout<<"TEST STATUS: PASS"<<endl;
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test merge sort end==============="<<endl;
+}
+
+void test_heapSort() {
+    cout<<"============simple test heap sort begin============="<<endl;
+    vector<int> nums{4,5,1,6,2,9,2};
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    heapSort(nums);
+    printOneDimVec(nums);
+    vector<int> desired{1,2,2,4,5,6,9};
+    if(nums == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(nums);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test heap sort end==============="<<endl;
 }
