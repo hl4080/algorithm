@@ -17,6 +17,7 @@ void hill_sort(vector<int>& nums);
 void quickSort(vector<int>& nums);
 void mergeSort(vector<int>& nums);
 void heapSort(vector<int>& nums);
+void countSort(vector<int>& nums);
 
 
 #endif //ALOGRITHM_SORT_H

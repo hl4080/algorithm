@@ -106,6 +106,7 @@ void mergeSort(vector<int>& nums) {
 }
 
 //heap sort
+//time complexity O(nlogn), space complexity O(1), unstable sort
 void adjustHeap(vector<int>& nums, int i, int len) {
     int tmp = nums[i];
     for(int k=2*i+1; k<len; k=2*k+1) {
@@ -123,5 +124,26 @@ void heapSort(vector<int>& nums) {
     for(int i=len-1; i>0; i--) {
         swap(nums[0], nums[i]);
         adjustHeap(nums, 0, i);
+    }
+}
+
+//count sort
+//time complexity O(n+k), space complexity O(n+k), stable sort
+void countSort(vector<int>& nums) {
+    int minVal = INT_MAX, maxVal = INT_MIN;
+    for(int i=0; i<nums.size(); i++) {
+        minVal = min(minVal, nums[i]);
+        maxVal = max(maxVal, nums[i]);
+    }
+    vector<int> count(maxVal-minVal+1, 0);
+    for(int i=0; i<nums.size(); i++)
+        count[nums[i]-minVal]++;
+    int pos = 0, cnt = 0;
+    while(cnt < count.size()) {
+        if(count[cnt]) {
+            nums[pos++] = cnt+minVal;
+            count[cnt]--;
+        }
+        else cnt++;
     }
 }

@@ -5,3 +5,4 @@
 5       quick sort
 6       merge sort
 7       heap sort
+8       count sort
