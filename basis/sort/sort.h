@@ -18,6 +18,7 @@ void quickSort(vector<int>& nums);
 void mergeSort(vector<int>& nums);
 void heapSort(vector<int>& nums);
 void countSort(vector<int>& nums);
+void bucketSort(vector<int>& nums);
 
 
 #endif //ALOGRITHM_SORT_H

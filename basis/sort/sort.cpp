@@ -147,3 +147,24 @@ void countSort(vector<int>& nums) {
         else cnt++;
     }
 }
+
+//bucket sort
+
+void bucketSort(vector<int>& nums) {
+    int bucketNum = 5;
+    vector<vector<int>> buckets(bucketNum, vector<int>());
+    int minVal = INT_MAX, maxVal = INT_MIN;
+    for(int i=0; i<nums.size(); i++) {
+        minVal = min(minVal, nums[i]);
+        maxVal = max(maxVal, nums[i]);
+    }
+    int interval = (maxVal-minVal+1)%bucketNum+1;
+    for(int i=0; i<nums.size(); i++)
+        buckets[(nums[i]-minVal)/interval].push_back(nums[i]);
+    int idx = 0;
+    for(int i=0; i<bucketNum; i++) {
+        selectSort(buckets[i]);
+        for(int j=0; j<buckets[i].size(); j++)
+            nums[idx++] = buckets[i][j];
+    }
+}

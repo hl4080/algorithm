@@ -6,3 +6,4 @@
 6       merge sort
 7       heap sort
 8       count sort
+9       bucket sort
