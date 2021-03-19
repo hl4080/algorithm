@@ -149,7 +149,7 @@ void countSort(vector<int>& nums) {
 }
 
 //bucket sort
-
+//time complexity O(n), space complexity O(m), stable sort
 void bucketSort(vector<int>& nums) {
     int bucketNum = 5;
     vector<vector<int>> buckets(bucketNum, vector<int>());
@@ -166,5 +166,31 @@ void bucketSort(vector<int>& nums) {
         selectSort(buckets[i]);
         for(int j=0; j<buckets[i].size(); j++)
             nums[idx++] = buckets[i][j];
+    }
+}
+
+//cardinal sort
+
+void cardinalSort(vector<int>& nums) {
+    int maxVal = INT_MIN;
+    for(int i=0; i<nums.size(); i++) maxVal = max(maxVal, nums[i]);
+    int bits = 0;
+    while(maxVal) {
+        maxVal/=10;
+        bits++;
+    }
+    int div1 = 10, div2 = 1;
+    for(int i=0; i<bits; i++) {
+        vector<vector<int>> buckets(10, vector<int>());
+        for(int j=0; j<nums.size(); j++) {
+            int locate = (nums[j]%div1)/div2;
+            buckets[locate].push_back(nums[j]);
+        }
+        div1 *= 10;
+        div2 *= 10;
+        int pos = 0;
+        for(int j=0; j<buckets.size(); j++) {
+            for(int k=0; k<buckets[j].size(); k++) nums[pos++] = buckets[j][k];
+        }
     }
 }

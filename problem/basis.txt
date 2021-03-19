@@ -7,3 +7,4 @@
 7       heap sort
 8       count sort
 9       bucket sort
+10      cardinal sort
