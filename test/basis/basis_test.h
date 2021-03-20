@@ -9,6 +9,7 @@
 #include "../../basis/sort/sort.h"
 #include <iostream>
 
+//sort
 void test_directInsertSort();
 void test_selectSort();
 void test_bubbleSort();
@@ -19,5 +20,8 @@ void test_heapSort();
 void test_countSort();
 void test_bucketSort();
 void test_cardinalSort();
+
+//search
+void test_seqSearch();
 
 #endif //ALOGRITHM_BASIS_TEST_H
