@@ -9,5 +9,7 @@
 using namespace std;
 
 int seqSearch(vector<int>& nums, int target);
+int binarySearchIter(vector<int>& nums, int target);
+int binarySearchRecurive(vector<int>& nums, int target);
 
 #endif //ALOGRITHM_SEARCH_H

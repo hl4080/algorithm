@@ -23,5 +23,6 @@ void test_cardinalSort();
 
 //search
 void test_seqSearch();
+void test_binarySearch();
 
 #endif //ALOGRITHM_BASIS_TEST_H
