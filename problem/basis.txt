@@ -10,3 +10,4 @@
 10      cardinal sort
 11      sequential search
 12      binary search
+13      differential search

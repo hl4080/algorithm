@@ -35,3 +35,18 @@ void test_binarySearch() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test binary search end==============="<<endl;
 }
+
+void test_differentialSearch() {
+    cout<<"============simple test differential search begin============="<<endl;
+    vector<int> nums{1,2,3,4,5,6,7,8,9};
+    int target = 7;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    int res = differentialSort(nums, target), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test differential search end==============="<<endl;
+}

@@ -13,7 +13,7 @@ int seqSearch(vector<int>& nums, int target) {
 }
 
 //binary search
-
+//time complexity O(logn), space complexity O(1), search condition: order
 int binarySearchIter(vector<int>& nums, int target) {
     int begin = 0, end = nums.size()-1;
     while(begin <= end) {
@@ -35,4 +35,17 @@ int binarySearchRecuriveHelp(vector<int>& nums, int target, int left, int right)
 
 int binarySearchRecurive(vector<int>& nums, int target) {
     return binarySearchRecuriveHelp(nums, target, 0, nums.size()-1);
+}
+
+//differiential sort
+//time complexity: worst O(n), avg O(logn), worst O(loglogn), space complexity O(1), search condition: order
+int differentialSort(vector<int>& nums, int target) {
+    int begin = 0, end = nums.size()-1;
+    while(begin <= end) {
+        int mid = begin + (target-nums[begin])*(end-begin)/(nums[end]-nums[begin]);
+        if(nums[mid] == target) return mid;
+        else if(nums[mid] > target) end = mid - 1;
+        else begin = mid + 1;
+    }
+    return -1;
 }
