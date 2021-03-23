@@ -11,3 +11,4 @@
 11      sequential search
 12      binary search
 13      differential search
+14      fabonacci search

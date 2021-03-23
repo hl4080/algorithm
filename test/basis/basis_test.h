@@ -25,5 +25,6 @@ void test_cardinalSort();
 void test_seqSearch();
 void test_binarySearch();
 void test_differentialSearch();
+void test_fabonacciSearch();
 
 #endif //ALOGRITHM_BASIS_TEST_H

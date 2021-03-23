@@ -49,3 +49,29 @@ int differentialSort(vector<int>& nums, int target) {
     }
     return -1;
 }
+
+//fabonacci search
+//time complexity O(logn), space complexity O(1), search condition: order
+int fabonacciSearch(vector<int>& nums, int target) {
+    vector<int> fab(20, 1);
+    int n = nums.size();
+    for(int i=2; i<20; i++) fab[i] = fab[i-1] + fab[i-2];
+    int k = 0;
+    while(target > fab[k]-1) k++;
+    for(int i=n; i<fab[k]-1; i++) nums.push_back(nums[n-1]);
+    int low = 0, high = n-1;
+    while(low <= high) {
+        int mid = low + fab[k-1]-1;
+        if(nums[mid] < target) {
+            low = mid + 1;
+            k--;
+        } else if(nums[mid] > target) {
+            high = mid - 1;
+            k -= 2;
+        } else {
+            if(mid < high) return mid;
+            else return high;
+        }
+    }
+    return -1;
+}

@@ -327,4 +327,5 @@ void initProblemMap(map<string, FUNC>& m) {
     m["b11"]    = &test_seqSearch;
     m["b12"]    = &test_binarySearch;
     m["b13"]    = &test_differentialSearch;
+    m["b14"]    = &test_fabonacciSearch;
 }
