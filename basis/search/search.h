@@ -13,5 +13,6 @@ int binarySearchIter(vector<int>& nums, int target);
 int binarySearchRecurive(vector<int>& nums, int target);
 int differentialSort(vector<int>& nums, int target);
 int fabonacciSearch(vector<int>& nums, int target);
+int hashSearch(vector<int>& nums, int target);
 
 #endif //ALOGRITHM_SEARCH_H

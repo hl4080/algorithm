@@ -75,3 +75,17 @@ int fabonacciSearch(vector<int>& nums, int target) {
     }
     return -1;
 }
+
+//hash search
+//time complexity O(1), space complexity O(n), search condition: order or disorder
+int hashSearch(vector<int>& nums, int target) {
+    vector<vector<pair<int, int>>> hashtable(5, vector<pair<int, int>>());
+    int hashsz = hashtable.size();
+    for(int i=0; i<nums.size(); i++)
+        hashtable[nums[i]%hashsz].push_back(make_pair(i, nums[i]));
+    vector<pair<int, int>> table = hashtable[target%hashsz];
+    for(int i=0; i<table.size(); i++) {
+        if(target == table[i].second) return table[i].first;
+    }
+    return -1;
+}
