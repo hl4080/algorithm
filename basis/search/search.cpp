@@ -89,3 +89,44 @@ int hashSearch(vector<int>& nums, int target) {
     }
     return -1;
 }
+
+//binary tree search
+//time complexity O(logn), space complexity O(n), search condition: order or disorder
+
+BinarySearchNode* BinaryTreeInsert(BinarySearchNode* root, int index, int val) {
+    if(!root) {
+        return new BinarySearchNode(index, val);
+    }
+    if(root->val < val) {
+        if(root->right) return BinaryTreeInsert(root->right, index, val);
+        else {
+            root->right = new BinarySearchNode(index, val);
+            return root->right;
+        }
+    } else {
+        if(root->left) return BinaryTreeInsert(root->left, index, val);
+        else {
+            root->left = new BinarySearchNode(index, val);
+            return root->left;
+        }
+    }
+}
+
+int binarySearch(BinarySearchNode* root, int target) {
+    if(!root) return -1;
+    if(root->val == target) return root->index;
+    int l = binarySearch(root->left, target);
+    int r = binarySearch(root->right, target);
+    if(l!=-1) return l;
+    else if(r!=-1) return r;
+    return -1;
+}
+
+int binaryTreeSearch(vector<int>& nums, int target) {
+    if(nums.empty()) return -1;
+    BinarySearchNode* root = new BinarySearchNode(0, nums[0]);
+    for(int i=1; i<nums.size(); i++) {
+        BinaryTreeInsert(root, i, nums[i]);
+    }
+    return binarySearch(root, target);
+}
