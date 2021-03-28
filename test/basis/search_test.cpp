@@ -95,3 +95,18 @@ void test_binaryTreeSearch() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test binary tree search end==============="<<endl;
 }
+
+void test_batchSearch() {
+    cout<<"============simple test batch search begin============="<<endl;
+    vector<int> nums{1,2,3,4,5,6,7,8,9};
+    int target = 7;
+    cout<<"test case: ";
+    printOneDimVec(nums);
+    cout<<"target: "<<target<<endl;
+    int res = batchSearch(nums, target), desired = 6;
+    if(res == desired) {
+        cout<<"result of test case: "<<res<<endl;
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test batch search end==============="<<endl;
+}

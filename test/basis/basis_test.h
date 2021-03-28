@@ -28,5 +28,6 @@ void test_differentialSearch();
 void test_fabonacciSearch();
 void test_hashSearch();
 void test_binaryTreeSearch();
+void test_batchSearch();
 
 #endif //ALOGRITHM_BASIS_TEST_H

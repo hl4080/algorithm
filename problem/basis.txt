@@ -14,3 +14,4 @@
 14      fabonacci search
 15      hash search
 16      binary tree search
+17      batch search

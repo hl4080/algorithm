@@ -15,6 +15,7 @@ int differentialSort(vector<int>& nums, int target);
 int fabonacciSearch(vector<int>& nums, int target);
 int hashSearch(vector<int>& nums, int target);
 int binaryTreeSearch(vector<int>& nums, int target);
+int batchSearch(vector<int>& nums, int target);
 
 struct BinarySearchNode {
     int val;

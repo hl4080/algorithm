@@ -90,9 +90,8 @@ int hashSearch(vector<int>& nums, int target) {
     return -1;
 }
 
-//binary tree search
+//binary tree search，树查找包括二叉搜索树、红黑树、2-3树、B树和B+树
 //time complexity O(logn), space complexity O(n), search condition: order or disorder
-
 BinarySearchNode* BinaryTreeInsert(BinarySearchNode* root, int index, int val) {
     if(!root) {
         return new BinarySearchNode(index, val);
@@ -129,4 +128,42 @@ int binaryTreeSearch(vector<int>& nums, int target) {
         BinaryTreeInsert(root, i, nums[i]);
     }
     return binarySearch(root, target);
+}
+
+//batch search
+//time complexity O(loga)+O(b), space complexity O(n), search condition: order or disorder
+#include <iostream>
+int batchSearch(vector<int>& nums, int target) {
+    int batchNum = 3;
+    int numsMax = INT_MIN, numsMin = INT_MAX;
+    for(int i=0; i<nums.size(); i++) {
+        numsMax = max(numsMax, nums[i]);
+        numsMin = min(numsMin, nums[i]);
+    }
+    int batchRange = (numsMax-numsMin)/batchNum+1;
+    vector<vector<pair<int, int>>> batches(3, vector<pair<int, int>>());
+    vector<int> batchMax;
+    for(int i=1; i<=batchNum; i++) batchMax.push_back(numsMin+i*batchRange);
+    for(int i=0; i<nums.size(); i++) {
+        batches[(nums[i]-numsMin)/batchRange].push_back(make_pair(i, nums[i]));
+    }
+    int begin = 0, end = batchMax.size()-1;
+    int index;
+    while(begin<=end) {
+        int mid = begin + (end-begin)/2;
+        if(mid == 0 && target < batchMax[mid]) {
+            index = mid;
+            break;
+        }
+        if(target>=batchMax[mid-1] && target<batchMax[mid]) {
+            index = mid;
+            break;
+        } else if(target>=batchMax[mid]) begin = mid+1;
+        else if(target<batchMax[mid-1]) end = mid-1;
+    }
+    //cout<<batchMax[1]<<endl;
+    for(int i=0; i<batches[index].size(); i++) {
+        if(batches[index][i].second == target) return batches[index][i].first;
+    }
+    return -1;
 }
