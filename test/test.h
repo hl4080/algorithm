@@ -331,4 +331,5 @@ void initProblemMap(map<string, FUNC>& m) {
     m["b15"]    = &test_hashSearch;
     m["b16"]    = &test_binaryTreeSearch;
     m["b17"]    = &test_batchSearch;
+    m["b18"]    = &test_preoderTree;
 }

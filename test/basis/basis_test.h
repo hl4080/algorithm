@@ -30,4 +30,7 @@ void test_hashSearch();
 void test_binaryTreeSearch();
 void test_batchSearch();
 
+//tree
+void test_preoderTree();
+
 #endif //ALOGRITHM_BASIS_TEST_H
