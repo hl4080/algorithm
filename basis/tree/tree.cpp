@@ -23,3 +23,26 @@ void preorderIter(TreeNode* root, vector<int>& res) {
         if(node->left) stk.push(node->left);
     }
 }
+
+void inorderdfs(TreeNode* root, vector<int>& res) {
+    if(!root) return ;
+    inorderdfs(root->left, res);
+    res.push_back(root->val);
+    inorderdfs(root->right, res);
+}
+
+void inorderIter(TreeNode* root, vector<int>& res) {
+    if(!root) return;
+    stack<TreeNode*> stk;
+    TreeNode* node = root;
+    while(node || !stk.empty()) {
+        while(node) {
+            stk.push(node);
+            node = node->left;
+        }
+        node = stk.top();
+        res.push_back(node->val);
+        stk.pop();
+        node = node->right;
+    }
+}

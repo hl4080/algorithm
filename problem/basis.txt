@@ -16,3 +16,4 @@
 16      binary tree search
 17      batch search
 18      preoder
+19      inorder
