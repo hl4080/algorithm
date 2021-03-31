@@ -16,5 +16,7 @@ void preorderdfs(TreeNode* root, vector<int>& res);
 void preorderIter(TreeNode* root, vector<int>& res);
 void inorderdfs(TreeNode* root, vector<int>& res);
 void inorderIter(TreeNode* root, vector<int>& res);
+void postorderdfs(TreeNode* root, vector<int>& res);
+void postorderIter(TreeNode* root, vector<int>& res);
 
 #endif //ALOGRITHM_TREE_H

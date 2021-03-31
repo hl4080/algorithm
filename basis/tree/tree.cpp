@@ -14,13 +14,16 @@ void preorderdfs(TreeNode* root, vector<int>& res) {
 void preorderIter(TreeNode* root, vector<int>& res) {
     if(!root) return;
     stack<TreeNode*> stk;
-    stk.push(root);
-    while(!stk.empty()) {
-        TreeNode* node = stk.top();
+    TreeNode* node = root;
+    while(node || !stk.empty()) {
+        while(node) {
+            res.push_back(node->val);
+            stk.push(node);
+            node = node->left;
+        }
+        node = stk.top();
         stk.pop();
-        res.push_back(node->val);
-        if(node->right) stk.push(node->right);
-        if(node->left) stk.push(node->left);
+        node = node->right;
     }
 }
 
@@ -44,5 +47,31 @@ void inorderIter(TreeNode* root, vector<int>& res) {
         res.push_back(node->val);
         stk.pop();
         node = node->right;
+    }
+}
+
+void postorderdfs(TreeNode* root, vector<int>& res) {
+    if(!root) return;
+    postorderdfs(root->left, res);
+    postorderdfs(root->right, res);
+    res.push_back(root->val);
+}
+
+void postorderIter(TreeNode* root, vector<int>& res) {
+    if(!root) return;
+    stack<TreeNode*> stk1;
+    stack<TreeNode*> stk2;
+    stk1.push(root);
+    while(!stk1.empty()) {
+        TreeNode* node = stk1.top();
+        stk1.pop();
+        stk2.push(node);
+        if(node->left) stk1.push(node->left);
+        if(node->right) stk1.push(node->right);
+    }
+    while(!stk2.empty()) {
+        TreeNode* node = stk2.top();
+        stk2.pop();
+        res.push_back(node->val);
     }
 }

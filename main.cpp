@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     //for leetcode, index's first char should be 'l'
     //for target offer, index's first char should be 'o'
     //for basis algorithms, index's first char should be 'b'
-    string index = "b19";
+    string index = "b20";
     map<string, FUNC>::iterator it;
     switch(index[0]) {
         case 'l':

@@ -38,3 +38,20 @@ void test_inoderTree() {
     } else cerr<<"TEST STATUS: FAILED"<<endl;
     cout<<"============simple test inorder tree end==============="<<endl;
 }
+
+void test_postoderTree() {
+    cout<<"============simple test postorder tree begin============="<<endl;
+    vector<int> vec{-1,1,-1,5,3,4,6};
+    TreeNode* root = buildTree(vec, 0, vec.size()-1);
+    vector<int> res1, res2, desired{1,3,6,4,5};
+    postorderdfs(root, res1);
+    postorderIter(root, res2);
+    cout<<"test case: "<<endl;
+    printTree(root);
+    if(res1 == desired && res2 == desired) {
+        cout<<"result of test case: ";
+        printOneDimVec(res1);
+        cout<<"TEST STATUS: PASS"<<endl;
+    } else cerr<<"TEST STATUS: FAILED"<<endl;
+    cout<<"============simple test postorder tree end==============="<<endl;
+}

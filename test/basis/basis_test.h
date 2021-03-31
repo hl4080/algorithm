@@ -33,5 +33,6 @@ void test_batchSearch();
 //tree
 void test_preoderTree();
 void test_inoderTree();
+void test_postoderTree();
 
 #endif //ALOGRITHM_BASIS_TEST_H
