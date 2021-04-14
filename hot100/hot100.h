@@ -5,7 +5,8 @@
 #ifndef ALOGRITHM_HOT100_H
 #define ALOGRITHM_HOT100_H
 
-#include "../leetcode/hash/hash.h"
+#include <map>
+#include "../leetcode/data-struct.h"
 
 //deplicate problems in 1,2,3,4,5,10,11,15,17,19,20,21,22,23,31,32,33,34,39,42,46,48,49,53,55,56
 //62,64,70,72,75,76,78,79,84,85,94,96,98,101,102,104,105,114,121,124,128,136,139,141,142,146,148

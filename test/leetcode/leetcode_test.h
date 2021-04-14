@@ -18,6 +18,7 @@
 #include "../../leetcode/stack/stack.h"
 #include "../../leetcode/tree/tree.h"
 #include "../../leetcode/graph/graph.h"
+#include "../../hot100/hot100.h"
 
 //test functiions in hash directory
 void test_twoSum();
@@ -233,6 +234,7 @@ void test_houseRobIII();
 void test_sumOfLeafNodes();
 void test_pathSumIII();
 void test_deleteTreeNode();
+
 
 //functions in graph directory
 void test_ladderLength();

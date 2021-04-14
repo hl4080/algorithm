@@ -1023,22 +1023,23 @@ Return 3. The paths that sum to 8 are:
 
  */
 
-int pathSumIIIHelp(TreeNode* root, vector<int>& piece, int sum) {
-    if(!root) return 0;
-    int count = 0;
-    vector<int> tmp;
-    for(int i=0; i<piece.size(); i++){
-        tmp.push_back(piece[i]+root->val);
-        count += tmp[i] == sum;
-    }
-    tmp.push_back(root->val);
-    if(root->val == sum) count++;
-    return count + pathSumIIIHelp(root->left, tmp, sum) + pathSumIIIHelp(root->right, tmp, sum);
+void pathsumDfs(TreeNode* root, map<int, int>& m, int& num, int sum, int target) {
+    if(!root) return;
+    sum += root->val;
+    for(auto it=m.begin(); it!=m.end(); it++)
+        if(sum-it->first == target) num+=it->second;
+    m[sum]++;
+    pathsumDfs(root->left, m, num, sum, target);
+    pathsumDfs(root->right, m, num, sum, target);
+    m[sum]--;
 }
 
-int pathSumIII(TreeNode* root, int sum) {
-    vector<int> piece;
-    return pathSumIIIHelp(root, piece, sum);
+int pathSumIII(TreeNode* root, int targetSum) {
+    map<int, int> m;
+    m[0]=1;
+    int res = 0;
+    pathsumDfs(root, m, res, 0, targetSum);
+    return res;
 }
 
 /*
